@@ -1,0 +1,19 @@
+{
+  "id": "5550000012",
+  "pass": "135791",
+  "msisdn": "5997654321",
+  "pass1": "135791",
+  "basic_Msisdn": "5051231231",
+  "basic_Pass": "135791",
+  "semi_Msisdn": "5053213213",
+  "semi_Pass": "135791",
+  "registerMsisdn": "5995883666",
+  "iban": "850005900085554556655888",
+  "aliciAdSoyad": "ahu demir",
+  "ISKIFaturaNo": "27083157",
+  "kurum": "ISKI",
+  "KKNo": "4155650100416111",
+  "CVV": "123",
+  "kisiMsisdn": "5111111111",
+  "groupName": "testGrup"
+}

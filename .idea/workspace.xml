@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d5672436-3bdd-4520-a293-1beda2ab3523" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2GJq5NdCz7jFBznCphV0bA90dV9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.42528737" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/Tests" />
+      <recent name="$PROJECT_DIR$/src/main/java/Libraries" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Tests.Basic" />
+      <recent name="Pages" />
+      <recent name="Tests" />
+      <recent name="Libraries" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.IBANKaydetTest">
+    <configuration name="GruptanParaIsteTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFrameworkForMobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Basic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Basic" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Basic.GruptanParaIsteTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IBANKaydetTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFrameworkForMobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Basic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Basic" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Basic.IBANKaydetTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KrediBankaKartiEkleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFrameworkForMobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Basic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Basic" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Basic.KrediBankaKartiEkleTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginLogOutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFrameworkForMobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Basic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Basic" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Basic.LoginLogOutTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PokusKartEkleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFrameworkForMobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Basic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Basic" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Basic.PokusKartEkleTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.IBANKaydetTest" />
+        <item itemvalue="TestNG.KrediBankaKartiEkleTest" />
+        <item itemvalue="TestNG.PokusKartEkleTest" />
+        <item itemvalue="TestNG.GruptanParaIsteTest" />
+        <item itemvalue="TestNG.LoginLogOutTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5672436-3bdd-4520-a293-1beda2ab3523" name="Changes" comment="" />
+      <created>1666116851520</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666116851520</updated>
+    </task>
+    <servers />
+  </component>
+</project>
