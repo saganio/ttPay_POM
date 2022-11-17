@@ -17,7 +17,6 @@ import java.io.IOException;
 import static Libraries.TestUtils.testAssertFunctions;
 import static Pages.StringConstants.hataMesaji_PARAISTE;
 
-@Listeners(TestListener.class)
 public class ParaIsteTest extends BaseClass {
 
     @Test(priority = 0)

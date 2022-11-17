@@ -18,7 +18,6 @@ import java.io.IOException;
 
 import static Pages.StringConstants.hataMesaji_PARAGONDER;
 
-@Listeners(TestListener.class)
 public class GrubaParaGonderTest extends BaseClass {
 
 

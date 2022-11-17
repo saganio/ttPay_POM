@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-@Listeners(TestListener.class)
+
 public class KisiDetayIncelemeTest extends BaseClass {
 
 
@@ -44,6 +44,5 @@ public class KisiDetayIncelemeTest extends BaseClass {
                 .click_cikisYap();
 
     }
-
 
 }

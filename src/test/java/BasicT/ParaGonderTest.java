@@ -17,15 +17,11 @@ import java.io.IOException;
 import static Libraries.TestUtils.testAssertFunctions;
 import static Pages.StringConstants.hataMesaji_PARAGONDER;
 
-@Listeners(TestListener.class)
 public class ParaGonderTest extends BaseClass {
-
-
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
     @Step("1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- Para Gönder")
     @Description("Para Gönderme senaryosu")
-
     public void LoginAndClickParaGonder() throws IOException, ParseException {
 
         LoginPage loginPage = new LoginPage(driver);

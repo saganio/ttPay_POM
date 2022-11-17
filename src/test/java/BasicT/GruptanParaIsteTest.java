@@ -19,7 +19,6 @@ import java.io.IOException;
 import static Pages.StringConstants.hataMesaji_PARAGONDER;
 import static Pages.StringConstants.hataMesaji_PARAISTE;
 
-@Listeners(TestListener.class)
 public class GruptanParaIsteTest extends BaseClass {
 
 
