@@ -8,7 +8,7 @@
 
     <test verbose="1" preserve-order="true" name="ttPay_POM">
         <packages>
-            <package name="Tests.Basic.*"/>
+            <package name="Login.Basic.*"/>
         </packages>
     </test>
 </suite>

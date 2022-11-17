@@ -17,12 +17,20 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2GJq5NdCz7jFBznCphV0bA90dV9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GitStage.ChangesTree.GroupingKeys" value="directory&#10;module&#10;repository" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -42,13 +50,14 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Login" />
       <recent name="Tests.Basic" />
       <recent name="Pages" />
       <recent name="Tests" />
       <recent name="Libraries" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.IBANKaydetTest">
+  <component name="RunManager" selected="TestNG.ParolamiUnuttumTest">
     <configuration name="GruptanParaIsteTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFrameworkForMobile" />
       <extension name="coverage">
@@ -100,16 +109,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginLogOutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ParolamiUnuttumTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFrameworkForMobile" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.Basic.*" />
+          <option name="PATTERN" value="Login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests.Basic" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Basic.LoginLogOutTest" />
+      <option name="PACKAGE_NAME" value="Login" />
+      <option name="MAIN_CLASS_NAME" value="Login.ParolamiUnuttumTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -136,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ParolamiUnuttumTest" />
         <item itemvalue="TestNG.IBANKaydetTest" />
         <item itemvalue="TestNG.KrediBankaKartiEkleTest" />
         <item itemvalue="TestNG.PokusKartEkleTest" />
         <item itemvalue="TestNG.GruptanParaIsteTest" />
-        <item itemvalue="TestNG.LoginLogOutTest" />
       </list>
     </recent_temporary>
   </component>
@@ -153,6 +162,37 @@
       <option name="presentableId" value="Default" />
       <updated>1666116851520</updated>
     </task>
+    <task id="LOCAL-00001" summary="Second">
+      <created>1668359736502</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668359736502</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add listener.class to BaseClass">
+      <created>1668674925563</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668674925563</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Second" />
+    <MESSAGE value="add listener.class to BaseClass" />
+    <option name="LAST_COMMIT_MESSAGE" value="add listener.class to BaseClass" />
   </component>
 </project>
