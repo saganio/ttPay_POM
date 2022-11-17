@@ -1,6 +1,6 @@
 package Libraries;
 
-import io.appium.java_client.MobileElement;
+import io.appium.java_client.MobileBy;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -97,7 +98,7 @@ public class TestUtils extends BaseClass {
 
     }
 
-    public static void doubleClick(WebElement element){
+    public static void doubleClick(WebElement element) {
 
         Actions action = new Actions(driver);
         action.moveToElement((WebElement) element);
@@ -105,6 +106,12 @@ public class TestUtils extends BaseClass {
         action.perform();
 
 
+    }
+
+    public static void swipeToElement(String text) {
+        WebElement el = driver.findElement(MobileBy
+                .AndroidUIAutomator("new UiScrollable(new UiSelector()).setAsVerticalList().scrollIntoView("
+                        + "new UiSelector().text(\"" + text + "\"));"));
     }
 
 }

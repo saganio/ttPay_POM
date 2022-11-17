@@ -6,9 +6,9 @@ import Utils.Log;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 import static Libraries.TestUtils.*;
+import static Pages.StringConstants.yeniKayitNo;
 
 public class RehberimVeBankHspPage extends BaseClass {
 
@@ -37,7 +37,9 @@ public class RehberimVeBankHspPage extends BaseClass {
     private final By grubuSil_VazgecButton = By.xpath("//android.widget.Button[@text='VAZGEÇ']");
     private final By grubuSil_TamamButton = By.xpath("//android.widget.Button[@text='TAMAM']");
     private final By IBANText = By.id("tv_confirmation_dialog_message");
-
+    private final By davetEt = By.xpath("(//*[@text='DAVET ET'])[2]");
+    private final By davetEtTextAssert = By.id("tr.com.turktelekom.pokus.test:id/tv_information_dialog_message");
+    private final By yeniKaydedilenKisi = By.xpath("//*[@text='"+yeniKayitNo+"']");
 
     //Constructor
     public RehberimVeBankHspPage(AndroidDriver<MobileElement> driver) {
@@ -52,7 +54,7 @@ public class RehberimVeBankHspPage extends BaseClass {
 
     public RehberimVeBankHspPage click_plusButton() {
         clickElementBy(plusButton);
-        Log.info("I clicked: "+this.getClass().getSimpleName());
+        Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 
@@ -62,7 +64,7 @@ public class RehberimVeBankHspPage extends BaseClass {
     }
 
     public RehberimVeBankHspPage sendkeys_searchBar(String text) {
-        TestUtils.clearAndfillInFieldWith(searchBar,text);
+        TestUtils.clearAndfillInFieldWith(searchBar, text);
         return this;
     }
 
@@ -78,7 +80,7 @@ public class RehberimVeBankHspPage extends BaseClass {
 
     public RehberimVeBankHspPage click_yeniGrupOlustur() {
         clickElementBy(yeniGrupOlustur);
-        Log.info("I clicked: "+this.getClass().getSimpleName());
+        Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 
@@ -94,32 +96,32 @@ public class RehberimVeBankHspPage extends BaseClass {
 
     public RehberimVeBankHspPage click_devamEtButonu_dialog() {
         clickElementBy(dialog_devamEtButonu);
-        Log.info("I clicked: "+this.getClass().getSimpleName());
+        Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 
-    public RehberimVeBankHspPage sendkey_grupAdiGirTextBox(String text){
-        clearAndfillInFieldWith(grupAdiGirTextBox,text);
-        Log.info("I clicked: "+this.getClass().getSimpleName());
-        System.out.println("Girilen değer: " + text );
+    public RehberimVeBankHspPage sendkey_grupAdiGirTextBox(String text) {
+        clearAndfillInFieldWith(grupAdiGirTextBox, text);
+        Log.info("I clicked: " + this.getClass().getSimpleName());
+        System.out.println("Girilen değer: " + text);
         return this;
     }
 
     public RehberimVeBankHspPage click_devamEtButonu() {
         clickElementBy(devamEtButonu);
-        Log.info("I clicked: "+this.getClass().getSimpleName());
+        Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 
     public RehberimVeBankHspPage click_kaydetButonu() {
         clickElementBy(kaydetButonu);
-        Log.info("I clicked: "+this.getClass().getSimpleName());
+        Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 
     public RehberimVeBankHspPage click_grubaEklemekicinKisiSec() {
         clickElementBy(grubaEklemekicinKisiSec);
-        Log.info("I clicked: "+this.getClass().getSimpleName());
+        Log.info("I clicked: " + this.getClass().getSimpleName());
 
         return this;
     }
@@ -153,6 +155,7 @@ public class RehberimVeBankHspPage extends BaseClass {
         clickElementBy(grubuSil_OnaylaButton);
         return this;
     }
+
     public RehberimVeBankHspPage click_grubuSil_TamamButton() {
         clickElementBy(grubuSil_TamamButton);
         return this;
@@ -162,6 +165,7 @@ public class RehberimVeBankHspPage extends BaseClass {
         clickElementBy(grubuSil_VazgecButton);
         return this;
     }
+
     public RehberimVeBankHspPage click_rehbereKaydet() {
         clickElementBy(rehbereKaydet);
         return this;
@@ -172,7 +176,23 @@ public class RehberimVeBankHspPage extends BaseClass {
         return this;
     }
 
+    public RehberimVeBankHspPage click_DavetEt() {
+        clickElementBy(davetEt);
+        return this;
+    }
+
     public String getErrorText() {
         return driver.findElement(IBANText).getText();
     }
+
+    public String getDavetEtText() {
+        return driver.findElement(davetEtTextAssert).getText();
+    }
+
+    public RehberimVeBankHspPage click_NewRecord() {
+        swipeToElement(yeniKayitNo);
+        clickElementBy(yeniKaydedilenKisi);
+        return this;
+    }
+
 }

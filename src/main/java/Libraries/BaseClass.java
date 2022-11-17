@@ -108,7 +108,7 @@ public class BaseClass {
 
     }
 
-    public String rastgeleNumaraGir() {
+    public static String rastgeleNumaraGir() {
         String randomNumbers = RandomStringUtils.randomNumeric(9);
         return 5 + randomNumbers;
     }

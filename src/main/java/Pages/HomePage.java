@@ -23,6 +23,7 @@ public class HomePage extends BaseClass {
     private final By confirmation_dialog_confirm = By.id("btn_confirmation_dialog_confirm");
     private final By confirmation_dialog_reject = By.id("btn_confirmation_dialog_cancel");
     private final By chooseKrediBankaHesabimdan = By.id("tv_fragment_top_up_select_bank_title");
+    private final By faturaOde = By.xpath("//*[@text='Fatura Öde']");
 
     //Constructor
     public HomePage(AndroidDriver<MobileElement> driver) {
@@ -95,4 +96,8 @@ public class HomePage extends BaseClass {
         return this;
     }
 
+    public HomePage click_FaturaOde() {
+        clickElementBy(faturaOde);
+        return this;
+    }
 }
