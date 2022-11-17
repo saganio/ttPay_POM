@@ -1,6 +1,7 @@
 package Libraries;
 
 import Utils.Log;
+import Utils.TestListener;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.Setting;
 import io.appium.java_client.android.AndroidDriver;
@@ -20,6 +21,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 
 import java.io.ByteArrayInputStream;
 import java.io.FileReader;
@@ -28,6 +30,7 @@ import java.io.IOException;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 @SuppressWarnings("ALL")
+@Listeners(TestListener.class)
 public class BaseClass {
 
     public static AndroidDriver<MobileElement> driver;
