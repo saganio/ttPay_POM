@@ -111,8 +111,9 @@ public class BaseClass {
 
         driver.quit();
         service.stop();
-        Log.info("Driver kapatılıyor..");
+        Log.info("Closing Driver");
         //Runtime.getRuntime().exec("allure serve allure-results");
+
 
     }
 

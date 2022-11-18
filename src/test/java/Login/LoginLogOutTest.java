@@ -17,7 +17,6 @@ public class LoginLogOutTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Kullanıcı adını gir, 2-Şifreyi Gir")
     @Description("Kullancı Adı ve Şifre ile giriş yapma senaryosu.")
     public void LoginAndLogOut() throws IOException, ParseException {
 
@@ -26,7 +25,8 @@ public class LoginLogOutTest extends BaseClass {
         GlobalPage globalPage = new GlobalPage(driver);
 
         LP
-                .login();
+                .login()
+                .click_HamburgerMenu();
         leftPanelPage
                 .click_cikisYap();
         globalPage

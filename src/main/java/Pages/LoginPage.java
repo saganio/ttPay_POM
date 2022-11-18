@@ -6,9 +6,11 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
+import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.testng.Reporter;
 
 import java.io.IOException;
 
@@ -37,21 +39,26 @@ public class LoginPage extends BaseClass {
     }
 
     //Methods
+
+    @Step("Kullanıcı adı: {0}")
     public LoginPage setUsername(String username) {
         driver.findElement(usernameTextBox).clear();
         driver.findElement(usernameTextBox).sendKeys(username);
         return this;
     }
 
+    @Step("Şifre: {0}")
     public LoginPage setPassword(String password) {
         driver.findElement(passwordTextBox).sendKeys(password);
         return this;
     }
 
+    @Step("OTP Mesajını çek.")
     public CharSequence getTextOfOTPMessage() {
         return getTextFromElement(loginOTPField);
     }
 
+    @Step("Kullanıcı adı ve şifreyi gir.")
     public LoginPage login() throws IOException, ParseException {
 
         setUsername(getString("id"));
@@ -67,7 +74,7 @@ public class LoginPage extends BaseClass {
                 }
                 clickElementBy(gonderButonu);
             } catch (NoSuchElementException NSE) {
-                Log.error("Giremedim.");
+                Log.info("Giremedim.");
             }
         } else {
             Log.info("Giriş yapıldı.");
@@ -75,32 +82,38 @@ public class LoginPage extends BaseClass {
         return this;
     }
 
+    @Step("Hamburger Menü'ye tıkla.")
     public LoginPage click_HamburgerMenu() {
         clickElementBy(hamburgerMenu);
+        Reporter.log("hamburger menü tıklandı");
         return this;
     }
-
+    @Step("Parolamı Unuttum'a tıkla.")
     public LoginPage click_ParolamiUnuttum() {
         clickElementBy(parolamiUnuttum);
         return this;
     }
 
+    @Step("Parolamı unuttum textbox'ına Msisdn Gir")
     public LoginPage sendKeys_ParolamiUnuttumMsisdnTextBox(String text) {
         clearAndfillInFieldWith(parolamiUnuttum_msisdnGir, text);
         Log.info("I clicked: " + this.getClass().getSimpleName());
-        Log.info("Girilen değer: " + text);
+        Log.info("Value: " + text);
         return this;
     }
 
+    @Step("Devam et butonuna tıkla.")
     public LoginPage click_DevamEtButton() {
         clickElementBy(parolamiUnuttum_devamEtButton);
         return this;
     }
 
+    @Step("Yanlış parola Uyarı textini al.")
     public String getYanlisParolaText() {
         return driver.findElement(yanlisParolaText).getText();
     }
 
+    @Step("Tekrar Dene butonuna tıkla.")
     public LoginPage click_TekrarDeneButton() {
         clickElementBy(tekrarDeneButton);
         return this;

@@ -4,6 +4,7 @@ import Libraries.BaseClass;
 import Utils.Log;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static Libraries.TestUtils.clearAndfillInFieldWith;
@@ -27,42 +28,50 @@ public class RegisterPage extends BaseClass {
     }
 
     //Methods
+
+    @Step("Hesabım Yok'A tıkla.")
     public RegisterPage click_HesabimYok() {
         clickElementBy(hesabimYok);
         return this;
     }
 
+    @Step("Hesap Oluşturmaya Başla'ya tıkla.")
     public RegisterPage click_HesapOlusturmayaTikla() {
         clickElementBy(hesapOlusturmayaBasla);
         return this;
     }
 
+    @Step("MSISDN Gir: {0}")
     public RegisterPage sendKeys_Msisdn(String text) {
         clearAndfillInFieldWith(msisdnField, text);
-        Log.info("I clicked: " + this.getClass().getSimpleName());
         Log.info("Value: " + text);
         return this;
     }
 
+    @Step("Devam Et'e tıkla.")
     public RegisterPage click_devamEtButton() {
         clickElementBy(devamEtButton);
         return this;
     }
 
+    @Step("OTP kutucuğuna tıkla.")
     public RegisterPage click_OTFField() {
         clickElementBy(clickOTPField);
         return this;
     }
 
+    @Step("OTP Girdikten sonra çıkan Devam Et butonuna tıkla.")
     public RegisterPage click_devamEtButtonAfterOTP() {
         clickElementBy(devamEtButtonAfterOTP);
         return this;
     }
 
+    @Step("Var olan hesap uyarısı textini çek.")
     public String getVarOlanHesapErrorText() {
         return driver.findElement(varOlanHesapErrorText).getText();
     }
 
+    @Step("Tamam'a tıkla.")
     public RegisterPage click_TamamDialog() {
         clickElementBy(confirmDialog);
         return this;

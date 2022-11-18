@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -24,6 +25,7 @@ public class TestListener extends BaseClass implements ITestListener {
     @Attachment(value = "{0}", type = "text/plain")
     public static String saveTextLog(String message) {
         return message;
+
     }
 
     //HTML attachments for Allure
@@ -50,20 +52,20 @@ public class TestListener extends BaseClass implements ITestListener {
 
     @Override
     public void onStart(ITestContext iTestContext) {
-        Log.info("I am in onStart method " + iTestContext.getName());
+        Log.info("I am in start " + iTestContext.getName());
         iTestContext.setAttribute("WebDriver", this.driver);
     }
 
     @Override
     public void onFinish(ITestContext iTestContext) {
-        Log.info("Test bitti." + iTestContext.getName());
+        Log.info("I am in on finish " + iTestContext.getName());
         //Do tier down operations for ExtentReports reporting!
 
     }
 
     @Override
     public void onTestStart(ITestResult iTestResult) {
-        Log.info(getTestMethodName(iTestResult) + " Test başladı.");
+        Log.info(getTestMethodName(iTestResult) + " test started.");
     }
 
     @Override
@@ -75,7 +77,7 @@ public class TestListener extends BaseClass implements ITestListener {
 
         //Allure ScreenShotRobot and SaveTestLog
         if (driver != null) {
-            Log.info("Test başarılı ve ekran görüntüsü alındı: " + getTestMethodName(iTestResult));
+            Log.info("Test is succeed and screenshot taken: " + getTestMethodName(iTestResult));
             try {
                 capture(driver);
                 Allure.addAttachment("Screenshot",
@@ -87,7 +89,8 @@ public class TestListener extends BaseClass implements ITestListener {
         }
 
         //Save a log on allure.
-        saveTextLog(getTestMethodName(iTestResult) + " succeed and screenshot taken!");
+        // saveTextLog(getTestMethodName(iTestResult) + " succeed and screenshot taken!");
+
 
     }
 
