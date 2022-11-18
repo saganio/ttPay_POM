@@ -24,6 +24,8 @@ public class RegisterPage extends BaseClass {
     private final By devamEtButton = By.id("abtn_activity_register_continue");
     private final By clickOTPField = By.xpath("//*[@resource-id='tr.com.turktelekom.pokus.test:id/et_otp_textfield_text']");
     private final By devamEtButtonAfterOTP = By.id("abtn_register_activation_sms_fragment_continue");
+    private final By varOlanHesapErrorText = By.id("tv_information_dialog_message");
+    private final By confirmDialog = By.id("btn_information_dialog_confirm");
 
     //Constructor
     public RegisterPage(AndroidDriver<MobileElement> driver) {
@@ -60,6 +62,15 @@ public class RegisterPage extends BaseClass {
 
     public RegisterPage click_devamEtButtonAfterOTP() {
         clickElementBy(devamEtButtonAfterOTP);
+        return this;
+    }
+
+    public String getVarOlanHesapErrorText(){
+        return driver.findElement(varOlanHesapErrorText).getText();
+    }
+
+    public RegisterPage click_TamamDialog() {
+        clickElementBy(confirmDialog);
         return this;
     }
 }

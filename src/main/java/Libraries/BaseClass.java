@@ -113,6 +113,10 @@ public class BaseClass {
         return 5 + randomNumbers;
     }
 
+    public static String rastgeleNumaraGir_5ileBaslamayan() {
+        String randomNumbers = RandomStringUtils.randomNumeric(9);
+        return 9 + randomNumbers;
+    }
     public static String getString(String string) throws IOException, ParseException {
 
         org.json.simple.parser.JSONParser parser = new JSONParser();

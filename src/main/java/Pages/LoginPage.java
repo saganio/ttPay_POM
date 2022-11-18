@@ -28,6 +28,8 @@ public class LoginPage extends BaseClass {
     private final By parolamiUnuttum = By.id("btn_login_activity_forgot_password");
     private final By parolamiUnuttum_msisdnGir = By.id("et_smart_textfield_text");
     private final By parolamiUnuttum_devamEtButton = By.id("abtn_forgot_password_identity_continue");
+    private final By yanlisParolaText = By.id("tr.com.turktelekom.pokus.test:id/tv_confirmation_dialog_message");
+    private final By tekrarDeneButton = By.id("btn_confirmation_dialog_confirm");
 
     //Constructor
     public LoginPage(AndroidDriver<MobileElement> driver) {
@@ -92,6 +94,15 @@ public class LoginPage extends BaseClass {
 
     public LoginPage click_DevamEtButton() {
         clickElementBy(parolamiUnuttum_devamEtButton);
+        return this;
+    }
+
+    public String getYanlisParolaText(){
+        return driver.findElement(yanlisParolaText).getText();
+    }
+
+    public LoginPage click_TekrarDeneButton(){
+        clickElementBy(tekrarDeneButton);
         return this;
     }
 }

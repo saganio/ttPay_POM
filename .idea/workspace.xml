@@ -66,49 +66,15 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="BasicT" />
-      <recent name="Register" />
-      <recent name="Pages" />
       <recent name="Login" />
+      <recent name="Register" />
+      <recent name="BasicT" />
+      <recent name="Pages" />
       <recent name="Tests.Basic" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.YeniKisiOlusturduktanSonraParaIsteTest">
-    <configuration name="IBANKaydetTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestFrameworkForMobile" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.Basic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.Basic" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Basic.IBANKaydetTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KisiOlusturTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestFrameworkForMobile" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BasicT.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="BasicT" />
-      <option name="MAIN_CLASS_NAME" value="BasicT.KisiOlusturTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParolamiUnuttumTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LoginHataliParolaTest">
+    <configuration name="LoginHataliParolaTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFrameworkForMobile" />
       <extension name="coverage">
         <pattern>
@@ -117,7 +83,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Login" />
-      <option name="MAIN_CLASS_NAME" value="Login.ParolamiUnuttumTest" />
+      <option name="MAIN_CLASS_NAME" value="Login.LoginHataliParolaTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Register5leBaslamayanNoTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFrameworkForMobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Register.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Register" />
+      <option name="MAIN_CLASS_NAME" value="Register.Register5leBaslamayanNoTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterVarOlanKullaniciTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFrameworkForMobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Register.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Register" />
+      <option name="MAIN_CLASS_NAME" value="Register.RegisterVarOlanKullaniciTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -161,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginHataliParolaTest" />
+        <item itemvalue="TestNG.RegisterVarOlanKullaniciTest" />
+        <item itemvalue="TestNG.Register5leBaslamayanNoTest" />
         <item itemvalue="TestNG.YeniKisiOlusturduktanSonraParaIsteTest" />
         <item itemvalue="TestNG.YeniKisiOlusturduktanSonraParaGonderTest" />
-        <item itemvalue="TestNG.KisiOlusturTest" />
-        <item itemvalue="TestNG.ParolamiUnuttumTest" />
-        <item itemvalue="TestNG.IBANKaydetTest" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668682200983</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="cesitli yenilikler">
+      <created>1668711573944</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668711573944</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

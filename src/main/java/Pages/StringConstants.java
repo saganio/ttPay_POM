@@ -13,5 +13,7 @@ public class StringConstants {
     public static final String KREDIBANKAKARTIKAYDET_TEXT = "Kredi kartı veya banka kartı eklemek için hesabını onaylamalısın.";
     public static final String DAVET_ET_TEXT = "Davet edildi.";
     public static final String yeniKayitNo = BaseClass.rastgeleNumaraGir();
+    public static final String VAR_OLAN_HESAP_ERROR_TEXT ="Girmiş olduğun cep telefonu sistemde kayıtlı. Bilgilerini kontrol etmelisin. Bilgilerin doğruluğuna eminsen ve kaydın yok ise müşteri hizmetleriyle iletişime geçebilirsin. (MBL-0013) ";
+    public static final String HATALI_PAROLA_TEXT = "Girdiğin cep telefonu veya parola bilgisi hatalı. Lütfen bilgilerini kontrol ederek tekrar dene.";
 
 }
