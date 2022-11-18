@@ -1,9 +1,7 @@
 package BasicT;
 
 import Pages.HomePage;
-import Pages.LeftPanelPage;
 import Pages.LoginPage;
-import Pages.RehberimVeBankHspPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -14,8 +12,6 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 import static Libraries.BaseClass.driver;
-import static Libraries.TestUtils.testAssertFunctions;
-import static Pages.StringConstants.DAVET_ET_TEXT;
 
 /**
  * Created by uguryildiz on 17.11.2022

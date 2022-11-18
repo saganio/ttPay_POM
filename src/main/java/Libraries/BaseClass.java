@@ -36,34 +36,6 @@ public class BaseClass {
     public static AndroidDriver<MobileElement> driver;
     private static AppiumDriverLocalService service;
 
-    @BeforeMethod
-    public void setUp() throws IOException {
-
-        startAppiumServer();
-        driver = BaseClass.initializeSetup();
-        Log.info("Çalıştırma öncesi ayarlar uygulanıyor...");
-    }
-
-    @AfterMethod(alwaysRun = true)
-    public void stopAppiumAndDriver() throws IOException {
-
-        driver.quit();
-        service.stop();
-        Log.info("Driver kapatılıyor..");
-        //Runtime.getRuntime().exec("allure serve allure-results");
-
-    }
-
-    @Attachment(value = "Screenshot", type = "image/png")
-    public void takeScreenShot() {
-
-        Log.info("Ekran görüntüsü alınıyor...");
-        Allure.addAttachment("Screenshot",
-                new ByteArrayInputStream(((TakesScreenshot) driver)
-                        .getScreenshotAs(OutputType.BYTES)));
-
-    }
-
     public static void startAppiumServer() {
         AppiumServiceBuilder builder = new AppiumServiceBuilder();
 
@@ -117,6 +89,7 @@ public class BaseClass {
         String randomNumbers = RandomStringUtils.randomNumeric(9);
         return 9 + randomNumbers;
     }
+
     public static String getString(String string) throws IOException, ParseException {
 
         org.json.simple.parser.JSONParser parser = new JSONParser();
@@ -125,16 +98,36 @@ public class BaseClass {
         return (String) elem.get(string);
     }
 
+    @BeforeMethod
+    public void setUp() throws IOException {
+
+        startAppiumServer();
+        driver = BaseClass.initializeSetup();
+        Log.info("Çalıştırma öncesi ayarlar uygulanıyor...");
+    }
+
+    @AfterMethod(alwaysRun = true)
+    public void stopAppiumAndDriver() throws IOException {
+
+        driver.quit();
+        service.stop();
+        Log.info("Driver kapatılıyor..");
+        //Runtime.getRuntime().exec("allure serve allure-results");
+
+    }
+
+    @Attachment(value = "Screenshot", type = "image/png")
+    public void takeScreenShot() {
+
+        Log.info("Ekran görüntüsü alınıyor...");
+        Allure.addAttachment("Screenshot",
+                new ByteArrayInputStream(((TakesScreenshot) driver)
+                        .getScreenshotAs(OutputType.BYTES)));
+
+    }
+
     public WebDriver getDriver() {
         return driver;
     }
 
-   /*
-    public void deleteAllureDirectory() throws IOException {
-        Files.walk(Path.of("ttPay_POM/allure-results"))
-                .sorted(Comparator.reverseOrder())
-                .map(Path::toFile)
-                .forEach(File::delete);
-    }
-*/
 }

@@ -4,13 +4,11 @@ import Libraries.BaseClass;
 import Pages.LeftPanelPage;
 import Pages.LoginPage;
 import Pages.RehberimVeBankHspPage;
-import Utils.TestListener;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.io.IOException;

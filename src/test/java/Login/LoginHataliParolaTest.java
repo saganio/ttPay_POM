@@ -2,8 +2,6 @@ package Login;
 
 import Libraries.BaseClass;
 import Libraries.TestUtils;
-import Pages.GlobalPage;
-import Pages.LeftPanelPage;
 import Pages.LoginPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
@@ -11,9 +9,7 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
-
 import static Pages.StringConstants.HATALI_PAROLA_TEXT;
 
 public class LoginHataliParolaTest extends BaseClass {
@@ -26,14 +22,14 @@ public class LoginHataliParolaTest extends BaseClass {
 
         LoginPage LP = new LoginPage(driver);
 
-            LP
+        LP
                 .setUsername(getString("id"))
                 .setPassword(getString("wrongPass"));
 
-            TestUtils
+        TestUtils
                 .testAssertFunctions(HATALI_PAROLA_TEXT, LP.getYanlisParolaText());
 
-            LP
+        LP
                 .click_TekrarDeneButton()
                 .login();
 

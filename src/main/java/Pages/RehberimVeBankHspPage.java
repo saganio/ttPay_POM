@@ -39,7 +39,7 @@ public class RehberimVeBankHspPage extends BaseClass {
     private final By IBANText = By.id("tv_confirmation_dialog_message");
     private final By davetEt = By.xpath("(//*[@text='DAVET ET'])[2]");
     private final By davetEtTextAssert = By.id("tr.com.turktelekom.pokus.test:id/tv_information_dialog_message");
-    private final By yeniKaydedilenKisi = By.xpath("//*[@text='"+yeniKayitNo+"']");
+    private final By yeniKaydedilenKisi = By.xpath("//*[@text='" + yeniKayitNo + "']");
 
     //Constructor
     public RehberimVeBankHspPage(AndroidDriver<MobileElement> driver) {

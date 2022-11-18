@@ -28,7 +28,7 @@ public class IBANKaydetTest extends BaseClass {
         LeftPanelPage leftPanelPage = new LeftPanelPage(driver);
         RehberimVeBankHspPage rehberimVeBankHspPage = new RehberimVeBankHspPage(driver);
 
-        
+
         loginPage
                 .login()
                 .click_HamburgerMenu();

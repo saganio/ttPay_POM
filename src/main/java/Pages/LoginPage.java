@@ -85,10 +85,10 @@ public class LoginPage extends BaseClass {
         return this;
     }
 
-    public LoginPage sendKeys_ParolamiUnuttumMsisdnTextBox(String text){
-        clearAndfillInFieldWith(parolamiUnuttum_msisdnGir,text);
-        Log.info("I clicked: "+this.getClass().getSimpleName());
-        Log.info("Girilen değer: " + text );
+    public LoginPage sendKeys_ParolamiUnuttumMsisdnTextBox(String text) {
+        clearAndfillInFieldWith(parolamiUnuttum_msisdnGir, text);
+        Log.info("I clicked: " + this.getClass().getSimpleName());
+        Log.info("Girilen değer: " + text);
         return this;
     }
 
@@ -97,11 +97,11 @@ public class LoginPage extends BaseClass {
         return this;
     }
 
-    public String getYanlisParolaText(){
+    public String getYanlisParolaText() {
         return driver.findElement(yanlisParolaText).getText();
     }
 
-    public LoginPage click_TekrarDeneButton(){
+    public LoginPage click_TekrarDeneButton() {
         clickElementBy(tekrarDeneButton);
         return this;
     }

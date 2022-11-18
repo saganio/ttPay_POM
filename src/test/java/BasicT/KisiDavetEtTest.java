@@ -1,6 +1,8 @@
 package BasicT;
 
-import Pages.*;
+import Pages.LeftPanelPage;
+import Pages.LoginPage;
+import Pages.RehberimVeBankHspPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;

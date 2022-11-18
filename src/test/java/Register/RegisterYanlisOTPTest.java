@@ -20,7 +20,7 @@ public class RegisterYanlisOTPTest extends BaseClass {
     public void RegisterYanlisOTP() throws IOException, ParseException {
 
         RegisterPage registerPage = new RegisterPage(driver);
-        
+
         registerPage
                 .click_HesabimYok()
                 .click_HesapOlusturmayaTikla()

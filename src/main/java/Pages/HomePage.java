@@ -5,6 +5,7 @@ import Utils.Log;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
+
 import static Libraries.TestUtils.clickElementBy;
 import static Libraries.TestUtils.getTextFromElement;
 

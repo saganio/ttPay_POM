@@ -1,9 +1,6 @@
 package Register;
 
 import Libraries.BaseClass;
-import Pages.GlobalPage;
-import Pages.LeftPanelPage;
-import Pages.LoginPage;
 import Pages.RegisterPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
@@ -23,7 +20,7 @@ public class RegisterTest extends BaseClass {
     public void Register() throws IOException, ParseException {
 
         RegisterPage registerPage = new RegisterPage(driver);
-        
+
         registerPage
                 .click_HesabimYok()
                 .click_HesapOlusturmayaTikla()

@@ -1,25 +1,23 @@
 package BasicT;
 
 import Libraries.BaseClass;
-import Pages.*;
-import io.appium.java_client.MobileElement;
+import Pages.LeftPanelPage;
+import Pages.LoginPage;
+import Pages.RehberimVeBankHspPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-import static Libraries.TestUtils.clickElementBy;
 import static Libraries.TestUtils.testAssertFunctions;
 import static Pages.StringConstants.hataMesaji_PARAGONDER;
 import static Pages.StringConstants.yeniKayitNo;
 
 public class YeniKisiOlusturduktanSonraParaGonderTest extends BaseClass {
-
 
 
     @Test(priority = 0)
@@ -48,7 +46,7 @@ public class YeniKisiOlusturduktanSonraParaGonderTest extends BaseClass {
                 .click_NewRecord()
                 .click_paraGonderButonu();
 
-        testAssertFunctions(hataMesaji_PARAGONDER,RVBH.getErrorText());
+        testAssertFunctions(hataMesaji_PARAGONDER, RVBH.getErrorText());
 
         RVBH
                 .click_vazgecButonuDialog();

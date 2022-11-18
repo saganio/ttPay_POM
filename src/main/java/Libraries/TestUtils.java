@@ -23,24 +23,6 @@ public class TestUtils extends BaseClass {
 
     private static Integer fluentWaitInterval = 60;
 
-    public String dateTime() {
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-        Date date = new Date();
-        return dateFormat.format(date);
-    }
-
-    public String getRandomAlphanumericString(int length) {
-        return RandomStringUtils.randomAlphanumeric(length);
-    }
-
-    public String getRandomNumberAsString(int length) {
-        return RandomStringUtils.randomNumeric(length);
-    }
-
-    public String getRandomAlphabeticString(int length) {
-        return RandomStringUtils.randomAlphabetic(length);
-    }
-
     public static Wait getFluentWait() {
         FluentWait fluentWait = new FluentWait(driver)
                 .withTimeout(Duration.ofSeconds(fluentWaitInterval))
@@ -48,24 +30,6 @@ public class TestUtils extends BaseClass {
                 .ignoring(NoSuchElementException.class)
                 .ignoring(StaleElementReferenceException.class);
         return fluentWait;
-    }
-
-    public boolean waitUntilElementIsPresent(By by) {
-        try {
-            getFluentWait().until(ExpectedConditions.presenceOfElementLocated(by));
-        } catch (TimeoutException e) {
-            return false;
-        }
-        return true;
-    }
-
-    public boolean waitUntilElementClickable(By by) {
-        try {
-            getFluentWait().until(ExpectedConditions.elementToBeClickable(by));
-        } catch (TimeoutException e) {
-            return false;
-        }
-        return true;
     }
 
     public static void clickElementBy(By by) {
@@ -84,10 +48,6 @@ public class TestUtils extends BaseClass {
 
     public static String getTextFromElement(By by) {
         return tryFindElement(by).getText().trim();
-    }
-
-    public int getNumberOfResultsForElement(By by) {
-        return driver.findElements(by).size();
     }
 
     public static void testAssertFunctions(String actual, String expected) {
@@ -112,6 +72,46 @@ public class TestUtils extends BaseClass {
         WebElement el = driver.findElement(MobileBy
                 .AndroidUIAutomator("new UiScrollable(new UiSelector()).setAsVerticalList().scrollIntoView("
                         + "new UiSelector().text(\"" + text + "\"));"));
+    }
+
+    public String dateTime() {
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+        Date date = new Date();
+        return dateFormat.format(date);
+    }
+
+    public String getRandomAlphanumericString(int length) {
+        return RandomStringUtils.randomAlphanumeric(length);
+    }
+
+    public String getRandomNumberAsString(int length) {
+        return RandomStringUtils.randomNumeric(length);
+    }
+
+    public String getRandomAlphabeticString(int length) {
+        return RandomStringUtils.randomAlphabetic(length);
+    }
+
+    public boolean waitUntilElementIsPresent(By by) {
+        try {
+            getFluentWait().until(ExpectedConditions.presenceOfElementLocated(by));
+        } catch (TimeoutException e) {
+            return false;
+        }
+        return true;
+    }
+
+    public boolean waitUntilElementClickable(By by) {
+        try {
+            getFluentWait().until(ExpectedConditions.elementToBeClickable(by));
+        } catch (TimeoutException e) {
+            return false;
+        }
+        return true;
+    }
+
+    public int getNumberOfResultsForElement(By by) {
+        return driver.findElements(by).size();
     }
 
 }

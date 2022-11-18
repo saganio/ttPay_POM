@@ -1,8 +1,6 @@
 package Login;
 
 import Libraries.BaseClass;
-import Pages.GlobalPage;
-import Pages.LeftPanelPage;
 import Pages.LoginPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;

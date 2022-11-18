@@ -22,7 +22,7 @@ public class GlobalPage extends BaseClass {
     //Methods
     public GlobalPage check_Notifications() {
         clickElementBy(bildirimler);
-        Log.info("I clicked"+ getClass());
+        Log.info("I clicked" + getClass());
         return this;
 
     }

@@ -14,10 +14,10 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 import static Libraries.TestUtils.testAssertFunctions;
-import static Pages.StringConstants.*;
+import static Pages.StringConstants.hataMesaji_PARAISTE;
+import static Pages.StringConstants.yeniKayitNo;
 
 public class YeniKisiOlusturduktanSonraParaIsteTest extends BaseClass {
-
 
 
     @Test(priority = 0)
@@ -46,7 +46,7 @@ public class YeniKisiOlusturduktanSonraParaIsteTest extends BaseClass {
                 .click_NewRecord()
                 .click_paraIsteButonu();
 
-        testAssertFunctions(hataMesaji_PARAISTE,RVBH.getErrorText());
+        testAssertFunctions(hataMesaji_PARAISTE, RVBH.getErrorText());
 
         RVBH
                 .click_vazgecButonuDialog();

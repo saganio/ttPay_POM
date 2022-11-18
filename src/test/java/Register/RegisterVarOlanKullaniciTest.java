@@ -7,7 +7,6 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
-import io.qameta.allure.internal.shadowed.jackson.databind.ser.Serializers;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
@@ -24,7 +23,7 @@ public class RegisterVarOlanKullaniciTest extends BaseClass {
     public void RegisterVarOlanKullanici() throws IOException, ParseException {
 
         RegisterPage registerPage = new RegisterPage(driver);
-        
+
         registerPage
                 .click_HesabimYok()
                 .click_HesapOlusturmayaTikla()
@@ -32,7 +31,7 @@ public class RegisterVarOlanKullaniciTest extends BaseClass {
                 .click_devamEtButton();
 
         TestUtils
-                .testAssertFunctions(VAR_OLAN_HESAP_ERROR_TEXT,registerPage.getVarOlanHesapErrorText());
+                .testAssertFunctions(VAR_OLAN_HESAP_ERROR_TEXT, registerPage.getVarOlanHesapErrorText());
 
         registerPage
                 .click_TamamDialog();

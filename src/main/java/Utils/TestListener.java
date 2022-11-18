@@ -21,12 +21,6 @@ public class TestListener extends BaseClass implements ITestListener {
     }
 
     //Text attachments for Allure
-    @Attachment(value = "Page screenshot", type = "image/png")
-    public byte[] saveScreenshotPNG(WebDriver driver) {
-        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-    }
-
-    //Text attachments for Allure
     @Attachment(value = "{0}", type = "text/plain")
     public static String saveTextLog(String message) {
         return message;
@@ -36,6 +30,22 @@ public class TestListener extends BaseClass implements ITestListener {
     @Attachment(value = "{0}", type = "text/html")
     public static String attachHtml(String html) {
         return html;
+    }
+
+    public static String capture(WebDriver driver) throws IOException {
+
+        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File Dest = new File("report//errSS//" + System.currentTimeMillis()
+                + ".png");
+        String errflpath = Dest.getAbsolutePath().replace("/C:", "C:/");
+        FileUtils.copyFile(scrFile, Dest);
+        return errflpath;
+    }
+
+    //Text attachments for Allure
+    @Attachment(value = "Page screenshot", type = "image/png")
+    public byte[] saveScreenshotPNG(WebDriver driver) {
+        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 
     @Override
@@ -117,15 +127,5 @@ public class TestListener extends BaseClass implements ITestListener {
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
         Log.info("Test failed but it is in defined success ratio " + getTestMethodName(iTestResult));
-    }
-
-    public static String capture(WebDriver driver) throws IOException {
-
-        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        File Dest = new File("report//errSS//" + System.currentTimeMillis()
-                + ".png");
-        String errflpath = Dest.getAbsolutePath().replace("/C:", "C:/");
-        FileUtils.copyFile(scrFile, Dest);
-        return errflpath;
     }
 }

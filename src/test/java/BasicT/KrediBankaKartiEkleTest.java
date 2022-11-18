@@ -16,7 +16,6 @@ import java.io.IOException;
 
 import static Libraries.TestUtils.testAssertFunctions;
 import static Pages.StringConstants.KREDIBANKAKARTIKAYDET_TEXT;
-import static Pages.StringConstants.POKUSKART_KAYDET_TEXT;
 
 public class KrediBankaKartiEkleTest extends BaseClass {
 

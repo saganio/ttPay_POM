@@ -22,7 +22,7 @@ public class CampaignsPage extends BaseClass {
     //Methods
     public CampaignsPage clickSwitchButton() {
         clickElementBy(switchButton);
-        Log.info("I clicked"+ getClass());
+        Log.info("I clicked" + getClass());
         return this;
 
     }

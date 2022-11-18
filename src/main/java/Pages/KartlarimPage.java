@@ -27,7 +27,7 @@ public class KartlarimPage extends BaseClass {
     //Methods
     public KartlarimPage click_pokusKartEkleOlustur() {
         clickElementBy(pokusKartEkleOlustur);
-        Log.info("I clicked"+ getClass());
+        Log.info("I clicked" + getClass());
         return this;
 
     }

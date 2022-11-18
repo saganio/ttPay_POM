@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 import static Libraries.TestUtils.testAssertFunctions;
-import static Pages.StringConstants.*;
+import static Pages.StringConstants.POKUSKART_KAYDET_TEXT;
 
 public class PokusKartEkleTest extends BaseClass {
 

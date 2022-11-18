@@ -4,16 +4,10 @@ import Libraries.BaseClass;
 import Utils.Log;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.nativekey.AndroidKey;
-import io.appium.java_client.android.nativekey.KeyEvent;
-import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 
-import java.io.IOException;
-
-import static Libraries.TestUtils.*;
-import static Pages.StringConstants.girisOncesiOTPText;
+import static Libraries.TestUtils.clearAndfillInFieldWith;
+import static Libraries.TestUtils.clickElementBy;
 
 
 public class RegisterPage extends BaseClass {
@@ -65,7 +59,7 @@ public class RegisterPage extends BaseClass {
         return this;
     }
 
-    public String getVarOlanHesapErrorText(){
+    public String getVarOlanHesapErrorText() {
         return driver.findElement(varOlanHesapErrorText).getText();
     }
 
