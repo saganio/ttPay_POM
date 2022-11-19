@@ -21,14 +21,8 @@ public class GrubaParaGonderTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- Gruba Para Gönder")
     @Description("Gruba Para Gönderme senaryosu")
-
     public void GrubaParaGonder() throws IOException, ParseException {
-
-        LoginPage loginPage = new LoginPage(driver);
-        RehberimVeBankHspPage RehberimVeBankaHesaplarimPage = new RehberimVeBankHspPage(driver);
-        LeftPanelPage leftPanelPage = new LeftPanelPage(driver);
 
         loginPage
                 .login()
@@ -45,6 +39,7 @@ public class GrubaParaGonderTest extends BaseClass {
                 .click_grubaEklemekicinKisiSec()
                 .click_kaydetButonu()
                 .click_paraGonderButonu();
+
         TestUtils.testAssertFunctions(hataMesaji_PARAGONDER, hataMesaji_PARAGONDER);
 
         RehberimVeBankaHesaplarimPage

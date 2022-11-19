@@ -21,14 +21,8 @@ public class KrediBankaKartiEkleTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- Kredi Banka Kartı Ekle")
     @Description("Kredi Banka Kartı Ekleme testi.")
     public void KrediBankaKartiEkle() throws IOException, ParseException {
-
-        LoginPage loginPage = new LoginPage(driver);
-        HomePage homePage = new HomePage(driver);
-        KartlarimPage kartlarimPage = new KartlarimPage(driver);
-        RehberimVeBankHspPage rehberimVeBankHspPage = new RehberimVeBankHspPage(driver);
 
         loginPage
                 .login();
@@ -39,7 +33,7 @@ public class KrediBankaKartiEkleTest extends BaseClass {
 
         testAssertFunctions(KREDIBANKAKARTIKAYDET_TEXT, kartlarimPage.getHataMesajiText());
 
-        rehberimVeBankHspPage
+        RehberimVeBankaHesaplarimPage
                 .click_vazgecButonuDialog();
 
     }

@@ -29,49 +29,49 @@ public class RegisterPage extends BaseClass {
 
     //Methods
 
-    @Step("Hesabım Yok'A tıkla.")
+    @Step("{method}")
     public RegisterPage click_HesabimYok() {
         clickElementBy(hesabimYok);
         return this;
     }
 
-    @Step("Hesap Oluşturmaya Başla'ya tıkla.")
+    @Step("{method}")
     public RegisterPage click_HesapOlusturmayaTikla() {
         clickElementBy(hesapOlusturmayaBasla);
         return this;
     }
 
-    @Step("MSISDN Gir: {0}")
+    @Step("{method} {0}")
     public RegisterPage sendKeys_Msisdn(String text) {
         clearAndfillInFieldWith(msisdnField, text);
         Log.info("Value: " + text);
         return this;
     }
 
-    @Step("Devam Et'e tıkla.")
+    @Step("{method}")
     public RegisterPage click_devamEtButton() {
         clickElementBy(devamEtButton);
         return this;
     }
 
-    @Step("OTP kutucuğuna tıkla.")
+    @Step("{method}")
     public RegisterPage click_OTFField() {
         clickElementBy(clickOTPField);
         return this;
     }
 
-    @Step("OTP Girdikten sonra çıkan Devam Et butonuna tıkla.")
+    @Step("{method}")
     public RegisterPage click_devamEtButtonAfterOTP() {
         clickElementBy(devamEtButtonAfterOTP);
         return this;
     }
 
-    @Step("Var olan hesap uyarısı textini çek.")
+    @Step("{method}")
     public String getVarOlanHesapErrorText() {
         return driver.findElement(varOlanHesapErrorText).getText();
     }
 
-    @Step("Tamam'a tıkla.")
+    @Step("{method}")
     public RegisterPage click_TamamDialog() {
         clickElementBy(confirmDialog);
         return this;

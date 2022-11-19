@@ -15,13 +15,10 @@ public class ParolamiUnuttumTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Login, 2-Parolamı Unuttum")
     @Description("Parolamı Unuttum senaryosu.")
     public void ParolamiUnuttum() throws IOException, ParseException {
 
-        LoginPage LP = new LoginPage(driver);
-
-        LP
+        loginPage
                 .click_ParolamiUnuttum()
                 .sendKeys_ParolamiUnuttumMsisdnTextBox(getString("id"))
                 .click_DevamEtButton();

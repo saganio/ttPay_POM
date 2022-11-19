@@ -34,26 +34,26 @@ public class HomePage extends BaseClass {
 
     //Methods
 
-    @Step("İşlemlerime tıkla.")
+    @Step("{method}")
     public HomePage clickIslemlerim() {
         clickElementBy(islemlerim);
-        Log.info(islemlerim + "Clicked");
         return this;
-
     }
-    @Step("Yükle butonuna tıkla.")
+
+    @Step("{method}")
     public HomePage click_YukleButonu() {
         clickElementBy(yukleButonu);
         return this;
     }
 
-    @Step("Para Gönder'e tıkla.")
+    @Step("{method}")
     public HomePage click_ParaGonderButonu() {
         clickElementBy(paraGonderButonu);
         return this;
 
     }
-    @Step("Para İste'ye tıkla.")
+
+    @Step("{method}")
     public HomePage click_ParaIsteButonu() {
         clickElementBy(paraIsteButonu);
         return this;
@@ -67,49 +67,48 @@ public class HomePage extends BaseClass {
 
     }
 
-    @Step("Kampanyalar'a tıkla.")
+    @Step("{method}")
     public HomePage click_Kampanyalar() {
         clickElementBy(kampanyalar);
         return this;
-
     }
 
-    @Step("Bildirim butonuna tıkla.")
+    @Step("{method}")
     public HomePage click_Bildirimler() {
         clickElementBy(bildirimler);
         return this;
     }
 
-    @Step("Kartlarım butonuna tıkla.")
+    @Step("{method}")
     public HomePage click_Kartlarim() {
         clickElementBy(kartlarim);
         return this;
     }
 
-    @Step("PopUp metnini çek.")
+    @Step("{method}")
     public String get_ConfirmationDialogText() {
         return getTextFromElement(confirmationDialog);
     }
 
-    @Step("Kabul Et'e tıkla.")
+    @Step("{method}")
     public HomePage accept_ConfirmationDialog() {
         clickElementBy(confirmation_dialog_confirm);
         return this;
     }
 
-    @Step("Vazgeç'e tıkla.")
+    @Step("{method}")
     public HomePage reject_ConfirmationDialog() {
         clickElementBy(confirmation_dialog_reject);
         return this;
     }
 
-    @Step("Kredi Banka Hesabimdan'a tıkla.")
+    @Step("{method}")
     public HomePage click_KrediBankaHesabimdan() {
         clickElementBy(chooseKrediBankaHesabimdan);
         return this;
     }
 
-    @Step("Fatura Öde'ye tıkla.")
+    @Step("{method}")
     public HomePage click_FaturaOde() {
         clickElementBy(faturaOde);
         return this;

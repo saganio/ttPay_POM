@@ -15,11 +15,8 @@ public class Register5leBaslamayanNoTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Hesabim Yok 2- 5'le başlamayan numara gir.")
     @Description("Sisteme 5 ile başlayan yeni kullanıcı kaydetme senaryosu.")
-    public void Register5ileBaslamayanNo() throws IOException, ParseException {
-
-        RegisterPage registerPage = new RegisterPage(driver);
+    public void Register5ileBaslamayanNo(){
 
         registerPage
                 .click_HesabimYok()

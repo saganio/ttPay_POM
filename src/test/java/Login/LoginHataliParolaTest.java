@@ -16,20 +16,17 @@ public class LoginHataliParolaTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Kullanıcı adını gir, 2-Yanlış Şifreyi Gir")
     @Description("Kullancı Adı ve Yanlış Şifre ile giriş yapma senaryosu.")
     public void LoginHataliParola() throws IOException, ParseException {
 
-        LoginPage LP = new LoginPage(driver);
-
-        LP
+        loginPage
                 .setUsername(getString("id"))
                 .setPassword(getString("wrongPass"));
 
         TestUtils
-                .testAssertFunctions(HATALI_PAROLA_TEXT, LP.getYanlisParolaText());
+                .testAssertFunctions(HATALI_PAROLA_TEXT, loginPage.getYanlisParolaText());
 
-        LP
+        loginPage
                 .click_TekrarDeneButton()
                 .login();
 

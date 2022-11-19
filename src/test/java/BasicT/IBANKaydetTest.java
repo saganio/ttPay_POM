@@ -24,23 +24,19 @@ public class IBANKaydetTest extends BaseClass {
     @Description("IBAN Kaydetme testi.")
     public void IBANKaydet() throws IOException, ParseException {
 
-        LoginPage loginPage = new LoginPage(driver);
-        LeftPanelPage leftPanelPage = new LeftPanelPage(driver);
-        RehberimVeBankHspPage rehberimVeBankHspPage = new RehberimVeBankHspPage(driver);
-
 
         loginPage
                 .login()
                 .click_HamburgerMenu();
         leftPanelPage
                 .click_rehberimVeBankaHesaplarim();
-        rehberimVeBankHspPage
+        RehberimVeBankaHesaplarimPage
                 .click_IbanSekmesi()
                 .click_plusButton();
 
-        testAssertFunctions(IBAN_KAYDETME_TEXT, rehberimVeBankHspPage.getErrorText());
+        testAssertFunctions(IBAN_KAYDETME_TEXT, RehberimVeBankaHesaplarimPage.getErrorText());
 
-        rehberimVeBankHspPage
+        RehberimVeBankaHesaplarimPage
                 .click_vazgecButonuDialog();
     }
 

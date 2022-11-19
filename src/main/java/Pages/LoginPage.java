@@ -38,27 +38,28 @@ public class LoginPage extends BaseClass {
         BaseClass.driver = driver;
     }
 
+
     //Methods
 
-    @Step("Kullanıcı adı: {0}")
+    @Step("{method}")
     public LoginPage setUsername(String username) {
         driver.findElement(usernameTextBox).clear();
         driver.findElement(usernameTextBox).sendKeys(username);
         return this;
     }
 
-    @Step("Şifre: {0}")
+    @Step("{method}")
     public LoginPage setPassword(String password) {
         driver.findElement(passwordTextBox).sendKeys(password);
         return this;
     }
 
-    @Step("OTP Mesajını çek.")
+    @Step("{method}")
     public CharSequence getTextOfOTPMessage() {
         return getTextFromElement(loginOTPField);
     }
 
-    @Step("Kullanıcı adı ve şifreyi gir.")
+    @Step("{method}")
     public LoginPage login() throws IOException, ParseException {
 
         setUsername(getString("id"));
@@ -82,19 +83,20 @@ public class LoginPage extends BaseClass {
         return this;
     }
 
-    @Step("Hamburger Menü'ye tıkla.")
+    @Step("{method}")
     public LoginPage click_HamburgerMenu() {
         clickElementBy(hamburgerMenu);
         Reporter.log("hamburger menü tıklandı");
         return this;
     }
-    @Step("Parolamı Unuttum'a tıkla.")
+
+    @Step("{method}")
     public LoginPage click_ParolamiUnuttum() {
         clickElementBy(parolamiUnuttum);
         return this;
     }
 
-    @Step("Parolamı unuttum textbox'ına Msisdn Gir")
+    @Step("{method}")
     public LoginPage sendKeys_ParolamiUnuttumMsisdnTextBox(String text) {
         clearAndfillInFieldWith(parolamiUnuttum_msisdnGir, text);
         Log.info("I clicked: " + this.getClass().getSimpleName());
@@ -102,18 +104,18 @@ public class LoginPage extends BaseClass {
         return this;
     }
 
-    @Step("Devam et butonuna tıkla.")
+    @Step("{method}")
     public LoginPage click_DevamEtButton() {
         clickElementBy(parolamiUnuttum_devamEtButton);
         return this;
     }
 
-    @Step("Yanlış parola Uyarı textini al.")
+    @Step("{method}")
     public String getYanlisParolaText() {
         return driver.findElement(yanlisParolaText).getText();
     }
 
-    @Step("Tekrar Dene butonuna tıkla.")
+    @Step("{method}")
     public LoginPage click_TekrarDeneButton() {
         clickElementBy(tekrarDeneButton);
         return this;

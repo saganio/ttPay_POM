@@ -20,13 +20,8 @@ public class PokusKartEkleTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- Pokus Kart Ekle")
     @Description("Pokus Kart Ekleme testi.")
     public void PokusKartEkle() throws IOException, ParseException {
-
-        LoginPage loginPage = new LoginPage(driver);
-        HomePage homePage = new HomePage(driver);
-        KartlarimPage kartlarimPage = new KartlarimPage(driver);
 
         loginPage
                 .login();

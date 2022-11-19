@@ -1,5 +1,6 @@
 package Libraries;
 
+import Pages.*;
 import Utils.Log;
 import Utils.TestListener;
 import io.appium.java_client.MobileElement;
@@ -33,9 +34,22 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 @Listeners(TestListener.class)
 public class BaseClass {
 
+
     public static AndroidDriver<MobileElement> driver;
     private static AppiumDriverLocalService service;
 
+    //Call Page Objects
+    public static LoginPage loginPage = new LoginPage(driver);
+    public static LeftPanelPage leftPanelPage = new LeftPanelPage(driver);
+    public static GlobalPage globalPage = new GlobalPage(driver);
+    public static HomePage homePage = new HomePage(driver);
+    public static RehberimVeBankHspPage RehberimVeBankaHesaplarimPage = new RehberimVeBankHspPage(driver);
+    public static CampaignsPage campaignsPage = new CampaignsPage(driver);
+    public static KartlarimPage kartlarimPage = new KartlarimPage(driver);
+    public static RegisterPage registerPage = new RegisterPage(driver);
+
+
+    //Start Appium Server
     public static void startAppiumServer() {
         AppiumServiceBuilder builder = new AppiumServiceBuilder();
 
@@ -56,6 +70,7 @@ public class BaseClass {
         service.clearOutPutStreams();
     }
 
+    //Setup before app start
     public static AndroidDriver<MobileElement> initializeSetup() {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();

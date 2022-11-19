@@ -19,16 +19,10 @@ import static Pages.StringConstants.hataMesaji_PARAISTE;
 public class GruptanParaIsteTest extends BaseClass {
 
 
-    @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- Gruptan Para İste")
     @Description("Gruptan Para İsteme senaryosu")
-
+    @Test(priority = 0)
     public void GruptanParaIste() throws IOException, ParseException {
-
-        LoginPage loginPage = new LoginPage(driver);
-        RehberimVeBankHspPage RehberimVeBankaHesaplarimPage = new RehberimVeBankHspPage(driver);
-        LeftPanelPage leftPanelPage = new LeftPanelPage(driver);
 
         loginPage
                 .login()
@@ -45,6 +39,7 @@ public class GruptanParaIsteTest extends BaseClass {
                 .click_grubaEklemekicinKisiSec()
                 .click_kaydetButonu()
                 .click_paraIsteButonu();
+
         TestUtils.testAssertFunctions(hataMesaji_PARAISTE, hataMesaji_PARAISTE);
 
         RehberimVeBankaHesaplarimPage

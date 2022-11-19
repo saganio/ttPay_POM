@@ -19,8 +19,6 @@ public class RegisterTest extends BaseClass {
     @Description("Sisteme yebi kullanıcı kaydetme senaryosu.")
     public void Register() throws IOException, ParseException {
 
-        RegisterPage registerPage = new RegisterPage(driver);
-
         registerPage
                 .click_HesabimYok()
                 .click_HesapOlusturmayaTikla()

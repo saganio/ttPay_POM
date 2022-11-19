@@ -5,6 +5,7 @@ import Libraries.TestUtils;
 import Utils.Log;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static Libraries.TestUtils.*;
@@ -47,148 +48,175 @@ public class RehberimVeBankHspPage extends BaseClass {
     }
 
     //Methods
+
+    @Step("{method}")
     public RehberimVeBankHspPage click_IbanSekmesi() {
         clickElementBy(ibanSekmesi);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_plusButton() {
         clickElementBy(plusButton);
         Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_searchButton() {
         clickElementBy(searchButton);
         return this;
     }
 
+    @Step("{method} {0}")
     public RehberimVeBankHspPage sendkeys_searchBar(String text) {
         TestUtils.clearAndfillInFieldWith(searchBar, text);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage close_SearchBar() {
         clickElementBy(closeSearchBar);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_yeniKisiEkle() {
         clickElementBy(yeniKisiEkle);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_yeniGrupOlustur() {
         clickElementBy(yeniGrupOlustur);
         Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_closeDialog() {
         clickElementBy(closeDialog);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_vazgecButonuDialog() {
         clickElementBy(dialog_vazgecButonu);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_devamEtButonu_dialog() {
         clickElementBy(dialog_devamEtButonu);
         Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 
+    @Step("{method} {0}")
     public RehberimVeBankHspPage sendkey_grupAdiGirTextBox(String text) {
         clearAndfillInFieldWith(grupAdiGirTextBox, text);
-        Log.info("I clicked: " + this.getClass().getSimpleName());
-        System.out.println("Girilen değer: " + text);
+        System.out.println("Value: " + text);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_devamEtButonu() {
         clickElementBy(devamEtButonu);
         Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_kaydetButonu() {
         clickElementBy(kaydetButonu);
         Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_grubaEklemekicinKisiSec() {
         clickElementBy(grubaEklemekicinKisiSec);
         Log.info("I clicked: " + this.getClass().getSimpleName());
-
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_paraIsteButonu() {
         clickElementBy(paraIsteButonu);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_paraGonderButonu() {
         clickElementBy(paraGonderButonu);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_silButonu() {
         clickElementBy(silButonu);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_grubaKisiEkle() {
         clickElementBy(grubaKisiEkle);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_grubuSil() {
         clickElementBy(grubuSil);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_grubuSil_OnaylaButton() {
         clickElementBy(grubuSil_OnaylaButton);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_grubuSil_TamamButton() {
         clickElementBy(grubuSil_TamamButton);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_grubuSil_VazgecButton() {
         clickElementBy(grubuSil_VazgecButton);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_rehbereKaydet() {
         clickElementBy(rehbereKaydet);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_saveButton() {
         clickElementBy(saveButton);
         return this;
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_DavetEt() {
         clickElementBy(davetEt);
         return this;
     }
 
+    @Step("{method}")
     public String getErrorText() {
         return driver.findElement(IBANText).getText();
     }
 
+    @Step("{method}")
     public String getDavetEtText() {
         return driver.findElement(davetEtTextAssert).getText();
     }
 
+    @Step("{method}")
     public RehberimVeBankHspPage click_NewRecord() {
         swipeToElement(yeniKayitNo);
         clickElementBy(yeniKaydedilenKisi);

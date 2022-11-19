@@ -22,8 +22,6 @@ public class RegisterVarOlanKullaniciTest extends BaseClass {
     @Description("Sistemde kayıtlı olan kullanıcıyı tekrar kaydetme senaryosu.")
     public void RegisterVarOlanKullanici() throws IOException, ParseException {
 
-        RegisterPage registerPage = new RegisterPage(driver);
-
         registerPage
                 .click_HesabimYok()
                 .click_HesapOlusturmayaTikla()

@@ -16,16 +16,10 @@ import java.io.IOException;
 public class GrupOlusturTest extends BaseClass {
 
 
-    @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- Para Gönder")
     @Description("Para Gönderme senaryosu")
-
+    @Test(priority = 0)
     public void GrupOlustur() throws IOException, ParseException {
-
-        LoginPage loginPage = new LoginPage(driver);
-        RehberimVeBankHspPage RehberimVeBankaHesaplarimPage = new RehberimVeBankHspPage(driver);
-        LeftPanelPage leftPanelPage = new LeftPanelPage(driver);
 
         loginPage
                 .login()

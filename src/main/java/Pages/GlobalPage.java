@@ -22,20 +22,20 @@ public class GlobalPage extends BaseClass {
 
     //Methods
 
-    @Step("Bildirimlere tıkla.")
+    @Step("{method}")
     public GlobalPage check_Notifications() {
         clickElementBy(bildirimler);
         Log.info("I clicked" + getClass());
         return this;
 
     }
-    @Step("Çıkış Yap / Evet'e tıkla.")
+    @Step("{method}")
     public GlobalPage click_EvetDialog() {
         clickElementBy(cikisYap_EvetButonu);
         return this;
     }
 
-    @Step("Çıkış Yap / Hayır'a tıkla.")
+    @Step("{method}")
     public GlobalPage click_HayirDialog() {
         clickElementBy(cikisYap_HayirButonu);
         return this;

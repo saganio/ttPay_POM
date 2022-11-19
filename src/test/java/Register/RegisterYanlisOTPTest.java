@@ -18,9 +18,6 @@ public class RegisterYanlisOTPTest extends BaseClass {
     @Step("1-Hesabim Yok 2- Yeni Hesap Oluştur")
     @Description("Sisteme Yanlış OTP ile yeni kullanıcı kaydetme senaryosu.")
     public void RegisterYanlisOTP() throws IOException, ParseException {
-
-        RegisterPage registerPage = new RegisterPage(driver);
-
         registerPage
                 .click_HesabimYok()
                 .click_HesapOlusturmayaTikla()

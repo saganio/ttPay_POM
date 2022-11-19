@@ -22,14 +22,14 @@ public class CampaignsPage extends BaseClass {
 
     //Methods
 
-    @Step("Aktif/Pasif switch'ine tıkla.")
+    @Step("{method}")
     public CampaignsPage clickSwitchButton() {
         clickElementBy(switchButton);
         Log.info("I clicked" + getClass());
         return this;
-
     }
-    @Step("Kampanyalar menüsüne tıkla.")
+
+    @Step("{method}")
     public CampaignsPage clickCampaign() {
         clickElementBy(clickCampaign);
         return this;

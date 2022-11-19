@@ -12,6 +12,7 @@ import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.io.PipedReader;
 
 public class LoginLogOutTest extends BaseClass {
 
@@ -20,11 +21,7 @@ public class LoginLogOutTest extends BaseClass {
     @Description("Kullancı Adı ve Şifre ile giriş yapma senaryosu.")
     public void LoginAndLogOut() throws IOException, ParseException {
 
-        LoginPage LP = new LoginPage(driver);
-        LeftPanelPage leftPanelPage = new LeftPanelPage(driver);
-        GlobalPage globalPage = new GlobalPage(driver);
-
-        LP
+        loginPage
                 .login()
                 .click_HamburgerMenu();
         leftPanelPage

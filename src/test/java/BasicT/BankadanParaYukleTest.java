@@ -1,8 +1,6 @@
 package BasicT;
 
 import Libraries.BaseClass;
-import Pages.HomePage;
-import Pages.LoginPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -23,12 +21,10 @@ public class BankadanParaYukleTest extends BaseClass {
     @Description("Banka hesabından para yükleme testi.")
     public void BankaHesabindanParaYukle() throws IOException, ParseException {
 
-        LoginPage loginPage = new LoginPage(driver);
-        HomePage homePage = new HomePage(driver);
-
-        loginPage.login();
-        homePage.click_YukleButonu();
-        homePage.click_KrediBankaHesabimdan();
+        loginPage
+                .login();
+        homePage.click_YukleButonu()
+                .click_KrediBankaHesabimdan();
 
         testAssertFunctions(hataMesaji_BANKAHESABI, homePage.get_ConfirmationDialogText());
     }

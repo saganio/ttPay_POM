@@ -29,76 +29,76 @@ public class LeftPanelPage extends BaseClass {
     }
 
     //Methods
-    @Step("Profil'e tıkla.")
+    @Step("{method}")
     public LeftPanelPage click_Profil() {
         clickElementBy(profil);
         return this;
     }
 
-    @Step("Hesabını Onayla'ya tıkla.")
+    @Step("{method}")
     public LeftPanelPage click_hesabiniOnayla() {
         clickElementBy(hesabiniOnayla);
         return this;
     }
 
-    @Step("Rehberim ve Banka Hesaplarım'a tıkla.")
+    @Step("{method}")
     public LeftPanelPage click_rehberimVeBankaHesaplarim() {
         clickElementBy(rehberimVeBankaHesaplarim);
         return this;
 
     }
 
-    @Step("Ayarlar ve İzinler'e tıkla.")
+    @Step("{method}")
     public LeftPanelPage click_ayarlarVeIzinler() {
         clickElementBy(ayarlarVeIzinler);
         return this;
     }
 
-    @Step("Pokus Kart Ekle/Oluştur'a tıkla.")
+    @Step("{method}")
     public LeftPanelPage click_pokusKartEkleOlustur() {
         clickElementBy(pokusKartEkleOlustur);
         return this;
     }
 
-    @Step("Form ve Sözleşmeler'e tıkla.")
+    @Step("{method}")
     public LeftPanelPage click_formVeSozlesmeler() {
         clickElementBy(formVeSozlesmeler);
         return this;
     }
 
-    @Step("SSS'e tıkla.")
+    @Step("{method}")
     public LeftPanelPage click_sikcaSorulanSorular() {
         clickElementBy(sikcaSorulanSorular);
         return this;
     }
 
-    @Step("Müşteri Hizmetlerine tıkla.")
+    @Step("{method}")
     public LeftPanelPage click_musteriHizmetleri() {
         clickElementBy(musteriHizmetleri);
         return this;
     }
 
-    @Step("Çıkış Yap'a tıkla.")
+    @Step("{method}")
     public LeftPanelPage click_cikisYap() {
         clickElementBy(cikisYap);
         return this;
     }
 
-    @Step("Geri git")
+    @Step("{method}")
     public LeftPanelPage goBack() {
         driver.navigate().back();
         getFluentWait();
         return this;
     }
 
-    @Step("İptal'e tıkla.")
+    @Step("{method}")
     public LeftPanelPage clickIptal() {
         clickElementBy(iptal);
         getFluentWait();
         return this;
     }
 
-    @Step("2 saniye bekle.")
+    @Step("{method}")
     public LeftPanelPage wait2Sec() throws InterruptedException {
         Thread.sleep(2000);
         return this;

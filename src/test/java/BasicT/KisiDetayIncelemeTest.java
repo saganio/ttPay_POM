@@ -18,13 +18,8 @@ public class KisiDetayIncelemeTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- Kişi Detay İncele")
     @Description("Kişi Detay İnceleme")
-
     public void KisiDetayInceleme() throws IOException, ParseException, InterruptedException {
-
-        LoginPage loginPage = new LoginPage(driver);
-        LeftPanelPage leftPanelPage = new LeftPanelPage(driver);
 
         loginPage
                 .login()

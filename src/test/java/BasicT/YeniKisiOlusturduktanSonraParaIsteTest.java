@@ -22,13 +22,8 @@ public class YeniKisiOlusturduktanSonraParaIsteTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- Para Gönder")
     @Description("Para Gönderme senaryosu")
     public void YeniKisiOlusturVeParaGonder() throws IOException, ParseException {
-
-        LoginPage loginPage = new LoginPage(driver);
-        RehberimVeBankHspPage RVBH = new RehberimVeBankHspPage(driver);
-        LeftPanelPage leftPanelPage = new LeftPanelPage(driver);
 
         loginPage
                 .login()
@@ -37,7 +32,7 @@ public class YeniKisiOlusturduktanSonraParaIsteTest extends BaseClass {
         leftPanelPage
                 .click_rehberimVeBankaHesaplarim();
 
-        RVBH
+        RehberimVeBankaHesaplarimPage
                 .click_plusButton()
                 .click_yeniKisiEkle()
                 .sendkey_grupAdiGirTextBox(yeniKayitNo)
@@ -46,9 +41,9 @@ public class YeniKisiOlusturduktanSonraParaIsteTest extends BaseClass {
                 .click_NewRecord()
                 .click_paraIsteButonu();
 
-        testAssertFunctions(hataMesaji_PARAISTE, RVBH.getErrorText());
+        testAssertFunctions(hataMesaji_PARAISTE, RehberimVeBankaHesaplarimPage.getErrorText());
 
-        RVBH
+        RehberimVeBankaHesaplarimPage
                 .click_vazgecButonuDialog();
     }
 

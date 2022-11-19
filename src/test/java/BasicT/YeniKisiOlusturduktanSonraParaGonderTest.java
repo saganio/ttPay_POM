@@ -26,10 +26,6 @@ public class YeniKisiOlusturduktanSonraParaGonderTest extends BaseClass {
     @Description("Para Gönderme senaryosu")
     public void YeniKisiOlusturVeParaGonder() throws IOException, ParseException {
 
-        LoginPage loginPage = new LoginPage(driver);
-        RehberimVeBankHspPage RVBH = new RehberimVeBankHspPage(driver);
-        LeftPanelPage leftPanelPage = new LeftPanelPage(driver);
-
         loginPage
                 .login()
                 .click_HamburgerMenu();
@@ -37,7 +33,7 @@ public class YeniKisiOlusturduktanSonraParaGonderTest extends BaseClass {
         leftPanelPage
                 .click_rehberimVeBankaHesaplarim();
 
-        RVBH
+        RehberimVeBankaHesaplarimPage
                 .click_plusButton()
                 .click_yeniKisiEkle()
                 .sendkey_grupAdiGirTextBox(yeniKayitNo)
@@ -46,9 +42,9 @@ public class YeniKisiOlusturduktanSonraParaGonderTest extends BaseClass {
                 .click_NewRecord()
                 .click_paraGonderButonu();
 
-        testAssertFunctions(hataMesaji_PARAGONDER, RVBH.getErrorText());
+        testAssertFunctions(hataMesaji_PARAGONDER, RehberimVeBankaHesaplarimPage.getErrorText());
 
-        RVBH
+        RehberimVeBankaHesaplarimPage
                 .click_vazgecButonuDialog();
     }
 
