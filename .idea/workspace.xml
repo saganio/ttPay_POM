@@ -67,14 +67,31 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Login" />
-      <recent name="Register" />
       <recent name="BasicT" />
       <recent name="Pages" />
+      <recent name="Login" />
+      <recent name="Register" />
       <recent name="Tests.Basic" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.KampanyalarTest">
+  <component name="RunManager" selected="TestNG.SifreGuncelleTest">
+    <configuration name="GrupOlusturTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFrameworkForMobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BasicT.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BasicT" />
+      <option name="MAIN_CLASS_NAME" value="BasicT.GrupOlusturTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="KampanyalarTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFrameworkForMobile" />
       <extension name="coverage">
@@ -92,16 +109,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginHataliParolaTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="KisiAdiGuncelleTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFrameworkForMobile" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Login.*" />
+          <option name="PATTERN" value="BasicT.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Login" />
-      <option name="MAIN_CLASS_NAME" value="Login.LoginHataliParolaTest" />
+      <option name="PACKAGE_NAME" value="BasicT" />
+      <option name="MAIN_CLASS_NAME" value="BasicT.KisiAdiGuncelleTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -109,16 +126,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginLogOutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ParaIsteKayitliKisidenTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFrameworkForMobile" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Login.*" />
+          <option name="PATTERN" value="BasicT.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Login" />
-      <option name="MAIN_CLASS_NAME" value="Login.LoginLogOutTest" />
+      <option name="PACKAGE_NAME" value="BasicT" />
+      <option name="MAIN_CLASS_NAME" value="BasicT.ParaIsteKayitliKisidenTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -126,33 +143,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Register5leBaslamayanNoTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SifreGuncelleTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFrameworkForMobile" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Register.*" />
+          <option name="PATTERN" value="BasicT.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Register" />
-      <option name="MAIN_CLASS_NAME" value="Register.Register5leBaslamayanNoTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegisterVarOlanKullaniciTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestFrameworkForMobile" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Register.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Register" />
-      <option name="MAIN_CLASS_NAME" value="Register.RegisterVarOlanKullaniciTest" />
+      <option name="PACKAGE_NAME" value="BasicT" />
+      <option name="MAIN_CLASS_NAME" value="BasicT.SifreGuncelleTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -162,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SifreGuncelleTest" />
+        <item itemvalue="TestNG.KisiAdiGuncelleTest" />
+        <item itemvalue="TestNG.GrupOlusturTest" />
+        <item itemvalue="TestNG.ParaIsteKayitliKisidenTest" />
         <item itemvalue="TestNG.KampanyalarTest" />
-        <item itemvalue="TestNG.LoginLogOutTest" />
-        <item itemvalue="TestNG.LoginHataliParolaTest" />
-        <item itemvalue="TestNG.RegisterVarOlanKullaniciTest" />
-        <item itemvalue="TestNG.Register5leBaslamayanNoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668809100713</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="cesitli yenilikler">
+      <created>1668862409593</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668862409593</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

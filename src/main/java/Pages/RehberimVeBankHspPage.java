@@ -6,7 +6,10 @@ import Utils.Log;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.Step;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
+
+import java.io.IOException;
 
 import static Libraries.TestUtils.*;
 import static Pages.StringConstants.yeniKayitNo;
@@ -16,6 +19,7 @@ public class RehberimVeBankHspPage extends BaseClass {
     private final By ibanSekmesi = By.id("radioButtonContacts2");
     private final By plusButton = By.id("ibSecondButton");
     private final By searchButton = By.id("ibFirstButton");
+    private final By editButton = By.id("ibFirstButton");
     private final By searchBar = By.id("iSearchField");
     private final By closeSearchBar = By.id("iSearchCloseBtn");
     private final By yeniKisiEkle = By.xpath("//android.widget.TextView[@text='Yeni Kişi Ekle']");
@@ -41,6 +45,9 @@ public class RehberimVeBankHspPage extends BaseClass {
     private final By davetEt = By.xpath("(//*[@text='DAVET ET'])[2]");
     private final By davetEtTextAssert = By.id("tr.com.turktelekom.pokus.test:id/tv_information_dialog_message");
     private final By yeniKaydedilenKisi = By.xpath("//*[@text='" + yeniKayitNo + "']");
+    private final By kisiAdiDegistirTextBox = By.xpath("//android.widget.EditText[@text='First name']");
+
+
 
     //Constructor
     public RehberimVeBankHspPage(AndroidDriver<MobileElement> driver) {
@@ -80,6 +87,11 @@ public class RehberimVeBankHspPage extends BaseClass {
         return this;
     }
 
+    @Step("{method}")
+    public RehberimVeBankHspPage click_Duzenle() {
+        clickElementBy(editButton);
+        return this;
+    }
     @Step("{method}")
     public RehberimVeBankHspPage click_yeniKisiEkle() {
         clickElementBy(yeniKisiEkle);
@@ -220,6 +232,12 @@ public class RehberimVeBankHspPage extends BaseClass {
     public RehberimVeBankHspPage click_NewRecord() {
         swipeToElement(yeniKayitNo);
         clickElementBy(yeniKaydedilenKisi);
+        return this;
+    }
+
+    @Step("{method}")
+    public RehberimVeBankHspPage set_kisiAdiDegistirTextBox() throws IOException, ParseException {
+        clearAndfillInFieldWith(kisiAdiDegistirTextBox,getString("aliciAdSoyad"));
         return this;
     }
 

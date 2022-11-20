@@ -1,6 +1,9 @@
 package Utils;
 
 import Libraries.BaseClass;
+import com.google.common.io.Files;
+import io.appium.java_client.ios.IOSStartScreenRecordingOptions;
+import io.appium.java_client.screenrecording.CanRecordScreen;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
@@ -15,6 +18,8 @@ import org.testng.Reporter;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
+import java.util.Base64;
 
 public class TestListener extends BaseClass implements ITestListener {
     private static String getTestMethodName(ITestResult iTestResult) {
@@ -46,14 +51,15 @@ public class TestListener extends BaseClass implements ITestListener {
 
     //Text attachments for Allure
     @Attachment(value = "Page screenshot", type = "image/png")
-    public byte[] saveScreenshotPNG(WebDriver driver) {
+    public byte[] saveScreenshotPNG(WebDriver driver) throws IOException {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+
     }
 
     @Override
     public void onStart(ITestContext iTestContext) {
         Log.info("I am in start " + iTestContext.getName());
-        iTestContext.setAttribute("WebDriver", this.driver);
+        iTestContext.setAttribute("WebDriver", driver);
     }
 
     @Override

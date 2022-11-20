@@ -13,11 +13,19 @@ public class KampanyalarTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Description("Kampanyaları görüntüleme testi.")
+    @Description("Giriş testi.")
     public void LoginAndCheckCampaigns() throws IOException, ParseException {
 
         loginPage
                 .login();
+
+    }
+
+    @Test(priority = 1)
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Kampanyaları görüntüleme testi.")
+    public void Step2(){
+
         homePage
                 .click_Kampanyalar();
         campaignsPage
@@ -26,5 +34,4 @@ public class KampanyalarTest extends BaseClass {
                 .clickCampaign();
 
     }
-
 }

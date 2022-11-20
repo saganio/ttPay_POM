@@ -4,6 +4,7 @@
 
     <listeners>
         <listener class-name="report.realtime.listener.RealTimeTestResultListener"/>
+        <listener class-name="io.qameta.allure.Allure"/>
     </listeners>
 
     <test verbose="1" preserve-order="true" name="ttPay_POM">

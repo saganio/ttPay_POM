@@ -16,13 +16,13 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.junit.After;
+import org.junit.AfterClass;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
+import org.testng.annotations.*;
 
 import java.io.ByteArrayInputStream;
 import java.io.FileReader;
@@ -47,7 +47,7 @@ public class BaseClass {
     public static CampaignsPage campaignsPage = new CampaignsPage(driver);
     public static KartlarimPage kartlarimPage = new KartlarimPage(driver);
     public static RegisterPage registerPage = new RegisterPage(driver);
-
+    public static AyarlarVeIzinlerPage ayarlarVeIzinlerPage = new AyarlarVeIzinlerPage(driver);
 
     //Start Appium Server
     public static void startAppiumServer() {
@@ -113,7 +113,7 @@ public class BaseClass {
         return (String) elem.get(string);
     }
 
-    @BeforeMethod
+    @BeforeSuite
     public void setUp() throws IOException {
 
         startAppiumServer();
@@ -121,7 +121,7 @@ public class BaseClass {
         Log.info("Çalıştırma öncesi ayarlar uygulanıyor...");
     }
 
-    @AfterMethod(alwaysRun = true)
+    @AfterSuite
     public void stopAppiumAndDriver() throws IOException {
 
         driver.quit();
