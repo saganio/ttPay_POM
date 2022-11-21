@@ -11,7 +11,6 @@
 
     <dependencies>
 
-
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
@@ -94,6 +93,24 @@
             <scope>runtime</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.31</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>20030203.000550</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20160810</version>
+        </dependency>
+
 
     </dependencies>
 
@@ -105,12 +122,8 @@
         <argLine>
             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
         </argLine>
-        <systemProperties>
-            <property>
-                <name>allure.results.directory</name>
-                <value>${project.build.directory}/allure-results</value>
-            </property>
-        </systemProperties>
+        <name>allure.results.directory</name>
+        <value>${project.build.directory}/allure-results</value>
     </properties>
 
 
