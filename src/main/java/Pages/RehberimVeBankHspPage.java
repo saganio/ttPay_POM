@@ -30,7 +30,7 @@ public class RehberimVeBankHspPage extends BaseClass {
     private final By grupAdiGirTextBox = By.id("et_smart_textfield_text");
     private final By devamEtButonu = By.id("abAddNewGroup");
     private final By kaydetButonu = By.id("abSaveNewGroup");
-    private final By grubaEklemekicinKisiSec = By.xpath("//android.widget.TextView[@text='(511) 888-8888']");
+    private final By grubaEklemekicinKisiSec = By.xpath("//android.widget.TextView[@text='ahu demir']");
     private final By paraIsteButonu = By.id("imgRequestMoney");
     private final By paraGonderButonu = By.id("imgSendtMoney");
     private final By silButonu = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.view.ViewGroup[1]/android.widget.FrameLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout[2]/android.widget.ImageButton[1]");
@@ -146,9 +146,9 @@ public class RehberimVeBankHspPage extends BaseClass {
     }
 
     @Step("{method}")
-    public RehberimVeBankHspPage click_grubaEklemekicinKisiSec() {
+    public RehberimVeBankHspPage click_grubaEklemekicinKisiSec() throws IOException, ParseException {
+        swipeToElement(getString("aliciAdSoyad"));
         clickElementBy(grubaEklemekicinKisiSec);
-        Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 

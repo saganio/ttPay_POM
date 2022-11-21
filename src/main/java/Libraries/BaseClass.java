@@ -45,6 +45,7 @@ public class BaseClass {
     public static KartlarimPage kartlarimPage = new KartlarimPage(driver);
     public static RegisterPage registerPage = new RegisterPage(driver);
     public static AyarlarVeIzinlerPage ayarlarVeIzinlerPage = new AyarlarVeIzinlerPage(driver);
+    public static ProfilPage profilPage = new ProfilPage(driver);
 
     //Start Appium Server
     public static void startAppiumServer() {
@@ -88,7 +89,6 @@ public class BaseClass {
 
         driver.manage().timeouts().implicitlyWait(15, SECONDS);
         return driver;
-
 
     }
 

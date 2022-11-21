@@ -32,6 +32,8 @@ public class LoginPage extends BaseClass {
     private final By parolamiUnuttum_devamEtButton = By.id("abtn_forgot_password_identity_continue");
     private final By yanlisParolaText = By.id("tr.com.turktelekom.pokus.test:id/tv_confirmation_dialog_message");
     private final By tekrarDeneButton = By.id("btn_confirmation_dialog_confirm");
+    private final By girisYapButton = By.id("btn_login_register_submith");
+
 
     //Constructor
     public LoginPage(AndroidDriver<MobileElement> driver) {
@@ -41,14 +43,14 @@ public class LoginPage extends BaseClass {
 
     //Methods
 
-    @Step("{method}")
+    @Step("{method} {0}")
     public LoginPage setUsername(String username) {
         driver.findElement(usernameTextBox).clear();
         driver.findElement(usernameTextBox).sendKeys(username);
         return this;
     }
 
-    @Step("{method}")
+    @Step("{method} {0}")
     public LoginPage setPassword(String password) {
         driver.findElement(passwordTextBox).sendKeys(password);
         return this;
@@ -120,4 +122,11 @@ public class LoginPage extends BaseClass {
         clickElementBy(tekrarDeneButton);
         return this;
     }
+
+    @Step("{method}")
+    public LoginPage click_girisYapButton() {
+        clickElementBy(girisYapButton);
+        return this;
+    }
+
 }
