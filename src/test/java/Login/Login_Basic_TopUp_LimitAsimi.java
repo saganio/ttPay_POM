@@ -1,6 +1,7 @@
 package Login;
 
 import Libraries.BaseClass;
+import Libraries.PostmanTopUp;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -13,16 +14,19 @@ public class Login_Basic_TopUp_LimitAsimi extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Hesabim Yok 2- Yeni Hesap Oluştur")
-    @Description("Sisteme yeni kullanıcı kaydetme senaryosu.")
+    @Description("Para Yükleme ve Kontrol Testi")
     public void Basic_TopUp_LimitAsimi() throws IOException, ParseException {
+
+        PostmanTopUp
+                .getToken_MakeTopUp(getString("id"),"12300");
 
         loginPage
                 .login();
 
-
-        // TODO: 17.11.2022
-
+        globalPage
+                .check_Notifications().goBack()
+                .click_Islemlerim()
+                .click_BekleyenIslemlerim();
     }
 
 

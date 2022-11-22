@@ -13,15 +13,29 @@ public class Login_BeniHatirla extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Hesabim Yok 2- Yeni Hesap Oluştur")
-    @Description("Sisteme yebi kullanıcı kaydetme senaryosu.")
-    public void Login_Basic_TopUp() throws IOException, ParseException {
+    @Description("Beni hatırla butonu testi.")
+    public void BeniHatirla() throws IOException, ParseException {
 
        loginPage
-               .login();
+               .setUsername(getString("id"))
+               .clickUsernameTextBox()
+               .click_beniHatirla()
+               .setPassword(getString("pass"))
+               .beniHatirlaloginClass()
+               .click_HamburgerMenu();
+
+       leftPanelPage
+               .click_cikisYap();
+
+       globalPage
+               .click_EvetDialog();
+
+       loginPage
+               .clickUsernameTextBox()
+               .click_beniHatirla();
 
 
-        // TODO: 17.11.2022
+
 
     }
 }

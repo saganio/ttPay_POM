@@ -46,6 +46,7 @@ public class BaseClass {
     public static RegisterPage registerPage = new RegisterPage(driver);
     public static AyarlarVeIzinlerPage ayarlarVeIzinlerPage = new AyarlarVeIzinlerPage(driver);
     public static ProfilPage profilPage = new ProfilPage(driver);
+    public static DBQueries dbQueries = new DBQueries(driver);
 
     //Start Appium Server
     public static void startAppiumServer() {

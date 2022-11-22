@@ -1,16 +1,88 @@
 package Pages;
 
+import Libraries.DBConnection;
+import Utils.Log;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
+import io.qameta.allure.Step;
+
+import java.sql.SQLException;
+
 /**
  * Created by uguryildiz on 20.11.2022
  */
 public class DBQueries {
     
-    private static final String  GET_OTP_SQL="";
-    private static final String  GET_PN_SQL="";
-    private static final String  GET_TOTAL_TAX_AMOUNT_SQL="";
-    private static final String  GET_BASIC_AMOUNT_SQL="";
-    private static final String  GET_SEMI_AMOUNT_SQL="";
-    private static final String  GET_VERIFIED_AMOUNT_SQL="";
+    private static final String  GET_OTP_SQL= "select TOP(1) TEXT from [TTPAY_TEST].[dbo].[SMS_TRANSACTION] ORDER BY CREATION_DATE DESC";
+    private static final String  GET_PN_SQL= "SELECT TOP(1) BODY FROM [TTPAY_TEST].[dbo].[PN_TRANSACTION] order by LOG_DATE desc";
+    private static final String  GET_TOTAL_TAX_AMOUNT_SEMI= "select top(1) TOTAL_TAX_AMOUNT from PAY_BILL where RECEIVER_EMAIL_ADDRESS in (select ACTIVE_MAIL from ACC_USER where ACTIVE_MSISDN='905980953248')  order by CREATED_DATE desc";
+    private static final String  GET_TOTAL_TAX_AMOUNT_VERIFIED= "select top(1) TOTAL_TAX_AMOUNT from [TTPAY_TEST].[dbo].[PAY_BILL] where RECEIVER_EMAIL_ADDRESS in (select ACTIVE_MAIL from [TTPAY_TEST].[dbo].[ACC_USER] where ACTIVE_MSISDN='905997654321')  order by CREATED_DATE desc";
+    private static final String  GET_BASIC_AMOUNT_SQL= "SELECT TOP (1) c.ACCOUNT_BALANCE FROM [TTPAY_TEST].[dbo].[ACC_USER] a, [TTPAY_TEST].[dbo].[EMN_MEMBER] b, [TTPAY_TEST].[dbo].[EMN_MEMBER_DETAIL_LOG] c WHERE a.USER_ID = b.USER_ID AND b.MEMBER_CODE = c.MEMBER_CODE AND a.ACTIVE_MSISDN = '905550000012' ORDER BY c.CREATED_DATE DESC";
+    private static final String  GET_SEMI_AMOUNT_SQL= "SELECT TOP (1) c.ACCOUNT_BALANCE FROM [TTPAY_TEST].[dbo].[ACC_USER] a, [TTPAY_TEST].[dbo].[EMN_MEMBER] b, [TTPAY_TEST].[dbo].[EMN_MEMBER_DETAIL_LOG] c WHERE a.USER_ID = b.USER_ID AND b.MEMBER_CODE = c.MEMBER_CODE AND a.ACTIVE_MSISDN = '905980953248' ORDER BY c.CREATED_DATE DESC";
+    private static final String  GET_VERIFIED_AMOUNT_SQL= "SELECT TOP (1) c.ACCOUNT_BALANCE FROM [TTPAY_TEST].[dbo].[ACC_USER] a, [TTPAY_TEST].[dbo].[EMN_MEMBER] b, [TTPAY_TEST].[dbo].[EMN_MEMBER_DETAIL_LOG] c WHERE a.USER_ID = b.USER_ID AND b.MEMBER_CODE = c.MEMBER_CODE AND a.ACTIVE_MSISDN = '905997654321' ORDER BY c.CREATED_DATE DESC";
 
-    // TODO: 20.11.2022  
+    public DBQueries(AndroidDriver<MobileElement> driver) {
+    }
+
+    @Step("{method} {dbConn.ttpayDev2(sql)}")
+    public String bakiyeKontrol_verified() throws SQLException {
+        String sql = GET_VERIFIED_AMOUNT_SQL;
+        DBConnection dbConn = new DBConnection();
+        dbConn.ttpayDev2(sql);
+        Log.info(dbConn.ttpayDev2(sql));
+        return dbConn.ttpayDev2(sql);
+    }
+
+    @Step("{method}")
+    public String bakiyeKontrol_semi() throws SQLException {
+        String sql = GET_SEMI_AMOUNT_SQL;
+        DBConnection dbConn = new DBConnection();
+        dbConn.ttpayDev2(sql);
+
+        return dbConn.ttpayDev2(sql);
+    }
+
+    @Step("{method}")
+    public static String bakiyeKontrol_basic() throws SQLException {
+
+        String sql = GET_BASIC_AMOUNT_SQL;
+        DBConnection dbConn = new DBConnection();
+        dbConn.ttpayDev(sql);
+        return dbConn.ttpayDev(sql);
+    }
+
+    @Step("{method}")
+    public static String otp_SMS_transaction_log() throws SQLException {
+        String sql = GET_OTP_SQL;
+        DBConnection dbConn = new DBConnection();
+        dbConn.ttpayDev2(sql);
+        return dbConn.ttpayDev2(sql);
+    }
+
+    @Step("{method}")
+    public static String push_Notification_log() throws SQLException {
+
+        String sql = GET_PN_SQL;
+        DBConnection dbConn = new DBConnection();
+        dbConn.ttpayDev2(sql);
+        return dbConn.ttpayDev2(sql);
+    }
+
+    @Step("{method}")
+    public static String total_Tax_Amount_verified() throws SQLException {
+        String sql = GET_TOTAL_TAX_AMOUNT_VERIFIED;
+        DBConnection dbConn = new DBConnection();
+        dbConn.ttpayDev2(sql);
+        return dbConn.ttpayDev2(sql);
+    }
+
+    @Step("{method}")
+    public static String total_Tax_Amount_semi() throws SQLException {
+        String sql = GET_TOTAL_TAX_AMOUNT_SEMI;
+        DBConnection dbConn = new DBConnection();
+        dbConn.ttpayDev2(sql);
+        return dbConn.ttpayDev2(sql);
+    }
+
+
 }

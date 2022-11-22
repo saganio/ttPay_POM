@@ -33,7 +33,7 @@ public class LoginPage extends BaseClass {
     private final By yanlisParolaText = By.id("tr.com.turktelekom.pokus.test:id/tv_confirmation_dialog_message");
     private final By tekrarDeneButton = By.id("btn_confirmation_dialog_confirm");
     private final By girisYapButton = By.id("btn_login_register_submith");
-
+    private final By beniHatirla = By.id("cb_username_password");
 
     //Constructor
     public LoginPage(AndroidDriver<MobileElement> driver) {
@@ -66,6 +66,27 @@ public class LoginPage extends BaseClass {
 
         setUsername(getString("id"));
         setPassword(getString("pass"));
+
+        if (getTextOfOTPMessage().equals(girisOncesiOTPText)) {
+            try {
+                clickElementBy(acceptOTPMessage);
+                clickElementBy(clickOTPField);
+
+                for (int i = 0; i < 6; i++) {
+                    driver.pressKey(new KeyEvent(AndroidKey.NUMPAD_1));
+                }
+                clickElementBy(gonderButonu);
+            } catch (NoSuchElementException NSE) {
+                Log.info("Giremedim.");
+            }
+        } else {
+            Log.info("Giriş yapıldı.");
+        }
+        return this;
+    }
+
+    @Step("{method}")
+    public LoginPage beniHatirlaloginClass() throws IOException, ParseException {
 
         if (getTextOfOTPMessage().equals(girisOncesiOTPText)) {
             try {
@@ -128,5 +149,18 @@ public class LoginPage extends BaseClass {
         clickElementBy(girisYapButton);
         return this;
     }
+
+    @Step("{method}")
+    public LoginPage click_beniHatirla() {
+        clickElementBy(beniHatirla);
+        return this;
+    }
+
+    @Step("{method} {0}")
+    public LoginPage clickUsernameTextBox() {
+        clickElementBy(usernameTextBox);
+        return this;
+    }
+
 
 }

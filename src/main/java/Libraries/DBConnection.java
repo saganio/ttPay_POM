@@ -3,6 +3,14 @@ package Libraries;
 import java.sql.*;
 
 public class DBConnection {
+
+
+    public static void main(String[] args) throws SQLException {
+        String sql = "select TOP(1) TEXT from [TTPAY_TEST].[dbo].[SMS_TRANSACTION] ORDER BY CREATION_DATE DESC";
+        DBConnection dbConn = new DBConnection();
+        dbConn.ttpayDev2(sql);
+    }
+
     private Connection openConnection(Connection connection, String dbDriver, String dbUrl, String username, String password) {
         if (connection != null) {
             closeConnection(connection);
@@ -10,6 +18,7 @@ public class DBConnection {
         try {
             Class.forName(dbDriver);
             connection = DriverManager.getConnection(dbUrl, username, password);
+
         } catch (ClassNotFoundException | SQLException e) {
             System.err.println(e.getMessage());
         }
@@ -71,6 +80,7 @@ public class DBConnection {
             return result;
         }
     */
+
     public String ttpayDev2(String sql) throws SQLException {
         String result = "";
         String dbDriver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
@@ -79,6 +89,7 @@ public class DBConnection {
         String dbUrl = "jdbc:sqlserver://10.10.10.109\\MSSQL2014;databaseName=TTPAY_TEST";
         String username = "ttpayuser";
         String password = "ttpaytest";
+
 
         Connection connection = openConnection(null, dbDriver, dbUrl, username, password);
         ResultSet rs = connection.createStatement().executeQuery(sql);
