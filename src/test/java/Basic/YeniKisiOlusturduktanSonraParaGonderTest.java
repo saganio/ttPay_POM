@@ -16,7 +16,6 @@ import static Pages.StringConstants.yeniKayitNo;
 
 public class YeniKisiOlusturduktanSonraParaGonderTest extends BaseClass {
 
-
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
     @Step("1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- Para Gönder")

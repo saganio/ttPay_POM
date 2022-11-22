@@ -1,5 +1,6 @@
 package Basic;
 
+import Libraries.BaseClass;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -13,7 +14,7 @@ import static Pages.StringConstants.DAVET_ET_TEXT;
 /**
  * Created by uguryildiz on 17.11.2022
  */
-public class KisiDavetEtTest {
+public class KisiDavetEtTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)

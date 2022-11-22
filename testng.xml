@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" preserve-order="true" thread-count="1">
+<suite name="Basic Suite" preserve-order="true" thread-count="1">
 
-    <listeners>
-        <listener class-name="report.realtime.listener.RealTimeTestResultListener"/>
-        <listener class-name="io.qameta.allure.Allure"/>
-    </listeners>
 
-    <test verbose="1" preserve-order="true" name="ttPay_POM">
+    <test verbose="1" preserve-order="false" name="ttPay_POM">
         <packages>
-            <package name="Login.Basic.*"/>
+            <package name="Basic.*"/>
         </packages>
     </test>
+
 </suite>

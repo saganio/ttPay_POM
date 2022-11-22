@@ -110,7 +110,7 @@ public class BaseClass {
         return (String) elem.get(string);
     }
 
-    @BeforeSuite
+    @BeforeClass(alwaysRun = true)
     public void setUp() throws IOException {
 
         startAppiumServer();
@@ -118,7 +118,7 @@ public class BaseClass {
         Log.info("Çalıştırma öncesi ayarlar uygulanıyor...");
     }
 
-    @AfterSuite
+    @AfterClass(alwaysRun = true)
     public void stopAppiumAndDriver() throws IOException {
 
         driver.quit();
@@ -126,13 +126,12 @@ public class BaseClass {
         Log.info("Closing Driver");
         //Runtime.getRuntime().exec("allure serve allure-results");
 
-
     }
 
     @Attachment(value = "Screenshot", type = "image/png")
     public void takeScreenShot() {
 
-        Log.info("Ekran görüntüsü alınıyor...");
+        Log.info("Taking Screenshot...");
         Allure.addAttachment("Screenshot",
                 new ByteArrayInputStream(((TakesScreenshot) driver)
                         .getScreenshotAs(OutputType.BYTES)));

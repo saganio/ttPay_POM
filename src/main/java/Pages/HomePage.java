@@ -14,7 +14,7 @@ import static Libraries.TestUtils.getTextFromElement;
 public class HomePage extends BaseClass {
 
     private final By islemlerim = By.id("bottom_navigation_transactions");
-    private final By yukleButonu = By.id("drop_shape_title");
+    private final By yukleButonu = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.ImageButton");
     private final By paraGonderButonu = By.id("ibtn_user_home_fragment_send_money");
     private final By paraIsteButonu = By.id("ibtn_user_home_fragment_request_money");
     private final By odemeYapButonu = By.id("ibPayment");

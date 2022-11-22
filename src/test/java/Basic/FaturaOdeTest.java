@@ -1,5 +1,6 @@
 package Basic;
 
+import Libraries.BaseClass;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -13,7 +14,7 @@ import static Libraries.BaseClass.loginPage;
 /**
  * Created by uguryildiz on 17.11.2022
  */
-public class FaturaOdeTest {
+public class FaturaOdeTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
