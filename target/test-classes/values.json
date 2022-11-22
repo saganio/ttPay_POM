@@ -1,5 +1,5 @@
 {
-  "id": "5997654321",
+  "id": "5550000012",
   "pass": "135791",
   "wrongPass": "135799",
   "msisdn": "5997654321",
@@ -16,5 +16,6 @@
   "KKNo": "4155650100416111",
   "CVV": "123",
   "kisiMsisdn": "5111111111",
-  "groupName": "testGrup"
+  "groupName": "testGrup",
+  "amount": "10"
 }
