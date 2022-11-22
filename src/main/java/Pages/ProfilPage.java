@@ -14,8 +14,7 @@ import org.openqa.selenium.NoSuchElementException;
 import java.io.IOException;
 
 import static Libraries.TestUtils.*;
-import static Pages.StringConstants.OTP_MESSAGE;
-import static Pages.StringConstants.girisOncesiOTPText;
+import static Pages.StringConstants.OTP_LOG_MESSAGE;
 
 public class ProfilPage extends BaseClass {
 
@@ -88,7 +87,7 @@ public class ProfilPage extends BaseClass {
 
     @Step("{method}")
     public ProfilPage sendkeys_acikAdresTextBox() throws IOException, ParseException {
-        clearAndfillInFieldWith(acikAdresTextBox,getString("KKNo"));
+        clearAndfillInFieldWith(acikAdresTextBox, getString("KKNo"));
         return this;
     }
 
@@ -109,7 +108,7 @@ public class ProfilPage extends BaseClass {
 
         boolean OTPMessageExists = driver.findElements(onayKoduText).size() != 0;
 
-        if (OTPMessageExists==true) {
+        if (OTPMessageExists) {
             try {
                 clickElementBy(clickOTPField);
                 for (int i = 0; i < 6; i++) {
@@ -117,10 +116,10 @@ public class ProfilPage extends BaseClass {
                 }
                 clickElementBy(gonderButonu);
             } catch (NoSuchElementException NSE) {
-                Log.info("OTP ekranı gelmedi, OTP girişi yapılmayacak.");
+                Log.info(OTP_LOG_MESSAGE);
             }
         } else {
-            Log.info("OTP ekranı gelmedi, OTP girişi yapılmayacak.");
+            Log.info(OTP_LOG_MESSAGE);
         }
         return this;
     }
