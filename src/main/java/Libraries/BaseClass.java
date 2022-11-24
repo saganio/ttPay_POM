@@ -3,6 +3,7 @@ package Libraries;
 import Pages.*;
 import Utils.Log;
 import Utils.TestListener;
+import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.Setting;
 import io.appium.java_client.android.AndroidDriver;
@@ -25,6 +26,7 @@ import java.io.ByteArrayInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 
+import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnvironmentWriter;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 @SuppressWarnings("ALL")
@@ -47,7 +49,7 @@ public class BaseClass {
     public static AyarlarVeIzinlerPage ayarlarVeIzinlerPage = new AyarlarVeIzinlerPage(driver);
     public static ProfilPage profilPage = new ProfilPage(driver);
     public static DBQueries dbQueries = new DBQueries(driver);
-
+    public static DBConnection dbConnection = new DBConnection();
     //Start Appium Server
     public static void startAppiumServer() {
         AppiumServiceBuilder builder = new AppiumServiceBuilder();
@@ -86,7 +88,7 @@ public class BaseClass {
         capabilities.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
         capabilities.setCapability("autoAcceptAlerts", true);
         AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(service.getUrl(), capabilities);
-        driver.setSetting(Setting.WAIT_FOR_IDLE_TIMEOUT, 300);
+        driver.setSetting(Setting.WAIT_FOR_IDLE_TIMEOUT, 100);
 
         driver.manage().timeouts().implicitlyWait(15, SECONDS);
         return driver;
@@ -116,7 +118,10 @@ public class BaseClass {
 
         startAppiumServer();
         driver = BaseClass.initializeSetup();
+        setAllureEnvironment();
         Log.info("Çalıştırma öncesi ayarlar uygulanıyor...");
+
+
     }
 
     @AfterClass(alwaysRun = true)
@@ -137,6 +142,17 @@ public class BaseClass {
                 new ByteArrayInputStream(((TakesScreenshot) driver)
                         .getScreenshotAs(OutputType.BYTES)));
 
+    }
+
+
+
+    public void setAllureEnvironment() {
+        allureEnvironmentWriter(
+                ImmutableMap.<String, String>builder()
+                        .put("Author", "uyildiz")
+                        .put("Project", "TTPay")
+                        .put("URL", "https://pokus.com.tr/")
+                        .build());
     }
 
     public WebDriver getDriver() {

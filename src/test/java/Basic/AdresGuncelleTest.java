@@ -39,7 +39,7 @@ public class AdresGuncelleTest extends BaseClass {
                 .click_secButton()
                 .sendkeys_acikAdresTextBox()
                 .click_tamamveGuncelleButton()
-                .setOTP();
+                .setOTP_Basic();
     }
 
 }

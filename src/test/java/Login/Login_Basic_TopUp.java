@@ -33,6 +33,4 @@ public class Login_Basic_TopUp extends BaseClass {
                 .click_BekleyenIslemlerim();
 
     }
-
-
 }
