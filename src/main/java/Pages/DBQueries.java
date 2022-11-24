@@ -1,7 +1,6 @@
 package Pages;
 
 import Libraries.DBConnection;
-import Utils.Log;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.Attachment;
@@ -29,6 +28,15 @@ public class DBQueries {
     private static final String GET_VERIFIED_AMOUNT_SQL = "SELECT TOP (1) c.ACCOUNT_BALANCE FROM [TTPAY_TEST].[dbo].[ACC_USER] a, [TTPAY_TEST].[dbo].[EMN_MEMBER] b, [TTPAY_TEST].[dbo].[EMN_MEMBER_DETAIL_LOG] c WHERE a.USER_ID = b.USER_ID AND b.MEMBER_CODE = c.MEMBER_CODE AND a.ACTIVE_MSISDN = '905997654321' ORDER BY c.CREATED_DATE DESC";
     public static final String SET_SEMIVERIFIED_OTP_SQL;
     public static final String SET_BASIC_OTP_SQL;
+    public static final String SET_VERIFIED_OTP_SQL;
+
+    static {
+        try {
+            SET_VERIFIED_OTP_SQL = "SELECT top (1) [OTP] FROM [TTPAY_TEST].[dbo].[OTP_TRANSACTION] where MSISDN='90" + getString("msisdn") + "' ORDER BY CREATION_DATE DESC";
+        } catch (IOException | ParseException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     static {
         try {
@@ -50,40 +58,31 @@ public class DBQueries {
     public DBQueries(AndroidDriver<MobileElement> driver) {
     }
 
-    @Step("{method} {dbConn.ttpayDev2(sql)}")
-    public String bakiyeKontrol_verified() throws SQLException {
-        String sql = GET_VERIFIED_AMOUNT_SQL;
-        DBConnection dbConn = new DBConnection();
-        dbConn.ttpayDev2(sql);
-        Log.info(dbConn.ttpayDev2(sql));
-        return dbConn.ttpayDev2(sql);
-    }
-
     @Step("{method}")
-    public String bakiyeKontrol_semi() throws SQLException, IOException {
+    public DBQueries bakiyeKontrol_semi() throws SQLException, IOException {
         String sql = GET_SEMI_AMOUNT_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
         addStringAttachment(GET_SEMI_AMOUNT_SQL);
-        return dbConn.ttpayDev2(sql);
+        return this;
     }
 
     @Step("{method}")
-    public String bakiyeKontrol_Basic() throws SQLException, IOException {
+    public DBQueries bakiyeKontrol_Basic() throws SQLException, IOException {
         String sql = GET_BASIC_AMOUNT_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
         addStringAttachment(GET_BASIC_AMOUNT_SQL);
-        return dbConn.ttpayDev2(sql);
+        return this;
     }
 
     @Step("{method}")
-    public String bakiyeKontrol_Verified() throws SQLException, IOException {
+    public DBQueries bakiyeKontrol_Verified() throws SQLException, IOException {
         String sql = GET_VERIFIED_AMOUNT_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
         addStringAttachment(GET_VERIFIED_AMOUNT_SQL);
-        return dbConn.ttpayDev2(sql);
+        return this;
     }
 
     @Attachment(value = "Bakiye", type = "text/plain")
@@ -93,50 +92,49 @@ public class DBQueries {
     }
 
     @Step("{method}")
-    public static String bakiyeKontrol_basic() throws SQLException {
+    public DBQueries bakiyeKontrol_basic() throws SQLException {
 
         String sql = GET_BASIC_AMOUNT_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev(sql);
-        return dbConn.ttpayDev(sql);
+        return this;
     }
 
     @Step("{method}")
-    public static String otp_SMS_transaction_log() throws SQLException, FileNotFoundException {
+    public DBQueries otp_SMS_transaction_log() throws SQLException, FileNotFoundException {
         String sql = GET_OTP_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
         addStringAttachment(GET_OTP_SQL);
-        return dbConn.ttpayDev2(sql);
+        return this;
     }
 
     @Step("{method}")
-    public static String push_Notification_log() throws SQLException, FileNotFoundException {
+    public DBQueries push_Notification_log() throws SQLException, FileNotFoundException {
 
         String sql = GET_PN_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
         addStringAttachment(GET_PN_SQL);
-
-        return dbConn.ttpayDev2(sql);
+        return this;
     }
 
     @Step("{method}")
-    public static String total_Tax_Amount_verified() throws SQLException, FileNotFoundException {
+    public DBQueries total_Tax_Amount_verified() throws SQLException, FileNotFoundException {
         String sql = GET_TOTAL_TAX_AMOUNT_VERIFIED;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
         addStringAttachment(GET_TOTAL_TAX_AMOUNT_VERIFIED);
-        return dbConn.ttpayDev2(sql);
+        return this;
     }
 
     @Step("{method}")
-    public static String total_Tax_Amount_semi() throws SQLException, FileNotFoundException {
+    public DBQueries total_Tax_Amount_semi() throws SQLException, FileNotFoundException {
         String sql = GET_TOTAL_TAX_AMOUNT_SEMI;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
         addStringAttachment(GET_TOTAL_TAX_AMOUNT_SEMI);
-        return dbConn.ttpayDev2(sql);
+        return this;
     }
 
 

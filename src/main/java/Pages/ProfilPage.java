@@ -16,8 +16,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 import static Libraries.TestUtils.*;
-import static Pages.DBQueries.SET_BASIC_OTP_SQL;
-import static Pages.DBQueries.SET_SEMIVERIFIED_OTP_SQL;
+import static Pages.DBQueries.*;
 import static Pages.StringConstants.OTP_LOG_MESSAGE;
 
 public class ProfilPage extends BaseClass {
@@ -104,6 +103,67 @@ public class ProfilPage extends BaseClass {
     @Step("{method}")
     public ProfilPage click_gerigitButton() {
         clickElementBy(geriGit);
+        return this;
+    }
+
+    @Step("{method}")
+    public ProfilPage setOTP_Verified() {
+
+        boolean OTPMessageExists = driver.findElements(onayKoduText).size() != 0;
+
+        if (OTPMessageExists) {
+            try {
+                clickElementBy(clickOTPField);
+
+                String sql = SET_VERIFIED_OTP_SQL;
+                DBConnection dbConn = new DBConnection();
+
+                int num = Integer.parseInt(dbConn.ttpayDev(sql));
+                String number = String.valueOf(num);
+
+                for (int ix = 0; ix < 1; ix++) {
+
+                    String text = number;
+                    String[] separated = text.split("");
+
+                    for (String word : separated) {
+                        if (!word.trim().isEmpty()) {
+                        }
+                    }
+
+                    int jer = Character.digit(number.charAt(ix), 10);
+                    MobileElement testDB = driver.findElementByXPath("//*[@resource-id='tr.com.turktelekom.pokus.test:id/et_otp_textfield_text']");
+                    testDB.sendKeys(separated[0]);
+
+                    MobileElement testDB1 = driver.findElementByXPath("(//*[@resource-id='tr.com.turktelekom.pokus.test:id/et_otp_textfield_text'])[2]");
+                    testDB1.sendKeys(separated[1]);
+
+
+                    MobileElement testDB2 = driver.findElementByXPath("(//*[@resource-id='tr.com.turktelekom.pokus.test:id/et_otp_textfield_text'])[3]");
+                    testDB2.sendKeys(separated[2]);
+
+
+                    MobileElement testDB3 = driver.findElementByXPath("(//*[@resource-id='tr.com.turktelekom.pokus.test:id/et_otp_textfield_text'])[4]");
+                    testDB3.sendKeys(separated[3]);
+
+
+                    MobileElement testDB4 = driver.findElementByXPath("(//*[@resource-id='tr.com.turktelekom.pokus.test:id/et_otp_textfield_text'])[5]");
+                    testDB4.sendKeys(separated[4]);
+
+
+                    MobileElement testDB5 = driver.findElementByXPath("(//*[@resource-id='tr.com.turktelekom.pokus.test:id/et_otp_textfield_text'])[6]");
+                    testDB5.sendKeys(separated[5]);
+
+                }
+                clickElementBy(gonderButonu);
+            } catch (NoSuchElementException NSE) {
+                Log.info(OTP_LOG_MESSAGE);
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        } else {
+            Log.info(OTP_LOG_MESSAGE);
+        }
         return this;
     }
 
