@@ -25,9 +25,10 @@ public class BankadanParaYukleTest extends BaseClass {
         loginPage
                 .semiVerifiedlogin();
         homePage.click_YukleButonu()
-                .click_KrediBankaHesabimdan();
+                .click_KrediBankaHesabimdan()
+                .click_TamamButtonBefore()
+                .click_TamamButtonAfter();
 
-        testAssertFunctions(hataMesaji_BANKAHESABI, homePage.get_ConfirmationDialogText());
     }
 
 }

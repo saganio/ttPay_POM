@@ -17,9 +17,9 @@ import static Pages.StringConstants.yeniKayitNo;
 public class RehberimVeBankHspPage extends BaseClass {
 
     private final By ibanSekmesi = By.id("radioButtonContacts2");
-    private final By plusButton = By.id("ibSecondButton");
+    private final By plusButton = By.id("tr.com.turktelekom.pokus.test:id/ibSecondButton");
     private final By searchButton = By.id("ibFirstButton");
-    private final By editButton = By.id("ibFirstButton");
+    private final By editButton = By.id("tr.com.turktelekom.pokus.test:id/ibFirstButton");
     private final By searchBar = By.id("iSearchField");
     private final By closeSearchBar = By.id("iSearchCloseBtn");
     private final By yeniKisiEkle = By.xpath("//android.widget.TextView[@text='Yeni Kişi Ekle']");
@@ -55,6 +55,7 @@ public class RehberimVeBankHspPage extends BaseClass {
     private final By IBANSilButton = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ImageButton");
     private final By rehberdenKisiSec = By.xpath("(//android.widget.ImageView[@resource-id='tr.com.turktelekom.pokus.test:id/imgNoAvatar'])[1]");
     private final By kisiSectiktenSonraDevamETButton = By.id("abtn_activity_want_money_continue");
+    private final By semiIBANHataText = By.id("abtn_activity_want_money_continue");
 
 
     //Constructor
@@ -73,7 +74,6 @@ public class RehberimVeBankHspPage extends BaseClass {
     @Step("{method}")
     public RehberimVeBankHspPage click_plusButton() {
         clickElementBy(plusButton);
-        Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 
@@ -237,6 +237,9 @@ public class RehberimVeBankHspPage extends BaseClass {
         return driver.findElement(IBANText).getText();
     }
 
+    public String getErrorText_Semi() {
+        return driver.findElement(semiIBANHataText).getText();
+    }
     @Step("{method}")
     public String getDavetEtText() {
         return driver.findElement(davetEtTextAssert).getText();
@@ -265,6 +268,12 @@ public class RehberimVeBankHspPage extends BaseClass {
         return this;
     }
 
+    @Step("{method}")
+    public RehberimVeBankHspPage IbanBilgileriniDoldur_Semi() throws IOException, ParseException {
+        clearAndfillInFieldWith(aliciIBAN, getString("yanlisIban"));
+        clickElementBy(IBANKaydetButton);
+        return this;
+    }
 
     @Step("{method}")
     public RehberimVeBankHspPage IBANKaydedilenKisiyiSec() {

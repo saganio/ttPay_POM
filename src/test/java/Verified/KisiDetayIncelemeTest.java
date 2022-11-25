@@ -28,7 +28,6 @@ public class KisiDetayIncelemeTest extends BaseClass {
 
         leftPanelPage
                 .click_Profil().wait2Sec().goBack()
-                .click_hesabiniOnayla().wait2Sec().goBack()
                 .click_rehberimVeBankaHesaplarim().wait2Sec().goBack()
                 .click_pokusKartEkleOlustur().wait2Sec().goBack()
                 .click_formVeSozlesmeler().wait2Sec().goBack()

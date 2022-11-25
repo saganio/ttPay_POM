@@ -25,7 +25,8 @@ public class ParaGonderTest extends BaseClass {
                 .semiVerifiedlogin();
 
         homePage
-                .click_ParaGonderButonu();
+                .click_ParaGonderButonu()
+                .click_KisiyeSecenegi();
 
         testAssertFunctions(hataMesaji_PARAGONDER, homePage.get_ConfirmationDialogText());
 

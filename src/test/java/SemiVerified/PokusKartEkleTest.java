@@ -30,7 +30,6 @@ public class PokusKartEkleTest extends BaseClass {
                 .click_pokusKartEkleOlustur()
                 .click_pokusKartiniEkle();
 
-        testAssertFunctions(POKUSKART_KAYDET_TEXT, kartlarimPage.getHataMesajiText());
     }
 
 }

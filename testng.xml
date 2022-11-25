@@ -5,7 +5,7 @@
 
     <test verbose="1" preserve-order="false" name="ttPay_POM">
         <packages>
-            <package name="Basic.*"/>
+            <package name="SemiVerified.*"/>
         </packages>
     </test>
 

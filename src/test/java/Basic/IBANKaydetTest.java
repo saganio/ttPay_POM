@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 import static Libraries.TestUtils.testAssertFunctions;
-import static Pages.StringConstants.IBAN_KAYDETME_TEXT;
+import static Pages.StringConstants.SEMI_IBAN_KAYDETME_TEXT;
 import static Pages.StringConstants.STEP_MESSAGE;
 
 public class IBANKaydetTest extends BaseClass {
@@ -29,9 +29,10 @@ public class IBANKaydetTest extends BaseClass {
                 .click_rehberimVeBankaHesaplarim();
         RehberimVeBankaHesaplarimPage
                 .click_IbanSekmesi()
-                .click_plusButton();
+                .click_plusButton()
+                .IbanBilgileriniDoldur_Semi();
 
-        testAssertFunctions(IBAN_KAYDETME_TEXT, RehberimVeBankaHesaplarimPage.getErrorText());
+        testAssertFunctions(SEMI_IBAN_KAYDETME_TEXT, RehberimVeBankaHesaplarimPage.getErrorText_Semi());
 
         RehberimVeBankaHesaplarimPage
                 .click_vazgecButonuDialog();

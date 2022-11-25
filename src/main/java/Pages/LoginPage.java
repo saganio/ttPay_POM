@@ -161,11 +161,7 @@ public class LoginPage extends BaseClass {
         setUsername(getString("msisdn"));
         setPassword(getString("pass1"));
 
-        boolean otpText = driver.findElements(By.xpath("//*[@text='Farklı bir cihazdan oturum açtığınız için cep telefonu numaranızı doğrulamanız gerekmektedir.']")).size() > 0;
-
-        if (otpText) {
-            System.out.println("Giriş yapıldı.");
-        } else if (!otpText) {
+        if (getTextOfOTPMessage().equals(girisOncesiOTPText)) {
             try {
                 clickElementBy(acceptOTPMessage);
                 clickElementBy(clickOTPField);

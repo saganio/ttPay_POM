@@ -130,8 +130,7 @@ public class HomePage extends BaseClass {
 
     @Step("{method}")
     public HomePage click_TamamButtonAfter() {
-        String getText = driver.findElement(bankaHesabindanYukle_tamamButonu2).getText();
-        swipeToElement(getText);
+        swipeToElement("TAMAM");
         clickElementBy(bankaHesabindanYukle_tamamButonu2);
         return this;
     }
