@@ -1,0 +1,1321 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 76, Failures: 35, Errors: 0, Skipped: 0, Time elapsed: 3,112.517 sec <<< FAILURE!
+KisiAdiGuncelle(Basic.KisiAdiGuncelleTest)  Time elapsed: 21.921 sec  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: The element 'By.id: ibFirstButton' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: d2eb4b3d-8843-42bd-be05-ba9cdeb71655
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.RehberimVeBankHspPage.click_Duzenle(RehberimVeBankHspPage.java:100)
+	at Basic.KisiAdiGuncelleTest.KisiAdiGuncelle(KisiAdiGuncelleTest.java:35)
+
+KisiDetayInceleme(Basic.KisiDetayIncelemeTest)  Time elapsed: 33.823 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 461a4bf8-bd41-465d-8904-03b30179a115
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Hesabını Onayla']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LeftPanelPage.click_hesabiniOnayla(LeftPanelPage.java:40)
+	at Basic.KisiDetayIncelemeTest.KisiDetayInceleme(KisiDetayIncelemeTest.java:31)
+
+LoginHataliParola(Login.LoginHataliParolaTest)  Time elapsed: 25.712 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 9cf1acf9-ffa9-47da-b189-d3c6ec46c726
+*** Element info: {Using=id, value=tv_information_dialog_message}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.getTextFromElement(TestUtils.java:50)
+	at Pages.LoginPage.getTextOfOTPMessage(LoginPage.java:64)
+	at Pages.LoginPage.login(LoginPage.java:73)
+	at Login.LoginHataliParolaTest.LoginHataliParola(LoginHataliParolaTest.java:34)
+
+Register(Register.RegisterTest)  Time elapsed: 24.826 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: e6ad98a8-8046-487b-bcf6-098787a93b8d
+*** Element info: {Using=id, value=abtn_register_activation_sms_fragment_continue}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.RegisterPage.click_devamEtButtonAfterOTP(RegisterPage.java:65)
+	at Register.RegisterTest.Register(RegisterTest.java:29)
+
+RegisterYanlisOTP(Register.RegisterYanlisOTPTest)  Time elapsed: 25.11 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: c3921cad-b7f8-410b-85c4-fa990fe02305
+*** Element info: {Using=id, value=abtn_register_activation_sms_fragment_continue}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.RegisterPage.click_devamEtButtonAfterOTP(RegisterPage.java:65)
+	at Register.RegisterYanlisOTPTest.RegisterYanlisOTP(RegisterYanlisOTPTest.java:28)
+
+BankaHesabindanParaYukle(SemiVerified.BankadanParaYukleTest)  Time elapsed: 25.861 sec  <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at Pages.LoginPage.semiVerifiedlogin(LoginPage.java:143)
+	at SemiVerified.BankadanParaYukleTest.BankaHesabindanParaYukle(BankadanParaYukleTest.java:26)
+
+GrupOlustur(SemiVerified.GrupOlusturTest)  Time elapsed: 28.294 sec  <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at Pages.LoginPage.semiVerifiedlogin(LoginPage.java:143)
+	at SemiVerified.GrupOlusturTest.GrupOlustur(GrupOlusturTest.java:25)
+
+IBANKaydet(SemiVerified.IBANKaydetTest)  Time elapsed: 49.978 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 644a3e22-8a04-41e5-950b-6a376df0f911
+*** Element info: {Using=id, value=tv_confirmation_dialog_message}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Pages.RehberimVeBankHspPage.getErrorText(RehberimVeBankHspPage.java:237)
+	at SemiVerified.IBANKaydetTest.IBANKaydet(IBANKaydetTest.java:35)
+
+KisiDetayInceleme(SemiVerified.KisiDetayIncelemeTest)  Time elapsed: 54.649 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 1087e9a0-9e4d-4e48-bda3-ce3ec516d74f
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Hesabını Onayla']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LeftPanelPage.click_hesabiniOnayla(LeftPanelPage.java:40)
+	at SemiVerified.KisiDetayIncelemeTest.KisiDetayInceleme(KisiDetayIncelemeTest.java:31)
+
+LoginAndClickParaGonder(SemiVerified.ParaGonderTest)  Time elapsed: 50.449 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 05fcf295-16fa-44a4-8de3-c7cc223a7a1b
+*** Element info: {Using=id, value=tv_confirmation_dialog_message}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.getTextFromElement(TestUtils.java:50)
+	at Pages.HomePage.get_ConfirmationDialogText(HomePage.java:91)
+	at SemiVerified.ParaGonderTest.LoginAndClickParaGonder(ParaGonderTest.java:30)
+
+ParaIste(SemiVerified.ParaIsteTest)  Time elapsed: 26.21 sec  <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at Pages.LoginPage.semiVerifiedlogin(LoginPage.java:143)
+	at SemiVerified.ParaIsteTest.ParaIste(ParaIsteTest.java:30)
+
+PokusKartEkle(SemiVerified.PokusKartEkleTest)  Time elapsed: 56.344 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: adfc295d-e35a-4355-9cf0-ade122d46826
+*** Element info: {Using=id, value=tv_confirmation_dialog_message}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Pages.KartlarimPage.getHataMesajiText(KartlarimPage.java:70)
+	at SemiVerified.PokusKartEkleTest.PokusKartEkle(PokusKartEkleTest.java:33)
+
+SifreGuncelle(SemiVerified.SifreGuncelleTest)  Time elapsed: 26.122 sec  <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at Pages.LoginPage.semiVerifiedlogin(LoginPage.java:143)
+	at SemiVerified.SifreGuncelleTest.SifreGuncelle(SifreGuncelleTest.java:27)
+
+AdresGuncelle(Verified.AdresGuncelleTest)  Time elapsed: 20.571 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: c1404677-d8d7-43b3-b165-680d63e9ba8d
+*** Element info: {Using=id, value=ibBackButton}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LoginPage.click_HamburgerMenu(LoginPage.java:211)
+	at Verified.AdresGuncelleTest.AdresGuncelle(AdresGuncelleTest.java:29)
+
+BankaHesabindanParaYukle(Verified.BankadanParaYukleTest)  Time elapsed: 20.555 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 8aaffd1d-8df0-4d20-984f-8fcebe407ae4
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.ImageButton}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.HomePage.click_YukleButonu(HomePage.java:46)
+	at Verified.BankadanParaYukleTest.BankaHesabindanParaYukle(BankadanParaYukleTest.java:25)
+
+FaturaOde(Verified.FaturaOdeTest)  Time elapsed: 20.506 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: ef717bee-1854-466f-9775-39a5ff482c7d
+*** Element info: {Using=id, value=ibPayment}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.HomePage.click_OdemeYapButonu(HomePage.java:66)
+	at Verified.FaturaOdeTest.FaturaOde(FaturaOdeTest.java:34)
+
+GrubaParaGonder(Verified.GrubaParaGonderTest)  Time elapsed: 19.663 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 7d379d79-28c7-4f64-8ba6-11bd65084973
+*** Element info: {Using=id, value=ibBackButton}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LoginPage.click_HamburgerMenu(LoginPage.java:211)
+	at Verified.GrubaParaGonderTest.GrubaParaGonder(GrubaParaGonderTest.java:30)
+
+GrupOlustur(Verified.GrupOlusturTest)  Time elapsed: 20.448 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: f7c73763-7600-405c-982b-258de691824f
+*** Element info: {Using=id, value=ibBackButton}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LoginPage.click_HamburgerMenu(LoginPage.java:211)
+	at Verified.GrupOlusturTest.GrupOlustur(GrupOlusturTest.java:26)
+
+GruptanParaIste(Verified.GruptanParaIsteTest)  Time elapsed: 19.026 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 73fd873d-9bb0-4f67-b1e6-f88f819e1ddf
+*** Element info: {Using=id, value=ibBackButton}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LoginPage.click_HamburgerMenu(LoginPage.java:211)
+	at Verified.GruptanParaIsteTest.GruptanParaIste(GruptanParaIsteTest.java:30)
+
+IBANKaydet(Verified.IBANKaydetParaGonderTest)  Time elapsed: 20.12 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 4fdf715f-1a88-4cd3-843e-b2e07c3d8ba2
+*** Element info: {Using=id, value=ibBackButton}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LoginPage.click_HamburgerMenu(LoginPage.java:211)
+	at Verified.IBANKaydetParaGonderTest.IBANKaydet(IBANKaydetParaGonderTest.java:29)
+
+Step2(Verified.KampanyalarTest)  Time elapsed: 15.753 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 252c9769-3f36-4c0b-ae3e-1640c38777f0
+*** Element info: {Using=xpath, value=//android.widget.FrameLayout[@content-desc="Kampanyalar"]/android.view.ViewGroup/android.widget.TextView}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.HomePage.click_Kampanyalar(HomePage.java:73)
+	at Verified.KampanyalarTest.Step2(KampanyalarTest.java:34)
+
+KisiAdiGuncelle(Verified.KisiAdiGuncelleTest)  Time elapsed: 20.042 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 6ed9a9d6-30c1-4ef3-932f-75514c2fccc0
+*** Element info: {Using=id, value=ibBackButton}
+	at jdk.internal.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LoginPage.click_HamburgerMenu(LoginPage.java:211)
+	at Verified.KisiAdiGuncelleTest.KisiAdiGuncelle(KisiAdiGuncelleTest.java:28)
+
+KisiDavetEt(Verified.KisiDavetEtTest)  Time elapsed: 20.231 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: da30175e-3671-4626-8860-917941b035ca
+*** Element info: {Using=id, value=ibBackButton}
+	at jdk.internal.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LoginPage.click_HamburgerMenu(LoginPage.java:211)
+	at Verified.KisiDavetEtTest.KisiDavetEt(KisiDavetEtTest.java:30)
+
+KayitliKisidenParaIste(Verified.KisidenParaIsteTest)  Time elapsed: 20.302 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: b986ee02-d5d2-481e-a5c5-482a39e6753e
+*** Element info: {Using=id, value=ibBackButton}
+	at jdk.internal.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LoginPage.click_HamburgerMenu(LoginPage.java:211)
+	at Verified.KisidenParaIsteTest.KayitliKisidenParaIste(KisidenParaIsteTest.java:25)
+
+KisiDetayInceleme(Verified.KisiDetayIncelemeTest)  Time elapsed: 20.319 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: a296d671-b2df-47d9-9737-e8aeb26be52b
+*** Element info: {Using=id, value=ibBackButton}
+	at jdk.internal.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LoginPage.click_HamburgerMenu(LoginPage.java:211)
+	at Verified.KisiDetayIncelemeTest.KisiDetayInceleme(KisiDetayIncelemeTest.java:27)
+
+KisiOlustur(Verified.KisiOlusturTest)  Time elapsed: 20.095 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 359d201a-140f-4f10-9de0-4004b789fdf2
+*** Element info: {Using=id, value=ibBackButton}
+	at jdk.internal.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LoginPage.click_HamburgerMenu(LoginPage.java:211)
+	at Verified.KisiOlusturTest.KisiOlustur(KisiOlusturTest.java:26)
+
+KayitliKisiyeParaGonder(Verified.KisiyeParaGonderTest)  Time elapsed: 20.261 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: becff76e-c50b-4418-ad9f-f41485707447
+*** Element info: {Using=id, value=ibBackButton}
+	at jdk.internal.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LoginPage.click_HamburgerMenu(LoginPage.java:211)
+	at Verified.KisiyeParaGonderTest.KayitliKisiyeParaGonder(KisiyeParaGonderTest.java:25)
+
+KrediBankaKartiEkle(Verified.KrediBankaKartiEkleTest)  Time elapsed: 19.899 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 67eecea2-4e4d-481e-ad3f-a7a440ad2f65
+*** Element info: {Using=id, value=ibFirstButton}
+	at jdk.internal.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.HomePage.click_Kartlarim(HomePage.java:85)
+	at Verified.KrediBankaKartiEkleTest.KrediBankaKartiEkle(KrediBankaKartiEkleTest.java:28)
+
+LoginAndClickParaGonder(Verified.ParaGonderTest)  Time elapsed: 20.525 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: d689525a-8778-40df-91ca-e2dae6669f15
+*** Element info: {Using=id, value=ibtn_user_home_fragment_send_money}
+	at jdk.internal.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.HomePage.click_ParaGonderButonu(HomePage.java:52)
+	at Verified.ParaGonderTest.LoginAndClickParaGonder(ParaGonderTest.java:27)
+
+KayitliKisidenParaIste(Verified.ParaIsteKayitliKisidenTest)  Time elapsed: 20.466 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 3b1364f4-c473-4cea-9851-f80b3ae336a9
+*** Element info: {Using=id, value=ibBackButton}
+	at jdk.internal.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LoginPage.click_HamburgerMenu(LoginPage.java:211)
+	at Verified.ParaIsteKayitliKisidenTest.KayitliKisidenParaIste(ParaIsteKayitliKisidenTest.java:28)
+
+ParaIste(Verified.ParaIsteTest)  Time elapsed: 20.692 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 8e139ddc-087d-43d6-9e96-d9a40925d81e
+*** Element info: {Using=id, value=ibtn_user_home_fragment_request_money}
+	at jdk.internal.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.HomePage.click_ParaIsteButonu(HomePage.java:59)
+	at Verified.ParaIsteTest.ParaIste(ParaIsteTest.java:31)
+
+PokusKartEkle(Verified.PokusKartEkleTest)  Time elapsed: 20.309 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 613bdc0a-39ba-4402-add1-9c7a7686e0b3
+*** Element info: {Using=id, value=ibFirstButton}
+	at jdk.internal.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.HomePage.click_Kartlarim(HomePage.java:85)
+	at Verified.PokusKartEkleTest.PokusKartEkle(PokusKartEkleTest.java:28)
+
+SifreGuncelle(Verified.SifreGuncelleTest)  Time elapsed: 20.487 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: e8dcc58e-1d46-4322-816a-fb20854f3ea5
+*** Element info: {Using=id, value=ibBackButton}
+	at jdk.internal.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LoginPage.click_HamburgerMenu(LoginPage.java:211)
+	at Verified.SifreGuncelleTest.SifreGuncelle(SifreGuncelleTest.java:28)
+
+YeniKisiOlusturVeParaGonder(Verified.YeniKisiOlusturduktanSonraParaGonderTest)  Time elapsed: 20.35 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: aa0b0ce5-83cc-4328-83a7-951f288f56ac
+*** Element info: {Using=id, value=ibBackButton}
+	at jdk.internal.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LoginPage.click_HamburgerMenu(LoginPage.java:211)
+	at Verified.YeniKisiOlusturduktanSonraParaGonderTest.YeniKisiOlusturVeParaGonder(YeniKisiOlusturduktanSonraParaGonderTest.java:27)
+
+YeniKisiOlusturVeParaGonder(Verified.YeniKisiOlusturduktanSonraParaIsteTest)  Time elapsed: 20.182 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: acf96624-4e71-4f68-9321-8816732b450a
+*** Element info: {Using=id, value=ibBackButton}
+	at jdk.internal.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Libraries.TestUtils.tryFindElement(TestUtils.java:45)
+	at Libraries.TestUtils.clickElementBy(TestUtils.java:36)
+	at Pages.LoginPage.click_HamburgerMenu(LoginPage.java:211)
+	at Verified.YeniKisiOlusturduktanSonraParaIsteTest.YeniKisiOlusturVeParaGonder(YeniKisiOlusturduktanSonraParaIsteTest.java:28)
+

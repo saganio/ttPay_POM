@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="SemiVerified.PokusKartEkleTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="PokusKartEkle"/>
+        </methods>
+      </class> <!-- SemiVerified.PokusKartEkleTest -->
+      <class name="Verified.SifreGuncelleTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="SifreGuncelle"/>
+        </methods>
+      </class> <!-- Verified.SifreGuncelleTest -->
+      <class name="Verified.YeniKisiOlusturduktanSonraParaIsteTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="YeniKisiOlusturVeParaGonder"/>
+        </methods>
+      </class> <!-- Verified.YeniKisiOlusturduktanSonraParaIsteTest -->
+      <class name="Verified.YeniKisiOlusturduktanSonraParaGonderTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="YeniKisiOlusturVeParaGonder"/>
+        </methods>
+      </class> <!-- Verified.YeniKisiOlusturduktanSonraParaGonderTest -->
+      <class name="Verified.ParaIsteTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="ParaIste"/>
+        </methods>
+      </class> <!-- Verified.ParaIsteTest -->
+      <class name="Verified.GrubaParaGonderTest">
+        <methods>
+          <include name="GrubaParaGonder"/>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+        </methods>
+      </class> <!-- Verified.GrubaParaGonderTest -->
+      <class name="SemiVerified.SifreGuncelleTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="SifreGuncelle"/>
+        </methods>
+      </class> <!-- SemiVerified.SifreGuncelleTest -->
+      <class name="Verified.ParaGonderTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="LoginAndClickParaGonder"/>
+          <include name="stopAppiumAndDriver"/>
+        </methods>
+      </class> <!-- Verified.ParaGonderTest -->
+      <class name="SemiVerified.KisiDetayIncelemeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="KisiDetayInceleme"/>
+          <include name="stopAppiumAndDriver"/>
+        </methods>
+      </class> <!-- SemiVerified.KisiDetayIncelemeTest -->
+      <class name="Verified.KisiDavetEtTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="KisiDavetEt"/>
+        </methods>
+      </class> <!-- Verified.KisiDavetEtTest -->
+      <class name="SemiVerified.BankadanParaYukleTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="BankaHesabindanParaYukle"/>
+        </methods>
+      </class> <!-- SemiVerified.BankadanParaYukleTest -->
+      <class name="Verified.KisiOlusturTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="KisiOlustur"/>
+          <include name="stopAppiumAndDriver"/>
+        </methods>
+      </class> <!-- Verified.KisiOlusturTest -->
+      <class name="Verified.GruptanParaIsteTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="GruptanParaIste"/>
+        </methods>
+      </class> <!-- Verified.GruptanParaIsteTest -->
+      <class name="Verified.IBANKaydetParaGonderTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="IBANKaydet"/>
+        </methods>
+      </class> <!-- Verified.IBANKaydetParaGonderTest -->
+      <class name="SemiVerified.ParaGonderTest">
+        <methods>
+          <include name="LoginAndClickParaGonder"/>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+        </methods>
+      </class> <!-- SemiVerified.ParaGonderTest -->
+      <class name="Verified.KisidenParaIsteTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="KayitliKisidenParaIste"/>
+        </methods>
+      </class> <!-- Verified.KisidenParaIsteTest -->
+      <class name="Verified.PokusKartEkleTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="PokusKartEkle"/>
+        </methods>
+      </class> <!-- Verified.PokusKartEkleTest -->
+      <class name="Verified.KisiyeParaGonderTest">
+        <methods>
+          <include name="KayitliKisiyeParaGonder"/>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+        </methods>
+      </class> <!-- Verified.KisiyeParaGonderTest -->
+      <class name="Verified.KampanyalarTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="Step2"/>
+        </methods>
+      </class> <!-- Verified.KampanyalarTest -->
+      <class name="Register.RegisterYanlisOTPTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="RegisterYanlisOTP"/>
+        </methods>
+      </class> <!-- Register.RegisterYanlisOTPTest -->
+      <class name="Register.RegisterTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="Register"/>
+        </methods>
+      </class> <!-- Register.RegisterTest -->
+      <class name="Login.LoginHataliParolaTest">
+        <methods>
+          <include name="LoginHataliParola"/>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+        </methods>
+      </class> <!-- Login.LoginHataliParolaTest -->
+      <class name="SemiVerified.ParaIsteTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="ParaIste"/>
+        </methods>
+      </class> <!-- SemiVerified.ParaIsteTest -->
+      <class name="Verified.KisiDetayIncelemeTest">
+        <methods>
+          <include name="KisiDetayInceleme"/>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+        </methods>
+      </class> <!-- Verified.KisiDetayIncelemeTest -->
+      <class name="SemiVerified.GrupOlusturTest">
+        <methods>
+          <include name="GrupOlustur"/>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+        </methods>
+      </class> <!-- SemiVerified.GrupOlusturTest -->
+      <class name="Verified.BankadanParaYukleTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="BankaHesabindanParaYukle"/>
+        </methods>
+      </class> <!-- Verified.BankadanParaYukleTest -->
+      <class name="Verified.AdresGuncelleTest">
+        <methods>
+          <include name="AdresGuncelle"/>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+        </methods>
+      </class> <!-- Verified.AdresGuncelleTest -->
+      <class name="SemiVerified.IBANKaydetTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="IBANKaydet"/>
+        </methods>
+      </class> <!-- SemiVerified.IBANKaydetTest -->
+      <class name="Verified.KrediBankaKartiEkleTest">
+        <methods>
+          <include name="KrediBankaKartiEkle"/>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+        </methods>
+      </class> <!-- Verified.KrediBankaKartiEkleTest -->
+      <class name="Basic.KisiDetayIncelemeTest">
+        <methods>
+          <include name="KisiDetayInceleme"/>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+        </methods>
+      </class> <!-- Basic.KisiDetayIncelemeTest -->
+      <class name="Basic.KisiAdiGuncelleTest">
+        <methods>
+          <include name="KisiAdiGuncelle"/>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+        </methods>
+      </class> <!-- Basic.KisiAdiGuncelleTest -->
+      <class name="Verified.GrupOlusturTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="GrupOlustur"/>
+        </methods>
+      </class> <!-- Verified.GrupOlusturTest -->
+      <class name="Verified.KisiAdiGuncelleTest">
+        <methods>
+          <include name="KisiAdiGuncelle"/>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+        </methods>
+      </class> <!-- Verified.KisiAdiGuncelleTest -->
+      <class name="Verified.FaturaOdeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+          <include name="FaturaOde"/>
+        </methods>
+      </class> <!-- Verified.FaturaOdeTest -->
+      <class name="Verified.ParaIsteKayitliKisidenTest">
+        <methods>
+          <include name="KayitliKisidenParaIste"/>
+          <include name="setUp"/>
+          <include name="stopAppiumAndDriver"/>
+        </methods>
+      </class> <!-- Verified.ParaIsteKayitliKisidenTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
