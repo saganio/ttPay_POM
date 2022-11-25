@@ -1,1 +1,153 @@
-{"uuid":"c5883e9b-e9ae-488e-874a-56298a7e2a96","historyId":"d50f7460d030b85ed49b6633163fae5b","fullName":"Login.LoginLogOutTest.LoginAndLogOut","labels":[{"name":"package","value":"Login.LoginLogOutTest"},{"name":"testClass","value":"Login.LoginLogOutTest"},{"name":"testMethod","value":"LoginAndLogOut"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"ttPay_POM"},{"name":"subSuite","value":"Login.LoginLogOutTest"},{"name":"host","value":"Ugur-MacBook-Pro.local"},{"name":"thread","value":"12460@Ugur-MacBook-Pro.local.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"},{"name":"severity","value":"minor"}],"links":[],"name":"LoginAndLogOut","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","description":"Kullancı Adı ve Şifre ile giriş yapma senaryosu.","steps":[{"name":"login","status":"passed","stage":"finished","steps":[{"name":"setUsername","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"username","value":"5997654321"}],"start":1668861487254,"stop":1668861488291},{"name":"setPassword","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"password","value":"135791"}],"start":1668861488300,"stop":1668861489674},{"name":"getTextOfOTPMessage","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1668861489676,"stop":1668861491030}],"attachments":[],"parameters":[],"start":1668861487224,"stop":1668861497487},{"name":"click_HamburgerMenu","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1668861497491,"stop":1668861499868},{"name":"click_cikisYap","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1668861499872,"stop":1668861500668},{"name":"click_EvetDialog","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1668861500670,"stop":1668861501316}],"attachments":[{"name":"Screenshot","source":"6b2a029b-cf56-428e-afe7-dccfeb4e03b0-attachment"}],"parameters":[],"start":1668861487121,"stop":1668861502592}
+{
+  "uuid": "c5883e9b-e9ae-488e-874a-56298a7e2a96",
+  "historyId": "d50f7460d030b85ed49b6633163fae5b",
+  "fullName": "Login.LoginLogOutTest.LoginAndLogOut",
+  "labels": [
+    {
+      "name": "package",
+      "value": "Login.LoginLogOutTest"
+    },
+    {
+      "name": "testClass",
+      "value": "Login.LoginLogOutTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "LoginAndLogOut"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "ttPay_POM"
+    },
+    {
+      "name": "subSuite",
+      "value": "Login.LoginLogOutTest"
+    },
+    {
+      "name": "host",
+      "value": "Ugur-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "12460@Ugur-MacBook-Pro.local.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    }
+  ],
+  "links": [],
+  "name": "LoginAndLogOut",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Kullancı Adı ve Şifre ile giriş yapma senaryosu.",
+  "steps": [
+    {
+      "name": "login",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "setUsername",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "username",
+              "value": "5997654321"
+            }
+          ],
+          "start": 1668861487254,
+          "stop": 1668861488291
+        },
+        {
+          "name": "setPassword",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "password",
+              "value": "135791"
+            }
+          ],
+          "start": 1668861488300,
+          "stop": 1668861489674
+        },
+        {
+          "name": "getTextOfOTPMessage",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1668861489676,
+          "stop": 1668861491030
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1668861487224,
+      "stop": 1668861497487
+    },
+    {
+      "name": "click_HamburgerMenu",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1668861497491,
+      "stop": 1668861499868
+    },
+    {
+      "name": "click_cikisYap",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1668861499872,
+      "stop": 1668861500668
+    },
+    {
+      "name": "click_EvetDialog",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1668861500670,
+      "stop": 1668861501316
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Screenshot",
+      "source": "6b2a029b-cf56-428e-afe7-dccfeb4e03b0-attachment"
+    }
+  ],
+  "parameters": [],
+  "start": 1668861487121,
+  "stop": 1668861502592
+}

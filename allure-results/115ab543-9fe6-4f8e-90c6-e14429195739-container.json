@@ -1,1 +1,12 @@
-{"uuid":"115ab543-9fe6-4f8e-90c6-e14429195739","name":"BasicT.KampanyalarTest","children":["7fa4a528-58f2-4793-b407-525db9926ad6","ab2493e2-e90d-4078-89f8-64e8a1c07ac0"],"befores":[],"afters":[],"start":1668880512355,"stop":1668880530855}
+{
+  "uuid": "115ab543-9fe6-4f8e-90c6-e14429195739",
+  "name": "BasicT.KampanyalarTest",
+  "children": [
+    "7fa4a528-58f2-4793-b407-525db9926ad6",
+    "ab2493e2-e90d-4078-89f8-64e8a1c07ac0"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1668880512355,
+  "stop": 1668880530855
+}

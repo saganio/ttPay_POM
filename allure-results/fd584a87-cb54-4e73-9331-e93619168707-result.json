@@ -1,1 +1,173 @@
-{"uuid":"fd584a87-cb54-4e73-9331-e93619168707","historyId":"110df3667d1071c93e322f4179cfd36b","fullName":"Basic.KisiyeParaGonderTest.KayitliKisiyeParaGonder","labels":[{"name":"package","value":"Basic.KisiyeParaGonderTest"},{"name":"testClass","value":"Basic.KisiyeParaGonderTest"},{"name":"testMethod","value":"KayitliKisiyeParaGonder"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"ttPay_POM"},{"name":"subSuite","value":"Basic.KisiyeParaGonderTest"},{"name":"host","value":"Ugur-MacBook-Pro.local"},{"name":"thread","value":"54788@Ugur-MacBook-Pro.local.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"},{"name":"severity","value":"minor"}],"links":[],"name":"KayitliKisiyeParaGonder","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","description":"Para Gönderme senaryosu","steps":[{"name":"login","status":"passed","stage":"finished","steps":[{"name":"setUsername 5550000012","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"username","value":"5550000012"}],"start":1669061438907,"stop":1669061440367},{"name":"setPassword 135791","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"password","value":"135791"}],"start":1669061440371,"stop":1669061441678},{"name":"getTextOfOTPMessage","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669061441680,"stop":1669061442914}],"attachments":[],"parameters":[],"start":1669061438864,"stop":1669061449528},{"name":"click_HamburgerMenu","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669061449532,"stop":1669061451985},{"name":"click_rehberimVeBankaHesaplarim","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669061451988,"stop":1669061452106},{"name":"click_grubaEklemekicinKisiSec","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669061452109,"stop":1669061457099},{"name":"click_paraGonderButonu","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669061457103,"stop":1669061457682},{"name":"get_ConfirmationDialogText","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669061457684,"stop":1669061458277}],"attachments":[{"name":"Screenshot","source":"2c3503b8-95ca-469c-8bba-7172938b7016-attachment"}],"parameters":[],"start":1669061438388,"stop":1669061459347}
+{
+  "uuid": "fd584a87-cb54-4e73-9331-e93619168707",
+  "historyId": "110df3667d1071c93e322f4179cfd36b",
+  "fullName": "Basic.KisiyeParaGonderTest.KayitliKisiyeParaGonder",
+  "labels": [
+    {
+      "name": "package",
+      "value": "Basic.KisiyeParaGonderTest"
+    },
+    {
+      "name": "testClass",
+      "value": "Basic.KisiyeParaGonderTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "KayitliKisiyeParaGonder"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "ttPay_POM"
+    },
+    {
+      "name": "subSuite",
+      "value": "Basic.KisiyeParaGonderTest"
+    },
+    {
+      "name": "host",
+      "value": "Ugur-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "54788@Ugur-MacBook-Pro.local.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    }
+  ],
+  "links": [],
+  "name": "KayitliKisiyeParaGonder",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Para Gönderme senaryosu",
+  "steps": [
+    {
+      "name": "login",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "setUsername 5550000012",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "username",
+              "value": "5550000012"
+            }
+          ],
+          "start": 1669061438907,
+          "stop": 1669061440367
+        },
+        {
+          "name": "setPassword 135791",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "password",
+              "value": "135791"
+            }
+          ],
+          "start": 1669061440371,
+          "stop": 1669061441678
+        },
+        {
+          "name": "getTextOfOTPMessage",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1669061441680,
+          "stop": 1669061442914
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669061438864,
+      "stop": 1669061449528
+    },
+    {
+      "name": "click_HamburgerMenu",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669061449532,
+      "stop": 1669061451985
+    },
+    {
+      "name": "click_rehberimVeBankaHesaplarim",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669061451988,
+      "stop": 1669061452106
+    },
+    {
+      "name": "click_grubaEklemekicinKisiSec",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669061452109,
+      "stop": 1669061457099
+    },
+    {
+      "name": "click_paraGonderButonu",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669061457103,
+      "stop": 1669061457682
+    },
+    {
+      "name": "get_ConfirmationDialogText",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669061457684,
+      "stop": 1669061458277
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Screenshot",
+      "source": "2c3503b8-95ca-469c-8bba-7172938b7016-attachment"
+    }
+  ],
+  "parameters": [],
+  "start": 1669061438388,
+  "stop": 1669061459347
+}

@@ -1,0 +1,35 @@
+{
+  "uuid": "18454710-eaf3-42c8-b580-e45d1b9b2d73",
+  "name": "SemiVerified.ParaIsteTest",
+  "children": [
+    "bc4ee1aa-fbc0-43f7-903c-2098157e23ac"
+  ],
+  "befores": [
+    {
+      "name": "setUp",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669357823998,
+      "stop": 1669357851026
+    }
+  ],
+  "afters": [
+    {
+      "name": "stopAppiumAndDriver",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669357894255,
+      "stop": 1669357895027
+    }
+  ],
+  "start": 1669357823902,
+  "stop": 1669357895046
+}

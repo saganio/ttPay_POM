@@ -11,13 +11,14 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 import static Libraries.TestUtils.testAssertFunctions;
+import static Pages.StringConstants.STEP_MESSAGE;
 import static Pages.StringConstants.hataMesaji_BANKAHESABI;
 
 public class BankadanParaYukleTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- Banka hesabından para yükle")
+    @Step(STEP_MESSAGE)
     @Description("Banka hesabından para yükleme testi.")
     public void BankaHesabindanParaYukle() throws IOException, ParseException {
 

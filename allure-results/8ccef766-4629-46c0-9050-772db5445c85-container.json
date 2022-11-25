@@ -1,0 +1,35 @@
+{
+  "uuid": "8ccef766-4629-46c0-9050-772db5445c85",
+  "name": "Verified.KisiyeParaGonderTest",
+  "children": [
+    "c2aa01e0-ef51-4917-8047-ca494d35bc34"
+  ],
+  "befores": [
+    {
+      "name": "setUp",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669371599233,
+      "stop": 1669371660251
+    }
+  ],
+  "afters": [
+    {
+      "name": "stopAppiumAndDriver",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669371723803,
+      "stop": 1669371724563
+    }
+  ],
+  "start": 1669371598698,
+  "stop": 1669371724588
+}

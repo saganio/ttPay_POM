@@ -1,1 +1,9 @@
-{"uuid":"73f3b43c-9704-42d2-ba17-bdef6eee1b23","name":"Basic.SifreGuncelleTest","children":[],"befores":[],"afters":[],"start":1669099835992,"stop":1669099945800}
+{
+  "uuid": "73f3b43c-9704-42d2-ba17-bdef6eee1b23",
+  "name": "Basic.SifreGuncelleTest",
+  "children": [],
+  "befores": [],
+  "afters": [],
+  "start": 1669099835992,
+  "stop": 1669099945800
+}

@@ -1,7 +1,6 @@
 package Register;
 
 import Libraries.BaseClass;
-import Pages.RegisterPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -11,11 +10,13 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import static Pages.StringConstants.STEP_MESSAGE;
+
 public class RegisterYanlisOTPTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Hesabim Yok 2- Yeni Hesap Oluştur")
+    @Step(STEP_MESSAGE)
     @Description("Sisteme Yanlış OTP ile yeni kullanıcı kaydetme senaryosu.")
     public void RegisterYanlisOTP() throws IOException, ParseException {
         registerPage

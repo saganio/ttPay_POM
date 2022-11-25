@@ -1,1 +1,9 @@
-{"uuid":"1c0331d1-5625-4a41-a9d8-b7ac87e18ec3","name":"Basic.KisiAdiGuncelleTest","children":[],"befores":[],"afters":[],"start":1669099835990,"stop":1669099945725}
+{
+  "uuid": "1c0331d1-5625-4a41-a9d8-b7ac87e18ec3",
+  "name": "Basic.KisiAdiGuncelleTest",
+  "children": [],
+  "befores": [],
+  "afters": [],
+  "start": 1669099835990,
+  "stop": 1669099945725
+}

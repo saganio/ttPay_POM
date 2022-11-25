@@ -1,0 +1,331 @@
+{
+  "uuid": "dbf38a4f-10f6-47f8-9b15-c209783b3fbf",
+  "historyId": "2fad4f6fad0f20ad64f53ab52a1d33f3",
+  "fullName": "Verified.GrubaParaGonderTest.GrubaParaGonder",
+  "labels": [
+    {
+      "name": "package",
+      "value": "Verified.GrubaParaGonderTest"
+    },
+    {
+      "name": "testClass",
+      "value": "Verified.GrubaParaGonderTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "GrubaParaGonder"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "ttPay_POM"
+    },
+    {
+      "name": "subSuite",
+      "value": "Verified.GrubaParaGonderTest"
+    },
+    {
+      "name": "host",
+      "value": "N110688"
+    },
+    {
+      "name": "thread",
+      "value": "19500@N110688.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    }
+  ],
+  "links": [],
+  "name": "GrubaParaGonder",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Gruba Para Gönderme senaryosu",
+  "steps": [
+    {
+      "name": "bakiyeKontrol_Verified",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Bakiye",
+          "source": "6f411aee-3345-4e8d-8575-132934a32ead-attachment",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1669363792727,
+      "stop": 1669363794788
+    },
+    {
+      "name": "setUsername 5997654321",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "username",
+          "value": "5997654321"
+        }
+      ],
+      "start": 1669363794794,
+      "stop": 1669363796194
+    },
+    {
+      "name": "setPassword 135791",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "password",
+          "value": "135791"
+        }
+      ],
+      "start": 1669363796195,
+      "stop": 1669363797549
+    },
+    {
+      "name": "click_HamburgerMenu",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363817868,
+      "stop": 1669363822100
+    },
+    {
+      "name": "click_rehberimVeBankaHesaplarim",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363822101,
+      "stop": 1669363823103
+    },
+    {
+      "name": "click_plusButton",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363823105,
+      "stop": 1669363824370
+    },
+    {
+      "name": "click_yeniGrupOlustur",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363824370,
+      "stop": 1669363825248
+    },
+    {
+      "name": "sendkey_grupAdiGirTextBox testGrup",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "text",
+          "value": "testGrup"
+        }
+      ],
+      "start": 1669363825249,
+      "stop": 1669363826700
+    },
+    {
+      "name": "click_devamEtButonu",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363826700,
+      "stop": 1669363827386
+    },
+    {
+      "name": "click_grubaEklemekicinKisiSec",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363827386,
+      "stop": 1669363828335
+    },
+    {
+      "name": "click_kaydetButonu",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363828336,
+      "stop": 1669363829184
+    },
+    {
+      "name": "click_paraGonderButonu",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363829184,
+      "stop": 1669363830611
+    },
+    {
+      "name": "tutarGir",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363830612,
+      "stop": 1669363835031
+    },
+    {
+      "name": "click_HamburgerMenu",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363847548,
+      "stop": 1669363849483
+    },
+    {
+      "name": "click_rehberimVeBankaHesaplarim",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363849484,
+      "stop": 1669363849611
+    },
+    {
+      "name": "click_GrupSec",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363849612,
+      "stop": 1669363850732
+    },
+    {
+      "name": "click_grubuSil",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363850733,
+      "stop": 1669363852153
+    },
+    {
+      "name": "click_grubuSil_OnaylaButton",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363852155,
+      "stop": 1669363853166
+    },
+    {
+      "name": "click_grubuSil_TamamButton",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363853166,
+      "stop": 1669363853871
+    },
+    {
+      "name": "otp_SMS_transaction_log",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Bakiye",
+          "source": "5cf44417-c9e3-4799-8514-9aa10dba2109-attachment",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1669363853871,
+      "stop": 1669363854264
+    },
+    {
+      "name": "bakiyeKontrol_Verified",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Bakiye",
+          "source": "5a55c9a8-35ce-4e24-9d6e-d895b66309b7-attachment",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1669363854265,
+      "stop": 1669363854871
+    },
+    {
+      "name": "push_Notification_log",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Bakiye",
+          "source": "b791d9ab-dfa7-46c3-b628-628c180728c9-attachment",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1669363854871,
+      "stop": 1669363855157
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Screenshot",
+      "source": "4d9f621d-4d71-4b04-80f1-3d967ffff54c-attachment"
+    }
+  ],
+  "parameters": [],
+  "start": 1669363792642,
+  "stop": 1669363855972
+}

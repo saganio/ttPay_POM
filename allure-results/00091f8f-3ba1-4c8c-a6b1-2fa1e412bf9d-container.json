@@ -1,1 +1,11 @@
-{"uuid":"00091f8f-3ba1-4c8c-a6b1-2fa1e412bf9d","name":"Basic.AdresGuncelleTest","children":["e1a6dfac-f0a9-4421-a8c7-2ba653e5fbee"],"befores":[],"afters":[],"start":1669098512042,"stop":1669098561808}
+{
+  "uuid": "00091f8f-3ba1-4c8c-a6b1-2fa1e412bf9d",
+  "name": "Basic.AdresGuncelleTest",
+  "children": [
+    "e1a6dfac-f0a9-4421-a8c7-2ba653e5fbee"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1669098512042,
+  "stop": 1669098561808
+}

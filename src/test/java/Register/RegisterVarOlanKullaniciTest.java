@@ -2,7 +2,6 @@ package Register;
 
 import Libraries.BaseClass;
 import Libraries.TestUtils;
-import Pages.RegisterPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -12,13 +11,14 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import static Pages.StringConstants.STEP_MESSAGE;
 import static Pages.StringConstants.VAR_OLAN_HESAP_ERROR_TEXT;
 
 public class RegisterVarOlanKullaniciTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Hesabim Yok, 2- Hesap Oluşturmaya Başla, 3-Var Olan Kullanicinin numarasini gir..")
+    @Step(STEP_MESSAGE)
     @Description("Sistemde kayıtlı olan kullanıcıyı tekrar kaydetme senaryosu.")
     public void RegisterVarOlanKullanici() throws IOException, ParseException {
 

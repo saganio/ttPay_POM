@@ -21,7 +21,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
+
 import java.io.ByteArrayInputStream;
 import java.io.FileReader;
 import java.io.IOException;
@@ -35,14 +38,12 @@ public class BaseClass {
 
 
     public static AndroidDriver<MobileElement> driver;
-    private static AppiumDriverLocalService service;
-
     //Call Page Objects
     public static LoginPage loginPage = new LoginPage(driver);
     public static LeftPanelPage leftPanelPage = new LeftPanelPage(driver);
     public static GlobalPage globalPage = new GlobalPage(driver);
     public static HomePage homePage = new HomePage(driver);
-    public static RehberimVeBankHspPage RehberimVeBankaHesaplarimPage = new RehberimVeBankHspPage(driver);
+    public static RehberimVeBankHspPage RehberimVeBankaHesaplarimPage;
     public static CampaignsPage campaignsPage = new CampaignsPage(driver);
     public static KartlarimPage kartlarimPage = new KartlarimPage(driver);
     public static RegisterPage registerPage = new RegisterPage(driver);
@@ -50,6 +51,18 @@ public class BaseClass {
     public static ProfilPage profilPage = new ProfilPage(driver);
     public static DBQueries dbQueries = new DBQueries(driver);
     public static DBConnection dbConnection = new DBConnection();
+    private static AppiumDriverLocalService service;
+
+    static {
+        try {
+            RehberimVeBankaHesaplarimPage = new RehberimVeBankHspPage(driver);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     //Start Appium Server
     public static void startAppiumServer() {
         AppiumServiceBuilder builder = new AppiumServiceBuilder();
@@ -143,7 +156,6 @@ public class BaseClass {
                         .getScreenshotAs(OutputType.BYTES)));
 
     }
-
 
 
     public void setAllureEnvironment() {

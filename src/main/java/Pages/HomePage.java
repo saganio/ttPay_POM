@@ -1,14 +1,12 @@
 package Pages;
 
 import Libraries.BaseClass;
-import Utils.Log;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
-import static Libraries.TestUtils.clickElementBy;
-import static Libraries.TestUtils.getTextFromElement;
+import static Libraries.TestUtils.*;
 
 
 public class HomePage extends BaseClass {
@@ -26,6 +24,9 @@ public class HomePage extends BaseClass {
     private final By confirmation_dialog_reject = By.id("btn_confirmation_dialog_cancel");
     private final By chooseKrediBankaHesabimdan = By.id("tv_fragment_top_up_select_bank_title");
     private final By faturaOde = By.xpath("//*[@text='Fatura Öde']");
+    private final By bankaHesabindanYukle_tamamButonu = By.id("abtnTopUpBeforeInfoOkay");
+    private final By bankaHesabindanYukle_tamamButonu2 = By.id("abtnTopUpBankTransferOkay");
+    private final By kisiyeSecenegi = By.id("tv_payment_method_qr");
 
     //Constructor
     public HomePage(AndroidDriver<MobileElement> driver) {
@@ -111,6 +112,27 @@ public class HomePage extends BaseClass {
     @Step("{method}")
     public HomePage click_FaturaOde() {
         clickElementBy(faturaOde);
+        return this;
+    }
+
+
+    @Step("{method}")
+    public HomePage click_TamamButtonBefore() {
+        clickElementBy(bankaHesabindanYukle_tamamButonu);
+        return this;
+    }
+
+    @Step("{method}")
+    public HomePage click_KisiyeSecenegi() {
+        clickElementBy(kisiyeSecenegi);
+        return this;
+    }
+
+    @Step("{method}")
+    public HomePage click_TamamButtonAfter() {
+        String getText = driver.findElement(bankaHesabindanYukle_tamamButonu2).getText();
+        swipeToElement(getText);
+        clickElementBy(bankaHesabindanYukle_tamamButonu2);
         return this;
     }
 }

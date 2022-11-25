@@ -1,1 +1,123 @@
-{"uuid":"56b7cef9-caf6-43c5-b34f-6f09a3d9995f","historyId":"3ce92e3d59a1673cca7b0ff8ee27f1a7","fullName":"Basic.KampanyalarTest.LoginAndCheckCampaigns","labels":[{"name":"package","value":"Basic.KampanyalarTest"},{"name":"testClass","value":"Basic.KampanyalarTest"},{"name":"testMethod","value":"LoginAndCheckCampaigns"},{"name":"parentSuite","value":"Basic Suite"},{"name":"suite","value":"ttPay_POM"},{"name":"subSuite","value":"Basic.KampanyalarTest"},{"name":"host","value":"N110688"},{"name":"thread","value":"1100@N110688.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"},{"name":"severity","value":"minor"}],"links":[],"name":"LoginAndCheckCampaigns","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","description":"Giriş testi.","steps":[{"name":"login","status":"passed","stage":"finished","steps":[{"name":"setUsername 5550000012","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"username","value":"5550000012"}],"start":1669100939986,"stop":1669100943550},{"name":"setPassword 135791","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"password","value":"135791"}],"start":1669100943550,"stop":1669100944333},{"name":"getTextOfOTPMessage","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669100944333,"stop":1669100946773}],"attachments":[],"parameters":[],"start":1669100939985,"stop":1669100953787}],"attachments":[{"name":"Screenshot","source":"631c0517-aaa5-4c8a-9a93-a46b8c614ad9-attachment"}],"parameters":[],"start":1669100939985,"stop":1669100956270}
+{
+  "uuid": "56b7cef9-caf6-43c5-b34f-6f09a3d9995f",
+  "historyId": "3ce92e3d59a1673cca7b0ff8ee27f1a7",
+  "fullName": "Basic.KampanyalarTest.LoginAndCheckCampaigns",
+  "labels": [
+    {
+      "name": "package",
+      "value": "Basic.KampanyalarTest"
+    },
+    {
+      "name": "testClass",
+      "value": "Basic.KampanyalarTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "LoginAndCheckCampaigns"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Basic Suite"
+    },
+    {
+      "name": "suite",
+      "value": "ttPay_POM"
+    },
+    {
+      "name": "subSuite",
+      "value": "Basic.KampanyalarTest"
+    },
+    {
+      "name": "host",
+      "value": "N110688"
+    },
+    {
+      "name": "thread",
+      "value": "1100@N110688.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    }
+  ],
+  "links": [],
+  "name": "LoginAndCheckCampaigns",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Giriş testi.",
+  "steps": [
+    {
+      "name": "login",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "setUsername 5550000012",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "username",
+              "value": "5550000012"
+            }
+          ],
+          "start": 1669100939986,
+          "stop": 1669100943550
+        },
+        {
+          "name": "setPassword 135791",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "password",
+              "value": "135791"
+            }
+          ],
+          "start": 1669100943550,
+          "stop": 1669100944333
+        },
+        {
+          "name": "getTextOfOTPMessage",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1669100944333,
+          "stop": 1669100946773
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669100939985,
+      "stop": 1669100953787
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Screenshot",
+      "source": "631c0517-aaa5-4c8a-9a93-a46b8c614ad9-attachment"
+    }
+  ],
+  "parameters": [],
+  "start": 1669100939985,
+  "stop": 1669100956270
+}

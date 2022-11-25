@@ -1,1 +1,9 @@
-{"uuid":"38d3ace0-fb9c-4ebe-a13b-f3c0ad05a170","name":"Basic.IBANKaydetTest","children":[],"befores":[],"afters":[],"start":1669099274700,"stop":1669099354321}
+{
+  "uuid": "38d3ace0-fb9c-4ebe-a13b-f3c0ad05a170",
+  "name": "Basic.IBANKaydetTest",
+  "children": [],
+  "befores": [],
+  "afters": [],
+  "start": 1669099274700,
+  "stop": 1669099354321
+}

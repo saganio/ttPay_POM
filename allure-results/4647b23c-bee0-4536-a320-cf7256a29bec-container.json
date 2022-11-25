@@ -1,1 +1,9 @@
-{"uuid":"4647b23c-bee0-4536-a320-cf7256a29bec","name":"Basic.YeniKisiOlusturduktanSonraParaIsteTest","children":[],"befores":[],"afters":[],"start":1669099598741,"stop":1669099677376}
+{
+  "uuid": "4647b23c-bee0-4536-a320-cf7256a29bec",
+  "name": "Basic.YeniKisiOlusturduktanSonraParaIsteTest",
+  "children": [],
+  "befores": [],
+  "afters": [],
+  "start": 1669099598741,
+  "stop": 1669099677376
+}

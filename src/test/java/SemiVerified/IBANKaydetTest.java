@@ -12,12 +12,13 @@ import java.io.IOException;
 
 import static Libraries.TestUtils.testAssertFunctions;
 import static Pages.StringConstants.IBAN_KAYDETME_TEXT;
+import static Pages.StringConstants.STEP_MESSAGE;
 
 public class IBANKaydetTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- IBAN Kaydet")
+    @Step(STEP_MESSAGE)
     @Description("IBAN Kaydetme testi.")
     public void IBANKaydet() throws IOException, ParseException {
 

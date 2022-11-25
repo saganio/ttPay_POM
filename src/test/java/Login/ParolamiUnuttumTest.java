@@ -1,7 +1,6 @@
 package Login;
 
 import Libraries.BaseClass;
-import Pages.LoginPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -11,10 +10,13 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import static Pages.StringConstants.STEP_MESSAGE;
+
 public class ParolamiUnuttumTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
+    @Step(STEP_MESSAGE)
     @Description("Parolamı Unuttum senaryosu.")
     public void ParolamiUnuttum() throws IOException, ParseException {
 

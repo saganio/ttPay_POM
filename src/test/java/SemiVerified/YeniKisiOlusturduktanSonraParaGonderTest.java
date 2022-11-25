@@ -11,15 +11,14 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 import static Libraries.TestUtils.testAssertFunctions;
-import static Pages.StringConstants.hataMesaji_PARAGONDER;
-import static Pages.StringConstants.yeniKayitNo;
+import static Pages.StringConstants.*;
 
 public class YeniKisiOlusturduktanSonraParaGonderTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- Para Gönder")
-    @Description("Para Gönderme senaryosu")
+    @Step(STEP_MESSAGE)
+    @Description("Yeni Kişi oluşturduktan sonra Para Gönderme senaryosu")
     public void YeniKisiOlusturVeParaGonder() throws IOException, ParseException {
 
         loginPage

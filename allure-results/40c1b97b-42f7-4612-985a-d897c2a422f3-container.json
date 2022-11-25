@@ -1,1 +1,24 @@
-{"uuid":"40c1b97b-42f7-4612-985a-d897c2a422f3","name":"Libraries.BaseClass.stopAppiumAndDriver","children":["eaba5350-721f-4da4-a8f0-da7080a1fe1c"],"description":"","befores":[],"afters":[{"name":"stopAppiumAndDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1668861189351,"stop":1668861190159}],"start":1668861189350,"stop":1668861190160}
+{
+  "uuid": "40c1b97b-42f7-4612-985a-d897c2a422f3",
+  "name": "Libraries.BaseClass.stopAppiumAndDriver",
+  "children": [
+    "eaba5350-721f-4da4-a8f0-da7080a1fe1c"
+  ],
+  "description": "",
+  "befores": [],
+  "afters": [
+    {
+      "name": "stopAppiumAndDriver",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1668861189351,
+      "stop": 1668861190159
+    }
+  ],
+  "start": 1668861189350,
+  "stop": 1668861190160
+}

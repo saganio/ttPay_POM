@@ -17,5 +17,6 @@ public class StringConstants {
     public static final String HATALI_PAROLA_TEXT = "Girdiğin cep telefonu veya parola bilgisi hatalı. Lütfen bilgilerini kontrol ederek tekrar dene.";
     public static final String OTP_MESSAGE = "Cep telefonuna gelen onay kodunu girmelisin.";
     public static final String OTP_LOG_MESSAGE = "Adres güncelledikten sonra OTP ekranı gelmedi, OTP girişi yapılmayacak.";
+    public static final String STEP_MESSAGE = "Test koşumunun detayları için genişletin.";
 
 }

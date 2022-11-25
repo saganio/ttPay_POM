@@ -9,18 +9,18 @@ import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import static Libraries.TestUtils.testAssertFunctions;
-import static Pages.StringConstants.hataMesaji_PARAGONDER;
-import static Pages.StringConstants.yeniKayitNo;
+import static Pages.StringConstants.*;
 
 public class YeniKisiOlusturduktanSonraParaGonderTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- Para Gönder")
-    @Description("Para Gönderme senaryosu")
-    public void YeniKisiOlusturVeParaGonder() throws IOException, ParseException {
+    @Step(STEP_MESSAGE)
+    @Description("Yeni Kişi ekledikten sonra Para Gönderme senaryosu")
+    public void YeniKisiOlusturVeParaGonder() throws IOException, ParseException, InterruptedException, SQLException {
 
         loginPage
                 .Verifiedlogin()
@@ -38,10 +38,14 @@ public class YeniKisiOlusturduktanSonraParaGonderTest extends BaseClass {
                 .click_NewRecord()
                 .click_paraGonderButonu();
 
-        testAssertFunctions(hataMesaji_PARAGONDER, RehberimVeBankaHesaplarimPage.getErrorText());
+        globalPage
+                .tutarGir_ParaGonder()
+                .OTPGir_Verified();
 
-        RehberimVeBankaHesaplarimPage
-                .click_vazgecButonuDialog();
+        dbQueries
+                .otp_SMS_transaction_log()
+                .bakiyeKontrol_Verified()
+                .push_Notification_log();
     }
 
 

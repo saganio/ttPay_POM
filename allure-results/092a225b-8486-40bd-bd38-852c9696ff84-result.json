@@ -1,1 +1,243 @@
-{"uuid":"092a225b-8486-40bd-bd38-852c9696ff84","historyId":"74c037e4a2f93e3944bff53115f436f9","fullName":"SemiVerified.AdresGuncelleTest.AdresGuncelle","labels":[{"name":"package","value":"SemiVerified.AdresGuncelleTest"},{"name":"testClass","value":"SemiVerified.AdresGuncelleTest"},{"name":"testMethod","value":"AdresGuncelle"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"ttPay_POM"},{"name":"subSuite","value":"SemiVerified.AdresGuncelleTest"},{"name":"host","value":"N110688"},{"name":"thread","value":"22972@N110688.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"},{"name":"severity","value":"minor"}],"links":[],"name":"AdresGuncelle","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","description":"Kayıtlı Kişiye Para Gönderme senaryosu","steps":[{"name":"bakiyeKontrol_semi","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669292327638,"stop":1669292329203},{"name":"semiVerifiedlogin","status":"passed","stage":"finished","steps":[{"name":"setUsername 5993152161","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"username","value":"5993152161"}],"start":1669292329209,"stop":1669292330856},{"name":"setPassword 135791","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"password","value":"135791"}],"start":1669292330857,"stop":1669292332233}],"attachments":[],"parameters":[],"start":1669292329204,"stop":1669292356010},{"name":"click_HamburgerMenu","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669292356011,"stop":1669292361174},{"name":"click_Profil","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669292361176,"stop":1669292361785},{"name":"click_adresDuzenleButton","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669292361786,"stop":1669292365455},{"name":"click_ilSecDialog","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669292365455,"stop":1669292366632},{"name":"click_Adana","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669292366632,"stop":1669292369079},{"name":"click_secButton","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669292369082,"stop":1669292369307},{"name":"click_ilceSecDialog","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669292369307,"stop":1669292369967},{"name":"click_Aladag","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669292369967,"stop":1669292371889},{"name":"click_secButton","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669292371889,"stop":1669292372055},{"name":"sendkeys_acikAdresTextBox","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669292372055,"stop":1669292374282},{"name":"click_tamamveGuncelleButton","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669292374282,"stop":1669292374901},{"name":"setOTP","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669292374901,"stop":1669292381895}],"attachments":[{"name":"Screenshot","source":"b683cf9b-71a9-4731-a46b-3687666aa54f-attachment"}],"parameters":[],"start":1669292327541,"stop":1669292383263}
+{
+  "uuid": "092a225b-8486-40bd-bd38-852c9696ff84",
+  "historyId": "74c037e4a2f93e3944bff53115f436f9",
+  "fullName": "SemiVerified.AdresGuncelleTest.AdresGuncelle",
+  "labels": [
+    {
+      "name": "package",
+      "value": "SemiVerified.AdresGuncelleTest"
+    },
+    {
+      "name": "testClass",
+      "value": "SemiVerified.AdresGuncelleTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "AdresGuncelle"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "ttPay_POM"
+    },
+    {
+      "name": "subSuite",
+      "value": "SemiVerified.AdresGuncelleTest"
+    },
+    {
+      "name": "host",
+      "value": "N110688"
+    },
+    {
+      "name": "thread",
+      "value": "22972@N110688.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    }
+  ],
+  "links": [],
+  "name": "AdresGuncelle",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Kayıtlı Kişiye Para Gönderme senaryosu",
+  "steps": [
+    {
+      "name": "bakiyeKontrol_semi",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669292327638,
+      "stop": 1669292329203
+    },
+    {
+      "name": "semiVerifiedlogin",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "setUsername 5993152161",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "username",
+              "value": "5993152161"
+            }
+          ],
+          "start": 1669292329209,
+          "stop": 1669292330856
+        },
+        {
+          "name": "setPassword 135791",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "password",
+              "value": "135791"
+            }
+          ],
+          "start": 1669292330857,
+          "stop": 1669292332233
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669292329204,
+      "stop": 1669292356010
+    },
+    {
+      "name": "click_HamburgerMenu",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669292356011,
+      "stop": 1669292361174
+    },
+    {
+      "name": "click_Profil",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669292361176,
+      "stop": 1669292361785
+    },
+    {
+      "name": "click_adresDuzenleButton",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669292361786,
+      "stop": 1669292365455
+    },
+    {
+      "name": "click_ilSecDialog",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669292365455,
+      "stop": 1669292366632
+    },
+    {
+      "name": "click_Adana",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669292366632,
+      "stop": 1669292369079
+    },
+    {
+      "name": "click_secButton",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669292369082,
+      "stop": 1669292369307
+    },
+    {
+      "name": "click_ilceSecDialog",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669292369307,
+      "stop": 1669292369967
+    },
+    {
+      "name": "click_Aladag",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669292369967,
+      "stop": 1669292371889
+    },
+    {
+      "name": "click_secButton",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669292371889,
+      "stop": 1669292372055
+    },
+    {
+      "name": "sendkeys_acikAdresTextBox",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669292372055,
+      "stop": 1669292374282
+    },
+    {
+      "name": "click_tamamveGuncelleButton",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669292374282,
+      "stop": 1669292374901
+    },
+    {
+      "name": "setOTP",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669292374901,
+      "stop": 1669292381895
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Screenshot",
+      "source": "b683cf9b-71a9-4731-a46b-3687666aa54f-attachment"
+    }
+  ],
+  "parameters": [],
+  "start": 1669292327541,
+  "stop": 1669292383263
+}

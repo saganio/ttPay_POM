@@ -7,7 +7,6 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static Libraries.TestUtils.clickElementBy;
-import static Libraries.TestUtils.getFluentWait;
 
 public class AyarlarVeIzinlerPage extends BaseClass {
 

@@ -1,9 +1,6 @@
 package Utils;
 
 import Libraries.BaseClass;
-import com.google.common.io.Files;
-import io.appium.java_client.ios.IOSStartScreenRecordingOptions;
-import io.appium.java_client.screenrecording.CanRecordScreen;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
@@ -13,13 +10,10 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.Reporter;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
-import java.time.Duration;
-import java.util.Base64;
 
 public class TestListener extends BaseClass implements ITestListener {
     private static String getTestMethodName(ITestResult iTestResult) {
@@ -43,7 +37,7 @@ public class TestListener extends BaseClass implements ITestListener {
 
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File Dest = new File("report//errSS//" + System.currentTimeMillis()
-                + ".png");
+                             + ".png");
         String errflpath = Dest.getAbsolutePath().replace("/C:", "C:/");
         FileUtils.copyFile(scrFile, Dest);
         return errflpath;

@@ -1,1 +1,35 @@
-{"uuid":"d6b9e2e5-af2a-4cd0-81c8-9472ab8f1fa4","name":"Basic.KisiAdiGuncelleTest","children":["3c9d0d92-2634-469b-961b-1f4b949ba53e"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1669100956280,"stop":1669100975644}],"afters":[{"name":"stopAppiumAndDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1669100998199,"stop":1669100998893}],"start":1669100603459,"stop":1669100999013}
+{
+  "uuid": "d6b9e2e5-af2a-4cd0-81c8-9472ab8f1fa4",
+  "name": "Basic.KisiAdiGuncelleTest",
+  "children": [
+    "3c9d0d92-2634-469b-961b-1f4b949ba53e"
+  ],
+  "befores": [
+    {
+      "name": "setUp",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669100956280,
+      "stop": 1669100975644
+    }
+  ],
+  "afters": [
+    {
+      "name": "stopAppiumAndDriver",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669100998199,
+      "stop": 1669100998893
+    }
+  ],
+  "start": 1669100603459,
+  "stop": 1669100999013
+}

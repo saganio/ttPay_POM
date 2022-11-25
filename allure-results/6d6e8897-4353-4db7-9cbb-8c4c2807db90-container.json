@@ -1,1 +1,11 @@
-{"uuid":"6d6e8897-4353-4db7-9cbb-8c4c2807db90","name":"BasicT.KisiAdiGuncelleTest","children":["7f385af0-d7e6-4d59-bc06-3d5f7b51bda0"],"befores":[],"afters":[],"start":1668950866888,"stop":1668950900673}
+{
+  "uuid": "6d6e8897-4353-4db7-9cbb-8c4c2807db90",
+  "name": "BasicT.KisiAdiGuncelleTest",
+  "children": [
+    "7f385af0-d7e6-4d59-bc06-3d5f7b51bda0"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1668950866888,
+  "stop": 1668950900673
+}

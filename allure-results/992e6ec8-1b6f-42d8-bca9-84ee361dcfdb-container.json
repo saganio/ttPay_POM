@@ -1,1 +1,35 @@
-{"uuid":"992e6ec8-1b6f-42d8-bca9-84ee361dcfdb","name":"Basic.KisidenParaIsteTest","children":["bff0ef62-cd66-4c2a-9ec3-fe828565fc67"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1669116124632,"stop":1669116139058}],"afters":[{"name":"stopAppiumAndDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1669116161315,"stop":1669116162228}],"start":1669115578696,"stop":1669116521555}
+{
+  "uuid": "992e6ec8-1b6f-42d8-bca9-84ee361dcfdb",
+  "name": "Basic.KisidenParaIsteTest",
+  "children": [
+    "bff0ef62-cd66-4c2a-9ec3-fe828565fc67"
+  ],
+  "befores": [
+    {
+      "name": "setUp",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669116124632,
+      "stop": 1669116139058
+    }
+  ],
+  "afters": [
+    {
+      "name": "stopAppiumAndDriver",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669116161315,
+      "stop": 1669116162228
+    }
+  ],
+  "start": 1669115578696,
+  "stop": 1669116521555
+}

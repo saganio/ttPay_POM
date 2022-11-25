@@ -1,16 +1,17 @@
 package Verified;
 
 import Libraries.BaseClass;
-import Libraries.TestUtils;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
-import static Pages.StringConstants.hataMesaji_PARAISTE;
+import static Pages.StringConstants.STEP_MESSAGE;
 
 public class GruptanParaIsteTest extends BaseClass {
 
@@ -18,7 +19,11 @@ public class GruptanParaIsteTest extends BaseClass {
     @Severity(SeverityLevel.MINOR)
     @Description("Gruptan Para İsteme senaryosu")
     @Test(priority = 0)
-    public void GruptanParaIste() throws IOException, ParseException {
+    @Step(STEP_MESSAGE)
+    public void GruptanParaIste() throws IOException, ParseException, InterruptedException, SQLException {
+
+        dbQueries
+                .bakiyeKontrol_Verified();
 
         loginPage
                 .Verifiedlogin()
@@ -36,14 +41,24 @@ public class GruptanParaIsteTest extends BaseClass {
                 .click_kaydetButonu()
                 .click_paraIsteButonu();
 
-        TestUtils.testAssertFunctions(hataMesaji_PARAISTE, hataMesaji_PARAISTE);
+        globalPage
+                .tutarGir_ParaIste();
+
+        loginPage
+                .click_HamburgerMenu();
+
+        leftPanelPage
+                .click_rehberimVeBankaHesaplarim();
 
         RehberimVeBankaHesaplarimPage
-                .click_vazgecButonuDialog()
+                .click_GrupSec()
                 .click_grubuSil()
                 .click_grubuSil_OnaylaButton()
                 .click_grubuSil_TamamButton();
+
+        dbQueries
+                .otp_SMS_transaction_log()
+                .bakiyeKontrol_Verified()
+                .push_Notification_log();
     }
-
-
 }

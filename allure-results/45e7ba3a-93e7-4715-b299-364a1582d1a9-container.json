@@ -1,1 +1,35 @@
-{"uuid":"45e7ba3a-93e7-4715-b299-364a1582d1a9","name":"Basic.YeniKisiOlusturduktanSonraParaIsteTest","children":["e30f8a4f-a0e7-435e-ba52-31dc858fc2a3"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1669116473288,"stop":1669116488524}],"afters":[{"name":"stopAppiumAndDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1669116520706,"stop":1669116521429}],"start":1669115578697,"stop":1669116521626}
+{
+  "uuid": "45e7ba3a-93e7-4715-b299-364a1582d1a9",
+  "name": "Basic.YeniKisiOlusturduktanSonraParaIsteTest",
+  "children": [
+    "e30f8a4f-a0e7-435e-ba52-31dc858fc2a3"
+  ],
+  "befores": [
+    {
+      "name": "setUp",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669116473288,
+      "stop": 1669116488524
+    }
+  ],
+  "afters": [
+    {
+      "name": "stopAppiumAndDriver",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669116520706,
+      "stop": 1669116521429
+    }
+  ],
+  "start": 1669115578697,
+  "stop": 1669116521626
+}

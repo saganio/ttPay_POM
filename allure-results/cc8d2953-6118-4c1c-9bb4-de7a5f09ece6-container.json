@@ -1,1 +1,9 @@
-{"uuid":"cc8d2953-6118-4c1c-9bb4-de7a5f09ece6","name":"Basic.KrediBankaKartiEkleTest","children":[],"befores":[],"afters":[],"start":1669099835991,"stop":1669099945765}
+{
+  "uuid": "cc8d2953-6118-4c1c-9bb4-de7a5f09ece6",
+  "name": "Basic.KrediBankaKartiEkleTest",
+  "children": [],
+  "befores": [],
+  "afters": [],
+  "start": 1669099835991,
+  "stop": 1669099945765
+}

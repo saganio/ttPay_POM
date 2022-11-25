@@ -19,16 +19,16 @@ import static Libraries.BaseClass.getString;
 public class DBQueries {
 
 
+    public static final String GET_SEMI_AMOUNT_SQL = "SELECT TOP (1) c.ACCOUNT_BALANCE FROM [TTPAY_TEST].[dbo].[ACC_USER] a, [TTPAY_TEST].[dbo].[EMN_MEMBER] b, [TTPAY_TEST].[dbo].[EMN_MEMBER_DETAIL_LOG] c WHERE a.USER_ID = b.USER_ID AND b.MEMBER_CODE = c.MEMBER_CODE AND a.ACTIVE_MSISDN = '905980953248' ORDER BY c.CREATED_DATE DESC";
+    public static final String SET_SEMIVERIFIED_OTP_SQL;
+    public static final String SET_BASIC_OTP_SQL;
+    public static final String SET_VERIFIED_OTP_SQL;
     private static final String GET_OTP_SQL = "select TOP(1) TEXT from [TTPAY_TEST].[dbo].[SMS_TRANSACTION] ORDER BY CREATION_DATE DESC";
     private static final String GET_PN_SQL = "SELECT TOP(1) BODY FROM [TTPAY_TEST].[dbo].[PN_TRANSACTION] order by LOG_DATE desc";
     private static final String GET_TOTAL_TAX_AMOUNT_SEMI = "select top(1) TOTAL_TAX_AMOUNT from PAY_BILL where RECEIVER_EMAIL_ADDRESS in (select ACTIVE_MAIL from ACC_USER where ACTIVE_MSISDN='905980953248')  order by CREATED_DATE desc";
     private static final String GET_TOTAL_TAX_AMOUNT_VERIFIED = "select top(1) TOTAL_TAX_AMOUNT from [TTPAY_TEST].[dbo].[PAY_BILL] where RECEIVER_EMAIL_ADDRESS in (select ACTIVE_MAIL from [TTPAY_TEST].[dbo].[ACC_USER] where ACTIVE_MSISDN='905997654321')  order by CREATED_DATE desc";
     private static final String GET_BASIC_AMOUNT_SQL = "SELECT TOP (1) c.ACCOUNT_BALANCE FROM [TTPAY_TEST].[dbo].[ACC_USER] a, [TTPAY_TEST].[dbo].[EMN_MEMBER] b, [TTPAY_TEST].[dbo].[EMN_MEMBER_DETAIL_LOG] c WHERE a.USER_ID = b.USER_ID AND b.MEMBER_CODE = c.MEMBER_CODE AND a.ACTIVE_MSISDN = '905550000012' ORDER BY c.CREATED_DATE DESC";
-    public static final String GET_SEMI_AMOUNT_SQL = "SELECT TOP (1) c.ACCOUNT_BALANCE FROM [TTPAY_TEST].[dbo].[ACC_USER] a, [TTPAY_TEST].[dbo].[EMN_MEMBER] b, [TTPAY_TEST].[dbo].[EMN_MEMBER_DETAIL_LOG] c WHERE a.USER_ID = b.USER_ID AND b.MEMBER_CODE = c.MEMBER_CODE AND a.ACTIVE_MSISDN = '905980953248' ORDER BY c.CREATED_DATE DESC";
     private static final String GET_VERIFIED_AMOUNT_SQL = "SELECT TOP (1) c.ACCOUNT_BALANCE FROM [TTPAY_TEST].[dbo].[ACC_USER] a, [TTPAY_TEST].[dbo].[EMN_MEMBER] b, [TTPAY_TEST].[dbo].[EMN_MEMBER_DETAIL_LOG] c WHERE a.USER_ID = b.USER_ID AND b.MEMBER_CODE = c.MEMBER_CODE AND a.ACTIVE_MSISDN = '905997654321' ORDER BY c.CREATED_DATE DESC";
-    public static final String SET_SEMIVERIFIED_OTP_SQL;
-    public static final String SET_BASIC_OTP_SQL;
-    public static final String SET_VERIFIED_OTP_SQL;
 
     static {
         try {
@@ -58,6 +58,12 @@ public class DBQueries {
     public DBQueries(AndroidDriver<MobileElement> driver) {
     }
 
+    @Attachment(value = "Bilgi", type = "text/plain")
+    public static String addStringAttachment(String SQL) throws SQLException, FileNotFoundException {
+        DBConnection dbConn = new DBConnection();
+        return dbConn.ttpayDev(SQL);
+    }
+
     @Step("{method}")
     public DBQueries bakiyeKontrol_semi() throws SQLException, IOException {
         String sql = GET_SEMI_AMOUNT_SQL;
@@ -82,21 +88,6 @@ public class DBQueries {
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
         addStringAttachment(GET_VERIFIED_AMOUNT_SQL);
-        return this;
-    }
-
-    @Attachment(value = "Bakiye", type = "text/plain")
-    public static String addStringAttachment(String SQL) throws SQLException, FileNotFoundException {
-        DBConnection dbConn = new DBConnection();
-        return dbConn.ttpayDev(SQL);
-    }
-
-    @Step("{method}")
-    public DBQueries bakiyeKontrol_basic() throws SQLException {
-
-        String sql = GET_BASIC_AMOUNT_SQL;
-        DBConnection dbConn = new DBConnection();
-        dbConn.ttpayDev(sql);
         return this;
     }
 

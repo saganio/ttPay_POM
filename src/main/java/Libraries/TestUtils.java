@@ -71,7 +71,7 @@ public class TestUtils extends BaseClass {
     public static void swipeToElement(String text) {
         WebElement el = driver.findElement(MobileBy
                 .AndroidUIAutomator("new UiScrollable(new UiSelector()).setAsVerticalList().scrollIntoView("
-                        + "new UiSelector().text(\"" + text + "\"));"));
+                                    + "new UiSelector().text(\"" + text + "\"));"));
     }
 
     public String dateTime() {

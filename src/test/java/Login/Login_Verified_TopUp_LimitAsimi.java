@@ -7,14 +7,17 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
+
 import java.io.IOException;
+
+import static Pages.StringConstants.STEP_MESSAGE;
 
 public class Login_Verified_TopUp_LimitAsimi extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Hesabim Yok 2- Yeni Hesap Oluştur")
-    @Description("Sisteme yebi kullanıcı kaydetme senaryosu.")
+    @Step(STEP_MESSAGE)
+    @Description("Verified Hesaba para yükle ve kontrol et.")
     public void Verified_TopUp_LimitAsimi() throws IOException, ParseException {
 
         loginPage

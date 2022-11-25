@@ -1,1 +1,9 @@
-{"uuid":"392b80a7-e2f5-4df1-95a6-7e473cefe4fb","name":"Basic.KisidenParaIsteTest","children":[],"befores":[],"afters":[],"start":1669100603459,"stop":1669100999055}
+{
+  "uuid": "392b80a7-e2f5-4df1-95a6-7e473cefe4fb",
+  "name": "Basic.KisidenParaIsteTest",
+  "children": [],
+  "befores": [],
+  "afters": [],
+  "start": 1669100603459,
+  "stop": 1669100999055
+}

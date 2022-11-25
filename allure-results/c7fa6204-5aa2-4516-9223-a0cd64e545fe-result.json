@@ -1,1 +1,164 @@
-{"uuid":"c7fa6204-5aa2-4516-9223-a0cd64e545fe","historyId":"2a95d8f8e6edc5ad0150f35342fd217e","fullName":"Basic.BankadanParaYukleTest.BankaHesabindanParaYukle","labels":[{"name":"package","value":"Basic.BankadanParaYukleTest"},{"name":"testClass","value":"Basic.BankadanParaYukleTest"},{"name":"testMethod","value":"BankaHesabindanParaYukle"},{"name":"parentSuite","value":"Basic Suite"},{"name":"suite","value":"ttPay_POM"},{"name":"subSuite","value":"Basic.BankadanParaYukleTest"},{"name":"host","value":"N110688"},{"name":"thread","value":"19404@N110688.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"},{"name":"severity","value":"minor"}],"links":[],"name":"BankaHesabindanParaYukle","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","description":"Banka hesabından para yükleme testi.","steps":[{"name":"1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- Banka hesabından para yükle","status":"passed","stage":"finished","steps":[{"name":"login","status":"passed","stage":"finished","steps":[{"name":"setUsername 5550000012","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"username","value":"5550000012"}],"start":1669100149326,"stop":1669100152786},{"name":"setPassword 135791","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"password","value":"135791"}],"start":1669100152786,"stop":1669100154145},{"name":"getTextOfOTPMessage","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669100154145,"stop":1669100155656}],"attachments":[],"parameters":[],"start":1669100149325,"stop":1669100163384},{"name":"click_YukleButonu","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669100163385,"stop":1669100166212},{"name":"click_KrediBankaHesabimdan","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669100166212,"stop":1669100175015},{"name":"get_ConfirmationDialogText","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1669100175016,"stop":1669100175836}],"attachments":[],"parameters":[],"start":1669100149325,"stop":1669100175839}],"attachments":[{"name":"Screenshot","source":"5b66ea1d-e577-4f6f-ad51-751787476010-attachment"}],"parameters":[],"start":1669100149324,"stop":1669100176666}
+{
+  "uuid": "c7fa6204-5aa2-4516-9223-a0cd64e545fe",
+  "historyId": "2a95d8f8e6edc5ad0150f35342fd217e",
+  "fullName": "Basic.BankadanParaYukleTest.BankaHesabindanParaYukle",
+  "labels": [
+    {
+      "name": "package",
+      "value": "Basic.BankadanParaYukleTest"
+    },
+    {
+      "name": "testClass",
+      "value": "Basic.BankadanParaYukleTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "BankaHesabindanParaYukle"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Basic Suite"
+    },
+    {
+      "name": "suite",
+      "value": "ttPay_POM"
+    },
+    {
+      "name": "subSuite",
+      "value": "Basic.BankadanParaYukleTest"
+    },
+    {
+      "name": "host",
+      "value": "N110688"
+    },
+    {
+      "name": "thread",
+      "value": "19404@N110688.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    }
+  ],
+  "links": [],
+  "name": "BankaHesabindanParaYukle",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Banka hesabından para yükleme testi.",
+  "steps": [
+    {
+      "name": "1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- Banka hesabından para yükle",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "login",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "setUsername 5550000012",
+              "status": "passed",
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "username",
+                  "value": "5550000012"
+                }
+              ],
+              "start": 1669100149326,
+              "stop": 1669100152786
+            },
+            {
+              "name": "setPassword 135791",
+              "status": "passed",
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "password",
+                  "value": "135791"
+                }
+              ],
+              "start": 1669100152786,
+              "stop": 1669100154145
+            },
+            {
+              "name": "getTextOfOTPMessage",
+              "status": "passed",
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1669100154145,
+              "stop": 1669100155656
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1669100149325,
+          "stop": 1669100163384
+        },
+        {
+          "name": "click_YukleButonu",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1669100163385,
+          "stop": 1669100166212
+        },
+        {
+          "name": "click_KrediBankaHesabimdan",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1669100166212,
+          "stop": 1669100175015
+        },
+        {
+          "name": "get_ConfirmationDialogText",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1669100175016,
+          "stop": 1669100175836
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669100149325,
+      "stop": 1669100175839
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Screenshot",
+      "source": "5b66ea1d-e577-4f6f-ad51-751787476010-attachment"
+    }
+  ],
+  "parameters": [],
+  "start": 1669100149324,
+  "stop": 1669100176666
+}

@@ -1,0 +1,35 @@
+{
+  "uuid": "1b411d91-79ef-4110-89a3-030ec4ad691f",
+  "name": "Verified.KisidenParaIsteTest",
+  "children": [
+    "5cf5f0d6-2fd7-4afd-a807-6b814da3bc63"
+  ],
+  "befores": [
+    {
+      "name": "setUp",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669370854894,
+      "stop": 1669370873563
+    }
+  ],
+  "afters": [
+    {
+      "name": "stopAppiumAndDriver",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669370933194,
+      "stop": 1669370933761
+    }
+  ],
+  "start": 1669370854796,
+  "stop": 1669370933791
+}

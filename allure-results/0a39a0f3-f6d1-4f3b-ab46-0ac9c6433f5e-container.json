@@ -1,0 +1,35 @@
+{
+  "uuid": "0a39a0f3-f6d1-4f3b-ab46-0ac9c6433f5e",
+  "name": "Verified.IBANKaydetParaGonderTest",
+  "children": [
+    "6cf0747e-823d-4be1-9d9c-049e37521564"
+  ],
+  "befores": [
+    {
+      "name": "setUp",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669367612937,
+      "stop": 1669367636877
+    }
+  ],
+  "afters": [
+    {
+      "name": "stopAppiumAndDriver",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669367696366,
+      "stop": 1669367697068
+    }
+  ],
+  "start": 1669367612850,
+  "stop": 1669367697094
+}

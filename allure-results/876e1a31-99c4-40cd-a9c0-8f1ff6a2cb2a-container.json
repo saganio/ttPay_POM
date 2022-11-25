@@ -1,1 +1,11 @@
-{"uuid":"876e1a31-99c4-40cd-a9c0-8f1ff6a2cb2a","name":"Basic.KisiyeParaGonderTest","children":["7aad1502-be58-42b3-b0dd-0aebf7d37f0d"],"befores":[],"afters":[],"start":1669060684948,"stop":1669060716138}
+{
+  "uuid": "876e1a31-99c4-40cd-a9c0-8f1ff6a2cb2a",
+  "name": "Basic.KisiyeParaGonderTest",
+  "children": [
+    "7aad1502-be58-42b3-b0dd-0aebf7d37f0d"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1669060684948,
+  "stop": 1669060716138
+}

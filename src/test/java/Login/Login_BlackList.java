@@ -7,18 +7,21 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
+
 import java.io.IOException;
+
+import static Pages.StringConstants.STEP_MESSAGE;
 
 public class Login_BlackList extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Hesabim Yok 2- Yeni Hesap Oluştur")
-    @Description("Sisteme yebi kullanıcı kaydetme senaryosu.")
-    public void  BlackList() throws IOException, ParseException {
+    @Step(STEP_MESSAGE)
+    @Description("Kara Listede olan kullanıcı ile sisteme giriş senaryosu.")
+    public void BlackList() throws IOException, ParseException {
 
-       loginPage
-               .login();
+        loginPage
+                .login();
 
         // TODO: 17.11.2022
 

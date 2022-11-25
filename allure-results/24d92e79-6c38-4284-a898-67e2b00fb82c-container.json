@@ -1,0 +1,35 @@
+{
+  "uuid": "24d92e79-6c38-4284-a898-67e2b00fb82c",
+  "name": "Verified.GrubaParaGonderTest",
+  "children": [
+    "dbf38a4f-10f6-47f8-9b15-c209783b3fbf"
+  ],
+  "befores": [
+    {
+      "name": "setUp",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363771567,
+      "stop": 1669363792406
+    }
+  ],
+  "afters": [
+    {
+      "name": "stopAppiumAndDriver",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669363856066,
+      "stop": 1669363856837
+    }
+  ],
+  "start": 1669363771496,
+  "stop": 1669363856851
+}

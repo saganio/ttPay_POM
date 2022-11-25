@@ -1,0 +1,200 @@
+{
+  "uuid": "af5b4bbb-f607-4db9-87fe-dc52f0435961",
+  "historyId": "a6ed05dd83d2d69110348c74b755f921",
+  "fullName": "Verified.KisiyeParaGonderTest.KayitliKisiyeParaGonder",
+  "labels": [
+    {
+      "name": "package",
+      "value": "Verified.KisiyeParaGonderTest"
+    },
+    {
+      "name": "testClass",
+      "value": "Verified.KisiyeParaGonderTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "KayitliKisiyeParaGonder"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "ttPay_POM"
+    },
+    {
+      "name": "subSuite",
+      "value": "Verified.KisiyeParaGonderTest"
+    },
+    {
+      "name": "host",
+      "value": "N110688"
+    },
+    {
+      "name": "thread",
+      "value": "20340@N110688.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    }
+  ],
+  "links": [],
+  "name": "KayitliKisiyeParaGonder",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Kayıtlı Kişiye Para Gönderme senaryosu",
+  "steps": [
+    {
+      "name": "setUsername 5997654321",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "username",
+          "value": "5997654321"
+        }
+      ],
+      "start": 1669371307803,
+      "stop": 1669371311293
+    },
+    {
+      "name": "setPassword 135791",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "password",
+          "value": "135791"
+        }
+      ],
+      "start": 1669371311295,
+      "stop": 1669371312668
+    },
+    {
+      "name": "click_HamburgerMenu",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669371333180,
+      "stop": 1669371338255
+    },
+    {
+      "name": "click_rehberimVeBankaHesaplarim",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669371338257,
+      "stop": 1669371339453
+    },
+    {
+      "name": "click_grubaEklemekicinKisiSec",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669371339453,
+      "stop": 1669371340349
+    },
+    {
+      "name": "click_paraGonderButonu",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669371340349,
+      "stop": 1669371341810
+    },
+    {
+      "name": "tutarGir_2",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669371341810,
+      "stop": 1669371351400
+    },
+    {
+      "name": "otp_SMS_transaction_log",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Bilgi",
+          "source": "3c69b711-f66e-417a-9b8b-663e65f68c49-attachment",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1669371351401,
+      "stop": 1669371353635
+    },
+    {
+      "name": "bakiyeKontrol_Verified",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Bilgi",
+          "source": "f4b36c5c-799a-429c-853e-c8c90da3517f-attachment",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1669371353636,
+      "stop": 1669371354312
+    },
+    {
+      "name": "push_Notification_log",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Bilgi",
+          "source": "d5b0b71d-f827-4048-a6cc-035b52a96eba-attachment",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1669371354313,
+      "stop": 1669371354686
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Screenshot",
+      "source": "cd57f175-1872-4ed1-9c78-22689e916466-attachment"
+    }
+  ],
+  "parameters": [],
+  "start": 1669371307686,
+  "stop": 1669371356614
+}

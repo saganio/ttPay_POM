@@ -1,1 +1,11 @@
-{"uuid":"06903a50-fb1e-475b-8cc0-8975ad21070e","name":"Basic.BankadanParaYukleTest","children":["69dc07ef-50d1-498d-9ddd-31e9d356fc87"],"befores":[],"afters":[],"start":1669099274699,"stop":1669099354302}
+{
+  "uuid": "06903a50-fb1e-475b-8cc0-8975ad21070e",
+  "name": "Basic.BankadanParaYukleTest",
+  "children": [
+    "69dc07ef-50d1-498d-9ddd-31e9d356fc87"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1669099274699,
+  "stop": 1669099354302
+}

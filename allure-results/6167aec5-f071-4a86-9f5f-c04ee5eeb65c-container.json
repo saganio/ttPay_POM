@@ -1,1 +1,35 @@
-{"uuid":"6167aec5-f071-4a86-9f5f-c04ee5eeb65c","name":"Basic.GruptanParaIsteTest","children":["4d96c85b-1370-418a-8be5-c20bf3955676"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1669100837825,"stop":1669100851966}],"afters":[{"name":"stopAppiumAndDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1669100877028,"stop":1669100877697}],"start":1669100603458,"stop":1669100998982}
+{
+  "uuid": "6167aec5-f071-4a86-9f5f-c04ee5eeb65c",
+  "name": "Basic.GruptanParaIsteTest",
+  "children": [
+    "4d96c85b-1370-418a-8be5-c20bf3955676"
+  ],
+  "befores": [
+    {
+      "name": "setUp",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669100837825,
+      "stop": 1669100851966
+    }
+  ],
+  "afters": [
+    {
+      "name": "stopAppiumAndDriver",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669100877028,
+      "stop": 1669100877697
+    }
+  ],
+  "start": 1669100603458,
+  "stop": 1669100998982
+}

@@ -2,7 +2,7 @@ package Libraries;
 
 import java.sql.SQLException;
 
-import static Pages.DBQueries.GET_SEMI_AMOUNT_SQL;
+import static Pages.DBQueries.SET_VERIFIED_OTP_SQL;
 
 
 public class test {
@@ -12,7 +12,7 @@ public class test {
     }
 
     public static String String() throws SQLException {
-        String sql = GET_SEMI_AMOUNT_SQL;
+        String sql = SET_VERIFIED_OTP_SQL;
         DBConnection dbConn = new DBConnection();
         System.out.println(dbConn.ttpayDev(sql));
         return dbConn.ttpayDev(sql);

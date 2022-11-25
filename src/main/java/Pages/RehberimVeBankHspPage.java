@@ -46,11 +46,19 @@ public class RehberimVeBankHspPage extends BaseClass {
     private final By davetEtTextAssert = By.id("tr.com.turktelekom.pokus.test:id/tv_information_dialog_message");
     private final By yeniKaydedilenKisi = By.xpath("//*[@text='" + yeniKayitNo + "']");
     private final By kisiAdiDegistirTextBox = By.xpath("//android.widget.EditText[@text='First name']");
-
+    private final By grupSec = By.id("group_icon_non_avatar");
+    private final By aliciAdSoyad = By.xpath("//*[@text='Alıcı Ad Soyad']");
+    private final By aliciIBAN = By.xpath("//*[@text='Alıcı IBAN']");
+    private final By IBANKaydetButton = By.id("btnSaveIban");
+    private final By IBANKaydetTamamButton = By.id("fs_success_dialog_submith");
+    private final By kaydedilenIBANiSec = By.id("imgNoAvatar");
+    private final By IBANSilButton = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ImageButton");
+    private final By rehberdenKisiSec = By.xpath("(//android.widget.ImageView[@resource-id='tr.com.turktelekom.pokus.test:id/imgNoAvatar'])[1]");
+    private final By kisiSectiktenSonraDevamETButton = By.id("abtn_activity_want_money_continue");
 
 
     //Constructor
-    public RehberimVeBankHspPage(AndroidDriver<MobileElement> driver) {
+    public RehberimVeBankHspPage(AndroidDriver<MobileElement> driver) throws IOException, ParseException {
         BaseClass.driver = driver;
     }
 
@@ -92,6 +100,7 @@ public class RehberimVeBankHspPage extends BaseClass {
         clickElementBy(editButton);
         return this;
     }
+
     @Step("{method}")
     public RehberimVeBankHspPage click_yeniKisiEkle() {
         clickElementBy(yeniKisiEkle);
@@ -218,6 +227,12 @@ public class RehberimVeBankHspPage extends BaseClass {
     }
 
     @Step("{method}")
+    public RehberimVeBankHspPage click_GrupSec() {
+        clickElementBy(grupSec);
+        return this;
+    }
+
+    @Step("{method}")
     public String getErrorText() {
         return driver.findElement(IBANText).getText();
     }
@@ -236,7 +251,42 @@ public class RehberimVeBankHspPage extends BaseClass {
 
     @Step("{method}")
     public RehberimVeBankHspPage set_kisiAdiDegistirTextBox() throws IOException, ParseException {
-        clearAndfillInFieldWith(kisiAdiDegistirTextBox,getString("aliciAdSoyad"));
+        clearAndfillInFieldWith(kisiAdiDegistirTextBox, getString("aliciAdSoyad"));
+        return this;
+    }
+
+
+    @Step("{method}")
+    public RehberimVeBankHspPage IbanBilgileriniDoldur() throws IOException, ParseException {
+        clearAndfillInFieldWith(aliciAdSoyad, getString("aliciAdSoyad"));
+        clearAndfillInFieldWith(aliciIBAN, getString("iban"));
+        clickElementBy(IBANKaydetButton);
+        clickElementBy(IBANKaydetTamamButton);
+        return this;
+    }
+
+
+    @Step("{method}")
+    public RehberimVeBankHspPage IBANKaydedilenKisiyiSec() {
+        clickElementBy(kaydedilenIBANiSec);
+        return this;
+    }
+
+    @Step("{method}")
+    public RehberimVeBankHspPage click_IBANSilButton()  {
+        clickElementBy(IBANSilButton);
+        return this;
+    }
+
+    @Step("{method}")
+    public RehberimVeBankHspPage rehberdenKisiSec() {
+        clickElementBy(rehberdenKisiSec);
+        return this;
+    }
+
+    @Step("{method}")
+    public RehberimVeBankHspPage kisiSectiktenSonraDevamEt() {
+        clickElementBy(kisiSectiktenSonraDevamETButton);
         return this;
     }
 

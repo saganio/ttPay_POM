@@ -1,1 +1,123 @@
-{"uuid":"71308f4f-037d-4751-99e6-1994f2c5950b","historyId":"2646b0f439074d6cd559380e3755b426","fullName":"BasicT.KampanyalarTest.LoginAndCheckCampaigns","labels":[{"name":"package","value":"BasicT.KampanyalarTest"},{"name":"testClass","value":"BasicT.KampanyalarTest"},{"name":"testMethod","value":"LoginAndCheckCampaigns"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"ttPay_POM"},{"name":"subSuite","value":"BasicT.KampanyalarTest"},{"name":"host","value":"Ugur-MacBook-Pro.local"},{"name":"thread","value":"35533@Ugur-MacBook-Pro.local.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"},{"name":"severity","value":"minor"}],"links":[],"name":"LoginAndCheckCampaigns","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","description":"Kampanyaları görüntüleme testi.","steps":[{"name":"login","status":"passed","stage":"finished","steps":[{"name":"setUsername","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"username","value":"5997654321"}],"start":1668880149326,"stop":1668880150635},{"name":"setPassword","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"password","value":"135791"}],"start":1668880150638,"stop":1668880151974},{"name":"getTextOfOTPMessage","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1668880151976,"stop":1668880153217}],"attachments":[],"parameters":[],"start":1668880149225,"stop":1668880159846}],"attachments":[{"name":"Screenshot","source":"faf85380-33c9-42b6-a9ac-022691a40c58-attachment"}],"parameters":[],"start":1668880149036,"stop":1668880160919}
+{
+  "uuid": "71308f4f-037d-4751-99e6-1994f2c5950b",
+  "historyId": "2646b0f439074d6cd559380e3755b426",
+  "fullName": "BasicT.KampanyalarTest.LoginAndCheckCampaigns",
+  "labels": [
+    {
+      "name": "package",
+      "value": "BasicT.KampanyalarTest"
+    },
+    {
+      "name": "testClass",
+      "value": "BasicT.KampanyalarTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "LoginAndCheckCampaigns"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "ttPay_POM"
+    },
+    {
+      "name": "subSuite",
+      "value": "BasicT.KampanyalarTest"
+    },
+    {
+      "name": "host",
+      "value": "Ugur-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "35533@Ugur-MacBook-Pro.local.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    }
+  ],
+  "links": [],
+  "name": "LoginAndCheckCampaigns",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Kampanyaları görüntüleme testi.",
+  "steps": [
+    {
+      "name": "login",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "setUsername",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "username",
+              "value": "5997654321"
+            }
+          ],
+          "start": 1668880149326,
+          "stop": 1668880150635
+        },
+        {
+          "name": "setPassword",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "password",
+              "value": "135791"
+            }
+          ],
+          "start": 1668880150638,
+          "stop": 1668880151974
+        },
+        {
+          "name": "getTextOfOTPMessage",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1668880151976,
+          "stop": 1668880153217
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1668880149225,
+      "stop": 1668880159846
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Screenshot",
+      "source": "faf85380-33c9-42b6-a9ac-022691a40c58-attachment"
+    }
+  ],
+  "parameters": [],
+  "start": 1668880149036,
+  "stop": 1668880160919
+}

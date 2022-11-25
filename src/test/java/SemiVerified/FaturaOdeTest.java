@@ -10,6 +10,8 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import static Pages.StringConstants.STEP_MESSAGE;
+
 /**
  * Created by uguryildiz on 17.11.2022
  */
@@ -17,7 +19,7 @@ public class FaturaOdeTest extends BaseClass {
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
-    @Step("1-Kullanıcı adını gir, 2-Şifreyi Gir, 3- Ödeme Yap, 4-Fatura Öde")
+    @Step(STEP_MESSAGE)
     @Description("Fatura Ödeme testi.")
     public void FaturaOde() throws IOException, ParseException {
 

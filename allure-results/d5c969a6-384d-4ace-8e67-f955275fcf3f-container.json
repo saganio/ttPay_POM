@@ -1,1 +1,35 @@
-{"uuid":"d5c969a6-384d-4ace-8e67-f955275fcf3f","name":"Login.Login_Basic_TopUp","children":["01782f6c-316f-42b4-ab41-ddde57160251"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1669122253051,"stop":1669122269047}],"afters":[{"name":"stopAppiumAndDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1669122280226,"stop":1669122280848}],"start":1669122252998,"stop":1669122280873}
+{
+  "uuid": "d5c969a6-384d-4ace-8e67-f955275fcf3f",
+  "name": "Login.Login_Basic_TopUp",
+  "children": [
+    "01782f6c-316f-42b4-ab41-ddde57160251"
+  ],
+  "befores": [
+    {
+      "name": "setUp",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669122253051,
+      "stop": 1669122269047
+    }
+  ],
+  "afters": [
+    {
+      "name": "stopAppiumAndDriver",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1669122280226,
+      "stop": 1669122280848
+    }
+  ],
+  "start": 1669122252998,
+  "stop": 1669122280873
+}
