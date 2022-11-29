@@ -9,6 +9,7 @@ import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import static Pages.StringConstants.STEP_MESSAGE;
 
@@ -18,9 +19,11 @@ public class YanlisIBANKaydetTest extends BaseClass {
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("IBAN Kaydetme testi.")
-    public void IBANKaydet() throws IOException, ParseException {
+    public void IBANKaydet() throws IOException, ParseException, SQLException {
 
 
+        dbQueries
+                .bakiyeKontrol_semi();
         loginPage
                 .semiVerifiedlogin()
                 .click_HamburgerMenu();
@@ -31,9 +34,15 @@ public class YanlisIBANKaydetTest extends BaseClass {
                 .click_plusButton()
                 .IbanBilgileriniDoldur_Semi();
 
-
         RehberimVeBankaHesaplarimPage
                 .click_vazgecButonuDialog();
+
+        dbQueries
+                .otp_SMS_transaction_log()
+                .bakiyeKontrol_semi()
+                .push_Notification_log()
+                .total_Tax_Amount_semi();
+
     }
 
 }

@@ -35,7 +35,10 @@ public class ParaIsteTest extends BaseClass {
         testAssertFunctions(hataMesaji_PARAISTE, homePage.get_ConfirmationDialogText());
 
         dbQueries
-                .bakiyeKontrol_semi();
+                .otp_SMS_transaction_log()
+                .bakiyeKontrol_semi()
+                .push_Notification_log()
+                .total_Tax_Amount_semi();
 
     }
 

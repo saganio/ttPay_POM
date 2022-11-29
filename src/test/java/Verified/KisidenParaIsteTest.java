@@ -37,7 +37,8 @@ public class KisidenParaIsteTest extends BaseClass {
         dbQueries
                 .otp_SMS_transaction_log()
                 .bakiyeKontrol_Verified()
-                .push_Notification_log();
+                .push_Notification_log()
+                .total_Tax_Amount_verified();
 
     }
 

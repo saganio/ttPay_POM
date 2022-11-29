@@ -10,6 +10,7 @@ import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import static Pages.StringConstants.STEP_MESSAGE;
 import static Pages.StringConstants.hataMesaji_PARAISTE;
@@ -21,7 +22,10 @@ public class GruptanParaIsteTest extends BaseClass {
     @Description("Gruptan Para İsteme senaryosu")
     @Step(STEP_MESSAGE)
     @Test(priority = 0)
-    public void GruptanParaIste() throws IOException, ParseException {
+    public void GruptanParaIste() throws IOException, ParseException, SQLException {
+
+        dbQueries
+                .bakiyeKontrol_semi();
 
         loginPage
                 .semiVerifiedlogin()
@@ -46,6 +50,13 @@ public class GruptanParaIsteTest extends BaseClass {
                 .click_grubuSil()
                 .click_grubuSil_OnaylaButton()
                 .click_grubuSil_TamamButton();
+
+        dbQueries
+                .otp_SMS_transaction_log()
+                .bakiyeKontrol_semi()
+                .push_Notification_log()
+                .total_Tax_Amount_semi();
+
     }
 
 

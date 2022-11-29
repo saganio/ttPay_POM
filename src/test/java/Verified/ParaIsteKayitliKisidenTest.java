@@ -23,6 +23,8 @@ public class ParaIsteKayitliKisidenTest extends BaseClass {
     @Description("Para İsteme senaryosu.")
     public void KayitliKisidenParaIste() throws IOException, ParseException, InterruptedException, SQLException {
 
+        dbQueries
+                .bakiyeKontrol_Verified();
         loginPage
                 .Verifiedlogin()
                 .click_HamburgerMenu();
@@ -40,7 +42,8 @@ public class ParaIsteKayitliKisidenTest extends BaseClass {
         dbQueries
                 .otp_SMS_transaction_log()
                 .bakiyeKontrol_Verified()
-                .push_Notification_log();
+                .push_Notification_log()
+                .total_Tax_Amount_verified();
 
     }
 

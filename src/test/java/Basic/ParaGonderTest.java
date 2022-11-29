@@ -9,6 +9,7 @@ import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import static Libraries.TestUtils.testAssertFunctions;
 import static Pages.StringConstants.STEP_MESSAGE;
@@ -19,7 +20,10 @@ public class ParaGonderTest extends BaseClass {
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Para Gönderme senaryosu")
-    public void LoginAndClickParaGonder() throws IOException, ParseException {
+    public void LoginAndClickParaGonder() throws IOException, ParseException, SQLException {
+
+        dbQueries
+                .bakiyeKontrol_Basic();
 
         loginPage
                 .login();

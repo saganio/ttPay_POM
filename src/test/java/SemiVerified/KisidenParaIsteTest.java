@@ -9,6 +9,7 @@ import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import static Libraries.TestUtils.testAssertFunctions;
 import static Pages.StringConstants.STEP_MESSAGE;
@@ -20,7 +21,10 @@ public class KisidenParaIsteTest extends BaseClass {
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Kayıtlı Kişiden Para İsteme senaryosu")
-    public void KayitliKisidenParaIste() throws IOException, ParseException {
+    public void KayitliKisidenParaIste() throws IOException, ParseException, SQLException {
+
+        dbQueries
+                .bakiyeKontrol_semi();
 
         loginPage
                 .semiVerifiedlogin()
@@ -34,6 +38,12 @@ public class KisidenParaIsteTest extends BaseClass {
                 .click_paraIsteButonu();
 
         testAssertFunctions(hataMesaji_PARAISTE, homePage.get_ConfirmationDialogText());
+
+        dbQueries
+                .otp_SMS_transaction_log()
+                .bakiyeKontrol_semi()
+                .push_Notification_log()
+                .total_Tax_Amount_semi();
 
     }
 

@@ -56,8 +56,8 @@ public class DBQueries {
     public DBQueries(AndroidDriver<MobileElement> driver) {
     }
 
-    @Attachment(value = "Bilgi", type = "text/plain")
-    public static String addStringAttachment(String SQL) throws SQLException, FileNotFoundException {
+    @Attachment(value = "{value}", type = "text/plain")
+    public static String addStringAttachment(String SQL, String value) throws SQLException, FileNotFoundException {
         DBConnection dbConn = new DBConnection();
         return dbConn.ttpayDev(SQL);
     }
@@ -67,7 +67,7 @@ public class DBQueries {
         String sql = GET_SEMI_AMOUNT_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
-        addStringAttachment(GET_SEMI_AMOUNT_SQL);
+        addStringAttachment(GET_SEMI_AMOUNT_SQL,"SemiVerified Bakiye: ");
         return this;
     }
 
@@ -76,7 +76,7 @@ public class DBQueries {
         String sql = GET_BASIC_AMOUNT_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
-        addStringAttachment(GET_BASIC_AMOUNT_SQL);
+        addStringAttachment(GET_BASIC_AMOUNT_SQL,"Basic Bakiye: ");
         return this;
     }
 
@@ -85,7 +85,7 @@ public class DBQueries {
         String sql = GET_VERIFIED_AMOUNT_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
-        addStringAttachment(GET_VERIFIED_AMOUNT_SQL);
+        addStringAttachment(GET_VERIFIED_AMOUNT_SQL,"Verified Bakiye: ");
         return this;
     }
 
@@ -94,7 +94,7 @@ public class DBQueries {
         String sql = GET_OTP_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
-        addStringAttachment(GET_OTP_SQL);
+        addStringAttachment(GET_OTP_SQL,"SMS Log: ");
         return this;
     }
 
@@ -104,7 +104,7 @@ public class DBQueries {
         String sql = GET_PN_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
-        addStringAttachment(GET_PN_SQL);
+        addStringAttachment(GET_PN_SQL,"Push Notification Log: ");
         return this;
     }
 
@@ -113,7 +113,7 @@ public class DBQueries {
         String sql = GET_TOTAL_TAX_AMOUNT_VERIFIED;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
-        addStringAttachment(GET_TOTAL_TAX_AMOUNT_VERIFIED);
+        addStringAttachment(GET_TOTAL_TAX_AMOUNT_VERIFIED,"Toplam Kesinti Miktarı - Verified: ");
         return this;
     }
 
@@ -122,7 +122,7 @@ public class DBQueries {
         String sql = GET_TOTAL_TAX_AMOUNT_SEMI;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
-        addStringAttachment(GET_TOTAL_TAX_AMOUNT_SEMI);
+        addStringAttachment(GET_TOTAL_TAX_AMOUNT_SEMI,"Toplam Kesinti Miktarı - SemiVerified: ");
         return this;
     }
 

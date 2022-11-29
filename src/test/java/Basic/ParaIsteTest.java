@@ -9,6 +9,7 @@ import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import static Libraries.TestUtils.testAssertFunctions;
 import static Pages.StringConstants.STEP_MESSAGE;
@@ -20,7 +21,10 @@ public class ParaIsteTest extends BaseClass {
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Para İsteme senaryosu.")
-    public void LoginAndClickParaIste() throws IOException, ParseException {
+    public void LoginAndClickParaIste() throws IOException, ParseException, SQLException {
+
+        dbQueries
+                .bakiyeKontrol_Basic();
 
         loginPage
                 .login();

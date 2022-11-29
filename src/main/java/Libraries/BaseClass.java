@@ -24,11 +24,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
-
 import java.io.ByteArrayInputStream;
 import java.io.FileReader;
 import java.io.IOException;
-
 import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnvironmentWriter;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
@@ -36,8 +34,8 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 @Listeners(TestListener.class)
 public class BaseClass {
 
-
     public static AndroidDriver<MobileElement> driver;
+
     //Call Page Objects
     public static LoginPage loginPage = new LoginPage(driver);
     public static LeftPanelPage leftPanelPage = new LeftPanelPage(driver);
@@ -156,7 +154,6 @@ public class BaseClass {
                         .getScreenshotAs(OutputType.BYTES)));
 
     }
-
 
     public void setAllureEnvironment() {
         allureEnvironmentWriter(

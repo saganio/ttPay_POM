@@ -9,6 +9,7 @@ import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import static Libraries.TestUtils.testAssertFunctions;
 import static Pages.StringConstants.STEP_MESSAGE;
@@ -20,7 +21,10 @@ public class BankadanParaYukleTest extends BaseClass {
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Banka hesabından para yükleme testi.")
-    public void BankaHesabindanParaYukle() throws IOException, ParseException {
+    public void BankaHesabindanParaYukle() throws IOException, ParseException, SQLException {
+
+        dbQueries
+                .bakiyeKontrol_semi();
 
         loginPage
                 .semiVerifiedlogin();
@@ -29,6 +33,11 @@ public class BankadanParaYukleTest extends BaseClass {
                 .click_TamamButtonBefore()
                 .click_TamamButtonAfter();
 
+        dbQueries
+                .otp_SMS_transaction_log()
+                .bakiyeKontrol_semi()
+                .push_Notification_log()
+                .total_Tax_Amount_semi();
     }
 
 }
