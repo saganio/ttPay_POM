@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5672436-3bdd-4520-a293-1beda2ab3523" name="Changes" comment="commit-db and trends">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/RealTimeReport-v2.1/realtime-report-v2.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/RealTimeReport-v2.1/realtime-report-v2.1-sources.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/RealTimeReport-v2.1/realtime-report-v2.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/RealTimeReport-v2.1/realtime-report-v2.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/DBQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/DBQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProfilPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ProfilPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RehberimVeBankHspPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RehberimVeBankHspPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/TestListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/DBQueries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/DBQueries.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +91,7 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GrubaParaGonderTest">
+  <component name="RunManager" selected="TestNG.LoginHataliParolaTest">
     <configuration name="C:/Users/uyildiz/Desktop/IDEA Projects/ttPay_POM/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFrameworkForMobile" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -115,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IBANKaydetParaGonderTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GruptanParaIsteTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFrameworkForMobile" />
       <extension name="coverage">
         <pattern>
@@ -123,16 +127,28 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="PACKAGE_NAME" value="Verified" />
-      <option name="MAIN_CLASS_NAME" value="Verified.IBANKaydetParaGonderTest" />
+      <option name="MAIN_CLASS_NAME" value="Verified.GruptanParaIsteTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
-      <patterns>
-        <pattern testClass="Verified.IBANKaydetParaGonderTest" />
-        <pattern testClass="Verified.KisiDetayIncelemeTest" />
-      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginHataliParolaTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFrameworkForMobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Login" />
+      <option name="MAIN_CLASS_NAME" value="Login.LoginHataliParolaTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -154,27 +170,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Verified.IBANKaydetParaGonderTest and 1 more" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestFrameworkForMobile" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="PATTERN" />
-      <properties />
-      <listeners />
-      <patterns>
-        <pattern testClass="Verified.IBANKaydetParaGonderTest" />
-        <pattern testClass="Verified.KisiDetayIncelemeTest" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginHataliParolaTest" />
         <item itemvalue="TestNG.GrubaParaGonderTest" />
+        <item itemvalue="TestNG.GruptanParaIsteTest" />
         <item itemvalue="TestNG.SemiVerified.BankadanParaYukleTest and 4 more" />
         <item itemvalue="TestNG.C:/Users/uyildiz/Desktop/IDEA Projects/ttPay_POM/testng.xml" />
-        <item itemvalue="TestNG.IBANKaydetParaGonderTest" />
-        <item itemvalue="TestNG.Verified.IBANKaydetParaGonderTest and 1 more" />
       </list>
     </recent_temporary>
   </component>
@@ -327,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669726458363</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="commit-db and trends">
+      <created>1669726825951</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1669726825951</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

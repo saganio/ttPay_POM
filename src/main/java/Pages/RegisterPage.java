@@ -7,8 +7,8 @@ import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
-import static Libraries.TestUtils.clearAndfillInFieldWith;
-import static Libraries.TestUtils.clickElementBy;
+import static Libraries.TestUtils.*;
+import static Utils.TestListener.saveTextLog;
 
 
 public class RegisterPage extends BaseClass {
@@ -68,6 +68,7 @@ public class RegisterPage extends BaseClass {
 
     @Step("{method}")
     public String getVarOlanHesapErrorText() {
+        saveTextLog(getTextFromElement(varOlanHesapErrorText));
         return driver.findElement(varOlanHesapErrorText).getText();
     }
 

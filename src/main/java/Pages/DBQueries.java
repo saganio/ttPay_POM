@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.SQLException;
 import static Libraries.BaseClass.getString;
+import static Utils.TestListener.saveTextLog;
 
 /**
  * Created by uguryildiz on 20.11.2022
@@ -125,6 +126,4 @@ public class DBQueries {
         addStringAttachment(GET_TOTAL_TAX_AMOUNT_SEMI,"Toplam Kesinti Miktarı - SemiVerified: ");
         return this;
     }
-
-
 }

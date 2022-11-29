@@ -13,6 +13,7 @@ import java.io.IOException;
 
 import static Libraries.TestUtils.*;
 import static Pages.StringConstants.yeniKayitNo;
+import static Utils.TestListener.saveTextLog;
 
 public class RehberimVeBankHspPage extends BaseClass {
 
@@ -110,7 +111,6 @@ public class RehberimVeBankHspPage extends BaseClass {
     @Step("{method}")
     public RehberimVeBankHspPage click_yeniGrupOlustur() {
         clickElementBy(yeniGrupOlustur);
-        Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 
@@ -129,7 +129,6 @@ public class RehberimVeBankHspPage extends BaseClass {
     @Step("{method}")
     public RehberimVeBankHspPage click_devamEtButonu_dialog() {
         clickElementBy(dialog_devamEtButonu);
-        Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 
@@ -143,14 +142,12 @@ public class RehberimVeBankHspPage extends BaseClass {
     @Step("{method}")
     public RehberimVeBankHspPage click_devamEtButonu() {
         clickElementBy(devamEtButonu);
-        Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 
     @Step("{method}")
     public RehberimVeBankHspPage click_kaydetButonu() {
         clickElementBy(kaydetButonu);
-        Log.info("I clicked: " + this.getClass().getSimpleName());
         return this;
     }
 
@@ -234,14 +231,17 @@ public class RehberimVeBankHspPage extends BaseClass {
 
     @Step("{method}")
     public String getErrorText() {
+        saveTextLog(getTextFromElement(IBANText));
         return driver.findElement(IBANText).getText();
     }
 
     public String getErrorText_Semi() {
+        saveTextLog(getTextFromElement(semiIBANHataText));
         return driver.findElement(semiIBANHataText).getText();
     }
     @Step("{method}")
     public String getDavetEtText() {
+        saveTextLog(getTextFromElement(davetEtTextAssert));
         return driver.findElement(davetEtTextAssert).getText();
     }
 

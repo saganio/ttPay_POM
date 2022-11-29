@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static Libraries.TestUtils.*;
+import static Utils.TestListener.saveTextLog;
 
 
 public class HomePage extends BaseClass {
@@ -88,7 +89,9 @@ public class HomePage extends BaseClass {
 
     @Step("{method}")
     public String get_ConfirmationDialogText() {
+        saveTextLog(getTextFromElement(confirmationDialog));
         return getTextFromElement(confirmationDialog);
+
     }
 
     @Step("{method}")

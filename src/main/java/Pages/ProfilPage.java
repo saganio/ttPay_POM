@@ -16,6 +16,7 @@ import java.sql.SQLException;
 import static Libraries.TestUtils.*;
 import static Pages.DBQueries.*;
 import static Pages.StringConstants.OTP_LOG_MESSAGE;
+import static Utils.TestListener.saveTextLog;
 
 public class ProfilPage extends BaseClass {
 

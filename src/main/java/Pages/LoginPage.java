@@ -19,6 +19,7 @@ import java.sql.SQLException;
 import static Libraries.TestUtils.*;
 import static Pages.DBQueries.SET_SEMIVERIFIED_OTP_SQL;
 import static Pages.StringConstants.girisOncesiOTPText;
+import static Utils.TestListener.saveTextLog;
 
 
 public class LoginPage extends BaseClass {
@@ -61,6 +62,7 @@ public class LoginPage extends BaseClass {
 
     @Step("{method}")
     public CharSequence getTextOfOTPMessage() {
+        saveTextLog(getTextFromElement(loginOTPField));
         return getTextFromElement(loginOTPField);
     }
 
@@ -230,6 +232,7 @@ public class LoginPage extends BaseClass {
 
     @Step("{method}")
     public String getYanlisParolaText() {
+        saveTextLog(getTextFromElement(yanlisParolaText));
         return driver.findElement(yanlisParolaText).getText();
     }
 

@@ -36,7 +36,7 @@ public class TestListener extends BaseClass implements ITestListener {
     public static String capture(WebDriver driver) throws IOException {
 
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        File Dest = new File("report//errSS//" + System.currentTimeMillis()
+        File Dest = new File("target//errSS//" + System.currentTimeMillis()
                              + ".png");
         String errflpath = Dest.getAbsolutePath().replace("/C:", "C:/");
         FileUtils.copyFile(scrFile, Dest);
@@ -52,13 +52,13 @@ public class TestListener extends BaseClass implements ITestListener {
 
     @Override
     public void onStart(ITestContext iTestContext) {
-        Log.info("I am in start " + iTestContext.getName());
+        Log.info("I am in" + iTestContext.getName());
         iTestContext.setAttribute("WebDriver", driver);
     }
 
     @Override
     public void onFinish(ITestContext iTestContext) {
-        Log.info("I am in on finish " + iTestContext.getName());
+        Log.info("I am on finish " + iTestContext.getName());
         //Do tier down operations for ExtentReports reporting!
 
     }
