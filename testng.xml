@@ -4,9 +4,9 @@
 
 
     <test verbose="1" preserve-order="false" name="ttPay_POM">
-        <packages>
-            <package name="SemiVerified.*"/>
-        </packages>
+        <classes>
+            <class name="Login.LoginLogOutTest"/>
+        </classes>
     </test>
 
 </suite>
