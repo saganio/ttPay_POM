@@ -25,8 +25,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import java.io.ByteArrayInputStream;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.HashMap;
+
 import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnvironmentWriter;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
@@ -66,24 +71,21 @@ public class BaseClass {
         AppiumServiceBuilder builder = new AppiumServiceBuilder();
 
         builder.usingAnyFreePort();
-        // Tell builder where node is installed. Or set this path in an environment variable named NODE_PATH
-   /*     builder.usingDriverExecutable(new File("path_to_node"));
+    /*    // Tell builder where node is installed. Or set this path in an environment variable named NODE_PATH
+       builder.usingDriverExecutable(new File("C:\\Users\\uyildiz\\AppData\\Local\\Programs\\Appium\\Appium.exe"));
         // Tell builder where Appium is installed. Or set this path in an environment variable named APPIUM_PATH
-        builder.withAppiumJS(new File("path_to_appium"));
-
-
-        HashMap<String, String> environment = new HashMap();
-        environment.put("PATH", "/usr/local/bin:" + System.getenv("PATH"));
-        builder.withEnvironment(environment);
+        builder.withAppiumJS(new File("C:\\Users\\uyildiz\\AppData\\Local\\Programs\\Appium"));
 */
-
         service = AppiumDriverLocalService.buildService(builder);
         service.start();
         service.clearOutPutStreams();
     }
 
     //Setup before app start
-    public static AndroidDriver<MobileElement> initializeSetup() {
+    public static AndroidDriver<MobileElement> initializeSetup() throws MalformedURLException {
+
+        final String URL_STRING = "http://127.0.0.1:4723/wd/hub";
+        URL url = new URL(URL_STRING);
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
@@ -98,7 +100,7 @@ public class BaseClass {
         capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 6000);
         capabilities.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
         capabilities.setCapability("autoAcceptAlerts", true);
-        AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(service.getUrl(), capabilities);
+        AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(url, capabilities);
         driver.setSetting(Setting.WAIT_FOR_IDLE_TIMEOUT, 100);
 
         driver.manage().timeouts().implicitlyWait(15, SECONDS);
@@ -127,10 +129,10 @@ public class BaseClass {
     @BeforeClass(alwaysRun = true)
     public void setUp() throws IOException {
 
-        startAppiumServer();
+        //startAppiumServer();
         driver = BaseClass.initializeSetup();
         setAllureEnvironment();
-        Log.info("Çalıştırma öncesi ayarlar uygulanıyor...");
+        Log.info("Engine started.");
 
 
     }
@@ -139,7 +141,7 @@ public class BaseClass {
     public void stopAppiumAndDriver() throws IOException {
 
         driver.quit();
-        service.stop();
+      //  service.stop();
         Log.info("Closing Driver");
         //Runtime.getRuntime().exec("allure serve allure-results");
 
