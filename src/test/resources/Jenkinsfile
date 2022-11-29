@@ -1,0 +1,41 @@
+pipeline {
+    agent any
+
+tools {
+    maven 'maven'
+    jdk 'java_home'
+  }
+stages{
+        stage('starting Tests.') {
+            steps {
+                echo "Test Starting."
+
+            }
+        }
+
+        stage('running Tests') {
+            steps {
+                echo "running Tests.."
+               sh 'mvn -f pom.xml clean install'
+            }
+        }
+
+
+        stage('preparing report to Send') {
+            steps {
+                echo "preparing report to Send.."
+
+            }
+        }
+
+}
+
+
+ post {
+     always {
+            emailext attachmentsPattern: 'target/surefire-reports/*.html', body: '''${SCRIPT, template="groovy-html.template"}''',
+                    subject: "${currentBuild.currentResult}: ${env.JOB_NAME}",
+                    mimeType: 'text/html',to: "uyildiz@innova.com.tr"
+            }
+    }
+}
