@@ -129,7 +129,7 @@
             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
         </argLine>
         <name>allure.results.directory</name>
-        <value>${project.build.directory}/allure-results</value>
+        <value>${project.build.directory}/target/allure-results</value>
     </properties>
 
 
