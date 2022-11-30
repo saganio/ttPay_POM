@@ -8,6 +8,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static Libraries.TestUtils.clickElementBy;
+import static Pages.GlobalPage.getNames;
 
 public class KartlarimPage extends BaseClass {
 
@@ -30,7 +31,7 @@ public class KartlarimPage extends BaseClass {
     @Step("{method}")
     public KartlarimPage click_pokusKartEkleOlustur() {
         clickElementBy(pokusKartEkleOlustur);
-        Log.info("I clicked" + getClass());
+        Log.info(getNames());
         return this;
 
     }
@@ -38,35 +39,41 @@ public class KartlarimPage extends BaseClass {
     @Step("{method}")
     public KartlarimPage click_pokusKartiniEkle() {
         clickElementBy(pokusKartiniEkle);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public KartlarimPage click_pokusSanalKartOlustur() {
         clickElementBy(pokusSanalKartOlustur);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public KartlarimPage click_krediBankaKartiEkle() {
         clickElementBy(krediBankaKartiEkle);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public KartlarimPage click_pokusKartTalebiOlustur() {
         clickElementBy(pokusKartTalebiOlustur);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public KartlarimPage click_kartlarMenusunuKapat() {
         clickElementBy(kartlarMenusunuKapat);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public String getHataMesajiText() {
+        Log.info(getNames());
         return driver.findElement(errorText).getText();
     }
 

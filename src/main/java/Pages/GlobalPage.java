@@ -9,6 +9,8 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
+import java.util.Arrays;
+
 import static Libraries.TestUtils.clickElementBy;
 import static Libraries.TestUtils.getFluentWait;
 
@@ -40,7 +42,7 @@ public class GlobalPage extends BaseClass {
     @Step("{method}")
     public GlobalPage check_Notifications() {
         clickElementBy(bildirimler);
-        Log.info("I clicked" + getClass());
+        Log.info(getNames());
         return this;
 
     }
@@ -48,12 +50,14 @@ public class GlobalPage extends BaseClass {
     @Step("{method}")
     public GlobalPage click_EvetDialog() {
         clickElementBy(cikisYap_EvetButonu);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public GlobalPage click_HayirDialog() {
         clickElementBy(cikisYap_HayirButonu);
+        Log.info(getNames());
         return this;
     }
 
@@ -61,12 +65,14 @@ public class GlobalPage extends BaseClass {
     @Step("{method}")
     public GlobalPage click_Islemlerim() {
         clickElementBy(islemlerim);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public GlobalPage click_BekleyenIslemlerim() {
         clickElementBy(bekleyenIslemler);
+        Log.info(getNames());
         return this;
     }
 
@@ -74,12 +80,14 @@ public class GlobalPage extends BaseClass {
     public GlobalPage goBack() {
         driver.navigate().back();
         getFluentWait();
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public GlobalPage wait2Sec() throws InterruptedException {
         Thread.sleep(2000);
+        Log.info(getNames());
         return this;
     }
 
@@ -90,6 +98,7 @@ public class GlobalPage extends BaseClass {
         driver.pressKey(new KeyEvent(AndroidKey.NUMPAD_6));
         clickElementBy(tutarGirdiktenSonrakiDevamEtButonu);
         clickElementBy(tutarGirdiktenSonrakiOnaylaEtButonu);
+        Log.info(getNames());
         return this;
     }
 
@@ -101,7 +110,7 @@ public class GlobalPage extends BaseClass {
         clickElementBy(tutarGirdiktenSonrakiDevamEtButonu);
         clickElementBy(tutarGirdiktenSonrakiOnaylaEtButonu);
         clickElementBy(OTPGirdiktenSonrakiBitirButonu);
-
+        Log.info(getNames());
         return this;
     }
 
@@ -113,7 +122,7 @@ public class GlobalPage extends BaseClass {
         clickElementBy(bankaHesabinaParaGonderDevamEtButonu);
         clickElementBy(bankaHesabinaParaGonderOnaylaButonu);
         clickElementBy(bankaHesabinaParaGonderBitirButonu);
-
+        Log.info(getNames());
         return this;
     }
 
@@ -124,7 +133,13 @@ public class GlobalPage extends BaseClass {
         }
         clickElementBy(OTPGirdiktenSonrakiGonderButonu);
         clickElementBy(OTPGirdiktenSonrakiBitirButonu);
+        Log.info(getNames());
         return this;
     }
 
+    public static String getNames() {
+        final StackTraceElement e = Thread.currentThread().getStackTrace()[2];
+        final String s = e.getClassName();
+        return "I interact with > "+s.substring(s.lastIndexOf('.') + 1, s.length()) + "." + e.getMethodName();
+    }
 }

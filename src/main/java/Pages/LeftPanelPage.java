@@ -1,6 +1,7 @@
 package Pages;
 
 import Libraries.BaseClass;
+import Utils.Log;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.Step;
@@ -8,6 +9,7 @@ import org.openqa.selenium.By;
 
 import static Libraries.TestUtils.clickElementBy;
 import static Libraries.TestUtils.getFluentWait;
+import static Pages.GlobalPage.getNames;
 
 public class LeftPanelPage extends BaseClass {
 
@@ -32,18 +34,21 @@ public class LeftPanelPage extends BaseClass {
     @Step("{method}")
     public LeftPanelPage click_Profil() {
         clickElementBy(profil);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public LeftPanelPage click_hesabiniOnayla() {
         clickElementBy(hesabiniOnayla);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public LeftPanelPage click_rehberimVeBankaHesaplarim() {
         clickElementBy(rehberimVeBankaHesaplarim);
+        Log.info(getNames());
         return this;
 
     }
@@ -51,36 +56,42 @@ public class LeftPanelPage extends BaseClass {
     @Step("{method}")
     public LeftPanelPage click_ayarlarVeIzinler() {
         clickElementBy(ayarlarVeIzinler);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public LeftPanelPage click_pokusKartEkleOlustur() {
         clickElementBy(pokusKartEkleOlustur);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public LeftPanelPage click_formVeSozlesmeler() {
         clickElementBy(formVeSozlesmeler);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public LeftPanelPage click_sikcaSorulanSorular() {
         clickElementBy(sikcaSorulanSorular);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public LeftPanelPage click_musteriHizmetleri() {
         clickElementBy(musteriHizmetleri);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public LeftPanelPage click_cikisYap() {
         clickElementBy(cikisYap);
+        Log.info(getNames());
         return this;
     }
 
@@ -88,6 +99,7 @@ public class LeftPanelPage extends BaseClass {
     public LeftPanelPage goBack() {
         driver.navigate().back();
         getFluentWait();
+        Log.info(getNames());
         return this;
     }
 
@@ -95,12 +107,14 @@ public class LeftPanelPage extends BaseClass {
     public LeftPanelPage clickIptal() {
         clickElementBy(iptal);
         getFluentWait();
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public LeftPanelPage wait2Sec() throws InterruptedException {
         Thread.sleep(2000);
+        Log.info(getNames());
         return this;
     }
 }

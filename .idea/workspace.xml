@@ -6,8 +6,30 @@
   <component name="ChangeListManager">
     <list default="true" id="d5672436-3bdd-4520-a293-1beda2ab3523" name="Changes" comment="cesitli yenilikler">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Libraries/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/BaseClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/BaseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/DBConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/EventHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/PostmanTopUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/TestUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/AyarlarVeIzinlerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/AyarlarVeIzinlerPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CampaignsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CampaignsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/GlobalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/GlobalPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/KartlarimPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/KartlarimPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LeftPanelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LeftPanelPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProfilPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ProfilPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RehberimVeBankHspPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RehberimVeBankHspPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/TestListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Libraries/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Libraries/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/ProfilPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/ProfilPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/RegisterPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/RehberimVeBankHspPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/RehberimVeBankHspPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utils/TestListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utils/TestListener.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,17 +107,7 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginHataliParolaTest">
-    <configuration name="C:/Users/uyildiz/Desktop/IDEA Projects/ttPay_POM/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestFrameworkForMobile" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.LoginLogOutTest">
     <configuration name="GrubaParaGonderTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFrameworkForMobile" />
       <extension name="coverage">
@@ -147,6 +159,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginLogOutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFrameworkForMobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Login" />
+      <option name="MAIN_CLASS_NAME" value="Login.LoginLogOutTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SemiVerified.BankadanParaYukleTest and 4 more" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFrameworkForMobile" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -166,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginLogOutTest" />
         <item itemvalue="TestNG.LoginHataliParolaTest" />
         <item itemvalue="TestNG.GrubaParaGonderTest" />
         <item itemvalue="TestNG.GruptanParaIsteTest" />
         <item itemvalue="TestNG.SemiVerified.BankadanParaYukleTest and 4 more" />
-        <item itemvalue="TestNG.C:/Users/uyildiz/Desktop/IDEA Projects/ttPay_POM/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -358,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669732929897</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="cesitli yenilikler">
+      <created>1669735314152</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1669735314152</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

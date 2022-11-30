@@ -15,6 +15,7 @@ import java.sql.SQLException;
 
 import static Libraries.TestUtils.*;
 import static Pages.DBQueries.*;
+import static Pages.GlobalPage.getNames;
 import static Pages.StringConstants.OTP_LOG_MESSAGE;
 import static Utils.TestListener.saveTextLog;
 
@@ -45,6 +46,7 @@ public class ProfilPage extends BaseClass {
     public ProfilPage click_adresDuzenleButton() {
         swipeToElement("Adres");
         clickElementBy(adresAlani);
+        Log.info(getNames());
         return this;
     }
 
@@ -52,12 +54,14 @@ public class ProfilPage extends BaseClass {
     public ProfilPage click_emailDuzenleButton() {
         swipeToElement("E-posta");
         clickElementBy(eMailAlani);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public ProfilPage click_ilSecDialog() {
         clickElementBy(ilSecDialog);
+        Log.info(getNames());
         return this;
 
     }
@@ -65,6 +69,7 @@ public class ProfilPage extends BaseClass {
     @Step("{method}")
     public ProfilPage click_Adana() {
         clickElementBy(ilSecAdana);
+        Log.info(getNames());
         return this;
 
     }
@@ -72,36 +77,42 @@ public class ProfilPage extends BaseClass {
     @Step("{method}")
     public ProfilPage click_ilceSecDialog() {
         clickElementBy(ilceSecDialog);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public ProfilPage click_Aladag() {
         clickElementBy(ilSecAladag);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public ProfilPage click_secButton() {
         clickElementBy(secButonu);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public ProfilPage sendkeys_acikAdresTextBox() throws IOException, ParseException {
         clearAndfillInFieldWith(acikAdresTextBox, getString("KKNo"));
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public ProfilPage click_tamamveGuncelleButton() {
         clickElementBy(guncelleVetamamButton);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public ProfilPage click_gerigitButton() {
         clickElementBy(geriGit);
+        Log.info(getNames());
         return this;
     }
 
@@ -163,6 +174,7 @@ public class ProfilPage extends BaseClass {
         } else {
             Log.info(OTP_LOG_MESSAGE);
         }
+        Log.info(getNames());
         return this;
     }
 
@@ -224,6 +236,7 @@ public class ProfilPage extends BaseClass {
         } else {
             Log.info(OTP_LOG_MESSAGE);
         }
+        Log.info(getNames());
         return this;
     }
 
@@ -285,11 +298,13 @@ public class ProfilPage extends BaseClass {
         } else {
             Log.info(OTP_LOG_MESSAGE);
         }
+        Log.info(getNames());
         return this;
     }
 
 
     public CharSequence getTextOfOTPMessage() {
+        Log.info(getNames());
         return getTextFromElement(onayKoduText);
     }
 

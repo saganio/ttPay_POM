@@ -52,13 +52,12 @@ public class TestListener extends BaseClass implements ITestListener {
 
     @Override
     public void onStart(ITestContext iTestContext) {
-        Log.info("I am in" + iTestContext.getName());
         iTestContext.setAttribute("WebDriver", driver);
     }
 
     @Override
     public void onFinish(ITestContext iTestContext) {
-        Log.info("I am on finish " + iTestContext.getName());
+        //Log.info("I am on finish " + iTestContext.getName());
         //Do tier down operations for ExtentReports reporting!
 
     }
@@ -116,7 +115,7 @@ public class TestListener extends BaseClass implements ITestListener {
         }
 
         //Save a log on allure.
-        saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");
+       // saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");
 
     }
 

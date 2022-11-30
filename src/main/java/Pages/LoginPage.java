@@ -12,12 +12,11 @@ import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Reporter;
-
 import java.io.IOException;
 import java.sql.SQLException;
-
 import static Libraries.TestUtils.*;
 import static Pages.DBQueries.SET_SEMIVERIFIED_OTP_SQL;
+import static Pages.GlobalPage.getNames;
 import static Pages.StringConstants.girisOncesiOTPText;
 import static Utils.TestListener.saveTextLog;
 
@@ -49,20 +48,22 @@ public class LoginPage extends BaseClass {
 
     @Step("{method} {0}")
     public LoginPage setUsername(String username) {
-        driver.findElement(usernameTextBox).clear();
-        driver.findElement(usernameTextBox).sendKeys(username);
+        clearAndfillInFieldWith(usernameTextBox,username);
+        Log.info(getNames()+" : "+username);
         return this;
     }
 
     @Step("{method} {0}")
     public LoginPage setPassword(String password) {
-        driver.findElement(passwordTextBox).sendKeys(password);
+        clearAndfillInFieldWith(passwordTextBox,password);
+        Log.info(getNames()+" : "+password);
         return this;
     }
 
     @Step("{method}")
     public CharSequence getTextOfOTPMessage() {
         saveTextLog(getTextFromElement(loginOTPField));
+        Log.info(getNames());
         return getTextFromElement(loginOTPField);
     }
 
@@ -87,6 +88,7 @@ public class LoginPage extends BaseClass {
         } else {
             Log.info("Giriş yapıldı.");
         }
+        Log.info(getNames());
         return this;
     }
 
@@ -155,6 +157,7 @@ public class LoginPage extends BaseClass {
         } else {
             Log.info("Giriş yapıldı.");
         }
+        Log.info(getNames());
         return this;
     }
 
@@ -200,6 +203,7 @@ public class LoginPage extends BaseClass {
         } else {
             Log.info("Giriş yapıldı.");
         }
+        Log.info(getNames());
         return this;
     }
 
@@ -207,13 +211,14 @@ public class LoginPage extends BaseClass {
     @Step("{method}")
     public LoginPage click_HamburgerMenu() {
         clickElementBy(hamburgerMenu);
-        Reporter.log("hamburger menü tıklandı");
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public LoginPage click_ParolamiUnuttum() {
         clickElementBy(parolamiUnuttum);
+        Log.info(getNames());
         return this;
     }
 
@@ -221,29 +226,34 @@ public class LoginPage extends BaseClass {
     public LoginPage sendKeys_ParolamiUnuttumMsisdnTextBox(String text) {
         clearAndfillInFieldWith(parolamiUnuttum_msisdnGir, text);
         Log.info("Value: " + text);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public LoginPage click_DevamEtButton() {
         clickElementBy(parolamiUnuttum_devamEtButton);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public String getYanlisParolaText() {
         saveTextLog(getTextFromElement(yanlisParolaText));
+        Log.info(getNames());
         return driver.findElement(yanlisParolaText).getText();
     }
 
     @Step("{method}")
     public LoginPage click_TekrarDeneButton() {
         clickElementBy(tekrarDeneButton);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public LoginPage click_girisYapButton() {
+        Log.info(getNames());
         clickElementBy(girisYapButton);
         return this;
     }
@@ -251,12 +261,14 @@ public class LoginPage extends BaseClass {
     @Step("{method}")
     public LoginPage click_beniHatirla() {
         clickElementBy(beniHatirla);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method} {0}")
     public LoginPage clickUsernameTextBox() {
         clickElementBy(usernameTextBox);
+        Log.info(getNames());
         return this;
     }
 

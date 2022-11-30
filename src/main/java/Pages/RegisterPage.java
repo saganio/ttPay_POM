@@ -8,6 +8,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static Libraries.TestUtils.*;
+import static Pages.GlobalPage.getNames;
 import static Utils.TestListener.saveTextLog;
 
 
@@ -32,12 +33,14 @@ public class RegisterPage extends BaseClass {
     @Step("{method}")
     public RegisterPage click_HesabimYok() {
         clickElementBy(hesabimYok);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public RegisterPage click_HesapOlusturmayaTikla() {
         clickElementBy(hesapOlusturmayaBasla);
+        Log.info(getNames());
         return this;
     }
 
@@ -45,36 +48,42 @@ public class RegisterPage extends BaseClass {
     public RegisterPage sendKeys_Msisdn(String text) {
         clearAndfillInFieldWith(msisdnField, text);
         Log.info("Value: " + text);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public RegisterPage click_devamEtButton() {
         clickElementBy(devamEtButton);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public RegisterPage click_OTFField() {
         clickElementBy(clickOTPField);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public RegisterPage click_devamEtButtonAfterOTP() {
         clickElementBy(devamEtButtonAfterOTP);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public String getVarOlanHesapErrorText() {
         saveTextLog(getTextFromElement(varOlanHesapErrorText));
+        Log.info(getNames());
         return driver.findElement(varOlanHesapErrorText).getText();
     }
 
     @Step("{method}")
     public RegisterPage click_TamamDialog() {
         clickElementBy(confirmDialog);
+        Log.info(getNames());
         return this;
     }
 }

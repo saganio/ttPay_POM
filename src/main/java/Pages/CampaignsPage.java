@@ -8,6 +8,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static Libraries.TestUtils.clickElementBy;
+import static Pages.GlobalPage.getNames;
 
 public class CampaignsPage extends BaseClass {
 
@@ -25,13 +26,14 @@ public class CampaignsPage extends BaseClass {
     @Step("{method}")
     public CampaignsPage clickSwitchButton() {
         clickElementBy(switchButton);
-        Log.info("I clicked" + getClass());
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public CampaignsPage clickCampaign() {
         clickElementBy(clickCampaign);
+        Log.info(getNames());
         return this;
     }
 

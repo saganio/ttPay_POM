@@ -1,12 +1,14 @@
 package Pages;
 
 import Libraries.BaseClass;
+import Utils.Log;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static Libraries.TestUtils.*;
+import static Pages.GlobalPage.getNames;
 import static Utils.TestListener.saveTextLog;
 
 
@@ -39,18 +41,21 @@ public class HomePage extends BaseClass {
     @Step("{method}")
     public HomePage clickIslemlerim() {
         clickElementBy(islemlerim);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public HomePage click_YukleButonu() {
         clickElementBy(yukleButonu);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public HomePage click_ParaGonderButonu() {
         clickElementBy(paraGonderButonu);
+        Log.info(getNames());
         return this;
 
     }
@@ -58,6 +63,7 @@ public class HomePage extends BaseClass {
     @Step("{method}")
     public HomePage click_ParaIsteButonu() {
         clickElementBy(paraIsteButonu);
+        Log.info(getNames());
         return this;
 
     }
@@ -65,6 +71,7 @@ public class HomePage extends BaseClass {
     @Step("Ödeme Yap'a tıkla.")
     public HomePage click_OdemeYapButonu() {
         clickElementBy(odemeYapButonu);
+        Log.info(getNames());
         return this;
 
     }
@@ -72,24 +79,28 @@ public class HomePage extends BaseClass {
     @Step("{method}")
     public HomePage click_Kampanyalar() {
         clickElementBy(kampanyalar);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public HomePage click_Bildirimler() {
         clickElementBy(bildirimler);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public HomePage click_Kartlarim() {
         clickElementBy(kartlarim);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public String get_ConfirmationDialogText() {
         saveTextLog(getTextFromElement(confirmationDialog));
+        Log.info(getNames());
         return getTextFromElement(confirmationDialog);
 
     }
@@ -97,24 +108,28 @@ public class HomePage extends BaseClass {
     @Step("{method}")
     public HomePage accept_ConfirmationDialog() {
         clickElementBy(confirmation_dialog_confirm);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public HomePage reject_ConfirmationDialog() {
         clickElementBy(confirmation_dialog_reject);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public HomePage click_KrediBankaHesabimdan() {
         clickElementBy(chooseKrediBankaHesabimdan);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public HomePage click_FaturaOde() {
         clickElementBy(faturaOde);
+        Log.info(getNames());
         return this;
     }
 
@@ -122,12 +137,14 @@ public class HomePage extends BaseClass {
     @Step("{method}")
     public HomePage click_TamamButtonBefore() {
         clickElementBy(bankaHesabindanYukle_tamamButonu);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public HomePage click_KisiyeSecenegi() {
         clickElementBy(kisiyeSecenegi);
+        Log.info(getNames());
         return this;
     }
 
@@ -135,6 +152,7 @@ public class HomePage extends BaseClass {
     public HomePage click_TamamButtonAfter() {
         swipeToElement("TAMAM");
         clickElementBy(bankaHesabindanYukle_tamamButonu2);
+        Log.info(getNames());
         return this;
     }
 }

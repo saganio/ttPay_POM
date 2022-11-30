@@ -1,12 +1,14 @@
 package Pages;
 
 import Libraries.BaseClass;
+import Utils.Log;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static Libraries.TestUtils.clickElementBy;
+import static Pages.GlobalPage.getNames;
 
 public class AyarlarVeIzinlerPage extends BaseClass {
 
@@ -27,17 +29,20 @@ public class AyarlarVeIzinlerPage extends BaseClass {
     @Step("{method}")
     public AyarlarVeIzinlerPage click_uygulamaParolasiText() {
         clickElementBy(uygulamaParolasi);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public AyarlarVeIzinlerPage click_rehberimdekiKisilerPokusluOldugumuguGorsunSwitch() {
         clickElementBy(rehberimdekiKisilerPokusluOldugumuguGorsun);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public AyarlarVeIzinlerPage click_ePostaIzniSwitch() {
+        Log.info(getNames());
         clickElementBy(ePostaIzni);
         return this;
 
@@ -46,18 +51,21 @@ public class AyarlarVeIzinlerPage extends BaseClass {
     @Step("{method}")
     public AyarlarVeIzinlerPage click_SMSIzniSwitch() {
         clickElementBy(SMSIzni);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public AyarlarVeIzinlerPage click_aramaIzniSwitch() {
         clickElementBy(aramaIzni);
+        Log.info(getNames());
         return this;
     }
 
     @Step("{method}")
     public AyarlarVeIzinlerPage click_bildirimIzniSwitch() {
         clickElementBy(bildirimIzni);
+        Log.info(getNames());
         return this;
     }
 
