@@ -7,11 +7,8 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
 import java.sql.SQLException;
-
-import static Libraries.TestUtils.testAssertFunctions;
 import static Pages.StringConstants.SEMI_IBAN_KAYDETME_TEXT;
 import static Pages.StringConstants.STEP_MESSAGE;
 
@@ -36,7 +33,8 @@ public class IBANKaydetTest extends BaseClass {
                 .click_plusButton()
                 .IbanBilgileriniDoldur_Semi();
 
-        testAssertFunctions(SEMI_IBAN_KAYDETME_TEXT, RehberimVeBankaHesaplarimPage.getErrorText_Semi());
+        globalPage
+                .CompareTexts(SEMI_IBAN_KAYDETME_TEXT, RehberimVeBankaHesaplarimPage.getErrorText_Semi());
 
         RehberimVeBankaHesaplarimPage
                 .click_vazgecButonuDialog();

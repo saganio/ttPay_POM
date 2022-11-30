@@ -8,6 +8,7 @@ import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 
 import java.util.Arrays;
 
@@ -142,4 +143,15 @@ public class GlobalPage extends BaseClass {
         final String s = e.getClassName();
         return "I interact with > "+s.substring(s.lastIndexOf('.') + 1, s.length()) + "." + e.getMethodName();
     }
+
+    @Step("{method}")
+    public GlobalPage CompareTexts(String actual, String expected) {
+
+        String ActualTitle = actual;
+        String ExpectedTitle = expected;
+        Assert.assertEquals(ExpectedTitle, ActualTitle);
+
+        return this;
+    }
+
 }

@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.sql.SQLException;
 
-import static Libraries.TestUtils.testAssertFunctions;
+
 import static Pages.StringConstants.STEP_MESSAGE;
 import static Pages.StringConstants.hataMesaji_PARAGONDER;
 
@@ -31,7 +31,8 @@ public class ParaGonderTest extends BaseClass {
                 .click_ParaGonderButonu()
                 .click_KisiyeSecenegi();
 
-        testAssertFunctions(hataMesaji_PARAGONDER, homePage.get_ConfirmationDialogText());
+        globalPage
+                .CompareTexts(hataMesaji_PARAGONDER, homePage.get_ConfirmationDialogText());
 
 
         dbQueries

@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.sql.SQLException;
 
-import static Libraries.TestUtils.testAssertFunctions;
+
 import static Pages.StringConstants.STEP_MESSAGE;
 import static Pages.StringConstants.hataMesaji_PARAISTE;
 
@@ -36,7 +36,8 @@ public class ParaIsteKayitliKisidenTest extends BaseClass {
                 .click_grubaEklemekicinKisiSec()
                 .click_paraIsteButonu();
 
-        testAssertFunctions(hataMesaji_PARAISTE, homePage.get_ConfirmationDialogText());
+        globalPage
+                .CompareTexts(hataMesaji_PARAISTE, homePage.get_ConfirmationDialogText());
 
         dbQueries
                 .otp_SMS_transaction_log()

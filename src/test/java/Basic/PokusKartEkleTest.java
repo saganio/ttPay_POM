@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-import static Libraries.TestUtils.testAssertFunctions;
+
 import static Pages.StringConstants.POKUSKART_KAYDET_TEXT;
 import static Pages.StringConstants.STEP_MESSAGE;
 
@@ -30,7 +30,8 @@ public class PokusKartEkleTest extends BaseClass {
                 .click_pokusKartEkleOlustur()
                 .click_pokusKartiniEkle();
 
-        testAssertFunctions(POKUSKART_KAYDET_TEXT, kartlarimPage.getHataMesajiText());
+        globalPage
+                .CompareTexts(POKUSKART_KAYDET_TEXT, kartlarimPage.getHataMesajiText());
     }
 
 }

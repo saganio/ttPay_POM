@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-import static Libraries.TestUtils.testAssertFunctions;
 import static Pages.StringConstants.STEP_MESSAGE;
 import static Pages.StringConstants.hataMesaji_BANKAHESABI;
 
@@ -26,8 +25,8 @@ public class BankadanParaYukleTest extends BaseClass {
                 .login();
         homePage.click_YukleButonu()
                 .click_KrediBankaHesabimdan();
-
-        testAssertFunctions(hataMesaji_BANKAHESABI, homePage.get_ConfirmationDialogText());
+        globalPage
+                .CompareTexts(hataMesaji_BANKAHESABI, homePage.get_ConfirmationDialogText());
     }
 
 }

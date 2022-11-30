@@ -7,10 +7,7 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
-
-import static Libraries.TestUtils.testAssertFunctions;
 import static Pages.StringConstants.DAVET_ET_TEXT;
 import static Pages.StringConstants.STEP_MESSAGE;
 
@@ -36,7 +33,8 @@ public class KisiDavetEtTest extends BaseClass {
                 .click_DavetEt()
                 .click_devamEtButonu_dialog();
 
-        testAssertFunctions(DAVET_ET_TEXT, RehberimVeBankaHesaplarimPage.getDavetEtText());
+        globalPage
+                .CompareTexts(DAVET_ET_TEXT, RehberimVeBankaHesaplarimPage.getDavetEtText());
 
 
     }

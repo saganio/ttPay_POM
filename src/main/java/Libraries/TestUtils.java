@@ -1,6 +1,9 @@
 package Libraries;
 
 import io.appium.java_client.MobileBy;
+import io.qameta.allure.Allure;
+import io.qameta.allure.Attachment;
+import io.qameta.allure.Step;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -48,14 +51,6 @@ public class TestUtils extends BaseClass {
 
     public static String getTextFromElement(By by) {
         return tryFindElement(by).getText().trim();
-    }
-
-    public static void testAssertFunctions(String actual, String expected) {
-
-        String ActualTitle = actual;
-        String ExpectedTitle = expected;
-        Assert.assertEquals(ExpectedTitle, ActualTitle);
-
     }
 
     public static void doubleClick(WebElement element) {

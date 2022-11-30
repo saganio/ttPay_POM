@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.sql.SQLException;
 
-import static Libraries.TestUtils.testAssertFunctions;
+
 import static Pages.StringConstants.*;
 
 public class YeniKisiOlusturduktanSonraParaIsteTest extends BaseClass {

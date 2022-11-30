@@ -26,8 +26,8 @@ public class LoginHataliParolaTest extends BaseClass {
                 .setUsername(getString("id"))
                 .setPassword(getString("wrongPass"));
 
-        TestUtils
-                .testAssertFunctions(HATALI_PAROLA_TEXT, loginPage.getYanlisParolaText());
+        globalPage
+                .CompareTexts(HATALI_PAROLA_TEXT, loginPage.getYanlisParolaText());
 
         loginPage
                 .click_TekrarDeneButton()

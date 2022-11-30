@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-import static Libraries.TestUtils.testAssertFunctions;
+
 import static Pages.StringConstants.KREDIBANKAKARTIKAYDET_TEXT;
 import static Pages.StringConstants.STEP_MESSAGE;
 
@@ -29,7 +29,8 @@ public class KrediBankaKartiEkleTest extends BaseClass {
         kartlarimPage
                 .click_krediBankaKartiEkle();
 
-        testAssertFunctions(KREDIBANKAKARTIKAYDET_TEXT, kartlarimPage.getHataMesajiText());
+        globalPage
+                .CompareTexts(KREDIBANKAKARTIKAYDET_TEXT, kartlarimPage.getHataMesajiText());
 
         RehberimVeBankaHesaplarimPage
                 .click_vazgecButonuDialog();

@@ -28,8 +28,8 @@ public class RegisterVarOlanKullaniciTest extends BaseClass {
                 .sendKeys_Msisdn(getString("id"))
                 .click_devamEtButton();
 
-        TestUtils
-                .testAssertFunctions(VAR_OLAN_HESAP_ERROR_TEXT, registerPage.getVarOlanHesapErrorText());
+        globalPage
+                .CompareTexts(VAR_OLAN_HESAP_ERROR_TEXT, registerPage.getVarOlanHesapErrorText());
 
         registerPage
                 .click_TamamDialog();

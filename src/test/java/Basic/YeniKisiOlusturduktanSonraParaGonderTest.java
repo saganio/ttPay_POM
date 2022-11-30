@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.sql.SQLException;
 
-import static Libraries.TestUtils.testAssertFunctions;
+
 import static Pages.StringConstants.*;
 
 public class YeniKisiOlusturduktanSonraParaGonderTest extends BaseClass {
@@ -41,7 +41,8 @@ public class YeniKisiOlusturduktanSonraParaGonderTest extends BaseClass {
                 .click_NewRecord()
                 .click_paraGonderButonu();
 
-        testAssertFunctions(hataMesaji_PARAGONDER, RehberimVeBankaHesaplarimPage.getErrorText());
+        globalPage
+                .CompareTexts(hataMesaji_PARAGONDER, RehberimVeBankaHesaplarimPage.getErrorText());
 
         RehberimVeBankaHesaplarimPage
                 .click_vazgecButonuDialog();

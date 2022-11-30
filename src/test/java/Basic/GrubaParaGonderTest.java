@@ -43,7 +43,8 @@ public class GrubaParaGonderTest extends BaseClass {
                 .click_kaydetButonu()
                 .click_paraGonderButonu();
 
-        TestUtils.testAssertFunctions(hataMesaji_PARAGONDER, hataMesaji_PARAGONDER);
+        globalPage
+                .CompareTexts(hataMesaji_PARAGONDER, hataMesaji_PARAGONDER);
 
         RehberimVeBankaHesaplarimPage
                 .click_vazgecButonuDialog()

@@ -43,7 +43,8 @@ public class GruptanParaIsteTest extends BaseClass {
                 .click_kaydetButonu()
                 .click_paraIsteButonu();
 
-        TestUtils.testAssertFunctions(hataMesaji_PARAISTE, hataMesaji_PARAISTE);
+        globalPage
+                .CompareTexts(hataMesaji_PARAISTE, hataMesaji_PARAISTE);
 
         RehberimVeBankaHesaplarimPage
                 .click_vazgecButonuDialog()

@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.sql.SQLException;
 
-import static Libraries.TestUtils.testAssertFunctions;
+
 import static Pages.StringConstants.STEP_MESSAGE;
 import static Pages.StringConstants.hataMesaji_PARAGONDER;
 
@@ -36,7 +36,8 @@ public class KisiyeParaGonderTest extends BaseClass {
                 .click_grubaEklemekicinKisiSec()
                 .click_paraGonderButonu();
 
-        testAssertFunctions(hataMesaji_PARAGONDER, homePage.get_ConfirmationDialogText());
+        globalPage
+                .CompareTexts(hataMesaji_PARAGONDER, homePage.get_ConfirmationDialogText());
 
         dbQueries
                 .otp_SMS_transaction_log()

@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-import static Libraries.TestUtils.testAssertFunctions;
+
 import static Pages.StringConstants.POKUSKART_KAYDET_TEXT;
 import static Pages.StringConstants.STEP_MESSAGE;
 

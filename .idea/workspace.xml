@@ -6,25 +6,46 @@
   <component name="ChangeListManager">
     <list default="true" id="d5672436-3bdd-4520-a293-1beda2ab3523" name="Changes" comment="cesitli yenilikler">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Libraries/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/DBQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/DBQueries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/StringConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/StringConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Register/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Register/RegisterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/values.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Libraries/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Libraries/DBConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/AyarlarVeIzinlerPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/AyarlarVeIzinlerPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/CampaignsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/CampaignsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/DBQueries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/DBQueries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/GlobalPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/GlobalPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/KartlarimPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/KartlarimPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/LeftPanelPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/LeftPanelPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/ProfilPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/ProfilPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/RegisterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/RehberimVeBankHspPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/RehberimVeBankHspPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/values.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/TestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Libraries/TestUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/GlobalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/GlobalPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/BankadanParaYukleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/BankadanParaYukleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/GrubaParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/GrubaParaGonderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/GruptanParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/GruptanParaIsteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/IBANKaydetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/IBANKaydetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/KisiDavetEtTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/KisiDavetEtTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/KisidenParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/KisidenParaIsteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/KisiyeParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/KisiyeParaGonderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/KrediBankaKartiEkleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/KrediBankaKartiEkleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/ParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/ParaGonderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/ParaIsteKayitliKisidenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/ParaIsteKayitliKisidenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/ParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/ParaIsteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/PokusKartEkleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/PokusKartEkleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/YeniKisiOlusturduktanSonraParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/YeniKisiOlusturduktanSonraParaGonderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/YeniKisiOlusturduktanSonraParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/YeniKisiOlusturduktanSonraParaIsteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginHataliParolaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/LoginHataliParolaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Register/RegisterVarOlanKullaniciTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Register/RegisterVarOlanKullaniciTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Register/RegisterYanlisOTPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Register/RegisterYanlisOTPTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/BankadanParaYukleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/BankadanParaYukleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/GrubaParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/GrubaParaGonderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/GruptanParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/GruptanParaIsteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/KisiDavetEtTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/KisiDavetEtTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/KisidenParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/KisidenParaIsteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/KisiyeParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/KisiyeParaGonderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/KrediBankaKartiEkleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/KrediBankaKartiEkleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/ParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/ParaGonderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/ParaIsteKayitliKisidenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/ParaIsteKayitliKisidenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/ParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/ParaIsteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/PokusKartEkleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/PokusKartEkleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/YeniKisiOlusturduktanSonraParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/YeniKisiOlusturduktanSonraParaGonderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/YeniKisiOlusturduktanSonraParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/YeniKisiOlusturduktanSonraParaIsteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/KisiDavetEtTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/KisiDavetEtTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/ParaIsteKayitliKisidenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/ParaIsteKayitliKisidenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/PokusKartEkleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/PokusKartEkleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/YeniKisiOlusturduktanSonraParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/YeniKisiOlusturduktanSonraParaGonderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/YeniKisiOlusturduktanSonraParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/YeniKisiOlusturduktanSonraParaIsteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Libraries/TestUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Libraries/TestUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Register/RegisterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Register/RegisterTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Register/RegisterYanlisOTPTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Register/RegisterYanlisOTPTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -392,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669793066903</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="cesitli yenilikler">
+      <created>1669811288971</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1669811288971</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

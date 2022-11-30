@@ -7,10 +7,7 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
-
-import static Libraries.TestUtils.testAssertFunctions;
 import static Pages.StringConstants.STEP_MESSAGE;
 import static Pages.StringConstants.YANLIS_OTP_TEXT;
 
@@ -30,8 +27,8 @@ public class RegisterYanlisOTPTest extends BaseClass {
                 .yanlisOTPGir()
                 .click_devamEtButtonAfterOTP();
 
-
-        testAssertFunctions(YANLIS_OTP_TEXT,registerPage.get_OTPText());
+        globalPage
+                .CompareTexts(YANLIS_OTP_TEXT,registerPage.get_OTPText());
     }
 
 }
