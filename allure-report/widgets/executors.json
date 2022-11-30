@@ -1,0 +1,10 @@
+[ {
+  "name" : "TTPay Suite Test Results",
+  "type" : "Local",
+  "url" : "https://pokus.com.tr/",
+  "buildOrder" : 1,
+  "buildName" : "TTPay",
+  "buildUrl" : "localhost",
+  "reportName" : "TTPay Suite Test Results",
+  "reportUrl" : "localhost"
+} ]

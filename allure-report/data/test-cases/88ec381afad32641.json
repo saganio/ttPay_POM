@@ -1,0 +1,221 @@
+{
+  "uid" : "88ec381afad32641",
+  "name" : "PokusKartEkle",
+  "fullName" : "Verified.PokusKartEkleTest.PokusKartEkle",
+  "historyId" : "93a4307d9dbc7cd86fb1f4cddac2a0c3",
+  "time" : {
+    "start" : 1669383574798,
+    "stop" : 1669383608079,
+    "duration" : 33281
+  },
+  "description" : "Pokus Kart Ekleme testi.",
+  "descriptionHtml" : "<p>Pokus Kart Ekleme testi.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1669383559285,
+      "stop" : 1669383574791,
+      "duration" : 15506
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Pokus Kart Ekleme testi.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Test koşumunun detayları için genişletin.",
+      "time" : {
+        "start" : 1669383574798,
+        "stop" : 1669383606030,
+        "duration" : 31232
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "setUsername 5997654321",
+        "time" : {
+          "start" : 1669383574799,
+          "stop" : 1669383577900,
+          "duration" : 3101
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "username",
+          "value" : "5997654321"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "setPassword 135791",
+        "time" : {
+          "start" : 1669383577901,
+          "stop" : 1669383578667,
+          "duration" : 766
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "password",
+          "value" : "135791"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_Kartlarim",
+        "time" : {
+          "start" : 1669383599114,
+          "stop" : 1669383602821,
+          "duration" : 3707
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_pokusKartEkleOlustur",
+        "time" : {
+          "start" : 1669383602821,
+          "stop" : 1669383604514,
+          "duration" : 1693
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_pokusKartiniEkle",
+        "time" : {
+          "start" : 1669383604514,
+          "stop" : 1669383606030,
+          "duration" : 1516
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "1d4e7b82267934ab",
+      "name" : "Screenshot",
+      "source" : "1d4e7b82267934ab.png",
+      "type" : "image/png",
+      "size" : 77407
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 6,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "stopAppiumAndDriver",
+    "time" : {
+      "start" : 1669383608088,
+      "stop" : 1669383609231,
+      "duration" : 1143
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Verified.PokusKartEkleTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Verified.PokusKartEkleTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "PokusKartEkle"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Basic Suite"
+  }, {
+    "name" : "suite",
+    "value" : "ttPay_POM"
+  }, {
+    "name" : "subSuite",
+    "value" : "Verified.PokusKartEkleTest"
+  }, {
+    "name" : "host",
+    "value" : "N110688"
+  }, {
+    "name" : "thread",
+    "value" : "20940@N110688.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ {
+      "uid" : "ac5943a3fb3071b1",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 613bdc0a-39ba-4402-add1-9c7a7686e0b3\n*** Element info: {Using=id, value=ibFirstButton}",
+      "time" : {
+        "start" : 1669381364948,
+        "stop" : 1669381385254,
+        "duration" : 20306
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "88ec381afad32641.json",
+  "parameterValues" : [ ]
+}

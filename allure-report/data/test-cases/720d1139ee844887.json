@@ -1,0 +1,294 @@
+{
+  "uid" : "720d1139ee844887",
+  "name" : "BankaHesabindanParaYukle",
+  "fullName" : "Basic.BankadanParaYukleTest.BankaHesabindanParaYukle",
+  "historyId" : "2a95d8f8e6edc5ad0150f35342fd217e",
+  "time" : {
+    "start" : 1669378457544,
+    "stop" : 1669378478139,
+    "duration" : 20595
+  },
+  "description" : "Banka hesabından para yükleme testi.",
+  "descriptionHtml" : "<p>Banka hesabından para yükleme testi.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1669378444426,
+      "stop" : 1669378457541,
+      "duration" : 13115
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Banka hesabından para yükleme testi.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Test koşumunun detayları için genişletin.",
+      "time" : {
+        "start" : 1669378457545,
+        "stop" : 1669378477090,
+        "duration" : 19545
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "login",
+        "time" : {
+          "start" : 1669378457545,
+          "stop" : 1669378470132,
+          "duration" : 12587
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "setUsername 5550000012",
+          "time" : {
+            "start" : 1669378457546,
+            "stop" : 1669378460823,
+            "duration" : 3277
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "username",
+            "value" : "5550000012"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "setPassword 135791",
+          "time" : {
+            "start" : 1669378460824,
+            "stop" : 1669378462182,
+            "duration" : 1358
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "password",
+            "value" : "135791"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "getTextOfOTPMessage",
+          "time" : {
+            "start" : 1669378462182,
+            "stop" : 1669378463765,
+            "duration" : 1583
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 3,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_YukleButonu",
+        "time" : {
+          "start" : 1669378470133,
+          "stop" : 1669378475028,
+          "duration" : 4895
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_KrediBankaHesabimdan",
+        "time" : {
+          "start" : 1669378475028,
+          "stop" : 1669378476215,
+          "duration" : 1187
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "get_ConfirmationDialogText",
+        "time" : {
+          "start" : 1669378476216,
+          "stop" : 1669378477087,
+          "duration" : 871
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 7,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "14420cdb6b11b28d",
+      "name" : "Screenshot",
+      "source" : "14420cdb6b11b28d.png",
+      "type" : "image/png",
+      "size" : 137306
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 8,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "stopAppiumAndDriver",
+    "time" : {
+      "start" : 1669378478147,
+      "stop" : 1669378478769,
+      "duration" : 622
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Basic.BankadanParaYukleTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Basic.BankadanParaYukleTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "BankaHesabindanParaYukle"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Command line suite"
+  }, {
+    "name" : "suite",
+    "value" : "Command line test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Basic.BankadanParaYukleTest"
+  }, {
+    "name" : "host",
+    "value" : "N110688"
+  }, {
+    "name" : "thread",
+    "value" : "12708@N110688.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ {
+      "uid" : "f965485da2e3a649",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669115670024,
+        "stop" : 1669115689394,
+        "duration" : 19370
+      }
+    }, {
+      "uid" : "33e184db7f2e2a4f",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '172.18.16.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 466be156-8f32-49c3-88e1-96db53280f65\n*** Element info: {Using=id, value=tv_fragment_top_up_select_bank_title}",
+      "time" : {
+        "start" : 1669100683287,
+        "stop" : 1669100717427,
+        "duration" : 34140
+      }
+    }, {
+      "uid" : "bd5abe3011fa36e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669100149324,
+        "stop" : 1669100176666,
+        "duration" : 27342
+      }
+    }, {
+      "uid" : "98a8c14378b9681c",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '172.18.16.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: fb6439f4-6ef5-465f-8572-e9d2bbdae400\n*** Element info: {Using=id, value=tv_fragment_top_up_select_bank_title}",
+      "time" : {
+        "start" : 1669099911899,
+        "stop" : 1669099945126,
+        "duration" : 33227
+      }
+    }, {
+      "uid" : "1ce7a8f53a98d923",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '172.18.16.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: df73338f-ae12-498f-b732-cf72528166a2\n*** Element info: {Using=id, value=tr.com.turktelekom.pokus.test:id/et_username_password_text}",
+      "time" : {
+        "start" : 1669099646515,
+        "stop" : 1669099662238,
+        "duration" : 15723
+      }
+    }, {
+      "uid" : "697d34f34327bb1d",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '172.18.16.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 6a7a5e3d-dd1b-4b3d-83df-503c726baeae\n*** Element info: {Using=id, value=tr.com.turktelekom.pokus.test:id/et_username_password_text}",
+      "time" : {
+        "start" : 1669099323486,
+        "stop" : 1669099339228,
+        "duration" : 15742
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "720d1139ee844887.json",
+  "parameterValues" : [ ]
+}

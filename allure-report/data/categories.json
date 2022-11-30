@@ -1,0 +1,260 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'Ugur-MacBook-Pro.local', ip: 'fe80:0:0:0:149b:2d62:98f9:5464%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0', java.version: '11.0.14'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 33, deviceManufacturer: Google, deviceModel: sdk_gphone64_arm64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2392, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 58b90d6c-8a30-483d-927b-95dbf0067c6f\n*** Element info: {Using=id, value=tv_confirmation_dialog_message}",
+      "children" : [ {
+        "name" : "LoginAndClickParaIste",
+        "uid" : "dbb1747396aaa7ae",
+        "parentUid" : "9bee1f97ee2c64d07fdc30c05bccfac7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1668880978025,
+          "stop" : 1668881010166,
+          "duration" : 32141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9bee1f97ee2c64d07fdc30c05bccfac7"
+    }, {
+      "name" : "org/apache/commons/io/IOUtils",
+      "children" : [ {
+        "name" : "setUp",
+        "uid" : "26920c88fa67b0d8",
+        "parentUid" : "a9a95e0391234680a281999574886c65",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669060155150,
+          "stop" : 1669060155170,
+          "duration" : 20
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a9a95e0391234680a281999574886c65"
+    }, {
+      "name" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '172.18.16.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: c86db311-d9c3-4871-8bb1-564ca7e8bfc1\n*** Element info: {Using=id, value=tr.com.turktelekom.pokus.test:id/et_username_password_text}",
+      "children" : [ {
+        "name" : "Login_Basic_TopUp",
+        "uid" : "f559d541fe69de18",
+        "parentUid" : "73101f3b6954b370b90c0d1e6fa5c22d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669122093911,
+          "stop" : 1669122116670,
+          "duration" : 22759
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "73101f3b6954b370b90c0d1e6fa5c22d"
+    }, {
+      "name" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '172.18.16.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 08c2ca5f-9852-4ed5-918e-d8d245e8958c\n*** Element info: {Using=id, value=cb_username_password}",
+      "children" : [ {
+        "name" : "BeniHatirla",
+        "uid" : "be4b687ce30ade46",
+        "parentUid" : "ce7036a8b085fddac905bfca9560a641",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669122192889,
+          "stop" : 1669122233066,
+          "duration" : 40177
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ce7036a8b085fddac905bfca9560a641"
+    }, {
+      "name" : "The element 'By.id: ibFirstButton' does not exist in DOM anymore\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: d2eb4b3d-8843-42bd-be05-ba9cdeb71655",
+      "children" : [ {
+        "name" : "KisiAdiGuncelle",
+        "uid" : "3a0d2f29d8964551",
+        "parentUid" : "3e6a929a2f6a3a816b58d5da295d6a9d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669378723278,
+          "stop" : 1669378745192,
+          "duration" : 21914
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3e6a929a2f6a3a816b58d5da295d6a9d"
+    }, {
+      "name" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 461a4bf8-bd41-465d-8904-03b30179a115\n*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Hesabını Onayla']}",
+      "children" : [ {
+        "name" : "KisiDetayInceleme",
+        "uid" : "a19a5e4ff8490488",
+        "parentUid" : "a3d515c2cc513f62ce8ff525df0465a0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669378831659,
+          "stop" : 1669378865475,
+          "duration" : 33816
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a3d515c2cc513f62ce8ff525df0465a0"
+    }, {
+      "name" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 252c9769-3f36-4c0b-ae3e-1640c38777f0\n*** Element info: {Using=xpath, value=//android.widget.FrameLayout[@content-desc=\"Kampanyalar\"]/android.view.ViewGroup/android.widget.TextView}",
+      "children" : [ {
+        "name" : "Step2",
+        "uid" : "cac100ebb3cea9fb",
+        "parentUid" : "aa8874b20dc28ccd57a45e7f603e2012",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669380989716,
+          "stop" : 1669381005465,
+          "duration" : 15749
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "aa8874b20dc28ccd57a45e7f603e2012"
+    }, {
+      "name" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 720dc7b6-ee9c-4b54-ac2e-19c284a46c09\n*** Element info: {Using=xpath, value=//*[@resource-id='tr.com.turktelekom.pokus.test:id/et_smart_textfield_text']}",
+      "children" : [ {
+        "name" : "IBANKaydet",
+        "uid" : "2ec6f77eaae2f678",
+        "parentUid" : "93dc43895587356553a257903bb72042",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669384848509,
+          "stop" : 1669384893308,
+          "duration" : 44799
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "93dc43895587356553a257903bb72042"
+    }, {
+      "name" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 766ee320-cb08-49c5-87fc-f338cf7c0ca7\n*** Element info: {Using=id, value=tv_confirmation_dialog_message}",
+      "children" : [ {
+        "name" : "IBANKaydet",
+        "uid" : "264eafa14d27703c",
+        "parentUid" : "e17ae118b86ec4c26dde71d16f463790",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669385420265,
+          "stop" : 1669385471038,
+          "duration" : 50773
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e17ae118b86ec4c26dde71d16f463790"
+    }, {
+      "name" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 3420ce0d-8885-4183-abca-10c5bdeaa878\n*** Element info: {Using=id, value=tv_confirmation_dialog_message}",
+      "children" : [ {
+        "name" : "PokusKartEkle",
+        "uid" : "f606157ecee63264",
+        "parentUid" : "fb3b34aff1fe74920c274eed78262a24",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669387509012,
+          "stop" : 1669387568310,
+          "duration" : 59298
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fb3b34aff1fe74920c274eed78262a24"
+    }, {
+      "name" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: c07256bf-a9ee-40d6-afb9-2ddc9da3d1cf\n*** Element info: {Using=id, value=btnWantMoneyAmountSubmit}",
+      "children" : [ {
+        "name" : "GruptanParaIste",
+        "uid" : "2143a8d315609aee",
+        "parentUid" : "7c5ae1e7730389d87ba27d258b5d7a03",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669729965656,
+          "stop" : 1669730018061,
+          "duration" : 52405
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7c5ae1e7730389d87ba27d258b5d7a03"
+    }, {
+      "name" : "java.lang.NullPointerException",
+      "children" : [ {
+        "name" : "setUp",
+        "uid" : "d1912bc9373f15de",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669734007852,
+          "stop" : 1669734007855,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "stopAppiumAndDriver",
+        "uid" : "60752e12e0a9429e",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669734008106,
+          "stop" : 1669734008106,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5592898b36d684905e31486a23088bda"
+    }, {
+      "name" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: b95e4633-b6a0-4f5c-92aa-9825f05b281d\n*** Element info: {Using=id, value=tv_information_dialog_message}",
+      "children" : [ {
+        "name" : "LoginHataliParola",
+        "uid" : "4e13ac5ffb467272",
+        "parentUid" : "60f5990aa826975ba840555bb37f66df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669734117365,
+          "stop" : 1669734147444,
+          "duration" : 30079
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "60f5990aa826975ba840555bb37f66df"
+    }, {
+      "name" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 2eff58a4-f052-481b-aaff-1dd93f004d0d\n*** Element info: {Using=id, value=fs_success_dialog_submith}",
+      "children" : [ {
+        "name" : "Register",
+        "uid" : "f032fbe4bc40d0d1",
+        "parentUid" : "9cc82b9dad02055b1917ad13db44cfe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669801344618,
+          "stop" : 1669801400962,
+          "duration" : 56344
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9cc82b9dad02055b1917ad13db44cfe9"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

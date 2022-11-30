@@ -1,0 +1,376 @@
+{
+  "uid" : "9efc2767bbce6536",
+  "name" : "ParaIste",
+  "fullName" : "SemiVerified.ParaIsteTest.ParaIste",
+  "historyId" : "59c027fd45cd8ce739d0ae79ff6dce30",
+  "time" : {
+    "start" : 1669386068159,
+    "stop" : 1669386105804,
+    "duration" : 37645
+  },
+  "description" : "Para İsteme senaryosu.",
+  "descriptionHtml" : "<p>Para İsteme senaryosu.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1669386048811,
+      "stop" : 1669386068155,
+      "duration" : 19344
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Para İsteme senaryosu.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Test koşumunun detayları için genişletin.",
+      "time" : {
+        "start" : 1669386068159,
+        "stop" : 1669386105006,
+        "duration" : 36847
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "bakiyeKontrol_semi",
+        "time" : {
+          "start" : 1669386068160,
+          "stop" : 1669386068823,
+          "duration" : 663
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "a3fa3072768fa9f9",
+          "name" : "Bilgi",
+          "source" : "a3fa3072768fa9f9.txt",
+          "type" : "text/plain",
+          "size" : 5
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "semiVerifiedlogin",
+        "time" : {
+          "start" : 1669386068824,
+          "stop" : 1669386097832,
+          "duration" : 29008
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "setUsername 5993152161",
+          "time" : {
+            "start" : 1669386068824,
+            "stop" : 1669386072292,
+            "duration" : 3468
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "username",
+            "value" : "5993152161"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "setPassword 135791",
+          "time" : {
+            "start" : 1669386072293,
+            "stop" : 1669386073111,
+            "duration" : 818
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "password",
+            "value" : "135791"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_ParaIsteButonu",
+        "time" : {
+          "start" : 1669386097832,
+          "stop" : 1669386103211,
+          "duration" : 5379
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "get_ConfirmationDialogText",
+        "time" : {
+          "start" : 1669386103212,
+          "stop" : 1669386104438,
+          "duration" : 1226
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "bakiyeKontrol_semi",
+        "time" : {
+          "start" : 1669386104438,
+          "stop" : 1669386105006,
+          "duration" : 568
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "bddf68947824d5dc",
+          "name" : "Bilgi",
+          "source" : "bddf68947824d5dc.txt",
+          "type" : "text/plain",
+          "size" : 5
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 7,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "908ad642c43dc5eb",
+      "name" : "Screenshot",
+      "source" : "908ad642c43dc5eb.png",
+      "type" : "image/png",
+      "size" : 134856
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 8,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "stopAppiumAndDriver",
+    "time" : {
+      "start" : 1669386105808,
+      "stop" : 1669386106734,
+      "duration" : 926
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "SemiVerified.ParaIsteTest"
+  }, {
+    "name" : "testClass",
+    "value" : "SemiVerified.ParaIsteTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "ParaIste"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Basic Suite"
+  }, {
+    "name" : "suite",
+    "value" : "ttPay_POM"
+  }, {
+    "name" : "subSuite",
+    "value" : "SemiVerified.ParaIsteTest"
+  }, {
+    "name" : "host",
+    "value" : "N110688"
+  }, {
+    "name" : "thread",
+    "value" : "24464@N110688.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ {
+      "uid" : "d4211ff3f012d3ad",
+      "status" : "broken",
+      "statusDetails" : "Index 5 out of bounds for length 5",
+      "time" : {
+        "start" : 1669380473464,
+        "stop" : 1669380499671,
+        "duration" : 26207
+      }
+    }, {
+      "uid" : "8fa97e3c9ec8279e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669357851262,
+        "stop" : 1669357894145,
+        "duration" : 42883
+      }
+    }, {
+      "uid" : "57a3769498b3bec3",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1669357764155,
+        "stop" : 1669357780133,
+        "duration" : 15978
+      }
+    }, {
+      "uid" : "13c8b4cca6fd3e14",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669301970778,
+        "stop" : 1669302007269,
+        "duration" : 36491
+      }
+    }, {
+      "uid" : "c79ca3d8fc359bf2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669300371648,
+        "stop" : 1669300409123,
+        "duration" : 37475
+      }
+    }, {
+      "uid" : "3c700b33e2ce7606",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669299423464,
+        "stop" : 1669299466979,
+        "duration" : 43515
+      }
+    }, {
+      "uid" : "f48a2648d38888db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669298699447,
+        "stop" : 1669298737939,
+        "duration" : 38492
+      }
+    }, {
+      "uid" : "102732403b4dddca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669298315592,
+        "stop" : 1669298354810,
+        "duration" : 39218
+      }
+    }, {
+      "uid" : "dbaab3001a6668fb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669297518882,
+        "stop" : 1669297557342,
+        "duration" : 38460
+      }
+    }, {
+      "uid" : "78d3efc8bbc7122c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669296824555,
+        "stop" : 1669296864994,
+        "duration" : 40439
+      }
+    }, {
+      "uid" : "ed16d95769aef12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669296173214,
+        "stop" : 1669296209814,
+        "duration" : 36600
+      }
+    }, {
+      "uid" : "c60275cc57c8ee69",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669295933896,
+        "stop" : 1669295972151,
+        "duration" : 38255
+      }
+    }, {
+      "uid" : "c30f93e08998dc71",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669294946643,
+        "stop" : 1669294984197,
+        "duration" : 37554
+      }
+    }, {
+      "uid" : "d17f15ec0feb6f4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669294437727,
+        "stop" : 1669294484038,
+        "duration" : 46311
+      }
+    }, {
+      "uid" : "ba06563613fb2204",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669293824989,
+        "stop" : 1669293864084,
+        "duration" : 39095
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9efc2767bbce6536.json",
+  "parameterValues" : [ ]
+}

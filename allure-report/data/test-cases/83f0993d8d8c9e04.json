@@ -1,0 +1,303 @@
+{
+  "uid" : "83f0993d8d8c9e04",
+  "name" : "KayitliKisiyeParaGonder",
+  "fullName" : "Verified.KisiyeParaGonderTest.KayitliKisiyeParaGonder",
+  "historyId" : "a6ed05dd83d2d69110348c74b755f921",
+  "time" : {
+    "start" : 1669373836829,
+    "stop" : 1669373899658,
+    "duration" : 62829
+  },
+  "description" : "Kayıtlı Kişiye Para Gönderme senaryosu",
+  "descriptionHtml" : "<p>Kayıtlı Kişiye Para Gönderme senaryosu</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1669373800376,
+      "stop" : 1669373836401,
+      "duration" : 36025
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Kayıtlı Kişiye Para Gönderme senaryosu",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Test koşumunun detayları için genişletin.",
+      "time" : {
+        "start" : 1669373836963,
+        "stop" : 1669373898244,
+        "duration" : 61281
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "setUsername 5997654321",
+        "time" : {
+          "start" : 1669373837007,
+          "stop" : 1669373840542,
+          "duration" : 3535
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "username",
+          "value" : "5997654321"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "setPassword 135791",
+        "time" : {
+          "start" : 1669373840544,
+          "stop" : 1669373841427,
+          "duration" : 883
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "password",
+          "value" : "135791"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_HamburgerMenu",
+        "time" : {
+          "start" : 1669373864094,
+          "stop" : 1669373870796,
+          "duration" : 6702
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_rehberimVeBankaHesaplarim",
+        "time" : {
+          "start" : 1669373870796,
+          "stop" : 1669373871817,
+          "duration" : 1021
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_grubaEklemekicinKisiSec",
+        "time" : {
+          "start" : 1669373871817,
+          "stop" : 1669373873884,
+          "duration" : 2067
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_paraGonderButonu",
+        "time" : {
+          "start" : 1669373873885,
+          "stop" : 1669373875494,
+          "duration" : 1609
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "tutarGir_2",
+        "time" : {
+          "start" : 1669373875496,
+          "stop" : 1669373885981,
+          "duration" : 10485
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "otp_SMS_transaction_log",
+        "time" : {
+          "start" : 1669373895274,
+          "stop" : 1669373897183,
+          "duration" : 1909
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "a94b33e2f0f7649b",
+          "name" : "Bilgi",
+          "source" : "a94b33e2f0f7649b.txt",
+          "type" : "text/plain",
+          "size" : 146
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "bakiyeKontrol_Verified",
+        "time" : {
+          "start" : 1669373897184,
+          "stop" : 1669373897908,
+          "duration" : 724
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "5bd7a4d71bef6b27",
+          "name" : "Bilgi",
+          "source" : "5bd7a4d71bef6b27.txt",
+          "type" : "text/plain",
+          "size" : 4
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "push_Notification_log",
+        "time" : {
+          "start" : 1669373897908,
+          "stop" : 1669373898244,
+          "duration" : 336
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "11836d4b6960bdab",
+          "name" : "Bilgi",
+          "source" : "11836d4b6960bdab.txt",
+          "type" : "text/plain",
+          "size" : 28
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 10,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "18e94bdc18e54a8b",
+      "name" : "Screenshot",
+      "source" : "18e94bdc18e54a8b.png",
+      "type" : "image/png",
+      "size" : 418296
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 11,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "stopAppiumAndDriver",
+    "time" : {
+      "start" : 1669373899774,
+      "stop" : 1669373900733,
+      "duration" : 959
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Verified.KisiyeParaGonderTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Verified.KisiyeParaGonderTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "KayitliKisiyeParaGonder"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "ttPay_POM"
+  }, {
+    "name" : "subSuite",
+    "value" : "Verified.KisiyeParaGonderTest"
+  }, {
+    "name" : "host",
+    "value" : "N110688"
+  }, {
+    "name" : "thread",
+    "value" : "816@N110688.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "83f0993d8d8c9e04.json",
+  "parameterValues" : [ ]
+}

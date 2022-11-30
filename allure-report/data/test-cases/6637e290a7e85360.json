@@ -1,0 +1,647 @@
+{
+  "uid" : "6637e290a7e85360",
+  "name" : "GrubaParaGonder",
+  "fullName" : "Verified.GrubaParaGonderTest.GrubaParaGonder",
+  "historyId" : "2fad4f6fad0f20ad64f53ab52a1d33f3",
+  "time" : {
+    "start" : 1669730063807,
+    "stop" : 1669730120390,
+    "duration" : 56583
+  },
+  "description" : "Gruba Para Gönderme senaryosu",
+  "descriptionHtml" : "<p>Gruba Para Gönderme senaryosu</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1669730044329,
+      "stop" : 1669730063536,
+      "duration" : 19207
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Gruba Para Gönderme senaryosu",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Test koşumunun detayları için genişletin.",
+      "time" : {
+        "start" : 1669730063884,
+        "stop" : 1669730119273,
+        "duration" : 55389
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "bakiyeKontrol_Verified",
+        "time" : {
+          "start" : 1669730063946,
+          "stop" : 1669730066087,
+          "duration" : 2141
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "e17b9dc9bc411438",
+          "name" : "Verified Bakiye: ",
+          "source" : "e17b9dc9bc411438.txt",
+          "type" : "text/plain",
+          "size" : 4
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "setUsername 5997654321",
+        "time" : {
+          "start" : 1669730066092,
+          "stop" : 1669730068123,
+          "duration" : 2031
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "username",
+          "value" : "5997654321"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "setPassword 135791",
+        "time" : {
+          "start" : 1669730068124,
+          "stop" : 1669730068908,
+          "duration" : 784
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "password",
+          "value" : "135791"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "getTextOfOTPMessage",
+        "time" : {
+          "start" : 1669730068909,
+          "stop" : 1669730071289,
+          "duration" : 2380
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_HamburgerMenu",
+        "time" : {
+          "start" : 1669730076754,
+          "stop" : 1669730081474,
+          "duration" : 4720
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_rehberimVeBankaHesaplarim",
+        "time" : {
+          "start" : 1669730081474,
+          "stop" : 1669730082632,
+          "duration" : 1158
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_plusButton",
+        "time" : {
+          "start" : 1669730082633,
+          "stop" : 1669730084245,
+          "duration" : 1612
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_yeniGrupOlustur",
+        "time" : {
+          "start" : 1669730084246,
+          "stop" : 1669730085169,
+          "duration" : 923
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "sendkey_grupAdiGirTextBox testGrup",
+        "time" : {
+          "start" : 1669730085169,
+          "stop" : 1669730086587,
+          "duration" : 1418
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "text",
+          "value" : "testGrup"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_devamEtButonu",
+        "time" : {
+          "start" : 1669730086588,
+          "stop" : 1669730087247,
+          "duration" : 659
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_grubaEklemekicinKisiSec",
+        "time" : {
+          "start" : 1669730087248,
+          "stop" : 1669730088223,
+          "duration" : 975
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_kaydetButonu",
+        "time" : {
+          "start" : 1669730088224,
+          "stop" : 1669730089027,
+          "duration" : 803
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_paraGonderButonu",
+        "time" : {
+          "start" : 1669730089027,
+          "stop" : 1669730090480,
+          "duration" : 1453
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "tutarGir_ParaGonder",
+        "time" : {
+          "start" : 1669730090480,
+          "stop" : 1669730096039,
+          "duration" : 5559
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_HamburgerMenu",
+        "time" : {
+          "start" : 1669730110737,
+          "stop" : 1669730111818,
+          "duration" : 1081
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_rehberimVeBankaHesaplarim",
+        "time" : {
+          "start" : 1669730111818,
+          "stop" : 1669730112733,
+          "duration" : 915
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_GrupSec",
+        "time" : {
+          "start" : 1669730112733,
+          "stop" : 1669730114120,
+          "duration" : 1387
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_grubuSil",
+        "time" : {
+          "start" : 1669730114120,
+          "stop" : 1669730115513,
+          "duration" : 1393
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_grubuSil_OnaylaButton",
+        "time" : {
+          "start" : 1669730115514,
+          "stop" : 1669730116570,
+          "duration" : 1056
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_grubuSil_TamamButton",
+        "time" : {
+          "start" : 1669730116570,
+          "stop" : 1669730117268,
+          "duration" : 698
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "otp_SMS_transaction_log",
+        "time" : {
+          "start" : 1669730117269,
+          "stop" : 1669730117899,
+          "duration" : 630
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "93843629d4409231",
+          "name" : "SMS Log: ",
+          "source" : "93843629d4409231.txt",
+          "type" : "text/plain",
+          "size" : 146
+        }, {
+          "uid" : "b5c799b53137e00c",
+          "name" : "select TOP(1) TEXT from [TTPAY_TEST].[dbo].[SMS_TRANSACTION] ORDER BY CREATION_DATE DESC",
+          "source" : "b5c799b53137e00c.txt",
+          "type" : "text/plain",
+          "size" : 88
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "bakiyeKontrol_Verified",
+        "time" : {
+          "start" : 1669730117899,
+          "stop" : 1669730118525,
+          "duration" : 626
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "e62d29da4369e056",
+          "name" : "Verified Bakiye: ",
+          "source" : "e62d29da4369e056.txt",
+          "type" : "text/plain",
+          "size" : 4
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "push_Notification_log",
+        "time" : {
+          "start" : 1669730118525,
+          "stop" : 1669730118850,
+          "duration" : 325
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "767969f372115c30",
+          "name" : "Push Notification Log: ",
+          "source" : "767969f372115c30.txt",
+          "type" : "text/plain",
+          "size" : 28
+        }, {
+          "uid" : "5b64406695966fe0",
+          "name" : "SELECT TOP(1) BODY FROM [TTPAY_TEST].[dbo].[PN_TRANSACTION] order by LOG_DATE desc",
+          "source" : "5b64406695966fe0.txt",
+          "type" : "text/plain",
+          "size" : 82
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "total_Tax_Amount_verified",
+        "time" : {
+          "start" : 1669730118850,
+          "stop" : 1669730119273,
+          "duration" : 423
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "2337b9b225586f6e",
+          "name" : "Toplam Kesinti Miktarı - Verified: ",
+          "source" : "2337b9b225586f6e.bin",
+          "type" : "text/plain",
+          "size" : 0
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 24,
+      "attachmentsCount" : 7,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "13c0cba808abe74f",
+      "name" : "Screenshot",
+      "source" : "13c0cba808abe74f.png",
+      "type" : "image/png",
+      "size" : 273537
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 25,
+    "attachmentsCount" : 8,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "stopAppiumAndDriver",
+    "time" : {
+      "start" : 1669730120514,
+      "stop" : 1669730121342,
+      "duration" : 828
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Verified.GrubaParaGonderTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Verified.GrubaParaGonderTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "GrubaParaGonder"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "ttPay_POM"
+  }, {
+    "name" : "subSuite",
+    "value" : "Verified.GrubaParaGonderTest"
+  }, {
+    "name" : "host",
+    "value" : "N110688"
+  }, {
+    "name" : "thread",
+    "value" : "12436@N110688.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ {
+      "uid" : "fc9a7f2e47255958",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669724344550,
+        "stop" : 1669724405601,
+        "duration" : 61051
+      }
+    }, {
+      "uid" : "7f675d8126dc0437",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669382637614,
+        "stop" : 1669382700977,
+        "duration" : 63363
+      }
+    }, {
+      "uid" : "7f15a9d44eea117e",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 7d379d79-28c7-4f64-8ba6-11bd65084973\n*** Element info: {Using=id, value=ibBackButton}",
+      "time" : {
+        "start" : 1669380841745,
+        "stop" : 1669380861398,
+        "duration" : 19653
+      }
+    }, {
+      "uid" : "b2414ed7ba112990",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669363792642,
+        "stop" : 1669363855972,
+        "duration" : 63330
+      }
+    }, {
+      "uid" : "4da3da4ae0117143",
+      "status" : "broken",
+      "statusDetails" : "An unknown server-side error occurred while processing the command. Original error: org.eclipse.wst.xml.xpath2.processor.internal.StaticNsNameError: Unknown prefix: tr.com.turktelekom.pokus.test.\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 4ced4849-4713-4b7d-85c6-ec0e1807526f\n*** Element info: {Using=xpath, value=(//tr.com.turktelekom.pokus.test:id/tv_contact_list_item_group_view_name[@text='testGrup'])[1]}",
+      "time" : {
+        "start" : 1669361912566,
+        "stop" : 1669361970384,
+        "duration" : 57818
+      }
+    }, {
+      "uid" : "40aee67da25b2f77",
+      "status" : "broken",
+      "statusDetails" : "An unknown server-side error occurred while processing the command. Original error: org.eclipse.wst.xml.xpath2.processor.internal.StaticNsNameError: Unknown prefix: tr.com.turktelekom.pokus.test.\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 8a79a96a-16d3-4a4e-a3e5-9f6b6b576de6\n*** Element info: {Using=xpath, value=(//tr.com.turktelekom.pokus.test:id/tv_contact_list_item_group_view_name[@text='testGrup'])[1]}",
+      "time" : {
+        "start" : 1669361751542,
+        "stop" : 1669361807700,
+        "duration" : 56158
+      }
+    }, {
+      "uid" : "10caff14449ddaeb",
+      "status" : "broken",
+      "statusDetails" : "An unknown server-side error occurred while processing the command. Original error: org.eclipse.wst.xml.xpath2.processor.internal.StaticNsNameError: Unknown prefix: tr.com.turktelekom.pokus.test.\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 8ef658e3-f612-4d8f-8deb-0bc9f617e1e2\n*** Element info: {Using=xpath, value=//tr.com.turktelekom.pokus.test:id/tv_contact_list_item_group_view_name[@text='testGrup']}",
+      "time" : {
+        "start" : 1669361588088,
+        "stop" : 1669361645445,
+        "duration" : 57357
+      }
+    }, {
+      "uid" : "209cfb2a94372a25",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 013efc49-69e3-4c0d-bf43-c86d29419556\n*** Element info: {Using=id, value=abtn_activity_send_money_otp_continue}",
+      "time" : {
+        "start" : 1669361465853,
+        "stop" : 1669361527468,
+        "duration" : 61615
+      }
+    }, {
+      "uid" : "fd2f22fccb4c3a0f",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 6fb84ef9-a25d-41b0-bf34-8264855af557\n*** Element info: {Using=id, value=abtn_activity_send_money_otp_continue}",
+      "time" : {
+        "start" : 1669361041696,
+        "stop" : 1669361110843,
+        "duration" : 69147
+      }
+    }, {
+      "uid" : "e05d6bf58799e09",
+      "status" : "broken",
+      "statusDetails" : "Cannot set the element to '6'. Did you interact with the correct element?\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: d176b499-37e6-4189-a33e-d62c27843a65",
+      "time" : {
+        "start" : 1669360889002,
+        "stop" : 1669360931705,
+        "duration" : 42703
+      }
+    }, {
+      "uid" : "f0c58eb2cb2bd2a7",
+      "status" : "broken",
+      "statusDetails" : "Cannot set the element to '6'. Did you interact with the correct element?\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 83e1e383-2313-4102-b4c5-dbc0955d331a",
+      "time" : {
+        "start" : 1669360798974,
+        "stop" : 1669360839916,
+        "duration" : 40942
+      }
+    }, {
+      "uid" : "d67fa2d138ae9f8c",
+      "status" : "broken",
+      "statusDetails" : "An unknown server-side error occurred while processing the command. Original error: org.eclipse.wst.xml.xpath2.processor.internal.StaticNsNameError: Unknown prefix: tr.com.turktelekom.pokus.test.\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'N110688', ip: '10.10.20.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {VERSION: 11, appActivity: tr.com.innova.fintek.ttpay...., appPackage: tr.com.turktelekom.pokus.test, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Pixel_XL_API_33, disableWindowAnimation: true, newCommandTimeout: 6000, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, disableWindowAnimation: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 6000, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2844, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}\nSession ID: 33a73503-4f13-4808-9741-b7de331ef671\n*** Element info: {Using=xpath, value=//tr.com.turktelekom.pokus.test:id/et_smart_textfield_text[@text='Tutar']}",
+      "time" : {
+        "start" : 1669360595656,
+        "stop" : 1669360636785,
+        "duration" : 41129
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6637e290a7e85360.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,225 @@
+{
+  "uid" : "c9fdc6e1cea53962",
+  "name" : "LoginAndLogOut",
+  "fullName" : "Login.LoginLogOutTest.LoginAndLogOut",
+  "historyId" : "d50f7460d030b85ed49b6633163fae5b",
+  "time" : {
+    "start" : 1668861487121,
+    "stop" : 1668861502592,
+    "duration" : 15471
+  },
+  "description" : "Kullancı Adı ve Şifre ile giriş yapma senaryosu.",
+  "descriptionHtml" : "<p>Kullancı Adı ve Şifre ile giriş yapma senaryosu.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1668861470889,
+      "stop" : 1668861486456,
+      "duration" : 15567
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Kullancı Adı ve Şifre ile giriş yapma senaryosu.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1668861487224,
+        "stop" : 1668861497487,
+        "duration" : 10263
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "setUsername",
+        "time" : {
+          "start" : 1668861487254,
+          "stop" : 1668861488291,
+          "duration" : 1037
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "username",
+          "value" : "5997654321"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "setPassword",
+        "time" : {
+          "start" : 1668861488300,
+          "stop" : 1668861489674,
+          "duration" : 1374
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "password",
+          "value" : "135791"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "getTextOfOTPMessage",
+        "time" : {
+          "start" : 1668861489676,
+          "stop" : 1668861491030,
+          "duration" : 1354
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "click_HamburgerMenu",
+      "time" : {
+        "start" : 1668861497491,
+        "stop" : 1668861499868,
+        "duration" : 2377
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "click_cikisYap",
+      "time" : {
+        "start" : 1668861499872,
+        "stop" : 1668861500668,
+        "duration" : 796
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "click_EvetDialog",
+      "time" : {
+        "start" : 1668861500670,
+        "stop" : 1668861501316,
+        "duration" : 646
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "b3e78055be7315fd",
+      "name" : "Screenshot",
+      "source" : "b3e78055be7315fd.png",
+      "type" : "image/png",
+      "size" : 92900
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 7,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "stopAppiumAndDriver",
+    "time" : {
+      "start" : 1668861502621,
+      "stop" : 1668861505210,
+      "duration" : 2589
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Login.LoginLogOutTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Login.LoginLogOutTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "LoginAndLogOut"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "ttPay_POM"
+  }, {
+    "name" : "subSuite",
+    "value" : "Login.LoginLogOutTest"
+  }, {
+    "name" : "host",
+    "value" : "Ugur-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "12460@Ugur-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c9fdc6e1cea53962.json",
+  "parameterValues" : [ ]
+}

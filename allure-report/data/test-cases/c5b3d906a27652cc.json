@@ -1,0 +1,180 @@
+{
+  "uid" : "c5b3d906a27652cc",
+  "name" : "LoginAndCheckCampaigns",
+  "fullName" : "SemiVerified.KampanyalarTest.LoginAndCheckCampaigns",
+  "historyId" : "e89f9671ac35e575b6dd765e160881a7",
+  "time" : {
+    "start" : 1669379890005,
+    "stop" : 1669379920447,
+    "duration" : 30442
+  },
+  "description" : "Kampanyaları kontrol testi.",
+  "descriptionHtml" : "<p>Kampanyaları kontrol testi.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1669379874902,
+      "stop" : 1669379890003,
+      "duration" : 15101
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Kampanyaları kontrol testi.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Test koşumunun detayları için genişletin.",
+      "time" : {
+        "start" : 1669379890006,
+        "stop" : 1669379918465,
+        "duration" : 28459
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "semiVerifiedlogin",
+        "time" : {
+          "start" : 1669379890006,
+          "stop" : 1669379918465,
+          "duration" : 28459
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "setUsername 5993152161",
+          "time" : {
+            "start" : 1669379890006,
+            "stop" : 1669379893359,
+            "duration" : 3353
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "username",
+            "value" : "5993152161"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "setPassword 135791",
+          "time" : {
+            "start" : 1669379893359,
+            "stop" : 1669379894729,
+            "duration" : 1370
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "password",
+            "value" : "135791"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "b00f78a0ecaca079",
+      "name" : "Screenshot",
+      "source" : "b00f78a0ecaca079.png",
+      "type" : "image/png",
+      "size" : 134158
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 4,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "stopAppiumAndDriver",
+    "time" : {
+      "start" : 1669379927427,
+      "stop" : 1669379928100,
+      "duration" : 673
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "SemiVerified.KampanyalarTest"
+  }, {
+    "name" : "testClass",
+    "value" : "SemiVerified.KampanyalarTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "LoginAndCheckCampaigns"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Command line suite"
+  }, {
+    "name" : "suite",
+    "value" : "Command line test"
+  }, {
+    "name" : "subSuite",
+    "value" : "SemiVerified.KampanyalarTest"
+  }, {
+    "name" : "host",
+    "value" : "N110688"
+  }, {
+    "name" : "thread",
+    "value" : "12708@N110688.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c5b3d906a27652cc.json",
+  "parameterValues" : [ ]
+}

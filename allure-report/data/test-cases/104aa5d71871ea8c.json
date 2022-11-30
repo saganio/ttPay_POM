@@ -1,0 +1,252 @@
+{
+  "uid" : "104aa5d71871ea8c",
+  "name" : "RegisterYanlisOTP",
+  "fullName" : "Register.RegisterYanlisOTPTest.RegisterYanlisOTP",
+  "historyId" : "589edeae32f33f4cc6156f0ecec5a73d",
+  "time" : {
+    "start" : 1669811229211,
+    "stop" : 1669811246988,
+    "duration" : 17777
+  },
+  "description" : "Sisteme Yanlış OTP ile yeni kullanıcı kaydetme senaryosu.",
+  "descriptionHtml" : "<p>Sisteme Yanlış OTP ile yeni kullanıcı kaydetme senaryosu.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1669811206767,
+      "stop" : 1669811228809,
+      "duration" : 22042
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Sisteme Yanlış OTP ile yeni kullanıcı kaydetme senaryosu.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Test koşumunun detayları için genişletin.",
+      "time" : {
+        "start" : 1669811229378,
+        "stop" : 1669811245466,
+        "duration" : 16088
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "click_HesabimYok",
+        "time" : {
+          "start" : 1669811229384,
+          "stop" : 1669811231330,
+          "duration" : 1946
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_HesapOlusturmayaTikla",
+        "time" : {
+          "start" : 1669811231331,
+          "stop" : 1669811232021,
+          "duration" : 690
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "sendKeys_Msisdn 5821525763",
+        "time" : {
+          "start" : 1669811232024,
+          "stop" : 1669811234281,
+          "duration" : 2257
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "text",
+          "value" : "5821525763"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_devamEtButton",
+        "time" : {
+          "start" : 1669811234282,
+          "stop" : 1669811234969,
+          "duration" : 687
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_OTFField",
+        "time" : {
+          "start" : 1669811234969,
+          "stop" : 1669811238475,
+          "duration" : 3506
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "yanlisOTPGir",
+        "time" : {
+          "start" : 1669811238478,
+          "stop" : 1669811243005,
+          "duration" : 4527
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_devamEtButtonAfterOTP",
+        "time" : {
+          "start" : 1669811243007,
+          "stop" : 1669811243893,
+          "duration" : 886
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "get_OTPText",
+        "time" : {
+          "start" : 1669811243894,
+          "stop" : 1669811245457,
+          "duration" : 1563
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 8,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "b05dd67a0b58c073",
+      "name" : "Screenshot",
+      "source" : "b05dd67a0b58c073.png",
+      "type" : "image/png",
+      "size" : 103357
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 9,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "stopAppiumAndDriver",
+    "time" : {
+      "start" : 1669811247143,
+      "stop" : 1669811248103,
+      "duration" : 960
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Register.RegisterYanlisOTPTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Register.RegisterYanlisOTPTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "RegisterYanlisOTP"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "ttPay_POM"
+  }, {
+    "name" : "subSuite",
+    "value" : "Register.RegisterYanlisOTPTest"
+  }, {
+    "name" : "host",
+    "value" : "N110688"
+  }, {
+    "name" : "thread",
+    "value" : "22296@N110688.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "104aa5d71871ea8c.json",
+  "parameterValues" : [ ]
+}

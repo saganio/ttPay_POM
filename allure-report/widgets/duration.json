@@ -1,0 +1,901 @@
+[ {
+  "uid" : "cce19857d3204b38",
+  "name" : "IBANKaydet",
+  "time" : {
+    "start" : 1669378653616,
+    "stop" : 1669378672624,
+    "duration" : 19008
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "b7a2419a8c18622d",
+  "name" : "YeniKisiOlusturVeParaGonder",
+  "time" : {
+    "start" : 1669386281117,
+    "stop" : 1669386332959,
+    "duration" : 51842
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "283d7f05293e2a02",
+  "name" : "ParolamiUnuttum",
+  "time" : {
+    "start" : 1669379341833,
+    "stop" : 1669379348347,
+    "duration" : 6514
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "4f56f4c252aca894",
+  "name" : "LoginAndClickParaIste",
+  "time" : {
+    "start" : 1669293585259,
+    "stop" : 1669293623539,
+    "duration" : 38280
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "66493e3c970b4431",
+  "name" : "Step2",
+  "time" : {
+    "start" : 1668880524519,
+    "stop" : 1668880530774,
+    "duration" : 6255
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6c004183926ebb24",
+  "name" : "KayitliKisidenParaIste",
+  "time" : {
+    "start" : 1669383179127,
+    "stop" : 1669383223539,
+    "duration" : 44412
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "13ab3cfbec112bd6",
+  "name" : "LoginAndClickParaIste",
+  "time" : {
+    "start" : 1669379052139,
+    "stop" : 1669379069820,
+    "duration" : 17681
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "26920c88fa67b0d8",
+  "name" : "setUp",
+  "time" : {
+    "start" : 1669060155150,
+    "stop" : 1669060155170,
+    "duration" : 20
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "1bf47b2b11aca20c",
+  "name" : "KrediBankaKartiEkle",
+  "time" : {
+    "start" : 1669378954200,
+    "stop" : 1669378973078,
+    "duration" : 18878
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "cac100ebb3cea9fb",
+  "name" : "Step2",
+  "time" : {
+    "start" : 1669380989716,
+    "stop" : 1669381005465,
+    "duration" : 15749
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b1199ba4e98865b1",
+  "name" : "KisiDavetEt",
+  "time" : {
+    "start" : 1669378760082,
+    "stop" : 1669378783509,
+    "duration" : 23427
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "264eafa14d27703c",
+  "name" : "IBANKaydet",
+  "time" : {
+    "start" : 1669385420265,
+    "stop" : 1669385471038,
+    "duration" : 50773
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "3eda85f740e24a6e",
+  "name" : "LoginAndClickParaGonder",
+  "time" : {
+    "start" : 1669378987523,
+    "stop" : 1669379003130,
+    "duration" : 15607
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "ad9e05708b5f69a",
+  "name" : "PokusKartEkle",
+  "time" : {
+    "start" : 1669379085049,
+    "stop" : 1669379106474,
+    "duration" : 21425
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "1e1435369391fd2d",
+  "name" : "KisiAdiGuncelle",
+  "time" : {
+    "start" : 1669384185350,
+    "stop" : 1669384222576,
+    "duration" : 37226
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "9191da7c52fef77f",
+  "name" : "KisiOlustur",
+  "time" : {
+    "start" : 1669378878955,
+    "stop" : 1669378905062,
+    "duration" : 26107
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "2f2dad284dc0dfb1",
+  "name" : "LoginAndCheckCampaigns",
+  "time" : {
+    "start" : 1668880512787,
+    "stop" : 1668880524208,
+    "duration" : 11421
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "d05f00f9d733e947",
+  "name" : "GruptanParaIste",
+  "time" : {
+    "start" : 1669385360004,
+    "stop" : 1669385405368,
+    "duration" : 45364
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "183746254a88d8e4",
+  "name" : "LoginAndLogOut",
+  "time" : {
+    "start" : 1669792420277,
+    "stop" : 1669792443660,
+    "duration" : 23383
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "a35b562a49b9bed",
+  "name" : "FaturaOde",
+  "time" : {
+    "start" : 1669378492710,
+    "stop" : 1669378510751,
+    "duration" : 18041
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "720d1139ee844887",
+  "name" : "BankaHesabindanParaYukle",
+  "time" : {
+    "start" : 1669378457544,
+    "stop" : 1669378478139,
+    "duration" : 20595
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "ddb8032afe69df7d",
+  "name" : "LoginAndCheckCampaigns",
+  "time" : {
+    "start" : 1669382904434,
+    "stop" : 1669382932117,
+    "duration" : 27683
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "f559d541fe69de18",
+  "name" : "Login_Basic_TopUp",
+  "time" : {
+    "start" : 1669122093911,
+    "stop" : 1669122116670,
+    "duration" : 22759
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "d71cc6673067d8d",
+  "name" : "KayitliKisidenParaIste",
+  "time" : {
+    "start" : 1669385775879,
+    "stop" : 1669385813373,
+    "duration" : 37494
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "7476941eb676270c",
+  "name" : "AdresGuncelle",
+  "time" : {
+    "start" : 1669385066119,
+    "stop" : 1669385128086,
+    "duration" : 61967
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "92b1919c9d340b6f",
+  "name" : "KisiAdiGuncelle",
+  "time" : {
+    "start" : 1668951049461,
+    "stop" : 1668951069560,
+    "duration" : 20099
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "f19278c3c6737c5a",
+  "name" : "Register5ileBaslamayanNo",
+  "time" : {
+    "start" : 1669379362618,
+    "stop" : 1669379367735,
+    "duration" : 5117
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "2ec6f77eaae2f678",
+  "name" : "IBANKaydet",
+  "time" : {
+    "start" : 1669384848509,
+    "stop" : 1669384893308,
+    "duration" : 44799
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "dbb1747396aaa7ae",
+  "name" : "LoginAndClickParaIste",
+  "time" : {
+    "start" : 1668880978025,
+    "stop" : 1668881010166,
+    "duration" : 32141
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "8e3f01e8ae986ac7",
+  "name" : "FaturaOde",
+  "time" : {
+    "start" : 1669385210209,
+    "stop" : 1669385244804,
+    "duration" : 34595
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "9d2dba590bc7cf4a",
+  "name" : "KisiAdiGuncelle",
+  "time" : {
+    "start" : 1669387400071,
+    "stop" : 1669387441759,
+    "duration" : 41688
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "93cd8291d24dc1d4",
+  "name" : "AdresGuncelle",
+  "time" : {
+    "start" : 1669382452733,
+    "stop" : 1669382513380,
+    "duration" : 60647
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "4e13ac5ffb467272",
+  "name" : "LoginHataliParola",
+  "time" : {
+    "start" : 1669734117365,
+    "stop" : 1669734147444,
+    "duration" : 30079
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "6c44d53f41432e7b",
+  "name" : "KisiDavetEt",
+  "time" : {
+    "start" : 1669385584114,
+    "stop" : 1669385621897,
+    "duration" : 37783
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "bf0db3244e3eccf8",
+  "name" : "BankaHesabindanParaYukle",
+  "time" : {
+    "start" : 1669384239495,
+    "stop" : 1669384282837,
+    "duration" : 43342
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "dcf87334c4fcb11a",
+  "name" : "GrubaParaGonder",
+  "time" : {
+    "start" : 1669378525707,
+    "stop" : 1669378555061,
+    "duration" : 29354
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "120d3122864996bf",
+  "name" : "KayitliKisiyeParaGonder",
+  "time" : {
+    "start" : 1669383241058,
+    "stop" : 1669383293879,
+    "duration" : 52821
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "2df4f681402751f7",
+  "name" : "KrediBankaKartiEkle",
+  "time" : {
+    "start" : 1669385890462,
+    "stop" : 1669385927585,
+    "duration" : 37123
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "f032fbe4bc40d0d1",
+  "name" : "Register",
+  "time" : {
+    "start" : 1669801344618,
+    "stop" : 1669801400962,
+    "duration" : 56344
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "1872e3d557ebe2c9",
+  "name" : "KisiDetayInceleme",
+  "time" : {
+    "start" : 1669385638876,
+    "stop" : 1669385696755,
+    "duration" : 57879
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "93c61dfe38eea453",
+  "name" : "RegisterVarOlanKullanici",
+  "time" : {
+    "start" : 1669379421662,
+    "stop" : 1669379429207,
+    "duration" : 7545
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "ff779ae04b9bd8bd",
+  "name" : "KisiOlustur",
+  "time" : {
+    "start" : 1669383119401,
+    "stop" : 1669383159971,
+    "duration" : 40570
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "64c973df5103ffd0",
+  "name" : "LoginAndClickParaGonder",
+  "time" : {
+    "start" : 1669383365981,
+    "stop" : 1669383433060,
+    "duration" : 67079
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "dc2174762bffaef8",
+  "name" : "YeniKisiOlusturVeParaGonder",
+  "time" : {
+    "start" : 1669379216649,
+    "stop" : 1669379247744,
+    "duration" : 31095
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "d1912bc9373f15de",
+  "name" : "setUp",
+  "time" : {
+    "start" : 1669734007852,
+    "stop" : 1669734007855,
+    "duration" : 3
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a19a5e4ff8490488",
+  "name" : "KisiDetayInceleme",
+  "time" : {
+    "start" : 1669378831659,
+    "stop" : 1669378865475,
+    "duration" : 33816
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "1345c1618f104b98",
+  "name" : "GrubaParaGonder",
+  "time" : {
+    "start" : 1669385259659,
+    "stop" : 1669385304486,
+    "duration" : 44827
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "d01d64875837016",
+  "name" : "KayitliKisidenParaIste",
+  "time" : {
+    "start" : 1669378797836,
+    "stop" : 1669378817549,
+    "duration" : 19713
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "c0543cf0efea1187",
+  "name" : "SifreGuncelle",
+  "time" : {
+    "start" : 1668951191207,
+    "stop" : 1668951212355,
+    "duration" : 21148
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "6f267b050fadd5a7",
+  "name" : "GrupOlustur",
+  "time" : {
+    "start" : 1668881134411,
+    "stop" : 1668881156953,
+    "duration" : 22542
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "988d300015fe7116",
+  "name" : "KayitliKisiyeParaGonder",
+  "time" : {
+    "start" : 1669385829982,
+    "stop" : 1669385870204,
+    "duration" : 40222
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "ae167514c743ff18",
+  "name" : "YeniKisiOlusturVeParaGonder",
+  "time" : {
+    "start" : 1669383672297,
+    "stop" : 1669383734852,
+    "duration" : 62555
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "3230593182ab8b00",
+  "name" : "Basic_TopUp",
+  "time" : {
+    "start" : 1669126710351,
+    "stop" : 1669126737036,
+    "duration" : 26685
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "c971a45cfca5e0e2",
+  "name" : "KayitliKisidenParaIste",
+  "time" : {
+    "start" : 1669383449447,
+    "stop" : 1669383492982,
+    "duration" : 43535
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "54f5a51dc522c1b2",
+  "name" : "GrupOlustur",
+  "time" : {
+    "start" : 1669382715086,
+    "stop" : 1669382753588,
+    "duration" : 38502
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "a28261280a21b0a8",
+  "name" : "AdresGuncelle",
+  "time" : {
+    "start" : 1669378395718,
+    "stop" : 1669378443529,
+    "duration" : 47811
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "953afba40de06dd8",
+  "name" : "KayitliKisidenParaIste",
+  "time" : {
+    "start" : 1669379017414,
+    "stop" : 1669379037400,
+    "duration" : 19986
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "9efc2767bbce6536",
+  "name" : "ParaIste",
+  "time" : {
+    "start" : 1669386068159,
+    "stop" : 1669386105804,
+    "duration" : 37645
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "34fdab24d8551174",
+  "name" : "ParaIste",
+  "time" : {
+    "start" : 1669383508340,
+    "stop" : 1669383558633,
+    "duration" : 50293
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "40bf13b0da4ab660",
+  "name" : "GrupOlustur",
+  "time" : {
+    "start" : 1669387339505,
+    "stop" : 1669387384479,
+    "duration" : 44974
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "f606157ecee63264",
+  "name" : "PokusKartEkle",
+  "time" : {
+    "start" : 1669387509012,
+    "stop" : 1669387568310,
+    "duration" : 59298
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "f6ef399ae1145c5e",
+  "name" : "SifreGuncelle",
+  "time" : {
+    "start" : 1669386212336,
+    "stop" : 1669386256632,
+    "duration" : 44296
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "f62eb3c450a0f661",
+  "name" : "LoginAndCheckCampaigns",
+  "time" : {
+    "start" : 1669378687339,
+    "stop" : 1669378701562,
+    "duration" : 14223
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "a9a6de1f52183504",
+  "name" : "KayitliKisiyeParaGonder",
+  "time" : {
+    "start" : 1669378919435,
+    "stop" : 1669378939555,
+    "duration" : 20120
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "7cb3d5bb0d8c03b7",
+  "name" : "Step2",
+  "time" : {
+    "start" : 1669378701567,
+    "stop" : 1669378708841,
+    "duration" : 7274
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2143a8d315609aee",
+  "name" : "GruptanParaIste",
+  "time" : {
+    "start" : 1669729965656,
+    "stop" : 1669730018061,
+    "duration" : 52405
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "2c7f5de2e913e58f",
+  "name" : "YeniKisiOlusturVeParaGonder",
+  "time" : {
+    "start" : 1669383751553,
+    "stop" : 1669383805827,
+    "duration" : 54274
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "309b9e4c86967624",
+  "name" : "Step2",
+  "time" : {
+    "start" : 1669379920453,
+    "stop" : 1669379927422,
+    "duration" : 6969
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75ef8eab286a0ce",
+  "name" : "RegisterYanlisOTP",
+  "time" : {
+    "start" : 1669812097242,
+    "stop" : 1669812116929,
+    "duration" : 19687
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "bd43b9213455752",
+  "name" : "SifreGuncelle",
+  "time" : {
+    "start" : 1669383623765,
+    "stop" : 1669383656366,
+    "duration" : 32601
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "c9cf11d7b4fbda87",
+  "name" : "YeniKisiOlusturVeParaGonder",
+  "time" : {
+    "start" : 1669379166020,
+    "stop" : 1669379198924,
+    "duration" : 32904
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "d42738ef96cdf811",
+  "name" : "GrupOlustur",
+  "time" : {
+    "start" : 1669378569286,
+    "stop" : 1669378595183,
+    "duration" : 25897
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "c6ab303aa3631d09",
+  "name" : "KisiDetayInceleme",
+  "time" : {
+    "start" : 1669384627892,
+    "stop" : 1669384673186,
+    "duration" : 45294
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "1189ef40e2446b99",
+  "name" : "LoginAndCheckCampaigns",
+  "time" : {
+    "start" : 1669385487429,
+    "stop" : 1669385517387,
+    "duration" : 29958
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "4a799aeca761bdd2",
+  "name" : "LoginAndClickParaGonder",
+  "time" : {
+    "start" : 1669387457605,
+    "stop" : 1669387493618,
+    "duration" : 36013
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "e350488338843ae",
+  "name" : "KrediBankaKartiEkle",
+  "time" : {
+    "start" : 1669383312934,
+    "stop" : 1669383349170,
+    "duration" : 36236
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "3a0d2f29d8964551",
+  "name" : "KisiAdiGuncelle",
+  "time" : {
+    "start" : 1669378723278,
+    "stop" : 1669378745192,
+    "duration" : 21914
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "a43b6cd020040cf3",
+  "name" : "BankaHesabindanParaYukle",
+  "time" : {
+    "start" : 1669387269589,
+    "stop" : 1669387321756,
+    "duration" : 52167
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "73a6d424128bb6cb",
+  "name" : "KayitliKisidenParaIste",
+  "time" : {
+    "start" : 1669386010239,
+    "stop" : 1669386048156,
+    "duration" : 37917
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "6637e290a7e85360",
+  "name" : "GrubaParaGonder",
+  "time" : {
+    "start" : 1669730063807,
+    "stop" : 1669730120390,
+    "duration" : 56583
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "60752e12e0a9429e",
+  "name" : "stopAppiumAndDriver",
+  "time" : {
+    "start" : 1669734008106,
+    "stop" : 1669734008106,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "eb5cbc52ce074922",
+  "name" : "SifreGuncelle",
+  "time" : {
+    "start" : 1669379124061,
+    "stop" : 1669379147557,
+    "duration" : 23496
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "a73462ad589ee153",
+  "name" : "YeniKisiOlusturVeParaGonder",
+  "time" : {
+    "start" : 1669386354568,
+    "stop" : 1669386403463,
+    "duration" : 48895
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "ef37c4301af654c1",
+  "name" : "FaturaOde",
+  "time" : {
+    "start" : 1669382590460,
+    "stop" : 1669382622013,
+    "duration" : 31553
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "e6d0fa36b09a7211",
+  "name" : "KisiDavetEt",
+  "time" : {
+    "start" : 1669383006047,
+    "stop" : 1669383041321,
+    "duration" : 35274
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "5084a52451eecdb9",
+  "name" : "KayitliKisiyeParaGonder",
+  "time" : {
+    "start" : 1669061619253,
+    "stop" : 1669061638526,
+    "duration" : 19273
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "112fd772f69321a1",
+  "name" : "GruptanParaIste",
+  "time" : {
+    "start" : 1669378609483,
+    "stop" : 1669378639081,
+    "duration" : 29598
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "73abe7eb9f6bdb75",
+  "name" : "KisiOlustur",
+  "time" : {
+    "start" : 1669385715406,
+    "stop" : 1669385760644,
+    "duration" : 45238
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "be4b687ce30ade46",
+  "name" : "BeniHatirla",
+  "time" : {
+    "start" : 1669122192889,
+    "stop" : 1669122233066,
+    "duration" : 40177
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "88ec381afad32641",
+  "name" : "PokusKartEkle",
+  "time" : {
+    "start" : 1669383574798,
+    "stop" : 1669383608079,
+    "duration" : 33281
+  },
+  "status" : "passed",
+  "severity" : "minor"
+} ]

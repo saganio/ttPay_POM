@@ -1,0 +1,255 @@
+{
+  "uid" : "2ffd78f756d6e391",
+  "name" : "KisiDavetEt",
+  "fullName" : "SemiVerified.KisiDavetEtTest.KisiDavetEt",
+  "historyId" : "59596eaa23f5da912e3e17ff05bda272",
+  "time" : {
+    "start" : 1669380003471,
+    "stop" : 1669380042192,
+    "duration" : 38721
+  },
+  "description" : "Kişi davet etme testi.",
+  "descriptionHtml" : "<p>Kişi davet etme testi.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1669379986283,
+      "stop" : 1669380003468,
+      "duration" : 17185
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Kişi davet etme testi.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Test koşumunun detayları için genişletin.",
+      "time" : {
+        "start" : 1669380003471,
+        "stop" : 1669380041406,
+        "duration" : 37935
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "semiVerifiedlogin",
+        "time" : {
+          "start" : 1669380003471,
+          "stop" : 1669380031767,
+          "duration" : 28296
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "setUsername 5993152161",
+          "time" : {
+            "start" : 1669380003472,
+            "stop" : 1669380007040,
+            "duration" : 3568
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "username",
+            "value" : "5993152161"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "setPassword 135791",
+          "time" : {
+            "start" : 1669380007040,
+            "stop" : 1669380008423,
+            "duration" : 1383
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "password",
+            "value" : "135791"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_HamburgerMenu",
+        "time" : {
+          "start" : 1669380031767,
+          "stop" : 1669380035907,
+          "duration" : 4140
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_rehberimVeBankaHesaplarim",
+        "time" : {
+          "start" : 1669380035908,
+          "stop" : 1669380037409,
+          "duration" : 1501
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_DavetEt",
+        "time" : {
+          "start" : 1669380037409,
+          "stop" : 1669380038082,
+          "duration" : 673
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_devamEtButonu_dialog",
+        "time" : {
+          "start" : 1669380038082,
+          "stop" : 1669380038985,
+          "duration" : 903
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "getDavetEtText",
+        "time" : {
+          "start" : 1669380038985,
+          "stop" : 1669380041406,
+          "duration" : 2421
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 8,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "d6942ce448f3d08d",
+      "name" : "Screenshot",
+      "source" : "d6942ce448f3d08d.png",
+      "type" : "image/png",
+      "size" : 130241
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 9,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "stopAppiumAndDriver",
+    "time" : {
+      "start" : 1669380042194,
+      "stop" : 1669380042853,
+      "duration" : 659
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "SemiVerified.KisiDavetEtTest"
+  }, {
+    "name" : "testClass",
+    "value" : "SemiVerified.KisiDavetEtTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "KisiDavetEt"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Command line suite"
+  }, {
+    "name" : "suite",
+    "value" : "Command line test"
+  }, {
+    "name" : "subSuite",
+    "value" : "SemiVerified.KisiDavetEtTest"
+  }, {
+    "name" : "host",
+    "value" : "N110688"
+  }, {
+    "name" : "thread",
+    "value" : "12708@N110688.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2ffd78f756d6e391.json",
+  "parameterValues" : [ ]
+}

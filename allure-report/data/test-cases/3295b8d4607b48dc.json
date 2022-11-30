@@ -1,0 +1,288 @@
+{
+  "uid" : "3295b8d4607b48dc",
+  "name" : "KayitliKisiyeParaGonder",
+  "fullName" : "Verified.KisiyeParaGonderTest.KayitliKisiyeParaGonder",
+  "historyId" : "a6ed05dd83d2d69110348c74b755f921",
+  "time" : {
+    "start" : 1669371307686,
+    "stop" : 1669371356614,
+    "duration" : 48928
+  },
+  "description" : "Kayıtlı Kişiye Para Gönderme senaryosu",
+  "descriptionHtml" : "<p>Kayıtlı Kişiye Para Gönderme senaryosu</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1669371286197,
+      "stop" : 1669371307409,
+      "duration" : 21212
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Kayıtlı Kişiye Para Gönderme senaryosu",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "setUsername 5997654321",
+      "time" : {
+        "start" : 1669371307803,
+        "stop" : 1669371311293,
+        "duration" : 3490
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "username",
+        "value" : "5997654321"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "setPassword 135791",
+      "time" : {
+        "start" : 1669371311295,
+        "stop" : 1669371312668,
+        "duration" : 1373
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "135791"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "click_HamburgerMenu",
+      "time" : {
+        "start" : 1669371333180,
+        "stop" : 1669371338255,
+        "duration" : 5075
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "click_rehberimVeBankaHesaplarim",
+      "time" : {
+        "start" : 1669371338257,
+        "stop" : 1669371339453,
+        "duration" : 1196
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "click_grubaEklemekicinKisiSec",
+      "time" : {
+        "start" : 1669371339453,
+        "stop" : 1669371340349,
+        "duration" : 896
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "click_paraGonderButonu",
+      "time" : {
+        "start" : 1669371340349,
+        "stop" : 1669371341810,
+        "duration" : 1461
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "tutarGir_2",
+      "time" : {
+        "start" : 1669371341810,
+        "stop" : 1669371351400,
+        "duration" : 9590
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "otp_SMS_transaction_log",
+      "time" : {
+        "start" : 1669371351401,
+        "stop" : 1669371353635,
+        "duration" : 2234
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "210262c622800334",
+        "name" : "Bilgi",
+        "source" : "210262c622800334.txt",
+        "type" : "text/plain",
+        "size" : 53
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "bakiyeKontrol_Verified",
+      "time" : {
+        "start" : 1669371353636,
+        "stop" : 1669371354312,
+        "duration" : 676
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ac85e4fcbb76d025",
+        "name" : "Bilgi",
+        "source" : "ac85e4fcbb76d025.txt",
+        "type" : "text/plain",
+        "size" : 4
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "push_Notification_log",
+      "time" : {
+        "start" : 1669371354313,
+        "stop" : 1669371354686,
+        "duration" : 373
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f23a2ffc2677cecb",
+        "name" : "Bilgi",
+        "source" : "f23a2ffc2677cecb.txt",
+        "type" : "text/plain",
+        "size" : 28
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "3bbbd8a6f5835a85",
+      "name" : "Screenshot",
+      "source" : "3bbbd8a6f5835a85.png",
+      "type" : "image/png",
+      "size" : 73179
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 10,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "stopAppiumAndDriver",
+    "time" : {
+      "start" : 1669371357233,
+      "stop" : 1669371358636,
+      "duration" : 1403
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Verified.KisiyeParaGonderTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Verified.KisiyeParaGonderTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "KayitliKisiyeParaGonder"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "ttPay_POM"
+  }, {
+    "name" : "subSuite",
+    "value" : "Verified.KisiyeParaGonderTest"
+  }, {
+    "name" : "host",
+    "value" : "N110688"
+  }, {
+    "name" : "thread",
+    "value" : "20340@N110688.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3295b8d4607b48dc.json",
+  "parameterValues" : [ ]
+}

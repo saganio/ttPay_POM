@@ -1,0 +1,1 @@
+LoginAndLogOut succeed and screenshot taken!

@@ -1,0 +1,279 @@
+{
+  "uid" : "d428e915ecbf7494",
+  "name" : "RegisterYanlisOTP",
+  "fullName" : "Register.RegisterYanlisOTPTest.RegisterYanlisOTP",
+  "historyId" : "589edeae32f33f4cc6156f0ecec5a73d",
+  "time" : {
+    "start" : 1669811981758,
+    "stop" : 1669812004764,
+    "duration" : 23006
+  },
+  "description" : "Sisteme Yanlış OTP ile yeni kullanıcı kaydetme senaryosu.",
+  "descriptionHtml" : "<p>Sisteme Yanlış OTP ile yeni kullanıcı kaydetme senaryosu.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1669811961012,
+      "stop" : 1669811981518,
+      "duration" : 20506
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Sisteme Yanlış OTP ile yeni kullanıcı kaydetme senaryosu.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Test koşumunun detayları için genişletin.",
+      "time" : {
+        "start" : 1669811981841,
+        "stop" : 1669812003395,
+        "duration" : 21554
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "click_HesabimYok",
+        "time" : {
+          "start" : 1669811981849,
+          "stop" : 1669811985295,
+          "duration" : 3446
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_HesapOlusturmayaTikla",
+        "time" : {
+          "start" : 1669811985297,
+          "stop" : 1669811986089,
+          "duration" : 792
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "sendKeys_Msisdn 5394175950",
+        "time" : {
+          "start" : 1669811986093,
+          "stop" : 1669811989161,
+          "duration" : 3068
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "text",
+          "value" : "5394175950"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_devamEtButton",
+        "time" : {
+          "start" : 1669811989161,
+          "stop" : 1669811989852,
+          "duration" : 691
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_OTFField",
+        "time" : {
+          "start" : 1669811989853,
+          "stop" : 1669811995650,
+          "duration" : 5797
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "yanlisOTPGir",
+        "time" : {
+          "start" : 1669811995651,
+          "stop" : 1669811999857,
+          "duration" : 4206
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click_devamEtButtonAfterOTP",
+        "time" : {
+          "start" : 1669811999859,
+          "stop" : 1669812000768,
+          "duration" : 909
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "get_OTPText",
+        "time" : {
+          "start" : 1669812000769,
+          "stop" : 1669812003374,
+          "duration" : 2605
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "CompareTexts",
+        "time" : {
+          "start" : 1669812003374,
+          "stop" : 1669812003395,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "a67164be38268344",
+          "name" : "Aktivasyon kodun hatalı. Lütfen tekrar dene. (MBL-0014)",
+          "source" : "a67164be38268344.txt",
+          "type" : "text/plain",
+          "size" : 57
+        } ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "Aktivasyon kodun hatalı. Lütfen tekrar dene. (MBL-0014)"
+        }, {
+          "name" : "expected",
+          "value" : "Aktivasyon kodun hatalı. Lütfen tekrar dene. (MBL-0014)"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 9,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "bfc19ca727a9cf85",
+      "name" : "Screenshot",
+      "source" : "bfc19ca727a9cf85.png",
+      "type" : "image/png",
+      "size" : 103210
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 10,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "stopAppiumAndDriver",
+    "time" : {
+      "start" : 1669812004927,
+      "stop" : 1669812005803,
+      "duration" : 876
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Register.RegisterYanlisOTPTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Register.RegisterYanlisOTPTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "RegisterYanlisOTP"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "ttPay_POM"
+  }, {
+    "name" : "subSuite",
+    "value" : "Register.RegisterYanlisOTPTest"
+  }, {
+    "name" : "host",
+    "value" : "N110688"
+  }, {
+    "name" : "thread",
+    "value" : "25520@N110688.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d428e915ecbf7494.json",
+  "parameterValues" : [ ]
+}
