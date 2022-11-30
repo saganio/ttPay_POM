@@ -10,7 +10,9 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import static Libraries.TestUtils.testAssertFunctions;
 import static Pages.StringConstants.STEP_MESSAGE;
+import static Pages.StringConstants.YANLIS_OTP_TEXT;
 
 public class RegisterYanlisOTPTest extends BaseClass {
 
@@ -25,9 +27,11 @@ public class RegisterYanlisOTPTest extends BaseClass {
                 .sendKeys_Msisdn(rastgeleNumaraGir())
                 .click_devamEtButton()
                 .click_OTFField()
+                .yanlisOTPGir()
                 .click_devamEtButtonAfterOTP();
-        // TODO: 17.11.2022  
 
+
+        testAssertFunctions(YANLIS_OTP_TEXT,registerPage.get_OTPText());
     }
 
 }

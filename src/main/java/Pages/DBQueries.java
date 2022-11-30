@@ -6,28 +6,31 @@ import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.SQLException;
-import static Libraries.BaseClass.getString;
-import static Utils.TestListener.saveTextLog;
+
+import static Libraries.BaseClass.*;
 
 /**
  * Created by uguryildiz on 20.11.2022
  */
 public class DBQueries {
 
-
+    public static final String registerNo = rastgeleNumaraGir();
     public static final String GET_SEMI_AMOUNT_SQL = "SELECT TOP (1) c.ACCOUNT_BALANCE FROM [TTPAY_TEST].[dbo].[ACC_USER] a, [TTPAY_TEST].[dbo].[EMN_MEMBER] b, [TTPAY_TEST].[dbo].[EMN_MEMBER_DETAIL_LOG] c WHERE a.USER_ID = b.USER_ID AND b.MEMBER_CODE = c.MEMBER_CODE AND a.ACTIVE_MSISDN = '905051231231' ORDER BY c.CREATED_DATE DESC";
     public static final String SET_SEMIVERIFIED_OTP_SQL;
     public static final String SET_BASIC_OTP_SQL;
     public static final String SET_VERIFIED_OTP_SQL;
+    public static final String Set_OTPForNewAccount = "SELECT top (1) [OTP] FROM [TTPAY_TEST].[dbo].[OTP_TRANSACTION] where MSISDN='90" + registerNo + "' ORDER BY CREATION_DATE DESC";
     private static final String GET_OTP_SQL = "select TOP(1) TEXT from [TTPAY_TEST].[dbo].[SMS_TRANSACTION] ORDER BY CREATION_DATE DESC";
     private static final String GET_PN_SQL = "SELECT TOP(1) BODY FROM [TTPAY_TEST].[dbo].[PN_TRANSACTION] order by LOG_DATE desc";
     private static final String GET_TOTAL_TAX_AMOUNT_SEMI = "select top(1) TOTAL_TAX_AMOUNT from PAY_BILL where RECEIVER_EMAIL_ADDRESS in (select ACTIVE_MAIL from ACC_USER where ACTIVE_MSISDN='905051231231')  order by CREATED_DATE desc";
     private static final String GET_TOTAL_TAX_AMOUNT_VERIFIED = "select top(1) TOTAL_TAX_AMOUNT from [TTPAY_TEST].[dbo].[PAY_BILL] where RECEIVER_EMAIL_ADDRESS in (select ACTIVE_MAIL from [TTPAY_TEST].[dbo].[ACC_USER] where ACTIVE_MSISDN='905997654321')  order by CREATED_DATE desc";
     private static final String GET_BASIC_AMOUNT_SQL = "SELECT TOP (1) c.ACCOUNT_BALANCE FROM [TTPAY_TEST].[dbo].[ACC_USER] a, [TTPAY_TEST].[dbo].[EMN_MEMBER] b, [TTPAY_TEST].[dbo].[EMN_MEMBER_DETAIL_LOG] c WHERE a.USER_ID = b.USER_ID AND b.MEMBER_CODE = c.MEMBER_CODE AND a.ACTIVE_MSISDN = '905550000012' ORDER BY c.CREATED_DATE DESC";
     private static final String GET_VERIFIED_AMOUNT_SQL = "SELECT TOP (1) c.ACCOUNT_BALANCE FROM [TTPAY_TEST].[dbo].[ACC_USER] a, [TTPAY_TEST].[dbo].[EMN_MEMBER] b, [TTPAY_TEST].[dbo].[EMN_MEMBER_DETAIL_LOG] c WHERE a.USER_ID = b.USER_ID AND b.MEMBER_CODE = c.MEMBER_CODE AND a.ACTIVE_MSISDN = '905997654321' ORDER BY c.CREATED_DATE DESC";
+
 
     static {
         try {
@@ -68,7 +71,7 @@ public class DBQueries {
         String sql = GET_SEMI_AMOUNT_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
-        addStringAttachment(GET_SEMI_AMOUNT_SQL,"SemiVerified Bakiye: ");
+        addStringAttachment(GET_SEMI_AMOUNT_SQL, "SemiVerified Bakiye: ");
         return this;
     }
 
@@ -77,7 +80,7 @@ public class DBQueries {
         String sql = GET_BASIC_AMOUNT_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
-        addStringAttachment(GET_BASIC_AMOUNT_SQL,"Basic Bakiye: ");
+        addStringAttachment(GET_BASIC_AMOUNT_SQL, "Basic Bakiye: ");
         return this;
     }
 
@@ -86,7 +89,7 @@ public class DBQueries {
         String sql = GET_VERIFIED_AMOUNT_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
-        addStringAttachment(GET_VERIFIED_AMOUNT_SQL,"Verified Bakiye: ");
+        addStringAttachment(GET_VERIFIED_AMOUNT_SQL, "Verified Bakiye: ");
         return this;
     }
 
@@ -95,7 +98,7 @@ public class DBQueries {
         String sql = GET_OTP_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
-        addStringAttachment(GET_OTP_SQL,"SMS Log: ");
+        addStringAttachment(GET_OTP_SQL, "SMS Log: ");
         return this;
     }
 
@@ -105,7 +108,7 @@ public class DBQueries {
         String sql = GET_PN_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
-        addStringAttachment(GET_PN_SQL,"Push Notification Log: ");
+        addStringAttachment(GET_PN_SQL, "Push Notification Log: ");
         return this;
     }
 
@@ -114,7 +117,7 @@ public class DBQueries {
         String sql = GET_TOTAL_TAX_AMOUNT_VERIFIED;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
-        addStringAttachment(GET_TOTAL_TAX_AMOUNT_VERIFIED,"Toplam Kesinti Miktarı - Verified: ");
+        addStringAttachment(GET_TOTAL_TAX_AMOUNT_VERIFIED, "Toplam Kesinti Miktarı - Verified: ");
         return this;
     }
 
@@ -123,7 +126,54 @@ public class DBQueries {
         String sql = GET_TOTAL_TAX_AMOUNT_SEMI;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
-        addStringAttachment(GET_TOTAL_TAX_AMOUNT_SEMI,"Toplam Kesinti Miktarı - SemiVerified: ");
+        addStringAttachment(GET_TOTAL_TAX_AMOUNT_SEMI, "Toplam Kesinti Miktarı - SemiVerified: ");
         return this;
     }
+
+    @Step("{method}")
+    public DBQueries Set_OTPForNewAccount() throws SQLException, FileNotFoundException {
+
+        String sql = "SELECT top(1) [OTP] FROM [TTPAY_TEST].[dbo].[OTP_TRANSACTION] ORDER BY CREATION_DATE DESC";
+        DBConnection dbConn = new DBConnection();
+
+        int num = Integer.parseInt(dbConn.ttpayDev(sql));
+        String number = String.valueOf(num);
+
+        for (int i = 0; i < 1; i++) {
+            try {
+                String text = number;
+                String[] separated = text.split("");
+
+                for (String word : separated) {
+                    if (!word.trim().isEmpty()) {
+                    }
+                }
+
+                MobileElement testDB = driver.findElementByXPath("//*[@resource-id='tr.com.turktelekom.pokus.test:id/et_otp_textfield_text']");
+                testDB.sendKeys(separated[0]);
+
+                MobileElement testDB1 = driver.findElementByXPath("(//*[@resource-id='tr.com.turktelekom.pokus.test:id/et_otp_textfield_text'])[2]");
+                testDB1.sendKeys(separated[1]);
+
+                MobileElement testDB2 = driver.findElementByXPath("(//*[@resource-id='tr.com.turktelekom.pokus.test:id/et_otp_textfield_text'])[3]");
+                testDB2.sendKeys(separated[2]);
+
+                MobileElement testDB3 = driver.findElementByXPath("(//*[@resource-id='tr.com.turktelekom.pokus.test:id/et_otp_textfield_text'])[4]");
+                testDB3.sendKeys(separated[3]);
+
+                MobileElement testDB4 = driver.findElementByXPath("(//*[@resource-id='tr.com.turktelekom.pokus.test:id/et_otp_textfield_text'])[5]");
+                testDB4.sendKeys(separated[4]);
+
+                MobileElement testDB5 = driver.findElementByXPath("(//*[@resource-id='tr.com.turktelekom.pokus.test:id/et_otp_textfield_text'])[6]");
+                testDB5.sendKeys(separated[5]);
+            } catch (NumberFormatException e) {
+                System.out.println("not a number");
+            }
+        }
+
+        addStringAttachment(Set_OTPForNewAccount, "Yeni Hesap için Girilen OTP: ");
+        return this;
+    }
+
+
 }

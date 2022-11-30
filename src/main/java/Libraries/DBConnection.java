@@ -1,14 +1,13 @@
 package Libraries;
-
 import java.sql.*;
 
 public class DBConnection {
 
 
     public static void main(String[] args) throws SQLException {
-        String sql = "select TOP(1) TEXT from [TTPAY_TEST].[dbo].[SMS_TRANSACTION] ORDER BY CREATION_DATE DESC";
+        String sql = "SELECT top (1) [OTP] FROM [TTPAY_TEST].[dbo].[OTP_TRANSACTION] where MSISDN='905965555555' ORDER BY CREATION_DATE DESC";
         DBConnection dbConn = new DBConnection();
-        dbConn.ttpayDev2(sql);
+        System.out.println(dbConn.ttpayDev(sql));
     }
 
     private Connection openConnection(Connection connection, String dbDriver, String dbUrl, String username, String password) {

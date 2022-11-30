@@ -26,9 +26,21 @@ public class RegisterTest extends BaseClass {
                 .sendKeys_Msisdn(rastgeleNumaraGir())
                 .click_devamEtButton()
                 .click_OTFField()
-                .click_devamEtButtonAfterOTP();
-        // TODO: 17.11.2022  
-
+                .yeniHesapOTPGir()
+                .click_devamEtButtonAfterOTP()
+                .set_Sifre()
+                .click_DevamEtAfterSifre()
+                .set_IsimSoyIsimVeEmail(
+                        getString("testAd"),
+                        getString("testSoyad"),
+                        getString("testEmail"))
+                .click_DevamEtAfterAdSoyad()
+                .click_CheckBoxes()
+                .click_DevamEtAfterCheckBox();
+                /*
+                .click_devamEtAfterSuccess()
+                .click_tanitimiAtla();
+*/
     }
 
 }

@@ -6,30 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="d5672436-3bdd-4520-a293-1beda2ab3523" name="Changes" comment="cesitli yenilikler">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/BaseClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/BaseTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/DBConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/EventHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/PostmanTopUp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/TestUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/AyarlarVeIzinlerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/AyarlarVeIzinlerPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CampaignsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CampaignsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/GlobalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/GlobalPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/KartlarimPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/KartlarimPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LeftPanelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LeftPanelPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProfilPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ProfilPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Libraries/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/DBQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/DBQueries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RehberimVeBankHspPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RehberimVeBankHspPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/TestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Libraries/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Libraries/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/StringConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/StringConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Register/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Register/RegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/values.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Libraries/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Libraries/DBConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/AyarlarVeIzinlerPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/AyarlarVeIzinlerPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/CampaignsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/CampaignsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/DBQueries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/DBQueries.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/GlobalPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/GlobalPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/KartlarimPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/KartlarimPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/LeftPanelPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/LeftPanelPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/LoginPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/ProfilPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/ProfilPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/RegisterPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/RehberimVeBankHspPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/RehberimVeBankHspPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utils/TestListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utils/TestListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/values.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,37 +102,16 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginLogOutTest">
-    <configuration name="GrubaParaGonderTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.RegisterYanlisOTPTest">
+    <configuration name="DBConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Libraries.DBConnection" />
       <module name="TestFrameworkForMobile" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Verified.*" />
+          <option name="PATTERN" value="Libraries.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Verified" />
-      <option name="MAIN_CLASS_NAME" value="Verified.GrubaParaGonderTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GruptanParaIsteTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestFrameworkForMobile" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Verified.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Verified" />
-      <option name="MAIN_CLASS_NAME" value="Verified.GruptanParaIsteTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,30 +150,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SemiVerified.BankadanParaYukleTest and 4 more" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFrameworkForMobile" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="PATTERN" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Register.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Register" />
+      <option name="MAIN_CLASS_NAME" value="Register.RegisterTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
-      <patterns>
-        <pattern testClass="SemiVerified.BankadanParaYukleTest" />
-        <pattern testClass="SemiVerified.GrupOlusturTest" />
-        <pattern testClass="SemiVerified.KisiAdiGuncelleTest" />
-        <pattern testClass="SemiVerified.ParaGonderTest" />
-        <pattern testClass="SemiVerified.PokusKartEkleTest" />
-      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterYanlisOTPTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFrameworkForMobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Register.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Register" />
+      <option name="MAIN_CLASS_NAME" value="Register.RegisterYanlisOTPTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.RegisterYanlisOTPTest" />
+        <item itemvalue="TestNG.RegisterTest" />
+        <item itemvalue="Application.DBConnection" />
         <item itemvalue="TestNG.LoginLogOutTest" />
         <item itemvalue="TestNG.LoginHataliParolaTest" />
-        <item itemvalue="TestNG.GrubaParaGonderTest" />
-        <item itemvalue="TestNG.GruptanParaIsteTest" />
-        <item itemvalue="TestNG.SemiVerified.BankadanParaYukleTest and 4 more" />
       </list>
     </recent_temporary>
   </component>
@@ -394,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669735314152</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="cesitli yenilikler">
+      <created>1669793066903</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1669793066903</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
