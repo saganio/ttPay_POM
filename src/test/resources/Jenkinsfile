@@ -1,32 +1,65 @@
 pipeline {
     agent any
 
+
 tools {
-    maven 'maven'
-    jdk 'java_home'
+    maven 'M2_HOME'
+    jdk 'JAVA_HOME'
   }
+
 stages{
+
         stage('starting Tests.') {
             steps {
-                echo "Test Starting."
+                echo "Tests Starting."
 
             }
         }
 
         stage('running Tests') {
             steps {
-                echo "running Tests.."
-               sh 'mvn -f pom.xml clean install'
+              echo "running Tests.."
+             sh 'mvn -f pom.xml clean install'
             }
         }
 
-
-        stage('preparing report to Send') {
+/*
+        stage('After test') {
             steps {
-                echo "preparing report to Send.."
-
+                bat "cd C:/ProgramData/Jenkins/.jenkins/workspace/ttPay"
+                bat "allure generate --clean"
             }
         }
+
+          stage('Email Report') {
+            steps {
+            sh "zip -r allure-report.zip . -i allure-report"
+
+                emailext(
+                    to: "uyildiz@innova.com.tr",
+                    from: "uguryildiz.99@mail.com",
+                    subject: "TTPay Report",
+                    body: "Test koşumuna ait raporu ekten indirebilirsiniz.",
+                    attachmentsPattern: 'allure-report.zip'
+        )
+
+         }
+    }
+
+        */
+        stage('reports') {
+        steps {
+        script {
+                allure([
+                        includeProperties: false,
+                        jdk: '',
+                        properties: [],
+                        reportBuildPolicy: 'ALWAYS',
+                        results: [[path: 'allure-results']]
+            ])
+    }
+    }
+}
 
 }
 
