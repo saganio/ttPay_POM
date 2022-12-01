@@ -5,9 +5,9 @@ public class DBConnection {
 
 
     public static void main(String[] args) throws SQLException {
-        String sql = "SELECT top (1) [OTP] FROM [TTPAY_TEST].[dbo].[OTP_TRANSACTION] where MSISDN='905965555555' ORDER BY CREATION_DATE DESC";
+        String sql = "SELECT TOP(1) TOTAL_TAX_AMOUNT from PAY_BILL where RECEIVER_EMAIL_ADDRESS in (select ACTIVE_MAIL from ACC_USER where ACTIVE_MSISDN='905993152161')  order by CREATED_DATE desc";
         DBConnection dbConn = new DBConnection();
-        System.out.println(dbConn.ttpayDev(sql));
+        System.out.println(dbConn.ttpayDev2(sql));
     }
 
     private Connection openConnection(Connection connection, String dbDriver, String dbUrl, String username, String password) {

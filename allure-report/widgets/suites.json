@@ -1,37 +1,15 @@
 {
-  "total" : 3,
+  "total" : 1,
   "items" : [ {
     "uid" : "8399274b4bb69ec8699907dd6ef7de4e",
     "name" : "Default Suite",
     "statistic" : {
       "failed" : 0,
-      "broken" : 11,
-      "skipped" : 0,
-      "passed" : 18,
-      "unknown" : 0,
-      "total" : 29
-    }
-  }, {
-    "uid" : "a3ebd3885f734b5e692af432fe3ee17b",
-    "name" : "Command line suite",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 3,
-      "skipped" : 0,
-      "passed" : 25,
-      "unknown" : 0,
-      "total" : 28
-    }
-  }, {
-    "uid" : "52862a0a770aefdb51964380f386d901",
-    "name" : "Basic Suite",
-    "statistic" : {
-      "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 32,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 33
+      "total" : 2
     }
   } ]
 }

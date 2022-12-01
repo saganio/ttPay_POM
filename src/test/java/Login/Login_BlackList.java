@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import static Pages.StringConstants.BLACKLIST_TEXT;
 import static Pages.StringConstants.STEP_MESSAGE;
 
 public class Login_BlackList extends BaseClass {
@@ -21,9 +22,9 @@ public class Login_BlackList extends BaseClass {
     public void BlackList() throws IOException, ParseException {
 
         loginPage
-                .login();
+                .login_BlackList();
 
-        // TODO: 17.11.2022
-
+        globalPage
+                .CompareTexts(BLACKLIST_TEXT, loginPage.getBlackListText());
     }
 }

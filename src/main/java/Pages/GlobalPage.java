@@ -146,11 +146,7 @@ public class GlobalPage extends BaseClass {
 
     @Step("{method}")
     public GlobalPage CompareTexts(String actual, String expected) {
-
-        String ActualTitle = actual;
-        String ExpectedTitle = expected;
-        Assert.assertEquals(ExpectedTitle, ActualTitle);
-
+        Assert.assertEquals(expected, actual);
         return this;
     }
 

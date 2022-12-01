@@ -7,6 +7,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
+import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
@@ -26,6 +27,7 @@ public class LoginPage extends BaseClass {
     private final By usernameTextBox = By.id("tr.com.turktelekom.pokus.test:id/et_username_password_text");
     private final By passwordTextBox = By.id("tr.com.turktelekom.pokus.test:id/et_password_text");
     private final By loginOTPField = By.id("tv_information_dialog_message");
+    private final By blackListText = By.id("tv_information_dialog_message");
     private final By acceptOTPMessage = By.id("btn_information_dialog_confirm");
     private final By clickOTPField = By.xpath("//*[@resource-id='tr.com.turktelekom.pokus.test:id/et_otp_textfield_text']");
     private final By gonderButonu = By.xpath("//*[@text='GÖNDER']");
@@ -92,6 +94,14 @@ public class LoginPage extends BaseClass {
         return this;
     }
 
+    public LoginPage login_BlackList() throws IOException, ParseException {
+
+        setUsername(getString("blackList_Msisdn"));
+        setPassword(getString("pass"));
+        Log.info(getNames());
+        return this;
+    }
+
     @Step("{method}")
     public LoginPage semiVerifiedlogin() throws IOException, ParseException {
 
@@ -112,6 +122,7 @@ public class LoginPage extends BaseClass {
 
                 int num = Integer.parseInt(dbConn.ttpayDev(sql));
                 String number = String.valueOf(num);
+                Allure.addAttachment("OTP",dbConn.ttpayDev(sql));
 
                 for (int ix = 0; ix < 1; ix++) {
 
@@ -265,6 +276,14 @@ public class LoginPage extends BaseClass {
         return this;
     }
 
+    @Step("{method}")
+    public LoginPage click_OTPTextBox() {
+        clickElementBy(clickOTPField);
+        Log.info(getNames());
+        return this;
+    }
+
+
     @Step("{method} {0}")
     public LoginPage clickUsernameTextBox() {
         clickElementBy(usernameTextBox);
@@ -272,5 +291,11 @@ public class LoginPage extends BaseClass {
         return this;
     }
 
+    @Step("{method}")
+    public String getBlackListText() {
+        saveTextLog(getTextFromElement(blackListText));
+        Log.info(getNames());
+        return driver.findElement(blackListText).getText();
+    }
 
 }

@@ -9,6 +9,7 @@ import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import static Pages.StringConstants.STEP_MESSAGE;
 
@@ -18,12 +19,19 @@ public class ParolamiUnuttum_yanlisOTP extends BaseClass {
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Parolamı Unuttum dedikten sonra gelen OTP'yi YANLIŞ girme senaryosu.")
-    public void ParolamiUnuttum_yanlisOTP() throws IOException, ParseException {
+    public void ParolamiUnuttum_yanlisOTP() throws IOException, SQLException {
 
         loginPage
-                .login();
+                .click_ParolamiUnuttum()
+                .sendKeys_ParolamiUnuttumMsisdnTextBox(rastgeleNumaraGir())
+                .click_DevamEtButton()
+                .click_OTPTextBox();
+        dbQueries
+                .Set_WrongOTPForNewAccount();
 
-        // TODO: 17.11.2022
+        loginPage
+                .click_DevamEtButton();
 
+        // TODO: 1.12.2022  
     }
 }

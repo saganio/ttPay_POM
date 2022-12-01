@@ -22,7 +22,7 @@ public class ParolamiUnuttumTest extends BaseClass {
 
         loginPage
                 .click_ParolamiUnuttum()
-                .sendKeys_ParolamiUnuttumMsisdnTextBox(getString("id"))
+                .sendKeys_ParolamiUnuttumMsisdnTextBox(rastgeleNumaraGir())
                 .click_DevamEtButton();
     }
 

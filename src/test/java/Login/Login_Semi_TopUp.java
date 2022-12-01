@@ -1,6 +1,7 @@
 package Login;
 
 import Libraries.BaseClass;
+import Libraries.PostmanTopUp;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -18,12 +19,18 @@ public class Login_Semi_TopUp extends BaseClass {
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Semi Hesaba para yükle ve kontrol et.")
-    public void Semi_TopUp() throws IOException, ParseException {
+    public void Semi_TopUp() throws IOException, ParseException, InterruptedException {
+
+        PostmanTopUp
+                .getToken_MakeTopUp(getString("semi_Msisdn"), "20");
 
         loginPage
-                .login();
+                .semiVerifiedlogin();
 
-        // TODO: 17.11.2022
+        globalPage
+                .check_Notifications().wait2Sec().goBack()
+                .click_Islemlerim()
+                .click_BekleyenIslemlerim();
 
     }
 }

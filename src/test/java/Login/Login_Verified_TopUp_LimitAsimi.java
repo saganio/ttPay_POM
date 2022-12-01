@@ -1,6 +1,7 @@
 package Login;
 
 import Libraries.BaseClass;
+import Libraries.PostmanTopUp;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -18,12 +19,18 @@ public class Login_Verified_TopUp_LimitAsimi extends BaseClass {
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Verified Hesaba para yükle ve kontrol et.")
-    public void Verified_TopUp_LimitAsimi() throws IOException, ParseException {
+    public void Verified_TopUp_LimitAsimi() throws IOException, ParseException, InterruptedException {
+
+        PostmanTopUp
+                .getToken_MakeTopUp(getString("msisdn"), "2590");
 
         loginPage
-                .login();
+                .Verifiedlogin();
 
-        // TODO: 17.11.2022
+        globalPage
+                .check_Notifications().wait2Sec().goBack()
+                .click_Islemlerim()
+                .click_BekleyenIslemlerim();
 
     }
 

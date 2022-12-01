@@ -20,6 +20,7 @@ public class StringConstants {
     public static final String OTP_LOG_MESSAGE = "Adres güncelledikten sonra OTP ekranı gelmedi, OTP girişi yapılmayacak.";
     public static final String STEP_MESSAGE = "Test koşumunun detayları için genişletin.";
     public static final String YANLIS_OTP_TEXT = "Aktivasyon kodun hatalı. Lütfen tekrar dene. (MBL-0014)";
+    public static final String BLACKLIST_TEXT = "İşleminizi şu anda gerçekleştiremiyoruz. Çağrı merkezi ile iletişime geçiniz. (MBL-0019) ";
 
 
 }

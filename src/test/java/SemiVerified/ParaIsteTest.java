@@ -40,7 +40,6 @@ public class ParaIsteTest extends BaseClass {
                 .bakiyeKontrol_semi()
                 .push_Notification_log()
                 .total_Tax_Amount_semi();
-
     }
 
 }

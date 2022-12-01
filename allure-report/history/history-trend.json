@@ -1,75 +1,10 @@
 [ {
-  "buildOrder" : 1,
-  "reportUrl" : "localhost",
-  "reportName" : "TTPay Suite Test Results",
-  "data" : {
-    "failed" : 0,
-    "broken" : 15,
-    "skipped" : 0,
-    "passed" : 75,
-    "unknown" : 0,
-    "total" : 90
-  }
-}, {
-  "buildOrder" : 12,
-  "reportUrl" : "https://ci.qameta.io/job/allure2/job/master/Demo2_Report/index.html",
-  "data" : {
-    "failed" : 4,
-    "broken" : 1,
-    "skipped" : 1,
-    "passed" : 12,
-    "unknown" : 2,
-    "total" : 20
-  }
-}, {
-  "buildOrder" : 11,
-  "reportUrl" : "https://ci.qameta.io/job/allure2/job/master/Demo2_Report/index.html",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 11,
-    "unknown" : 1,
-    "total" : 12
-  }
-}, {
-  "buildOrder" : 10,
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 12,
-    "unknown" : 0,
-    "total" : 12
-  }
-}, {
-  "buildOrder" : 9,
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 4,
-    "passed" : 2,
-    "unknown" : 2,
-    "total" : 8
-  }
-}, {
-  "buildOrder" : 8,
-  "data" : {
-    "failed" : 1,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 10,
-    "unknown" : 0,
-    "total" : 11
-  }
-}, {
-  "buildOrder" : 7,
   "data" : {
     "failed" : 0,
     "broken" : 1,
-    "skipped" : 1,
-    "passed" : 10,
-    "unknown" : 1,
-    "total" : 13
+    "skipped" : 0,
+    "passed" : 1,
+    "unknown" : 0,
+    "total" : 2
   }
 } ]

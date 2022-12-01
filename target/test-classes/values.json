@@ -14,11 +14,14 @@
   "ISKIFaturaNo": "27083157",
   "kurum": "ISKI",
   "KKNo": "4155650100416111",
+  "KKNo2": "4119790166544284",
+  "CVV2": "961",
   "CVV": "123",
   "kisiMsisdn": "5111111111",
   "groupName": "testGrup",
   "amount": "10",
   "testAd": "testAd",
   "testSoyad": "testSoyad",
-  "testEmail": "test@eposta.com"
+  "testEmail": "test@eposta.com",
+  "blackList_Msisdn": "5063636399"
 }
