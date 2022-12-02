@@ -33,7 +33,10 @@ public class KisiyeParaGonderTest extends BaseClass {
 
         globalPage
                 .tutarGir_ParaGonder()
-                .OTPGir_Verified();
+                .OTPGir_Verified()
+                .check_Notifications().wait2Sec().goBack()
+                .click_Islemlerim()
+                .click_BekleyenIslemlerim();
 
         dbQueries
                 .otp_SMS_transaction_log()

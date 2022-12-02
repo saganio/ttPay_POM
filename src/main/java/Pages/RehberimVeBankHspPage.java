@@ -8,11 +8,13 @@ import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 
 import java.io.IOException;
 
 import static Libraries.TestUtils.*;
 import static Pages.GlobalPage.getNames;
+import static Pages.StringConstants.IBAN_KAYDETME_TEXT;
 import static Pages.StringConstants.yeniKayitNo;
 import static Utils.TestListener.saveTextLog;
 
@@ -29,6 +31,7 @@ public class RehberimVeBankHspPage extends BaseClass {
     private final By closeDialog = By.className("android.widget.ImageButton");
     private final By dialog_vazgecButonu = By.id("btn_confirmation_dialog_cancel");
     private final By dialog_devamEtButonu = By.id("btn_confirmation_dialog_confirm");
+    private final By IBANKaydetmeText_devamEtButonu = By.id("btn_information_dialog_confirm");
     private final By grupAdiGirTextBox = By.id("et_smart_textfield_text");
     private final By devamEtButonu = By.id("abAddNewGroup");
     private final By kaydetButonu = By.id("abSaveNewGroup");
@@ -43,6 +46,7 @@ public class RehberimVeBankHspPage extends BaseClass {
     private final By grubuSil_OnaylaButton = By.xpath("//android.widget.Button[@text='ONAYLA']");
     private final By grubuSil_VazgecButton = By.xpath("//android.widget.Button[@text='VAZGEÇ']");
     private final By grubuSil_TamamButton = By.xpath("//android.widget.Button[@text='TAMAM']");
+    private final By IBANSildiktenSonra_TamamButton = By.xpath("//android.widget.Button[@text='TAMAM']");
     private final By IBANText = By.id("tv_confirmation_dialog_message");
     private final By davetEt = By.xpath("(//*[@text='DAVET ET'])[2]");
     private final By davetEtTextAssert = By.id("tr.com.turktelekom.pokus.test:id/tv_information_dialog_message");
@@ -140,6 +144,7 @@ public class RehberimVeBankHspPage extends BaseClass {
     @Step("{method}")
     public RehberimVeBankHspPage click_devamEtButonu_dialog() {
         clickElementBy(dialog_devamEtButonu);
+        clickElementBy(IBANSildiktenSonra_TamamButton);
         Log.info(getNames());
         return this;
     }
@@ -295,10 +300,29 @@ public class RehberimVeBankHspPage extends BaseClass {
 
     @Step("{method}")
     public RehberimVeBankHspPage IbanBilgileriniDoldur() throws IOException, ParseException {
+
         clearAndfillInFieldWith(aliciAdSoyad, getString("aliciAdSoyad"));
         clearAndfillInFieldWith(aliciIBAN, getString("iban"));
         clickElementBy(IBANKaydetButton);
-        clickElementBy(IBANKaydetTamamButton);
+
+        boolean ibanText = driver.findElements(By.id("tv_information_dialog_message")).size() > 0;
+
+        if (ibanText) {
+            try {
+                clickElementBy(IBANKaydetmeText_devamEtButonu);
+                boolean tamamText = driver.findElements(By.id("fs_success_dialog_submith")).size() > 0;
+                if (tamamText) {
+                    clickElementBy(IBANKaydetTamamButton);
+                } else {
+                    Log.info("Devam");
+                }
+            } catch (NoSuchElementException noSuchElementException) {
+                Log.info(IBAN_KAYDETME_TEXT + " uyarısı gelmedi, devam ediliyor.");
+            }
+        } else {
+            clickElementBy(IBANKaydetTamamButton);
+        }
+
         Log.info(getNames());
         return this;
     }

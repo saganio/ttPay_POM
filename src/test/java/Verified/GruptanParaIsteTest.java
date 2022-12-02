@@ -56,10 +56,17 @@ public class GruptanParaIsteTest extends BaseClass {
                 .click_grubuSil_OnaylaButton()
                 .click_grubuSil_TamamButton();
 
+        globalPage
+                .goBack()
+                .goBack()
+                .goBack()
+                .check_Notifications().wait2Sec().goBack()
+                .click_Islemlerim()
+                .click_BekleyenIslemlerim();
+
         dbQueries
                 .otp_SMS_transaction_log()
                 .bakiyeKontrol_Verified()
-                .push_Notification_log()
-                .total_Tax_Amount_verified();
+                .push_Notification_log();
     }
 }

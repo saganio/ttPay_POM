@@ -6,7 +6,34 @@
   <component name="ChangeListManager">
     <list default="true" id="d5672436-3bdd-4520-a293-1beda2ab3523" name="Changes" comment="cesitli yenilikler">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Libraries/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/DBQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/DBQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/GlobalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/GlobalPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RehberimVeBankHspPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RehberimVeBankHspPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/StringConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/StringConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/GrubaParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/GrubaParaGonderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/GruptanParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/GruptanParaIsteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/IBANKaydetParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/IBANKaydetParaGonderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/KisiyeParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/KisiyeParaGonderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/ParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/ParaGonderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/ParaIsteKayitliKisidenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/ParaIsteKayitliKisidenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/ParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/ParaIsteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/YeniKisiOlusturduktanSonraParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/YeniKisiOlusturduktanSonraParaGonderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/YeniKisiOlusturduktanSonraParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/YeniKisiOlusturduktanSonraParaIsteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Libraries/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Libraries/DBConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/DBQueries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/DBQueries.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/GlobalPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/GlobalPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/RehberimVeBankHspPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/RehberimVeBankHspPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/StringConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/StringConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/ParolamiUnuttumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/ParolamiUnuttumTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/ParolamiUnuttum_yanlisOTP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/ParolamiUnuttum_yanlisOTP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/GrubaParaGonderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/GrubaParaGonderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/GruptanParaIsteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/GruptanParaIsteTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/IBANKaydetParaGonderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/IBANKaydetParaGonderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/KisiyeParaGonderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/KisiyeParaGonderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/ParaGonderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/ParaGonderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/ParaIsteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/ParaIsteTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +118,7 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ParolamiUnuttum_OTP">
+  <component name="RunManager" selected="TestNG.IBANKaydetParaGonderTest.IBANKaydet">
     <configuration name="DBConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Libraries.DBConnection" />
       <module name="ttPay_POM" />
@@ -105,19 +132,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Login_BlackList" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="IBANKaydetParaGonderTest.IBANKaydet" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ttPay_POM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Login.*" />
+          <option name="PATTERN" value="Verified.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Login" />
-      <option name="MAIN_CLASS_NAME" value="Login.Login_BlackList" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="Verified" />
+      <option name="MAIN_CLASS_NAME" value="Verified.IBANKaydetParaGonderTest" />
+      <option name="METHOD_NAME" value="IBANKaydet" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
+      <patterns>
+        <pattern testClass="Verified.GrubaParaGonderTest" />
+        <pattern testClass="Verified.IBANKaydetParaGonderTest" />
+        <pattern testClass="Verified.KisiyeParaGonderTest" />
+        <pattern testClass="Verified.ParaGonderTest" />
+        <pattern testClass="Verified.YeniKisiOlusturduktanSonraParaGonderTest" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -126,12 +161,12 @@
       <module name="ttPay_POM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SemiVerified.*" />
+          <option name="PATTERN" value="Verified.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SemiVerified" />
-      <option name="MAIN_CLASS_NAME" value="SemiVerified.ParaGonderTest" />
+      <option name="PACKAGE_NAME" value="Verified" />
+      <option name="MAIN_CLASS_NAME" value="Verified.ParaGonderTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -139,33 +174,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParaIsteTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Verified.GrubaParaGonderTest and 4 more" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ttPay_POM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SemiVerified.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SemiVerified" />
-      <option name="MAIN_CLASS_NAME" value="SemiVerified.ParaIsteTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="PATTERN" />
       <properties />
       <listeners />
+      <patterns>
+        <pattern testClass="Verified.GrubaParaGonderTest" />
+        <pattern testClass="Verified.IBANKaydetParaGonderTest" />
+        <pattern testClass="Verified.KisiyeParaGonderTest" />
+        <pattern testClass="Verified.ParaGonderTest" />
+        <pattern testClass="Verified.YeniKisiOlusturduktanSonraParaGonderTest" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParolamiUnuttum_OTP" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="YeniKisiOlusturduktanSonraParaIsteTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ttPay_POM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Login.*" />
+          <option name="PATTERN" value="Verified.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Login" />
-      <option name="MAIN_CLASS_NAME" value="Login.ParolamiUnuttum_OTP" />
+      <option name="PACKAGE_NAME" value="Verified" />
+      <option name="MAIN_CLASS_NAME" value="Verified.YeniKisiOlusturduktanSonraParaIsteTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -175,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ParolamiUnuttum_OTP" />
-        <item itemvalue="TestNG.Login_BlackList" />
-        <item itemvalue="TestNG.ParaIsteTest" />
-        <item itemvalue="TestNG.ParaGonderTest" />
+        <item itemvalue="TestNG.IBANKaydetParaGonderTest.IBANKaydet" />
+        <item itemvalue="TestNG.Verified.GrubaParaGonderTest and 4 more" />
         <item itemvalue="Application.DBConnection" />
+        <item itemvalue="TestNG.ParaGonderTest" />
+        <item itemvalue="TestNG.YeniKisiOlusturduktanSonraParaIsteTest" />
       </list>
     </recent_temporary>
   </component>
@@ -423,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669894504650</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="cesitli yenilikler">
+      <created>1669900971098</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1669900971098</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

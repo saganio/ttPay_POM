@@ -141,7 +141,7 @@ public class GlobalPage extends BaseClass {
     public static String getNames() {
         final StackTraceElement e = Thread.currentThread().getStackTrace()[2];
         final String s = e.getClassName();
-        return "I interact with > "+s.substring(s.lastIndexOf('.') + 1, s.length()) + "." + e.getMethodName();
+        return "I interacted with > "+s.substring(s.lastIndexOf('.') + 1, s.length()) + "." + e.getMethodName();
     }
 
     @Step("{method}")

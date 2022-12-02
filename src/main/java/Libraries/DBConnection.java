@@ -5,8 +5,17 @@ public class DBConnection {
 
 
     public static void main(String[] args) throws SQLException {
-        String sql = "SELECT TOP(1) TOTAL_TAX_AMOUNT from PAY_BILL where RECEIVER_EMAIL_ADDRESS in (select ACTIVE_MAIL from ACC_USER where ACTIVE_MSISDN='905993152161')  order by CREATED_DATE desc";
-        DBConnection dbConn = new DBConnection();
+        String sql = "SELECT TOP (1) c.ACCOUNT_BALANCE\n"
+                     + "FROM [TTPAY_TEST].[dbo].[ACC_USER] a,\n"
+                     + "[TTPAY_TEST].[dbo].[EMN_MEMBER] b,\n"
+                     + "[TTPAY_TEST].[dbo].[EMN_MEMBER_DETAIL_LOG] c\n"
+                     + "WHERE a.USER_ID = b.USER_ID\n"
+                     + "AND b.MEMBER_CODE = c.MEMBER_CODE\n"
+                     + "AND a.ACTIVE_MSISDN = '905997654321'\n"
+                     + "ORDER BY c.CREATED_DATE DESC";
+
+
+                DBConnection dbConn = new DBConnection();
         System.out.println(dbConn.ttpayDev2(sql));
     }
 
@@ -38,7 +47,7 @@ public class DBConnection {
         String result = "";
         String dbDriver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
         //String sql="SELECT TOP(1) [Msisdn] FROM [Payflex_Gateway_2_2_2_5].[mobil].[PrePaidOrderDeactivation]";
-        String dbUrl = "jdbc:sqlserver://172.26.66.235";
+        String dbUrl = "jdbc:sqlserver://;servername=172.26.66.235;encrypt=true;trustServerCertificate=true;";
         String username = "TTPAY_TEST";
         String password = "2kq43W!5Mb";
 

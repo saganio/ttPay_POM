@@ -57,6 +57,14 @@ public class GrubaParaGonderTest extends BaseClass {
                 .click_grubuSil_OnaylaButton()
                 .click_grubuSil_TamamButton();
 
+        globalPage
+                .goBack()
+                .goBack()
+                .goBack()
+                .check_Notifications().wait2Sec().goBack()
+                .click_Islemlerim()
+                .click_BekleyenIslemlerim();
+
         dbQueries
                 .otp_SMS_transaction_log()
                 .bakiyeKontrol_Verified()

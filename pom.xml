@@ -111,6 +111,7 @@
             <version>8.4.1.jre8</version>
         </dependency>
 
+
         <dependency>
             <groupId>com.github.automatedowl</groupId>
             <artifactId>allure-environment-writer</artifactId>
@@ -121,8 +122,8 @@
     </dependencies>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <aspectj.version>1.9.9.1</aspectj.version>
         <argLine>
