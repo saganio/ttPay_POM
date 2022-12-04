@@ -170,6 +170,8 @@ public class ProfilPage extends BaseClass {
                 Log.info(OTP_LOG_MESSAGE);
             } catch (SQLException e) {
                 throw new RuntimeException(e);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         } else {
             Log.info(OTP_LOG_MESSAGE);
@@ -232,6 +234,8 @@ public class ProfilPage extends BaseClass {
                 Log.info(OTP_LOG_MESSAGE);
             } catch (SQLException e) {
                 throw new RuntimeException(e);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         } else {
             Log.info(OTP_LOG_MESSAGE);
@@ -294,6 +298,8 @@ public class ProfilPage extends BaseClass {
                 Log.info(OTP_LOG_MESSAGE);
             } catch (SQLException e) {
                 throw new RuntimeException(e);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         } else {
             Log.info(OTP_LOG_MESSAGE);

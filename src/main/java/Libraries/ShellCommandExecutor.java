@@ -6,12 +6,14 @@ import lombok.extern.java.Log;
 
 @Log
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
-public final class ShellCommandExecutor {
+public class ShellCommandExecutor {
+
+    public static final String osPlatform = System.getProperty("os.name");
 
     public static void executeCommand(String command) {
         try {
             ProcessBuilder processBuilder = new ProcessBuilder();
-            if (GlobalVars.getOsPlatform().startsWith("Windows")) {
+            if (osPlatform.startsWith("Windows")) {
                 processBuilder.command("cmd.exe", "/c", command);
             } else {
                 processBuilder.command("sh", "-c", command);

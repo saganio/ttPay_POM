@@ -11,11 +11,13 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import java.awt.*;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 
 public class TestListener extends BaseClass implements ITestListener {
+
     private static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
     }
@@ -53,6 +55,7 @@ public class TestListener extends BaseClass implements ITestListener {
     @Override
     public void onStart(ITestContext iTestContext) {
         iTestContext.setAttribute("WebDriver", driver);
+
     }
 
     @Override
@@ -65,6 +68,7 @@ public class TestListener extends BaseClass implements ITestListener {
     @Override
     public void onTestStart(ITestResult iTestResult) {
         Log.info(getTestMethodName(iTestResult) + " test started.");
+
     }
 
     @Override
@@ -86,6 +90,7 @@ public class TestListener extends BaseClass implements ITestListener {
                 e.printStackTrace();
             }
         }
+
 
         //Save a log on allure.
         // saveTextLog(getTestMethodName(iTestResult) + " succeed and screenshot taken!");
@@ -123,11 +128,11 @@ public class TestListener extends BaseClass implements ITestListener {
     public void onTestSkipped(ITestResult iTestResult) {
         Log.info(getTestMethodName(iTestResult) + " test is skipped.");
         //ExtentReports log operation for skipped tests.
-
     }
 
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
         Log.info("Test failed but it is in defined success ratio " + getTestMethodName(iTestResult));
     }
+
 }

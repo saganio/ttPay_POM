@@ -24,14 +24,13 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+
+import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.HashMap;
-
+import java.util.Properties;
+import java.util.PropertyResourceBundle;
+import java.util.ResourceBundle;
 import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnvironmentWriter;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
@@ -40,6 +39,7 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 public class BaseClass {
 
     public static AndroidDriver<MobileElement> driver;
+    private static final String CAPS_FILENAME = "src/test/resources/caps.properties";
 
     //Call Page Objects
     public static LoginPage loginPage = new LoginPage(driver);
@@ -82,24 +82,27 @@ public class BaseClass {
     }
 
     //Setup before app start
-    public static AndroidDriver<MobileElement> initializeSetup() throws MalformedURLException {
+    public static AndroidDriver<MobileElement> initializeSetup() throws IOException {
 
-        final String URL_STRING = "http://127.0.0.1:4723/wd/hub";
+        Properties prop = new Properties();
+        prop.load(new FileInputStream(CAPS_FILENAME));
+
+        final String URL_STRING = "http://127.0.0.1:4721/wd/hub";
         URL url = new URL(URL_STRING);
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        capabilities.setCapability("VERSION", "11");
-        capabilities.setCapability("deviceName", "Pixel_XL_API_33");
-        capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("appPackage", "tr.com.turktelekom.pokus.test");
-        capabilities.setCapability("appActivity", "tr.com.innova.fintek.ttpay.pokus.view.splash.SplashActivity");
-        capabilities.setCapability("noReset", false);
-        capabilities.setCapability("automationName", "UiAutomator2");
-        capabilities.setCapability("disableWindowAnimation", true);
+        capabilities.setCapability("VERSION", prop.getProperty("VERSION"));
+        capabilities.setCapability("deviceName", prop.getProperty("deviceName"));
+        capabilities.setCapability("platformName", prop.getProperty("platformName"));
+        capabilities.setCapability("appPackage", prop.getProperty("appPackage"));
+        capabilities.setCapability("appActivity", prop.getProperty("appActivity"));
+        capabilities.setCapability("noReset", prop.getProperty("noReset"));
+        capabilities.setCapability("automationName", prop.getProperty("automationName"));
+        capabilities.setCapability("disableWindowAnimation", prop.getProperty("disableWindowAnimation"));
         capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 6000);
         capabilities.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
-        capabilities.setCapability("autoAcceptAlerts", true);
+        capabilities.setCapability("autoAcceptAlerts", prop.getProperty("autoAcceptAlerts"));
         AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(url, capabilities);
         driver.setSetting(Setting.WAIT_FOR_IDLE_TIMEOUT, 100);
 
@@ -126,6 +129,14 @@ public class BaseClass {
         return (String) elem.get(string);
     }
 
+    public static String getJiraString(String string) throws IOException, ParseException {
+
+        org.json.simple.parser.JSONParser parser = new JSONParser();
+        Object ob1j = parser.parse(new FileReader("src/test/resources/jiraProperties.json"));
+        JSONObject elem = (JSONObject) ob1j;
+        return (String) elem.get(string);
+    }
+
     @BeforeClass(alwaysRun = true)
     public void setUp() throws IOException {
 
@@ -133,7 +144,6 @@ public class BaseClass {
         driver = BaseClass.initializeSetup();
         setAllureEnvironment();
         Log.info("Engine started.");
-
 
     }
 
@@ -157,6 +167,17 @@ public class BaseClass {
 
     }
 
+    @Attachment(value = "Screenshot", type = "image/png")
+    public static Object takeJiraScreenShot() {
+
+        Log.info("Taking Screenshot...");
+        Allure.addAttachment("Screenshot",
+                new ByteArrayInputStream(((TakesScreenshot) driver)
+                        .getScreenshotAs(OutputType.BYTES)));
+
+        return null;
+    }
+
     public void setAllureEnvironment() {
         allureEnvironmentWriter(
                 ImmutableMap.<String, String>builder()
@@ -170,4 +191,9 @@ public class BaseClass {
         return driver;
     }
 
+    public static void readProperties(String props) throws IOException {
+
+
+
+    }
 }

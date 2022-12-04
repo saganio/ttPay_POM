@@ -74,7 +74,7 @@ public class LoginPage extends BaseClass {
 
         setUsername(getString("id"));
         setPassword(getString("pass"));
-
+/*
         if (getTextOfOTPMessage().equals(girisOncesiOTPText)) {
             try {
                 clickElementBy(acceptOTPMessage);
@@ -87,9 +87,16 @@ public class LoginPage extends BaseClass {
             } catch (NoSuchElementException NSE) {
                 Log.info("Giremedim.");
             }
+            if (getTextOfOTPMessage() != (girisOncesiOTPText)){
+                Log.info("Giriş yapıldı.");
+
+            }
         } else {
             Log.info("Giriş yapıldı.");
         }
+
+
+ */
         Log.info(getNames());
         return this;
     }

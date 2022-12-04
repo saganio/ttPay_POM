@@ -65,7 +65,7 @@ public class DBQueries {
     }
 
     @Attachment(value = "{value}", type = "text/plain")
-    public static String addStringAttachment(String SQL, String value) throws SQLException, FileNotFoundException {
+    public static String addStringAttachment(String SQL, String value) throws SQLException, IOException {
         DBConnection dbConn = new DBConnection();
         return dbConn.ttpayDev(SQL);
     }
@@ -98,7 +98,7 @@ public class DBQueries {
     }
 
     @Step("{method}")
-    public DBQueries otp_SMS_transaction_log() throws SQLException, FileNotFoundException {
+    public DBQueries otp_SMS_transaction_log() throws SQLException, IOException {
         String sql = GET_OTP_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
@@ -107,7 +107,7 @@ public class DBQueries {
     }
 
     @Step("{method}")
-    public DBQueries push_Notification_log() throws SQLException, FileNotFoundException {
+    public DBQueries push_Notification_log() throws SQLException, IOException {
 
         String sql = GET_PN_SQL;
         DBConnection dbConn = new DBConnection();
@@ -117,7 +117,7 @@ public class DBQueries {
     }
 
     @Step("{method}")
-    public DBQueries total_Tax_Amount_verified() throws SQLException, FileNotFoundException {
+    public DBQueries total_Tax_Amount_verified() throws SQLException, IOException {
         String sql = GET_TOTAL_TAX_AMOUNT_VERIFIED;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
@@ -126,7 +126,7 @@ public class DBQueries {
     }
 
     @Step("{method}")
-    public DBQueries total_Tax_Amount_semi() throws SQLException, FileNotFoundException {
+    public DBQueries total_Tax_Amount_semi() throws SQLException, IOException {
         String sql = GET_TOTAL_TAX_AMOUNT_SEMI;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
@@ -135,7 +135,7 @@ public class DBQueries {
     }
 
     @Step("{method}")
-    public DBQueries Set_OTPForNewAccount() throws SQLException, FileNotFoundException {
+    public DBQueries Set_OTPForNewAccount() throws SQLException, IOException {
 
         String sql = "SELECT top(1) [OTP] FROM [TTPAY_TEST].[dbo].[OTP_TRANSACTION] ORDER BY CREATION_DATE DESC";
         DBConnection dbConn = new DBConnection();
@@ -191,7 +191,7 @@ public class DBQueries {
 
 
     @Step("{method}")
-    public String Set_OTP_Verified() throws SQLException, FileNotFoundException {
+    public String Set_OTP_Verified() throws SQLException, IOException {
         String sql = SET_VERIFIED_OTP_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
@@ -200,7 +200,7 @@ public class DBQueries {
     }
 
     @Step("{method}")
-    public static String Set_OTP_Basic() throws SQLException, FileNotFoundException {
+    public static String Set_OTP_Basic() throws SQLException, IOException {
         String sql = SET_BASIC_OTP_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
@@ -209,13 +209,12 @@ public class DBQueries {
     }
 
     @Step("{method}")
-    public String Set_OTP_SemiVerified() throws SQLException, FileNotFoundException {
+    public String Set_OTP_SemiVerified() throws SQLException, IOException {
         String sql = SET_SEMIVERIFIED_OTP_SQL;
         DBConnection dbConn = new DBConnection();
         dbConn.ttpayDev2(sql);
         addStringAttachment(SET_SEMIVERIFIED_OTP_SQL,"OTP - SemiVerified: ");
         return dbConn.ttpayDev2(sql);
     }
-
 
 }

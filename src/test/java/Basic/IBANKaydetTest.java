@@ -1,18 +1,23 @@
 package Basic;
 
+import Jira.JiraPolicy;
 import Libraries.BaseClass;
+import Libraries.ShellCommandExecutor;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
+
 import java.io.IOException;
 import java.sql.SQLException;
-import static Pages.StringConstants.SEMI_IBAN_KAYDETME_TEXT;
-import static Pages.StringConstants.STEP_MESSAGE;
+
+import static Libraries.ShellCommandExecutor.executeCommand;
+import static Pages.StringConstants.*;
 
 public class IBANKaydetTest extends BaseClass {
+
 
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
@@ -20,8 +25,8 @@ public class IBANKaydetTest extends BaseClass {
     @Description("IBAN Kaydetme testi.")
     public void IBANKaydet() throws IOException, ParseException, SQLException {
 
-        dbQueries
-                .bakiyeKontrol_Basic();
+       // dbQueries
+        //        .bakiyeKontrol_Basic();
 
         loginPage
                 .login()
@@ -30,14 +35,14 @@ public class IBANKaydetTest extends BaseClass {
                 .click_rehberimVeBankaHesaplarim();
         RehberimVeBankaHesaplarimPage
                 .click_IbanSekmesi()
-                .click_plusButton()
-                .IbanBilgileriniDoldur_Semi();
+                .click_plusButton();
 
         globalPage
-                .CompareTexts(SEMI_IBAN_KAYDETME_TEXT, RehberimVeBankaHesaplarimPage.getErrorText_Semi());
+                .CompareTexts(IBAN_KAYDETME_TEXT, RehberimVeBankaHesaplarimPage.getErrorText());
 
         RehberimVeBankaHesaplarimPage
                 .click_vazgecButonuDialog();
+
     }
 
 }
