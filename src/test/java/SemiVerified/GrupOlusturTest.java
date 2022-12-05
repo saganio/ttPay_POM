@@ -18,7 +18,7 @@ public class GrupOlusturTest extends BaseClass {
     @Severity(SeverityLevel.MINOR)
     @Description("Grup oluşturma ve silme testi.")
     @Step(STEP_MESSAGE)
-    @Test(priority = 0)
+    @Test(priority = 1)
     public void GrupOlustur() throws IOException, ParseException {
 
         loginPage

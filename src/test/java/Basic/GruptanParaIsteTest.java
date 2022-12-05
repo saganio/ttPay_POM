@@ -21,7 +21,7 @@ public class GruptanParaIsteTest extends BaseClass {
     @Severity(SeverityLevel.MINOR)
     @Description("Gruptan Para İsteme senaryosu")
     @Step(STEP_MESSAGE)
-    @Test(priority = 0)
+    @Test(priority = 1)
     public void GruptanParaIste() throws IOException, ParseException, SQLException {
 
         dbQueries

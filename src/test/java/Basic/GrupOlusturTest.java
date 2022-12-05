@@ -18,7 +18,7 @@ public class GrupOlusturTest extends BaseClass {
     @Severity(SeverityLevel.MINOR)
     @Description("Para Gönderme senaryosu")
     @Step(STEP_MESSAGE)
-    @Test(priority = 0)
+    @Test(priority = 1)
     public void GrupOlustur() throws IOException, ParseException {
 
         loginPage

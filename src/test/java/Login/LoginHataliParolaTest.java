@@ -16,7 +16,7 @@ import static Pages.StringConstants.STEP_MESSAGE;
 
 public class LoginHataliParolaTest extends BaseClass {
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Kullancı Adı ve Yanlış Şifre ile giriş yapma senaryosu.")

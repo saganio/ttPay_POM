@@ -1,7 +1,11 @@
 package Jira;
 
+import Utils.Log;
+import com.google.common.collect.ImmutableMap;
 import net.rcarz.jiraclient.*;
 import net.rcarz.jiraclient.Issue.FluentCreate;
+
+import static Jira.Constants.REPORTER;
 
 public class JiraServiceProvider {
 
@@ -22,7 +26,8 @@ public class JiraServiceProvider {
 			fleuntCreate.field(Field.DESCRIPTION, description);
 			fleuntCreate.field(Field.REPORTER, reporterName);
 			Issue newIssue = fleuntCreate.execute();
-			System.out.println("new issue created in JIRA with ID: " + newIssue);
+
+			Log.info("new issue created in JIRA with ID: " + newIssue);
 
 		} catch (JiraException e) {
 			e.printStackTrace();

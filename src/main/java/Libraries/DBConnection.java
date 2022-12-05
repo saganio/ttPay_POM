@@ -1,15 +1,26 @@
 package Libraries;
+
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.*;
 import java.util.Properties;
+
+import static Pages.DBQueries.GET_BASIC_AMOUNT_SQL;
 
 public class DBConnection {
 
     private static final String DB_FILENAME = "src/test/resources/DB.properties";
 
 
+    public static void main(String[] args) throws SQLException, IOException {
+        String sql = GET_BASIC_AMOUNT_SQL;
+        DBConnection dbConnection = new DBConnection();
+
+        dbConnection.ttpayDev2(sql);
+        System.out.println(dbConnection.ttpayDev2(sql));
+
+
+    }
 
     private Connection openConnection(Connection connection, String dbDriver, String dbUrl, String username, String password) {
         if (connection != null) {
@@ -42,7 +53,7 @@ public class DBConnection {
 
         String result = "";
         String dbDriver = prop.getProperty("dbDriver");
-        String dbUrl = "";
+        String dbUrl = prop.getProperty("dbUrl");
         String username = prop.getProperty("username");
         String password = prop.getProperty("password");
 
@@ -60,7 +71,7 @@ public class DBConnection {
         closeConnection(connection);
         return result;
     }
-    /*
+ /*
         public String queryHelper2(String sql) throws SQLException {
             String result = "";
             String dbDriver = "oracle.jdbc.OracleDriver";
@@ -84,14 +95,19 @@ public class DBConnection {
         }
     */
 
-    public String ttpayDev2(String sql) throws SQLException {
-        String result = "";
-        String dbDriver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-        //String sql="SELECT TOP(1) [Msisdn] FROM [Payflex_Gateway_2_2_2_5].[mobil].[PrePaidOrderDeactivation]";
+    public String ttpayDev2(String sql) throws SQLException, IOException {
 
-        String dbUrl = "jdbc:sqlserver://10.10.10.109\\MSSQL2014;databaseName=TTPAY_TEST";
-        String username = "ttpayuser";
-        String password = "ttpaytest";
+        Properties prop = new Properties();
+        FileInputStream in = new FileInputStream(DB_FILENAME);
+        prop.load(in);
+        in.close();
+
+        String result = "";
+        String dbDriver = prop.getProperty("dbDriver");
+        //String sql="SELECT TOP(1) [Msisdn] FROM [Payflex_Gateway_2_2_2_5].[mobil].[PrePaidOrderDeactivation]";
+        String dbUrl = prop.getProperty("dbUrl");
+        String username = prop.getProperty("username");
+        String password = prop.getProperty("password");
 
 
         Connection connection = openConnection(null, dbDriver, dbUrl, username, password);

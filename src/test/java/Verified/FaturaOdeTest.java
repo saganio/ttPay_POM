@@ -18,7 +18,7 @@ import static Pages.StringConstants.STEP_MESSAGE;
  */
 public class FaturaOdeTest extends BaseClass {
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Fatura Ödeme testi.")

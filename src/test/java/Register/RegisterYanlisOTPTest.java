@@ -13,7 +13,7 @@ import static Pages.StringConstants.YANLIS_OTP_TEXT;
 
 public class RegisterYanlisOTPTest extends BaseClass {
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Sisteme Yanlış OTP ile yeni kullanıcı kaydetme senaryosu.")

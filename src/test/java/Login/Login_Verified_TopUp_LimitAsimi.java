@@ -15,7 +15,7 @@ import static Pages.StringConstants.STEP_MESSAGE;
 
 public class Login_Verified_TopUp_LimitAsimi extends BaseClass {
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Verified Hesaba para yükle ve kontrol et.")

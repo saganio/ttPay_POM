@@ -17,7 +17,7 @@ import static Pages.StringConstants.hataMesaji_BANKAHESABI;
 
 public class BankadanParaYukleTest extends BaseClass {
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Banka hesabından para yükleme testi.")

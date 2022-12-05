@@ -16,7 +16,7 @@ import static Pages.StringConstants.VAR_OLAN_HESAP_ERROR_TEXT;
 
 public class RegisterVarOlanKullaniciTest extends BaseClass {
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Sistemde kayıtlı olan kullanıcıyı tekrar kaydetme senaryosu.")

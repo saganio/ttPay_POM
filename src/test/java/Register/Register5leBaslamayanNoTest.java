@@ -11,7 +11,7 @@ import static Pages.StringConstants.STEP_MESSAGE;
 
 public class Register5leBaslamayanNoTest extends BaseClass {
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Sisteme 5 ile başlamayan yeni kullanıcı kaydetme senaryosu.")

@@ -17,7 +17,7 @@ import static Pages.StringConstants.*;
 public class YeniKisiOlusturduktanSonraParaIsteTest extends BaseClass {
 
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Yeni kişi oluşturduktan sonra Para Gönderme senaryosu")

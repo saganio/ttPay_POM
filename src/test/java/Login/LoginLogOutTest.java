@@ -16,7 +16,7 @@ import static Pages.StringConstants.STEP_MESSAGE;
 public class LoginLogOutTest extends BaseClass {
 
     @JiraPolicy(logTicketReady = true)
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Kullancı Adı ve Şifre ile giriş yapma senaryosu.")

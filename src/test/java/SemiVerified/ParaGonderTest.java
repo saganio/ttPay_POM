@@ -16,7 +16,7 @@ import static Pages.StringConstants.STEP_MESSAGE;
 import static Pages.StringConstants.hataMesaji_PARAGONDER;
 
 public class ParaGonderTest extends BaseClass {
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Para Gönderme senaryosu")

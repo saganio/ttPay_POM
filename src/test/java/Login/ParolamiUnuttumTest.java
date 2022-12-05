@@ -14,7 +14,7 @@ import static Pages.StringConstants.STEP_MESSAGE;
 
 public class ParolamiUnuttumTest extends BaseClass {
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Parolamı Unuttum senaryosu.")

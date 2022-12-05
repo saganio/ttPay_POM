@@ -14,7 +14,7 @@ import java.sql.SQLException;
 import static Pages.StringConstants.STEP_MESSAGE;
 
 public class ParaGonderTest extends BaseClass {
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Para Gönderme senaryosu")

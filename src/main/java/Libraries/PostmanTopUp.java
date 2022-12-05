@@ -1,5 +1,8 @@
 package Libraries;
 
+import Utils.Log;
+import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
 import okhttp3.*;
 import org.json.JSONObject;
 import org.json.simple.parser.ParseException;
@@ -18,6 +21,7 @@ public class PostmanTopUp {
 
     }
 
+    @Step
     public static void getToken_MakeTopUp(String msisdn, String amount) throws IOException {
 
         OkHttpClient client = new OkHttpClient().newBuilder()
@@ -34,7 +38,7 @@ public class PostmanTopUp {
         String resStr = response.body().string();
         JSONObject json = new JSONObject(resStr);
         String getToken = json.getString("access_token");
-        System.out.println("Token alındı: " + getToken);
+       Log.info("Token alındı: " + getToken);
 
 
         OkHttpClient client1 = new OkHttpClient().newBuilder()
@@ -61,6 +65,7 @@ public class PostmanTopUp {
                                                            + "}\n"
                                                            + "}");
 
+        Allure.addAttachment("Request: ", String.valueOf(request));
 
         Request request1 = new Request.Builder()
                 .url(MAKE_TOPUP_URL)
@@ -69,11 +74,12 @@ public class PostmanTopUp {
                 .addHeader("Content-Type", "application/json")
                 .build();
         Response response1 = client1.newCall(request1).execute();
+        Allure.addAttachment("Response:", String.valueOf(response1));
 
         String str = response1.body().string();
         JSONObject json1 = new JSONObject(str);
         System.out.println(json1);
-
+        Allure.addAttachment("Token: ",getToken);
     }
 
 }

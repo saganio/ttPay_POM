@@ -17,7 +17,7 @@ import static Pages.StringConstants.STEP_MESSAGE;
  */
 public class SifreGuncelleTest extends BaseClass {
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Sifre güncelleme testi. (Şifreyi güncellemez ekranı açar)")

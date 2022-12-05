@@ -15,7 +15,7 @@ import static Pages.StringConstants.STEP_MESSAGE;
 
 public class Login_BlackList extends BaseClass {
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Kara Listede olan kullanıcı ile sisteme giriş senaryosu.")

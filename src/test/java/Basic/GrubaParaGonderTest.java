@@ -18,7 +18,7 @@ import static Pages.StringConstants.hataMesaji_PARAGONDER;
 public class GrubaParaGonderTest extends BaseClass {
 
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Gruba Para Gönderme senaryosu")

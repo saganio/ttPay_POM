@@ -14,7 +14,7 @@ import static Pages.StringConstants.STEP_MESSAGE;
 
 public class ParolamiUnuttum_OTP extends BaseClass {
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Parolamı Unuttum dedikten sonra gelen OTP'yi girme senaryosu.")

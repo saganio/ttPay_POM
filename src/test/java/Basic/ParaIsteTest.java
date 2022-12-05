@@ -14,7 +14,7 @@ import static Pages.StringConstants.hataMesaji_PARAISTE;
 
 public class ParaIsteTest extends BaseClass {
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
     @Description("Para İsteme senaryosu.")
