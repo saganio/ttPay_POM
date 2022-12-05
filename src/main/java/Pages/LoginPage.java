@@ -74,8 +74,10 @@ public class LoginPage extends BaseClass {
 
         setUsername(getString("id"));
         setPassword(getString("pass"));
-/*
-        if (getTextOfOTPMessage().equals(girisOncesiOTPText)) {
+
+        boolean otpText = driver.findElements(By.xpath("//*[@text='Farklı bir cihazdan oturum açtığınız için cep telefonu numaranızı doğrulamanız gerekmektedir.']")).size() > 0;
+
+        if (otpText) {
             try {
                 clickElementBy(acceptOTPMessage);
                 clickElementBy(clickOTPField);
@@ -87,16 +89,10 @@ public class LoginPage extends BaseClass {
             } catch (NoSuchElementException NSE) {
                 Log.info("Giremedim.");
             }
-            if (getTextOfOTPMessage() != (girisOncesiOTPText)){
-                Log.info("Giriş yapıldı.");
-
-            }
         } else {
-            Log.info("Giriş yapıldı.");
+            Log.info("OTP Girişi istenmedi, Giriş yapıldı.");
         }
 
-
- */
         Log.info(getNames());
         return this;
     }
@@ -115,11 +111,11 @@ public class LoginPage extends BaseClass {
         setUsername(getString("semi_Msisdn"));
         setPassword(getString("semi_Pass"));
 
-        boolean otpText = driver.findElements(By.xpath("//*[@text='Farklı bir cihazdan oturum açtığınız için cep telefonu numaranızı doğrulamanız gerekmektedir.']")).size() > 0;
+        boolean isOtpMessagePresent = driver.findElements(By.xpath("//*[@text='Farklı bir cihazdan oturum açtığınız için cep telefonu numaranızı doğrulamanız gerekmektedir.']")).size() > 0;
 
-        if (otpText) {
+        if (isOtpMessagePresent) {
             System.out.println("Giriş yapıldı.");
-        } else if (!otpText) {
+        } else if (!isOtpMessagePresent) {
             try {
                 clickElementBy(acceptOTPMessage);
                 clickElementBy(clickOTPField);

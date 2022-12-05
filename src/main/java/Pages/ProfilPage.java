@@ -301,8 +301,11 @@ public class ProfilPage extends BaseClass {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        } else {
+        } else if (!OTPMessageExists){
             Log.info(OTP_LOG_MESSAGE);
+        }
+        else {
+            Log.info("");
         }
         Log.info(getNames());
         return this;

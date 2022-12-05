@@ -87,7 +87,7 @@ public class BaseClass {
         Properties prop = new Properties();
         prop.load(new FileInputStream(CAPS_FILENAME));
 
-        final String URL_STRING = "http://127.0.0.1:4721/wd/hub";
+        final String URL_STRING = "http://127.0.0.1:4723/wd/hub";
         URL url = new URL(URL_STRING);
 
         DesiredCapabilities capabilities = new DesiredCapabilities();

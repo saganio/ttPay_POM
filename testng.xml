@@ -8,7 +8,7 @@
 
     <test verbose="1" preserve-order="false" name="ttPay_POM">
         <classes>
-            <class name="Basic.IBANKaydetTest"/>
+            <class name="Login.LoginLogOutTest"/>
         </classes>
     </test>
 

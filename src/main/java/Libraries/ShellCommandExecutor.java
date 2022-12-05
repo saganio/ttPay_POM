@@ -1,11 +1,8 @@
 package Libraries;
 
-import lombok.AccessLevel;
-import lombok.NoArgsConstructor;
-import lombok.extern.java.Log;
 
-@Log
-@NoArgsConstructor(access = AccessLevel.PRIVATE)
+import Utils.Log;
+
 public class ShellCommandExecutor {
 
     public static final String osPlatform = System.getProperty("os.name");
@@ -20,7 +17,7 @@ public class ShellCommandExecutor {
             }
             Process process = processBuilder.start();
             if (process.waitFor() != 0) {
-                log.severe(String.format("Failed to execute [ %s ]. Failed to create capability file(s).", command));
+                Log.info(String.format("Failed to execute [ %s ]. Failed to create capability file(s).", command));
                 System.exit(1);
             }
         } catch (Exception e) {

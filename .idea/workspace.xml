@@ -5,33 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5672436-3bdd-4520-a293-1beda2ab3523" name="Changes" comment="cesitli yenilikler">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Jira/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Jira/JiraPolicy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Jira/JiraServiceProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Jira/TestJiraListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/jiraProperties.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_78.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_18_56.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_18_56/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_09_21_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_09_21__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Jira/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Jira/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Jira/JiraServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Jira/JiraServiceProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Jira/TestJiraListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Jira/TestJiraListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Libraries/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/ShellCommandExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Libraries/ShellCommandExecutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/StringConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/StringConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/TestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/IBANKaydetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/IBANKaydetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProfilPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ProfilPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/AdresGuncelleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/AdresGuncelleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginLogOutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/LoginLogOutTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Libraries/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Libraries/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Libraries/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Libraries/DBConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/DBQueries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/DBQueries.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/StringConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/StringConstants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utils/TestListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utils/TestListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/ProfilPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/ProfilPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Basic/AdresGuncelleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Basic/AdresGuncelleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DB.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DB.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/LoginLogOutTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/LoginLogOutTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ttPay_POM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ttPay_POM.iml" afterDir="false" />
     </list>
@@ -111,7 +103,24 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.IBANKaydetTest">
+  <component name="RunManager" selected="TestNG./Users/uguryildiz/gitProjects/ttPay_POMnew/testng.xml">
+    <configuration name="AdresGuncelleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ttPay_POM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Basic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Basic" />
+      <option name="MAIN_CLASS_NAME" value="Basic.AdresGuncelleTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IBANKaydetTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ttPay_POM" />
       <extension name="coverage">
@@ -139,23 +148,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="Login" />
       <option name="MAIN_CLASS_NAME" value="Login.LoginLogOutTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegisterTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestFrameworkForMobile" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Register.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Register" />
-      <option name="MAIN_CLASS_NAME" value="Register.RegisterTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -192,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.IBANKaydetTest" />
         <item itemvalue="TestNG./Users/uguryildiz/gitProjects/ttPay_POMnew/testng.xml" />
         <item itemvalue="TestNG.LoginLogOutTest (1)" />
+        <item itemvalue="TestNG.AdresGuncelleTest" />
+        <item itemvalue="TestNG.IBANKaydetTest" />
         <item itemvalue="TestNG.RegisterYanlisOTPTest" />
-        <item itemvalue="TestNG.RegisterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -439,7 +431,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

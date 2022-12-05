@@ -1,5 +1,6 @@
 package Login;
 
+import Jira.JiraPolicy;
 import Libraries.BaseClass;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
@@ -14,6 +15,7 @@ import static Pages.StringConstants.STEP_MESSAGE;
 
 public class LoginLogOutTest extends BaseClass {
 
+    @JiraPolicy(logTicketReady = true)
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
@@ -22,7 +24,8 @@ public class LoginLogOutTest extends BaseClass {
 
         loginPage
                 .login()
-                .click_HamburgerMenu();
+                .click_HamburgerMenu()
+                .click_TekrarDeneButton();
         leftPanelPage
                 .click_cikisYap();
         globalPage

@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import static Libraries.ShellCommandExecutor.executeCommand;
 import static Pages.StringConstants.STEP_MESSAGE;
 
 /**
@@ -20,7 +21,7 @@ public class AdresGuncelleTest extends BaseClass {
     @Test(priority = 0)
     @Severity(SeverityLevel.MINOR)
     @Step(STEP_MESSAGE)
-    @Description("Kayıtlı Kişiye Para Gönderme senaryosu")
+    @Description("Adres Güncelleme senaryosu")
     public void AdresGuncelle() throws IOException, ParseException {
 
         loginPage
@@ -41,6 +42,7 @@ public class AdresGuncelleTest extends BaseClass {
                 .sendkeys_acikAdresTextBox()
                 .click_tamamveGuncelleButton()
                 .setOTP_Basic();
+
     }
 
 }
