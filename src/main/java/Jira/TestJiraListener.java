@@ -1,6 +1,5 @@
 package Jira;
 
-import org.apache.commons.lang.exception.ExceptionUtils;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -35,7 +34,7 @@ public class TestJiraListener implements ITestListener {
 			String issueSummary = result.getMethod().getConstructorOrMethod().getMethod().getName()
 					+ "got failed due to some assertion or exception";
 			String issueDescription = result.getThrowable().getMessage() + "\n";
-			issueDescription.concat(ExceptionUtils.getFullStackTrace(result.getThrowable()));
+			//issueDescription.concat(ExceptionUtils.getFullStackTrace(result.getThrowable()));
 
 			jiraSp.createJiraTicket("Bug", issueSummary, issueDescription, "uyildiz");
 		}

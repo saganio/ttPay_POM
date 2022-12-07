@@ -78,6 +78,13 @@ public class GlobalPage extends BaseClass {
     }
 
     @Step("{method}")
+    public GlobalPage click_OnaylananIslemlerim() {
+        clickElementBy(islemlerim);
+        Log.info(getNames());
+        return this;
+    }
+
+    @Step("{method}")
     public GlobalPage goBack() {
         driver.navigate().back();
         getFluentWait();

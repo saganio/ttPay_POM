@@ -22,5 +22,7 @@ public class StringConstants {
     public static final String YANLIS_OTP_TEXT = "Aktivasyon kodun hatalı. Lütfen tekrar dene. (MBL-0014)";
     public static final String BLACKLIST_TEXT = "İşleminizi şu anda gerçekleştiremiyoruz. Çağrı merkezi ile iletişime geçiniz. (MBL-0019) ";
     public static final String KAYITLI_IBAN_TEXT ="Bu IBAN zaten kayıtlı! (MBL-0102)";
+    public static final String CREATE_REPORT ="allure serve";
+
 
 }

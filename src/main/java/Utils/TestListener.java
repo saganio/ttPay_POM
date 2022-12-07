@@ -10,11 +10,10 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
-import java.awt.*;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
+
 
 public class TestListener extends BaseClass implements ITestListener {
 
@@ -119,7 +118,7 @@ public class TestListener extends BaseClass implements ITestListener {
             }
         }
 
-        //Save a log on allure.
+
        // saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");
 
     }

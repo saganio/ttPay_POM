@@ -8,8 +8,9 @@ import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 import java.io.IOException;
-import static Pages.StringConstants.STEP_MESSAGE;
-import static Pages.StringConstants.YANLIS_OTP_TEXT;
+
+import static Libraries.ShellCommandExecutor.executeCommand;
+import static Pages.StringConstants.*;
 
 public class RegisterYanlisOTPTest extends BaseClass {
 
@@ -29,6 +30,7 @@ public class RegisterYanlisOTPTest extends BaseClass {
 
         globalPage
                 .CompareTexts(YANLIS_OTP_TEXT,registerPage.get_OTPText());
+
     }
 
 }

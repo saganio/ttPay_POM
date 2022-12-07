@@ -176,11 +176,12 @@ public class LoginPage extends BaseClass {
     }
 
     public LoginPage Verifiedlogin() throws IOException, ParseException {
+        boolean isOtpMessagePresent = driver.findElements(By.xpath("//*[@text='Farklı bir cihazdan oturum açtığınız için cep telefonu numaranızı doğrulamanız gerekmektedir.']")).size() > 0;
 
         setUsername(getString("msisdn"));
         setPassword(getString("pass1"));
 
-        if (getTextOfOTPMessage().equals(girisOncesiOTPText)) {
+        if (isOtpMessagePresent) {
             try {
                 clickElementBy(acceptOTPMessage);
                 clickElementBy(clickOTPField);

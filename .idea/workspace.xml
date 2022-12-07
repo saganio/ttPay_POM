@@ -5,101 +5,125 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5672436-3bdd-4520-a293-1beda2ab3523" name="Changes" comment="cesitli yenilikler">
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Jira/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Jira/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Jira/JiraServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Jira/JiraServiceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Libraries/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/PostmanTopUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Libraries/PostmanTopUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/DBQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/DBQueries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/AdresGuncelleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/AdresGuncelleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/BankadanParaYukleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/BankadanParaYukleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/FaturaOdeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/FaturaOdeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/GrubaParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/GrubaParaGonderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/GrupOlusturTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/GrupOlusturTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/GruptanParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/GruptanParaIsteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/IBANKaydetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/IBANKaydetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/KampanyalarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/KampanyalarTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/KisiAdiGuncelleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/KisiAdiGuncelleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/KisiDavetEtTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/KisiDavetEtTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/KisiDetayIncelemeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/KisiDetayIncelemeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/KisiOlusturTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/KisiOlusturTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/KisidenParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/KisidenParaIsteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/KisiyeParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/KisiyeParaGonderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/KrediBankaKartiEkleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/KrediBankaKartiEkleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/ParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/ParaGonderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/ParaIsteKayitliKisidenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/ParaIsteKayitliKisidenTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/ParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/ParaIsteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/PokusKartEkleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/PokusKartEkleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/SifreGuncelleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/SifreGuncelleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/YeniKisiOlusturduktanSonraParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/YeniKisiOlusturduktanSonraParaGonderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basic/YeniKisiOlusturduktanSonraParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basic/YeniKisiOlusturduktanSonraParaIsteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginHataliParolaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/LoginHataliParolaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/18aad88abc3ce816.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/2ea5ba3b18506920.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/3dce2491e64fbca2.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/5732fd48b0455ea5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/6168432ea734d252.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/7376c342d369a36d.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/7b45161cbce1268e.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/8e99199c5b9802b6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/b2fa4b3c8fe923b0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/b9a39037efb85a86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/e0ef38d32742f888.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/e2e775134d1ddf04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/e7a3fca471c42f8e.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/ec1e7af0795ffdc9.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/efdc1c571ce09696.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/packages.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/423db066ffaeb9dc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/ba5001225180ca0f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/deaa2de5890020c3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/timeline.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/mail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/prometheusData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/categories-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/duration-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/history-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/history.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/retry-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugins/behaviors/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugins/packages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugins/screen-diff/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugins/screen-diff/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/behaviors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/environment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/executors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/history-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/retry-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/severity.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/suites.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Jira/TestJiraListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Jira/TestJiraListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/GlobalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/GlobalPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/StringConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/StringConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/TestListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginLogOutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/LoginLogOutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/Login_Basic_TopUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/Login_Basic_TopUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/Login_Basic_TopUp_LimitAsimi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/Login_Basic_TopUp_LimitAsimi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/Login_BeniHatirla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/Login_BeniHatirla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/Login_BlackList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/Login_BlackList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/Login_Semi_TopUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/Login_Semi_TopUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/Login_Semi_TopUp_LimitAsimi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/Login_Semi_TopUp_LimitAsimi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/Login_Verified_TopUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/Login_Verified_TopUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/Login_Verified_TopUp_LimitAsimi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/Login_Verified_TopUp_LimitAsimi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/ParolamiUnuttumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/ParolamiUnuttumTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/ParolamiUnuttum_OTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/ParolamiUnuttum_OTP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/ParolamiUnuttum_yanlisOTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/ParolamiUnuttum_yanlisOTP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Register/Register5leBaslamayanNoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Register/Register5leBaslamayanNoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Register/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Register/RegisterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Register/RegisterVarOlanKullaniciTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Register/RegisterVarOlanKullaniciTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Register/RegisterYanlisOTPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Register/RegisterYanlisOTPTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/AdresGuncelleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/AdresGuncelleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/BankadanParaYukleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/BankadanParaYukleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/FaturaOdeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/FaturaOdeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/GrubaParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/GrubaParaGonderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/GrupOlusturTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/GrupOlusturTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/GruptanParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/GruptanParaIsteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/KampanyalarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/KampanyalarTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/KisiAdiGuncelleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/KisiAdiGuncelleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/KisiDavetEtTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/KisiDavetEtTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/KisiDetayIncelemeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/KisiDetayIncelemeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/KisiOlusturTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/KisiOlusturTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/KisidenParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/KisidenParaIsteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/KisiyeParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/KisiyeParaGonderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/KrediBankaKartiEkleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/KrediBankaKartiEkleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/ParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/ParaGonderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/ParaIsteKayitliKisidenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/ParaIsteKayitliKisidenTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/ParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/ParaIsteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/PokusKartEkleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/PokusKartEkleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/SifreGuncelleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/SifreGuncelleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/YanlisIBANKaydetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/YanlisIBANKaydetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/YeniKisiOlusturduktanSonraParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/YeniKisiOlusturduktanSonraParaGonderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/YeniKisiOlusturduktanSonraParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/YeniKisiOlusturduktanSonraParaIsteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/AdresGuncelleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/AdresGuncelleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/BankadanParaYukleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/BankadanParaYukleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/FaturaOdeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/FaturaOdeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/GrubaParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/GrubaParaGonderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/GrupOlusturTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/GrupOlusturTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/GruptanParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/GruptanParaIsteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/IBANKaydetParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/IBANKaydetParaGonderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/KampanyalarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/KampanyalarTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/KisiAdiGuncelleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/KisiAdiGuncelleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/KisiDavetEtTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/KisiDavetEtTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/KisiDetayIncelemeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/KisiDetayIncelemeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/KisiOlusturTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/KisiOlusturTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/KisidenParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/KisidenParaIsteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/KisiyeParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/KisiyeParaGonderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/KrediBankaKartiEkleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/KrediBankaKartiEkleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/ParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/ParaGonderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/ParaIsteKayitliKisidenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/ParaIsteKayitliKisidenTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/ParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/ParaIsteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/PokusKartEkleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/PokusKartEkleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/SifreGuncelleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/SifreGuncelleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/YeniKisiOlusturduktanSonraParaGonderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/YeniKisiOlusturduktanSonraParaGonderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verified/YeniKisiOlusturduktanSonraParaIsteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verified/YeniKisiOlusturduktanSonraParaIsteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/DB.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/DB.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Libraries/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Libraries/DBConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/DBQueries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/DBQueries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Basic/AdresGuncelleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Basic/AdresGuncelleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/DB.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DB.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Libraries/PostmanTopUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Libraries/PostmanTopUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/StringConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/StringConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utils/TestListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utils/TestListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Basic/FaturaOdeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Basic/FaturaOdeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Basic/GrupOlusturTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Basic/GrupOlusturTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Basic/KampanyalarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Basic/KampanyalarTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Basic/KisiAdiGuncelleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Basic/KisiAdiGuncelleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Basic/KisiDetayIncelemeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Basic/KisiDetayIncelemeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Basic/KisiOlusturTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Basic/KisiOlusturTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Basic/SifreGuncelleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Basic/SifreGuncelleTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Login/LoginLogOutTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/LoginLogOutTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/Login_Basic_TopUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/Login_Basic_TopUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/Login_Basic_TopUp_LimitAsimi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/Login_Basic_TopUp_LimitAsimi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/Login_BeniHatirla.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/Login_BeniHatirla.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/Login_BlackList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/Login_BlackList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/Login_Semi_TopUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/Login_Semi_TopUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/Login_Semi_TopUp_LimitAsimi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/Login_Semi_TopUp_LimitAsimi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/Login_Verified_TopUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/Login_Verified_TopUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/Login_Verified_TopUp_LimitAsimi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/Login_Verified_TopUp_LimitAsimi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/ParolamiUnuttumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/ParolamiUnuttumTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/ParolamiUnuttum_OTP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/ParolamiUnuttum_OTP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/ParolamiUnuttum_yanlisOTP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/ParolamiUnuttum_yanlisOTP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Register/Register5leBaslamayanNoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Register/Register5leBaslamayanNoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Register/RegisterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Register/RegisterTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SemiVerified/AdresGuncelleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SemiVerified/AdresGuncelleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SemiVerified/FaturaOdeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SemiVerified/FaturaOdeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SemiVerified/GrupOlusturTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SemiVerified/GrupOlusturTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SemiVerified/KampanyalarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SemiVerified/KampanyalarTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SemiVerified/KisiAdiGuncelleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SemiVerified/KisiAdiGuncelleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SemiVerified/KisiDetayIncelemeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SemiVerified/KisiDetayIncelemeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SemiVerified/KisiOlusturTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SemiVerified/KisiOlusturTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SemiVerified/SifreGuncelleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SemiVerified/SifreGuncelleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SemiVerified/YanlisIBANKaydetTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SemiVerified/YanlisIBANKaydetTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/AdresGuncelleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/AdresGuncelleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/BankadanParaYukleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/BankadanParaYukleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/FaturaOdeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/FaturaOdeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/GrubaParaGonderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/GrubaParaGonderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/GrupOlusturTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/GrupOlusturTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/GruptanParaIsteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/GruptanParaIsteTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/IBANKaydetParaGonderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/IBANKaydetParaGonderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/KampanyalarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/KampanyalarTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/KisiAdiGuncelleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/KisiAdiGuncelleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/KisiDetayIncelemeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/KisiDetayIncelemeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/KisiOlusturTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/KisiOlusturTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/KisidenParaIsteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/KisidenParaIsteTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/KisiyeParaGonderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/KisiyeParaGonderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/KrediBankaKartiEkleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/KrediBankaKartiEkleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/ParaGonderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/ParaGonderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/ParaIsteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/ParaIsteTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verified/SifreGuncelleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verified/SifreGuncelleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ttPay_POM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ttPay_POM.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,11 +168,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "C:/Users/uyildiz/Documents/Python Scripts/selenium-jira-integration-example"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;C:/ProgramData/Jenkins/.jenkins/workspace/ttPay&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Login" />
@@ -180,47 +204,17 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Login_Basic_TopUp">
-    <configuration name="DBConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Libraries.DBConnection" />
+  <component name="RunManager" selected="TestNG.IBANKaydetParaGonderTest">
+    <configuration name="IBANKaydetParaGonderTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ttPay_POM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Libraries.*" />
+          <option name="PATTERN" value="Verified.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AdresGuncelleTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ttPay_POM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Basic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Basic" />
-      <option name="MAIN_CLASS_NAME" value="Basic.AdresGuncelleTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginLogOutTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ttPay_POM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Login.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Login" />
-      <option name="MAIN_CLASS_NAME" value="Login.LoginLogOutTest" />
+      <option name="PACKAGE_NAME" value="Verified" />
+      <option name="MAIN_CLASS_NAME" value="Verified.IBANKaydetParaGonderTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -245,6 +239,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ParolamiUnuttum_yanlisOTP" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ttPay_POM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Login" />
+      <option name="MAIN_CLASS_NAME" value="Login.ParolamiUnuttum_yanlisOTP" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterYanlisOTPTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ttPay_POM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Register.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Register" />
+      <option name="MAIN_CLASS_NAME" value="Register.RegisterYanlisOTPTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="/Users/uguryildiz/gitProjects/ttPay_POMnew/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ttPay_POM" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -257,11 +285,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Login_Basic_TopUp" />
-        <item itemvalue="Application.DBConnection" />
+        <item itemvalue="TestNG.IBANKaydetParaGonderTest" />
+        <item itemvalue="TestNG.RegisterYanlisOTPTest" />
         <item itemvalue="TestNG./Users/uguryildiz/gitProjects/ttPay_POMnew/testng.xml" />
-        <item itemvalue="TestNG.LoginLogOutTest (1)" />
-        <item itemvalue="TestNG.AdresGuncelleTest" />
+        <item itemvalue="TestNG.ParolamiUnuttum_yanlisOTP" />
+        <item itemvalue="TestNG.Login_Basic_TopUp" />
       </list>
     </recent_temporary>
   </component>
@@ -498,7 +526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670235982681</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="cesitli yenilikler">
+      <created>1670242218160</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1670242218160</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

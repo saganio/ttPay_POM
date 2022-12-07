@@ -2,14 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Basic Suite" preserve-order="true" thread-count="1">
 
-    <listeners>
-        <listener class-name="Jira.TestJiraListener"/>
-    </listeners>
 
-    <test verbose="1" preserve-order="false" name="ttPay_POM">
+    <test verbose="1" preserve-order="true" name="ttPay_POM">
         <classes>
-            <class name="Login.LoginLogOutTest"/>
+            <class name="Verified.IBANKaydetParaGonderTest"/>
+            <class name="Verified.YeniKisiOlusturduktanSonraParaGonderTest"/>
+            <class name="Basic.GrupOlusturTest"/>
+            <class name="SemiVerified.AdresGuncelleTest"/>
         </classes>
     </test>
-
 </suite>
