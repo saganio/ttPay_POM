@@ -167,16 +167,6 @@ public class BaseClass {
 
     }
 
-    @Attachment(value = "Screenshot", type = "image/png")
-    public static Object takeJiraScreenShot() {
-
-        Log.info("Taking Screenshot...");
-        Allure.addAttachment("Screenshot",
-                new ByteArrayInputStream(((TakesScreenshot) driver)
-                        .getScreenshotAs(OutputType.BYTES)));
-
-        return null;
-    }
 
     public void setAllureEnvironment() {
         allureEnvironmentWriter(

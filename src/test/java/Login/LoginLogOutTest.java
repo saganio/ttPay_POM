@@ -23,8 +23,7 @@ public class LoginLogOutTest extends BaseClass {
 
         loginPage
                 .login()
-                .click_HamburgerMenu()
-                .click_TekrarDeneButton();
+                .click_HamburgerMenu();
         leftPanelPage
                 .click_cikisYap();
         globalPage
