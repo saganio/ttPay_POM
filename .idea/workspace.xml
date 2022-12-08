@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5672436-3bdd-4520-a293-1beda2ab3523" name="Changes" comment="cesitli yenilikler">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Libraries/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginLogOutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/LoginLogOutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Libraries/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Libraries/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/GlobalPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/GlobalPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -425,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670401790060</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="cesitli yenilikler">
+      <created>1670403042498</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1670403042498</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
