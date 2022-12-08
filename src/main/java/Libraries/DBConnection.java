@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.Properties;
 
-import static Pages.DBQueries.GET_BASIC_AMOUNT_SQL;
+import static Pages.DBQueries.*;
 
 public class DBConnection {
 
@@ -13,7 +13,7 @@ public class DBConnection {
 
 
     public static void main(String[] args) throws SQLException, IOException {
-        String sql = GET_BASIC_AMOUNT_SQL;
+        String sql = SET_SEMIVERIFIED_OTP_SQL;
         DBConnection dbConnection = new DBConnection();
 
         dbConnection.ttpayDev2(sql);
