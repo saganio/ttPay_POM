@@ -3,6 +3,7 @@ package Pages;
 import Libraries.DBConnection;
 import Utils.Log;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import io.qameta.allure.Attachment;
@@ -49,7 +50,7 @@ public class DBQueries {
     }
 
 
-    public DBQueries() {
+    public DBQueries(AndroidDriver<MobileElement> driver) {
     }
 
     @Attachment(value = "{value}", type = "text/plain")
