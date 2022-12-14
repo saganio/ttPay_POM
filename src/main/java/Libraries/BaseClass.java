@@ -21,16 +21,18 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 
-import java.io.*;
-import java.net.MalformedURLException;
+import java.io.ByteArrayInputStream;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
 import java.net.URL;
 import java.util.Properties;
-import java.util.PropertyResourceBundle;
-import java.util.ResourceBundle;
+
 import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnvironmentWriter;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
@@ -40,6 +42,7 @@ public class BaseClass {
 
     public static AndroidDriver<MobileElement> driver;
     private static final String CAPS_FILENAME = "src/test/resources/caps.properties";
+    public static RemoteWebDriver remoteWebDriver;
 
     //Call Page Objects
     public static LoginPage loginPage = new LoginPage(driver);
@@ -111,6 +114,30 @@ public class BaseClass {
 
     }
 
+    public static RemoteWebDriver GridSetupForAndroid() throws IOException {
+        Properties prop = new Properties();
+        prop.load(new FileInputStream(CAPS_FILENAME));
+
+        final String URL_STRING = "http://localhost:4444/wd/hub";
+        URL url = new URL(URL_STRING);
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+
+        capabilities.setCapability("deviceName", prop.getProperty("deviceName"));
+        capabilities.setCapability("platformName", prop.getProperty("platformName"));
+        capabilities.setCapability("appPackage", prop.getProperty("appPackage"));
+        capabilities.setCapability("appActivity", prop.getProperty("appActivity"));
+        capabilities.setCapability("noReset", prop.getProperty("noReset"));
+        capabilities.setCapability("automationName", prop.getProperty("automationName"));
+        capabilities.setCapability("disableWindowAnimation", prop.getProperty("disableWindowAnimation"));
+        capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 6000);
+        capabilities.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
+        capabilities.setCapability("autoAcceptAlerts", prop.getProperty("autoAcceptAlerts"));
+        remoteWebDriver = new RemoteWebDriver(url, capabilities);
+        remoteWebDriver.manage().timeouts().implicitlyWait(15, SECONDS);
+        return remoteWebDriver;
+    }
+
     public static String rastgeleNumaraGir() {
         String randomNumbers = RandomStringUtils.randomNumeric(9);
         return 5 + randomNumbers;
@@ -137,8 +164,16 @@ public class BaseClass {
         return (String) elem.get(string);
     }
 
+
     @BeforeClass(alwaysRun = true)
     public void setUp() throws IOException {
+        /*
+        Eğer Grid ile çalışıyorsa
+        driver = BaseClass.initializeSetup();
+        yoruma alınıp
+        remoteWebDriver = BaseClass.GridSetupForAndroid();
+        kullanılmalıdır.
+        */
 
         //startAppiumServer();
         driver = BaseClass.initializeSetup();
@@ -147,11 +182,19 @@ public class BaseClass {
 
     }
 
+
     @AfterClass(alwaysRun = true)
     public void stopAppiumAndDriver() throws IOException {
+         /*
+         Eğer Grid ile çalışıyorsa
+         driver.quit();
+         yoruma alınıp
+         remoteWebDriver.quit();
+         kullanılmalıdır.
+         */
 
         driver.quit();
-      //  service.stop();
+        //  service.stop();
         Log.info("Closing Driver");
         //Runtime.getRuntime().exec("allure serve allure-results");
 
@@ -161,20 +204,13 @@ public class BaseClass {
     public void takeScreenShot() {
 
         Log.info("Taking Screenshot...");
-        Allure.addAttachment("Screenshot",
-                new ByteArrayInputStream(((TakesScreenshot) driver)
-                        .getScreenshotAs(OutputType.BYTES)));
+        Allure.addAttachment("Screenshot", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
 
     }
 
 
     public void setAllureEnvironment() {
-        allureEnvironmentWriter(
-                ImmutableMap.<String, String>builder()
-                        .put("Author", "uyildiz")
-                        .put("Project", "TTPay")
-                        .put("URL", "https://pokus.com.tr/")
-                        .build());
+        allureEnvironmentWriter(ImmutableMap.<String, String>builder().put("Author", "uyildiz").put("Project", "TTPay").put("URL", "https://pokus.com.tr/").build());
     }
 
     public WebDriver getDriver() {
@@ -182,7 +218,6 @@ public class BaseClass {
     }
 
     public static void readProperties(String props) throws IOException {
-
 
 
     }
