@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Basic Suite" preserve-order="true" thread-count="1">
+<suite name="Ornek" preserve-order="true" thread-count="1">
 
-
-    <test verbose="1" preserve-order="true" name="ttPay_POM">
-        <classes>
-            <class name="Verified.IBANKaydetParaGonderTest"/>
-            <class name="Verified.YeniKisiOlusturduktanSonraParaGonderTest"/>
-            <class name="Basic.GrupOlusturTest"/>
-            <class name="SemiVerified.AdresGuncelleTest"/>
-        </classes>
+    <test verbose="1" preserve-order="true" name="OrnekClass">
+        <packages>
+            <package name="*"/>
+        </packages>
     </test>
+
+
 </suite>

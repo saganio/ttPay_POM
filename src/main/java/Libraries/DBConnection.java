@@ -13,12 +13,11 @@ public class DBConnection {
 
 
     public static void main(String[] args) throws SQLException, IOException {
-        String sql = SET_SEMIVERIFIED_OTP_SQL;
+        String sql = GET_PN_SQL;
         DBConnection dbConnection = new DBConnection();
 
         dbConnection.ttpayDev2(sql);
         System.out.println(dbConnection.ttpayDev2(sql));
-
 
     }
 

@@ -9,6 +9,8 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
+
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.SQLException;
@@ -24,7 +26,7 @@ public class DBQueries {
 
     public static final String GET_SEMI_AMOUNT_SQL;
     private static final String GET_OTP_SQL = "select TOP(1) TEXT from [TTPAY_TEST].[dbo].[SMS_TRANSACTION] ORDER BY CREATION_DATE DESC";
-    private static final String GET_PN_SQL = "SELECT TOP(1) BODY FROM [TTPAY_TEST].[dbo].[PN_TRANSACTION] order by LOG_DATE desc";
+    public static final String GET_PN_SQL = "SELECT TOP(1) BODY FROM [TTPAY_TEST].[dbo].[PN_TRANSACTION] order by LOG_DATE desc";
     public static final String SET_SEMIVERIFIED_OTP_SQL;
     public static final String SET_BASIC_OTP_SQL;
     public static final String SET_VERIFIED_OTP_SQL;
@@ -33,6 +35,8 @@ public class DBQueries {
     public static final String GET_TOTAL_TAX_AMOUNT_VERIFIED;
     public static final String GET_BASIC_AMOUNT_SQL;
     public static final String GET_VERIFIED_AMOUNT_SQL;
+    public static final String ORNEK_SCRIPT= "select * from";
+
 
     static {
         try {
@@ -57,7 +61,9 @@ public class DBQueries {
     public static String addStringAttachment(String SQL, String value) throws SQLException, IOException {
         DBConnection dbConn = new DBConnection();
         return dbConn.ttpayDev2(SQL);
+
     }
+
 
     @Step("{method}")
     public DBQueries bakiyeKontrol_semi() throws SQLException, IOException {
@@ -204,6 +210,18 @@ public class DBQueries {
         dbConn.ttpayDev2(sql);
         addStringAttachment(SET_SEMIVERIFIED_OTP_SQL,"OTP - SemiVerified: ");
         return dbConn.ttpayDev2(sql);
+    }
+
+
+    @Step
+    public String test_script() throws SQLException, IOException {
+      String sql = "select * from";
+      DBConnection dbConnection1 = new DBConnection();
+
+      dbConnection1.ttpayDev2(sql);
+      addStringAttachment(sql,"örnek script değeri: ");
+      return dbConnection1.ttpayDev2(sql);
+
     }
 
 }

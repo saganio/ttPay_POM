@@ -12,8 +12,7 @@ import org.testng.Assert;
 
 import java.util.Arrays;
 
-import static Libraries.TestUtils.clickElementBy;
-import static Libraries.TestUtils.getFluentWait;
+import static Libraries.TestUtils.*;
 
 public class GlobalPage extends BaseClass {
 
@@ -32,6 +31,9 @@ public class GlobalPage extends BaseClass {
     private final By bankaHesabinaParaGonderOnaylaButonu = By.id("continueBTN");
     private final By bankaHesabinaParaGonderBitirButonu = By.xpath("//*[@text='BİTİR']");
 
+    public String firstBalance;
+    public String lastBalance;
+    private final By balance = By.id("tr.com.turktelekom.pokus.test:id/tvMoneyAmount");
 
     //Constructor
     public GlobalPage(AndroidDriver<MobileElement> driver) {
@@ -148,13 +150,53 @@ public class GlobalPage extends BaseClass {
     public static String getNames() {
         final StackTraceElement e = Thread.currentThread().getStackTrace()[2];
         final String s = e.getClassName();
-        return "I interacted with > "+s.substring(s.lastIndexOf('.') + 1, s.length()) + "." + e.getMethodName();
+        return "I interacted with > " + s.substring(s.lastIndexOf('.') + 1, s.length()) + "." + e.getMethodName();
     }
 
     @Step("{method}")
     public GlobalPage CompareTexts(String actual, String expected) {
         Assert.assertEquals(expected, actual);
         return this;
+    }
+
+    @Step("{method}")
+    public int firstB() {
+        String str = getTextFromElement(balance);
+        firstBalance = Arrays.toString(str.split("₺"));
+        Log.info("İlk para:" + firstBalance);
+        int i = 0;
+        try {
+            i = Integer.parseInt(firstBalance);
+        } catch (NumberFormatException ex) {
+            Log.info(String.valueOf(i));
+        }
+        return i;
+    }
+
+    @Step("{method}")
+    public int lastB() {
+        String str2 = getTextFromElement(balance);
+        lastBalance = Arrays.toString(str2.split("₺"));
+        Log.info("Son para:" + lastBalance);
+
+        int e = 0;
+        try {
+            e = Integer.parseInt(lastBalance);
+        } catch (NumberFormatException ex) {
+            Log.info(String.valueOf(e));
+        }
+
+        return e;
+    }
+
+    @Step("{method}")
+    public int getToplam() {
+
+        int a = firstB();
+        int b = lastB();
+
+        return a - b;
+
     }
 
 }

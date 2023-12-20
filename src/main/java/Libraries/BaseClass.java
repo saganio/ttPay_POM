@@ -1,5 +1,6 @@
 package Libraries;
 
+import Jira.TestJiraListener;
 import Pages.*;
 import Utils.Log;
 import Utils.TestListener;
@@ -25,7 +26,6 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
-
 import java.io.ByteArrayInputStream;
 import java.io.FileInputStream;
 import java.io.FileReader;
@@ -37,7 +37,7 @@ import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnviro
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 @SuppressWarnings("ALL")
-@Listeners(TestListener.class)
+@Listeners({TestListener.class})
 public class BaseClass {
 
     public static AndroidDriver<MobileElement> driver;
@@ -58,6 +58,8 @@ public class BaseClass {
     public static DBQueries dbQueries = new DBQueries(driver);
     public static DBConnection dbConnection = new DBConnection();
     private static AppiumDriverLocalService service;
+    public static OrnekPage op = new OrnekPage(driver);
+
 
     static {
         try {
@@ -107,6 +109,7 @@ public class BaseClass {
         capabilities.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
         capabilities.setCapability("autoAcceptAlerts", prop.getProperty("autoAcceptAlerts"));
         AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(url, capabilities);
+
         driver.setSetting(Setting.WAIT_FOR_IDLE_TIMEOUT, 100);
 
         driver.manage().timeouts().implicitlyWait(15, SECONDS);
@@ -114,7 +117,7 @@ public class BaseClass {
 
     }
 
-    public static RemoteWebDriver GridSetupForAndroid() throws IOException {
+    public static AndroidDriver<MobileElement> GridSetupForAndroid() throws IOException {
         Properties prop = new Properties();
         prop.load(new FileInputStream(CAPS_FILENAME));
 
@@ -122,7 +125,6 @@ public class BaseClass {
         URL url = new URL(URL_STRING);
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-
         capabilities.setCapability("deviceName", prop.getProperty("deviceName"));
         capabilities.setCapability("platformName", prop.getProperty("platformName"));
         capabilities.setCapability("appPackage", prop.getProperty("appPackage"));
@@ -130,12 +132,11 @@ public class BaseClass {
         capabilities.setCapability("noReset", prop.getProperty("noReset"));
         capabilities.setCapability("automationName", prop.getProperty("automationName"));
         capabilities.setCapability("disableWindowAnimation", prop.getProperty("disableWindowAnimation"));
-        capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 6000);
-        capabilities.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
         capabilities.setCapability("autoAcceptAlerts", prop.getProperty("autoAcceptAlerts"));
-        remoteWebDriver = new RemoteWebDriver(url, capabilities);
-        remoteWebDriver.manage().timeouts().implicitlyWait(15, SECONDS);
-        return remoteWebDriver;
+        AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(url, capabilities);
+        driver.setSetting(Setting.WAIT_FOR_IDLE_TIMEOUT, 100);
+        driver.manage().timeouts().implicitlyWait(15, SECONDS);
+        return driver;
     }
 
     public static String rastgeleNumaraGir() {
@@ -175,7 +176,7 @@ public class BaseClass {
         kullanılmalıdır.
         */
 
-        //startAppiumServer();
+       // startAppiumServer();
         driver = BaseClass.initializeSetup();
         setAllureEnvironment();
         Log.info("Engine started.");
@@ -194,8 +195,9 @@ public class BaseClass {
          */
 
         driver.quit();
-        //  service.stop();
+        //service.stop();
         Log.info("Closing Driver");
+
         //Runtime.getRuntime().exec("allure serve allure-results");
 
     }
@@ -217,8 +219,5 @@ public class BaseClass {
         return driver;
     }
 
-    public static void readProperties(String props) throws IOException {
 
-
-    }
 }

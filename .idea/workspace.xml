@@ -4,13 +4,105 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5672436-3bdd-4520-a293-1beda2ab3523" name="Changes" comment="cesitli yenilikler">
+    <list default="true" id="d5672436-3bdd-4520-a293-1beda2ab3523" name="Changes" comment="Grid support">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Example/Araba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Example/Odevb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Example/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/OrnekPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/OrnekTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Verified/KPGAmount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/gridConfig.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_2_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_automatedowl_allure_environment_writer_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_25_0_jre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_appium_java_client_7_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_java_commons_2_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_model_2_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_test_filter_2_18_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_testng_2_18_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160810.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Libraries/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/gridConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/gridConfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Libraries/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/PostmanTopUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Libraries/PostmanTopUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Libraries/TestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Libraries/TestUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/DBQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/DBQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/GlobalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/GlobalPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login/Login_Basic_TopUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/Login_Basic_TopUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SemiVerified/PokusKartEkleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SemiVerified/PokusKartEkleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/DB.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/DB.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/caps.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/caps.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/gridConfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/values.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Libraries/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Libraries/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Libraries/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Libraries/DBConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Libraries/PostmanTopUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Libraries/PostmanTopUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Libraries/TestUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Libraries/TestUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/DBQueries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/DBQueries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/LoginLogOutTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/LoginLogOutTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/GlobalPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/GlobalPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DB.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DB.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/Login_Basic_TopUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login/Login_Basic_TopUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/values.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ttPay_POM.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +132,20 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/OrnekTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/resources/caps.properties" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/resources/values.json" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2GJq5NdCz7jFBznCphV0bA90dV9" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -57,8 +157,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "C:/ProgramData/Jenkins/.jenkins/workspace/ttPay",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+    "git-widget-placeholder": "main",
+    "last_directory_selection": "C:/Users/uyildiz/Desktop/IDEA Projects/ttPay_POM/src/test/resources",
+    "last_opened_file_path": "C:/Users/uyildiz/ttpay",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -72,18 +175,18 @@
       <recent name="$PROJECT_DIR$/src/main/java/Libraries" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\uyildiz\Desktop\IDEA Projects\ttPay_POM\src\test\resources" />
       <recent name="C:\Users\uyildiz\Desktop\IDEA Projects\ttPay_POM\target" />
       <recent name="C:\Users\uyildiz\Desktop\IDEA Projects\ttPay_POM\allure-results\history" />
       <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Verified" />
       <recent name="Pages" />
       <recent name="Basic" />
       <recent name="BasicT" />
       <recent name="Login" />
-      <recent name="Register" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -92,9 +195,16 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginLogOutTest">
-    <configuration name="DBConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Libraries.DBConnection" />
+  <component name="RunManager" selected="TestNG.PokusKartEkleTest (1)">
+    <configuration name="OrnekTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OrnekTest" />
+      <module name="ttPay_POM" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostmanTopUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Libraries.PostmanTopUp" />
       <module name="ttPay_POM" />
       <extension name="coverage">
         <pattern>
@@ -106,7 +216,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IBANKaydetParaGonderTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="KPGAmount" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ttPay_POM" />
       <extension name="coverage">
         <pattern>
@@ -115,7 +225,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Verified" />
-      <option name="MAIN_CLASS_NAME" value="Verified.IBANKaydetParaGonderTest" />
+      <option name="MAIN_CLASS_NAME" value="Verified.KPGAmount" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -123,16 +233,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginLogOutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PokusKartEkleTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ttPay_POM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Login.*" />
+          <option name="PATTERN" value="SemiVerified.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Login" />
-      <option name="MAIN_CLASS_NAME" value="Login.LoginLogOutTest" />
+      <option name="PACKAGE_NAME" value="SemiVerified" />
+      <option name="MAIN_CLASS_NAME" value="SemiVerified.PokusKartEkleTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -140,27 +250,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterYanlisOTPTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PokusKartEkleTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ttPay_POM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Register.*" />
+          <option name="PATTERN" value="Basic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Register" />
-      <option name="MAIN_CLASS_NAME" value="Register.RegisterYanlisOTPTest" />
+      <option name="PACKAGE_NAME" value="Basic" />
+      <option name="MAIN_CLASS_NAME" value="Basic.PokusKartEkleTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/uguryildiz/gitProjects/ttPay_POMnew/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ttPay_POM" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -169,11 +269,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginLogOutTest" />
-        <item itemvalue="Application.DBConnection" />
-        <item itemvalue="TestNG.IBANKaydetParaGonderTest" />
-        <item itemvalue="TestNG.RegisterYanlisOTPTest" />
-        <item itemvalue="TestNG./Users/uguryildiz/gitProjects/ttPay_POMnew/testng.xml" />
+        <item itemvalue="TestNG.PokusKartEkleTest (1)" />
+        <item itemvalue="TestNG.PokusKartEkleTest" />
+        <item itemvalue="Application.PostmanTopUp" />
+        <item itemvalue="Application.OrnekTest" />
+        <item itemvalue="TestNG.KPGAmount" />
       </list>
     </recent_temporary>
   </component>
@@ -445,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670507187857</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Grid support">
+      <created>1671013943621</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1671013943621</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -467,6 +574,7 @@
     <MESSAGE value="commit-db" />
     <MESSAGE value="commit-db and trends" />
     <MESSAGE value="cesitli yenilikler" />
-    <option name="LAST_COMMIT_MESSAGE" value="cesitli yenilikler" />
+    <MESSAGE value="Grid support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Grid support" />
   </component>
 </project>

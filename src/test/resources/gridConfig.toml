@@ -1,0 +1,6 @@
+[relay]
+url = "http://localhost:4723/wd/hub"
+configs = [
+  "3", "{\"browserName\": \"chrome\", \"platformName\": \"android\", \"appium:platformVersion\": \"11\"}",
+  "3", "{\"browserName\": \"Safari\", \"platformName\": \"iOS\", \"appium:platformVersion\": \"15.2\"}"
+]

@@ -40,6 +40,7 @@ public class LoginPage extends BaseClass {
     private final By girisYapButton = By.id("btn_login_register_submith");
     private final By beniHatirla = By.id("cb_username_password");
 
+
     //Constructor
     public LoginPage(AndroidDriver<MobileElement> driver) {
         BaseClass.driver = driver;

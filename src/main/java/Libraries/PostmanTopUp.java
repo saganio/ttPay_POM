@@ -6,6 +6,7 @@ import io.qameta.allure.Step;
 import okhttp3.*;
 import org.json.JSONObject;
 import org.json.simple.parser.ParseException;
+import org.testng.annotations.BeforeTest;
 
 import java.io.IOException;
 
@@ -13,10 +14,12 @@ import static Libraries.BaseClass.getString;
 
 public class PostmanTopUp {
 
-    private static final String GET_TOKEN_URL = "http://172.26.66.222:9000/account-provider/oauth/token?grant_type=client_credentials";
-    private static final String MAKE_TOPUP_URL = "http://172.26.66.222:9000/thirdparty-api/v1/topup";
+
+    private static final String GET_TOKEN_URL ="https://pokustest.payflex.com.tr/account-provider/oauth/token?grant_type=client_credentials";
+    private static final String MAKE_TOPUP_URL="https://pokustest.payflex.com.tr/thirdparty-api/v1/topup";
 
     public static void main(String[] args) throws IOException, ParseException {
+
         getToken_MakeTopUp(getString("id"), getString("amount"));
 
     }
@@ -39,7 +42,6 @@ public class PostmanTopUp {
         JSONObject json = new JSONObject(resStr);
         String getToken = json.getString("access_token");
        Log.info("Token alındı: " + getToken);
-
 
         OkHttpClient client1 = new OkHttpClient().newBuilder()
                 .build();

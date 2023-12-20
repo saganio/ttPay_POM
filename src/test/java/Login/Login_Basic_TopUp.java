@@ -17,7 +17,7 @@ import static Pages.StringConstants.STEP_MESSAGE;
 public class Login_Basic_TopUp extends BaseClass {
 
     @Test(priority = 1)
-    @Severity(SeverityLevel.MINOR)
+    @Severity(SeverityLevel.NORMAL)
     @Step(STEP_MESSAGE)
     @Description("Para Yükleme ve Kontrol Testi")
     public void Basic_TopUp() throws IOException, ParseException, InterruptedException, SQLException {
